@@ -19,8 +19,6 @@ public class LoginServiceImpl implements ILoginService {
     @Override
     public boolean loginValidate(SysUserDTO sysUserDTO) {
       TbSysUser sysUser=  loginMapper.loginValidate(sysUserDTO);
-        if (sysUser!=null)
-            return true;
-        return false;
+        return sysUser != null;
     }
 }

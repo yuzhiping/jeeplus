@@ -23,6 +23,17 @@
         <property name="password" value="${jdbc.password}"/>
         <property name="maxActive" value="${jdbc.maxActive}"/>
         <property name="maxWait" value="${jdbc.maxWait}"/>
+        <property name="proxyFilters">
+            <list>
+                <ref bean="log-filter"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="log-filter" class="com.alibaba.druid.filter.logging.Log4jFilter">
+        <property name="resultSetLogEnabled" value="false"/>
+        <property name="statementExecutableSqlLogEnable" value="true"/>
+        <property name="statementLogEnabled" value="false"/>
     </bean>
 
     <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">

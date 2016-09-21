@@ -47,16 +47,16 @@ public class IPAddressUtils {
             }else {
                 // 如果是Linux操作系统
                 boolean bFindIP = false;
-                Enumeration<NetworkInterface> netInterfaces = (Enumeration<NetworkInterface>) NetworkInterface.getNetworkInterfaces();
+                Enumeration<NetworkInterface> netInterfaces = NetworkInterface.getNetworkInterfaces();
                 while (netInterfaces.hasMoreElements()) {
                     if (bFindIP) {
                         break;
                     }
-                    NetworkInterface ni = (NetworkInterface) netInterfaces
+                    NetworkInterface ni = netInterfaces
                             .nextElement();
                     Enumeration<InetAddress> ips = ni.getInetAddresses();
                     while (ips.hasMoreElements()) {
-                        ip = (InetAddress) ips.nextElement();
+                        ip = ips.nextElement();
                         if (ip.isSiteLocalAddress() && !ip.isLoopbackAddress() // 127.开头的都是lookback地址
                                 && ip.getHostAddress().indexOf(":") == -1) {
                             bFindIP = true;

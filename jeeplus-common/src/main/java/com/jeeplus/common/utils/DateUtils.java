@@ -586,7 +586,7 @@ public class DateUtils extends PropertyEditorSupport {
         long millisDiff = getMillis(calSrc) - getMillis(calDes);
 
         if (flag == 'y') {
-            return (calSrc.get(calSrc.YEAR) - calDes.get(calDes.YEAR));
+            return (calSrc.get(Calendar.YEAR) - calDes.get(Calendar.YEAR));
         }
 
         if (flag == 'd') {
@@ -618,17 +618,16 @@ public class DateUtils extends PropertyEditorSupport {
         if (StringUtils.hasText(text)) {
             try {
                 if (text.indexOf(":") == -1 && text.length() == 10) {
-                    setValue(this.date_sdf.parse(text));
+                    setValue(date_sdf.parse(text));
                 } else if (text.indexOf(":") > 0 && text.length() == 19) {
-                    setValue(this.datetimeFormat.parse(text));
+                    setValue(datetimeFormat.parse(text));
                 } else {
                     throw new IllegalArgumentException(
                             "Could not parse date, date format is error ");
                 }
             } catch (ParseException ex) {
                 IllegalArgumentException iae = new IllegalArgumentException(
-                        "Could not parse date: " + ex.getMessage());
-                iae.initCause(ex);
+                        "Could not parse date: " + ex.getMessage(), ex);
                 throw iae;
             }
         } else {

@@ -57,30 +57,13 @@
         </property>
     </bean>
 
-    <!--配置XML的转换，需要使用Spring的Marshaller 和 Unmarshaller-->
-    <bean id="marshallingHttpMessageConverter" class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
-        <property name="marshaller" ref="castorMarshaller"/>
-        <property name="unmarshaller" ref="castorMarshaller"/>
-        <property name="supportedMediaTypes">
-            <list>
-                <value>application/json;charset=UTF-8</value>
-                <value>application/xml;charset=UTF-8</value>
-                <value>text/plain;charset=UTF-8</value>
-                <value>text/html;charset=UTF-8</value>
-                <value>text/xml;charset=UTF-8</value>
-            </list>
-        </property>
-    </bean>
-
-    <bean id="castorMarshaller" class="org.springframework.oxm.castor.CastorMarshaller"/>
-
 
     <!--启动mvc的注解驱动，注册请求url和注解POJO类方法的映射-->
     <mvc:annotation-driven>
         <mvc:message-converters>
             <ref bean="jackson2HttpMessageConverter"/>
             <ref bean="stringHttpMessageConverter"/>
-            <ref bean="marshallingHttpMessageConverter"/>
+
         </mvc:message-converters>
     </mvc:annotation-driven>
 
@@ -88,7 +71,7 @@
     <!-- 返回类型定义 -->
     <util:list id="messageConverters">
         <ref bean="jackson2HttpMessageConverter"/>
-        <ref bean="marshallingHttpMessageConverter"/>
+
         <ref bean="stringHttpMessageConverter"/>
     </util:list>
 

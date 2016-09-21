@@ -25,7 +25,7 @@ Date.prototype.Format = function (fmt) { //author: meizz
         if (new RegExp("(" + k + ")").test(fmt))
             fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
     return fmt;
-}
+};
 
 
 var helper = helper || {};
@@ -38,7 +38,7 @@ helper.formatSex = function (data) {
         return "女";
     else
         return "男";
-}
+};
 
 // Ajax 文件下载 
 jQuery.download = function (url, data, method) {
@@ -55,7 +55,7 @@ jQuery.download = function (url, data, method) {
         // request发送请求 
         jQuery('<form action="' + url + '" method="' + (method || 'post') + '">' + inputs + '</form>')
             .appendTo('body').submit().remove();
-    };
+    }
 };//详细出处参考：http://www.jb51.net/article/33275.htm
 
 
@@ -100,7 +100,7 @@ helper.formatNewDate = function (date) {
     var dd = date.slice(0, 10);
     var ss = date.slice(11, 19);
     return dd + " " + ss;
-}
+};
 
 helper.formatTimeCurrent = function (value) {
 
@@ -121,7 +121,7 @@ helper.formatTimeCurrent = function (value) {
     }
     return value.Format("yyyy-MM-dd hh:mm:ss"); //value.substring(0, 10);
 
-}
+};
 
 helper.optionItem = function (name, population) {
     this.name = name;
@@ -131,7 +131,7 @@ helper.optionItem = function (name, population) {
 
 helper.getSelectedText = function (jqSelectObj) {
     return jqSelectObj.find("option:selected").text();
-}
+};
 helper.formatOnline = function (value) {
     if (value == true) {
 
@@ -141,18 +141,18 @@ helper.formatOnline = function (value) {
     } else {
         return "未知";
     }
-}
+};
 
 helper.getChecked = function (checkboxName) {  //jquery获取复选框值    
     var chk_value = [];
     $('input[name="' + checkboxName + '"]:checked').each(function () {
-        var newObj = new Object();
+        var newObj = {};
         newObj.id = $(this).val();
         newObj.text = $(this).attr("data-text");//如果有text的话
         chk_value.push(newObj);
     });
     return chk_value;
-}
+};
 
 helper.setChecked = function (checkboxName, values) {  //jquery设定复选框值    
     var chk_value = [];
@@ -170,7 +170,7 @@ helper.setChecked = function (checkboxName, values) {  //jquery设定复选框�
 
     });
     return chk_value;
-}
+};
 
 helper.clearChecked = function (checkboxName) {  //jquery清空复选框值    
 
@@ -183,8 +183,7 @@ helper.clearChecked = function (checkboxName) {  //jquery清空复选框值
 
     });
     //alert(chk_value.length == 0 ? '你还没有选择任何内容！' : chk_value);
-    ;
-}
+};
 
 
 
@@ -210,20 +209,20 @@ helper.getScriptArg = function (key) {//获取单个参数
 //只取一个：
 helper.queryString = function (key) {
     return (document.location.search.match(new RegExp("(?:^\\?|&)" + key + "=(.*?)(?=&|$)")) || ['', null])[1];
-}
+};
 
 ///取指定月的天数,month是1-12
 helper.getMonthDays = function (year, month) {
     var day = new Date(year, month, 0);
     return day.getDate();
-}
+};
 
 
 //添加于12.22日
 //去除多余的分割符，例如：",a",结果为"a"
 helper.dropRsplit = function (a, splitC) {
     var tmpA = a.split(splitC);
-    var tmpObj = new Array();
+    var tmpObj = [];
     for (var i = 0; i < tmpA.length; i++) {
         if (tmpA[i] != "") {
             tmpObj.push(tmpA[i]);
@@ -231,7 +230,7 @@ helper.dropRsplit = function (a, splitC) {
 
     }
     return tmpObj.join(splitC);
-}
+};
 
 $(function () {
 
@@ -241,7 +240,7 @@ $(function () {
     // 手机号码验证
     jQuery.validator.addMethod("mobile", function (value, element) {
         var length = value.length;
-        var mobile = /^(((13[0-9]{1})|(15[0-9]{1}))+\d{8})$/
+        var mobile = /^(((13[0-9]{1})|(15[0-9]{1}))+\d{8})$/;
         return this.optional(element) || (length == 11 && mobile.test(value));
     }, "手机号码格式错误");
 
@@ -365,9 +364,9 @@ $(function () {
 
     //增加身份证验证
     function isIdCardNo(num) {
-        var factorArr = new Array(7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1);
-        var parityBit = new Array("1", "0", "X", "9", "8", "7", "6", "5", "4", "3", "2");
-        var varArray = new Array();
+        var factorArr = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1];
+        var parityBit = ["1", "0", "X", "9", "8", "7", "6", "5", "4", "3", "2"];
+        var varArray = [];
         var intValue;
         var lngProduct = 0;
         var intCheckDigit;
@@ -420,8 +419,8 @@ $(function () {
         var year, month, day;
         year = sDate.substring(0, 4);
         month = sDate.substring(4, 6);
-        if (year < 1700 || year > 2500) return false
-        if (month < 1 || month > 12) return false
+        if (year < 1700 || year > 2500) return false;
+        if (month < 1 || month > 12) return false;
         return true
     }
 
@@ -433,11 +432,11 @@ $(function () {
         year = sDate.substring(0, 4);
         month = sDate.substring(4, 6);
         day = sDate.substring(6, 8);
-        var iaMonthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-        if (year < 1700 || year > 2500) return false
+        var iaMonthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        if (year < 1700 || year > 2500) return false;
         if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) iaMonthDays[1] = 29;
-        if (month < 1 || month > 12) return false
-        if (day < 1 || day > iaMonthDays[month - 1]) return false
+        if (month < 1 || month > 12) return false;
+        if (day < 1 || day > iaMonthDays[month - 1]) return false;
         return true
     }
 });

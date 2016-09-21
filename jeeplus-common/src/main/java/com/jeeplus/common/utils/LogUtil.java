@@ -224,7 +224,7 @@ public class LogUtil {
             sb.append(']');
             sb.append(" - ");
             sb.append(msg);
-            getLogger().log((Priority) Level.toLevel(level), sb.toString(), e);
+            getLogger().log(Level.toLevel(level), sb.toString(), e);
         }catch(Exception ex){
             ex.printStackTrace();
         }finally{

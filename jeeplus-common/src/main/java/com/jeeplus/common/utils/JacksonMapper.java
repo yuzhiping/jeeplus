@@ -153,7 +153,7 @@ public final class  JacksonMapper {
     /**
      * 将InputStream 转换为JsonNode对象
      */
-    public static final JsonNode readJsonNode(InputStream in) throws JsonProcessingException, IOException {
+    public static final JsonNode readJsonNode(InputStream in) throws IOException {
         return jsonMapper.readTree(read(in));
     }
 
