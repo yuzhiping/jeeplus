@@ -1,0 +1,125 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.hexsmith</groupId>
+  <artifactId>jeeplus-parent</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>jeeplus-parent</name>
+  <url>http://maven.apache.org</url>
+
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>hexsmith</name>
+      <email>yuzhiping140103@hotmail.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+8</timezone>
+    </developer>
+  </developers>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.version>4.2.4.RELEASE</spring.version>
+    <spring-security.version>4.1.0.RELEASE</spring-security.version>
+    <jackson.version>2.5.3</jackson.version>
+      <poi.version>3.10.1</poi.version>
+    <java-version>1.7</java-version>
+    <jdk-version>1.7</jdk-version>
+  </properties>
+
+    <!--仓库设置-->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>http://repo.maven.apache.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spy</id>
+            <name>Spy Repository</name>
+            <url>http://files.couchbase.com/maven2/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>xerces</id>
+            <name>xerces</name>
+            <url>https://xerces.apache.org/xerces2-j/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>proxool</id>
+            <name>proxool</name>
+            <url>http://proxool.cvs.sourceforge.net/viewvc/proxool/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>jeecg</id>
+            <name>jeecg Repository</name>
+            <url>http://maven.jeecg.org/nexus/content/repositories/jeecg</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>jeecg-snapshots</id>
+            <name>jeecg-snapshots Repository</name>
+            <url>http://maven.jeecg.org/nexus/content/repositories/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+
+  <dependencies>
+      <!--junit测试依赖-->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <modules>
+    <module>jeeplus-web</module>
+    <module>jeeplus-weixin</module>
+    <module>jeeplus-test</module>
+    <module>jeeplus-test</module>
+    <module>jeeplus-test</module>
+    <module>jeeplus-admin</module>
+    <module>jeeplus-common</module>
+    <module>jeeplus-monitor</module>
+  </modules>
+
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/yuzhiping/jeeplus/issues</url>
+  </issueManagement>
+  <scm>
+    <url>https://github.com/alibaba/jeeplus</url>
+    <connection>https://github.com/yuzhiping/jeeplus.git</connection>
+  </scm>
+
+</project>

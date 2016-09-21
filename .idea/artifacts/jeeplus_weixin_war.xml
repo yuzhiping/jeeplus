@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jeeplus-weixin:war">
+    <output-path>$PROJECT_DIR$/jeeplus-weixin/target</output-path>
+    <root id="archive" name="jeeplus-weixin.war">
+      <element id="artifact" artifact-name="jeeplus-weixin:war exploded" />
+    </root>
+  </artifact>
+</component>

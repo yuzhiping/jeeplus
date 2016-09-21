@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- 对静态资源文件的访问，交给default servlet handler处理 -->
+    <mvc:default-servlet-handler />
+
+    <!--组件扫描-->
+    <context:component-scan base-package="com.jeeplus.weixin"/>
+
+    <context:annotation-config/>
+
+    <!--
+        配置转换器，避免使用 @ResponseBody 注解，返加字符串不做任何处理时，有可能会出现乱码问题
+        注：配置必须在 <mvc:annotation-driven /> 之前，否则将不会启效；
+    -->
+    <bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
+        <constructor-arg index="0" value="UTF-8"></constructor-arg><!--避免出现乱码-->
+        <property name="supportedMediaTypes">
+            <list>
+                <value>text/plain;charset=UTF-8</value>
+                <value>text/html;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--配置XML的转换，需要使用Spring的Marshaller 和 Unmarshaller-->
+    <bean id="marshallingHttpMessageConverter" class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
+        <property name="marshaller" ref="castorMarshaller"/>
+        <property name="unmarshaller" ref="castorMarshaller"/>
+        <property name="supportedMediaTypes">
+            <list>
+                <value>application/json;charset=UTF-8</value>
+                <value>application/xml;charset=UTF-8</value>
+                <value>text/plain;charset=UTF-8</value>
+                <value>text/html;charset=UTF-8</value>
+                <value>text/xml;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="castorMarshaller" class="org.springframework.oxm.castor.CastorMarshaller"/>
+
+
+    <!--使用alibaba的json转换器-->
+    <bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter4">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>application/json;charset=UTF-8</value>
+                <value>text/html;charset=UTF-8</value><!-- 避免IE出现下载JSON文件的情况 -->
+            </list>
+        </property>
+        <property name="fastJsonConfig">
+            <array>
+                <value>WriteMapNullValue</value>
+                <value>QuoteFieldNames</value>
+                <!--设置使用文本方式输出日期，fastjson默认是long-->
+                <value>WriteDateUseDateFormat</value>
+            </array>
+        </property>
+    </bean>
+
+    <!-- 使用mvc:annotation-driven代替注解的适配器和注解的映射器 -->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <ref bean="fastJsonHttpMessageConverter"/>
+            <ref bean="stringHttpMessageConverter"/>
+            <ref bean="marshallingHttpMessageConverter"/>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <!-- 返回类型定义 -->
+    <util:list id="messageConverters">
+        <ref bean="fastJsonHttpMessageConverter"/>
+        <ref bean="marshallingHttpMessageConverter"/>
+        <ref bean="stringHttpMessageConverter"/>
+    </util:list>
+
+    <!-- 视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+    <!-- 全局的异常处理器 -->
+
+    <!-- 只要实现了HandlerExceptionResolver接口就是全局的异常处理器 -->
+    <bean class="com.jeeplus.common.exception.GlobalExceptionResolver"/>
+
+
+    <!-- Kaptcha验证码生成器 -->
+    <bean id="captchaProducer" class="com.google.code.kaptcha.impl.DefaultKaptcha">
+        <property name="config">
+            <bean class="com.google.code.kaptcha.util.Config">
+                <constructor-arg>
+                    <props>
+                        <prop key="kaptcha.border">yes</prop>
+                        <prop key="kaptcha.border.color">105,179,90</prop>
+                        <prop key="kaptcha.textproducer.font.color">blue</prop>
+                        <prop key="kaptcha.obscurificator.impl">com.google.code.kaptcha.impl.ShadowGimpy</prop>
+                        <prop key="kaptcha.image.width">125</prop>
+                        <prop key="kaptcha.image.height">45</prop>
+                        <prop key="kaptcha.textproducer.font.size">45</prop>
+                        <prop key="kaptcha.session.key">code</prop>
+                        <prop key="kaptcha.textproducer.char.length">4</prop>
+                        <prop key="kaptcha.textproducer.font.names">宋体,楷体,微软雅黑</prop>
+                    </props>
+                </constructor-arg>
+            </bean>
+        </property>
+    </bean>
+
+
+
+    <!-- 系统错误转发配置[并记录错误日志] -->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="defaultErrorView" value="500"></property>   <!-- 默认为500，系统错误(error.jsp) -->
+        <property name="defaultStatusCode" value="404"></property>
+        <property name="statusCodes"><!-- 配置多个statusCode -->
+            <props>
+                <prop key="error">500</prop>  <!-- error.jsp -->
+                <prop key="error1">404</prop>    <!-- error1.jsp -->
+            </props>
+        </property>
+        <property name="exceptionMappings">
+            <props>
+                <!-- 这里你可以根据需要定义N多个错误异常转发 -->
+                <prop key="java.sql.SQLException">dbError</prop> <!-- 数据库错误(dbError.jsp) -->
+                <prop key="org.springframework.web.bind.ServletRequestBindingException">bizError</prop> <!-- 参数绑定错误(如：必须参数没传递)(bizError.jsp) -->
+                <prop key="java.lang.IllegalArgumentException">bizError</prop>  <!-- 参数错误(bizError.jsp) -->
+                <prop key="org.springframework.validation.BindException">bizError</prop>  <!-- 参数类型有误(bizError.jsp) -->
+                <prop key="java.lang.Exception">unknowError</prop>  <!-- 其他错误为'未定义错误'(unknowError.jsp) -->
+            </props>
+        </property>
+    </bean>
+
+</beans>
