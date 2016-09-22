@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="scheduledJob" class="com.jeeplus.weixin.handlers.AccessTokenScheduledJob">
+        <property name="schedulerFactory" value="schedulerJobFactory"/>
+        <property name="triggerKey" value="scheduledTrigger"/>
+    </bean>
+    <bean id="scheduledJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="scheduledJob"/>
+        <!--目标对象（任务要在哪个类中执行，可以直接在ref里面引用配置文件中的别名）-->
+        <property name="targetMethod" value="doScheduledJob"/>
+        <!--要执行目标对象里的什么方法-->
+        <property name="concurrent" value="false"/>
+        <!--concurrent==false 任务不并行（即当第一个任务还没有执行完，此时第二个任务触发要等到第一个执行完毕才会执行第二个）-->
+    </bean>
+
+    <bean id="scheduledTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <!--有corn与simple触发器两种-->
+        <property name="jobDetail" ref="scheduledJobDetail"/>
+        <!--要触发的任务-->
+        <!-- corn表达式(引用型)每隔3分钟触发一次 -->
+         <property name="cronExpression" >
+            <value>0 0 3 * * ?</value>
+         </property>
+        <!--直接corn表达式的值-->
+    </bean>
+
+    <!-- 控制器类 -->
+    <bean id="schedulerJobFactory" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="scheduledTrigger" />
+            </list>
+        </property>
+    </bean>
+
+</beans>

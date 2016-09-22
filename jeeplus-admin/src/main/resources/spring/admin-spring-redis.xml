@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 引入jedis配置文件 -->
+    <!--
+        如果你有多个数据源需要通过<context:property-placeholder管理，且不愿意放在一个配置文件里，
+        那么一定要加上ignore-unresolvable=“true"
+    -->
+    <context:property-placeholder location="classpath:redis-admin.properties" ignore-unresolvable="true"/>
+
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxTotal" value="${redis.pool.maxActive}"/>
+        <property name="maxIdle" value="${redis.pool.maxIdle}"/>
+        <property name="testOnBorrow" value="true"/>
+        <property name="testOnReturn" value="true"/>
+    </bean>
+
+    <!--
+        ShardedJedisPool有多种构造函数，选择你需要的（具体看源码），本配置中只初始化了一个分片，并使用了通过指定host的构造器，
+        如果有集群，在<list>下增加新的<bean>即可
+    -->
+    <bean id="shardedJedisPool" class="redis.clients.jedis.ShardedJedisPool" scope="singleton">
+        <constructor-arg index="0" ref="jedisPoolConfig"/>
+        <constructor-arg index="1">
+            <list>
+                <bean class="redis.clients.jedis.JedisShardInfo">
+                    <constructor-arg name="host" value="${redis.uri}"/>
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>

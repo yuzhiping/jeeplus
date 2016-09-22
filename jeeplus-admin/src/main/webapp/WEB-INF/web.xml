@@ -11,7 +11,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:spring/applicationContext-admin-*.xml</param-value>
+        <param-value>classpath:spring/applicationContext-admin-*.xml,classpath:spring/admin-spring-redis.xml</param-value>
     </context-param>
     <!-- 加载LOG4J -->
      <context-param>
@@ -23,6 +23,19 @@
          <param-name>log4jRefreshInterval</param-name>
          <param-value>60000</param-value>
      </context-param>
+    <!--Shiro Filter-->
+    <filter>
+        <filter-name>shiroFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <init-param>
+            <param-name>targetFilterLifecycle</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <!-- 编码过滤器 -->
     <filter>
         <filter-name>encodingFilter</filter-name>

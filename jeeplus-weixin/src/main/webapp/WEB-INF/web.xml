@@ -12,9 +12,8 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:spring/applicationContext-weixin-*.xml</param-value>
+        <param-value>classpath:spring/applicationContext-weixin-*.xml,classpath:quartz.xml</param-value>
     </context-param>
-
 
     <!-- 编码过滤器 -->
     <filter>
