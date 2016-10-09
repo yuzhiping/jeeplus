@@ -15,7 +15,7 @@ public class TestDataSource {
     @Test
     public void testDataSource(){
         ApplicationContext context=new ClassPathXmlApplicationContext("classpath:spring/applicationContext-admin-dao.xml");
-        DataSource dataSource= (DataSource) context.getBean("dataSource");
+        DataSource dataSource= (DataSource) context.getBean("adminDataSource");
         if(dataSource!=null){
             try {
                 dataSource.getConnection();

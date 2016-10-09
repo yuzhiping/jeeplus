@@ -36,8 +36,8 @@
     <spring-security.version>4.1.0.RELEASE</spring-security.version>
     <jackson.version>2.5.3</jackson.version>
       <poi.version>3.10.1</poi.version>
-    <java-version>1.7</java-version>
-    <jdk-version>1.7</jdk-version>
+    <java-version>1.8</java-version>
+    <jdk-version>1.8</jdk-version>
   </properties>
 
     <!--仓库设置-->

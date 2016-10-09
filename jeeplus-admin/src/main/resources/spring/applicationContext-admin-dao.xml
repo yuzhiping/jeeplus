@@ -17,12 +17,45 @@
 
     <!--数据源配置-->
     <bean id="adminDataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <!-- 配置连接池属性 -->
         <property name="driverClassName" value="${jdbc.className}"/>
         <property name="url" value="${jdbc.url}"/>
         <property name="username" value="${jdbc.username}"/>
         <property name="password" value="${jdbc.password}"/>
+
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="1" />
+        <property name="minIdle" value="1" />
         <property name="maxActive" value="${jdbc.maxActive}"/>
+
+
+        <!-- 配置获取连接等待超时的时间 -->
         <property name="maxWait" value="${jdbc.maxWait}"/>
+
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+
+        <property name="testWhileIdle" value="true" />
+
+        <!-- 这里建议配置为TRUE，防止取到的连接不可用 -->
+        <property name="testOnBorrow" value="true" />
+        <property name="testOnReturn" value="false" />
+
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+        <property name="poolPreparedStatements" value="true" />
+        <property name="maxPoolPreparedStatementPerConnectionSize"
+                  value="20" />
+
+        <!-- 这里配置提交方式，默认就是TRUE，可以不用配置 -->
+
+        <property name="defaultAutoCommit" value="true" />
+
+        <!-- 验证连接有效与否的SQL，不同的数据配置不同 -->
+        <property name="validationQuery" value="select 1 " />
+        <property name="filters" value="stat" />
         <property name="proxyFilters">
             <list>
                 <ref bean="log-filter"/>
@@ -36,15 +69,23 @@
         <property name="statementLogEnabled" value="false"/>
     </bean>
 
+    <!-- 配置SqlSessionFactory对象 -->
     <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 注入数据库连接池 -->
         <property name="dataSource" ref="adminDataSource"/>
+        <!-- 扫描sql配置文件:mapper需要的xml文件 -->
         <property name="mapperLocations" value="classpath:com/jeeplus/admin/mapper/*.xml"/>
+        <!-- 扫描entity包 使用别名 -->
         <property name="typeAliasesPackage" value="com.jeeplus.admin"/>
+        <!-- 配置MyBaties全局配置文件:mybatis-config.xml -->
         <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
     </bean>
 
+    <!-- 配置扫描Mapper接口包，动态实现Mapper接口，注入到spring容器中 -->
     <bean id="scannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 注入sqlSessionFactory -->
         <property name="sqlSessionFactoryBeanName" value="sessionFactory"/>
+        <!-- 给出需要扫描Mapper接口包 -->
         <property name="basePackage" value="com.jeeplus.admin.mapper"/>
     </bean>
 

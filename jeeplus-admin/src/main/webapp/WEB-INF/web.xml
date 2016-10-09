@@ -11,7 +11,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:spring/applicationContext-admin-*.xml,classpath:spring/admin-spring-redis.xml</param-value>
+        <param-value>classpath:spring/applicationContext-admin-*.xml</param-value>
     </context-param>
     <!-- 加载LOG4J -->
      <context-param>
@@ -23,19 +23,19 @@
          <param-name>log4jRefreshInterval</param-name>
          <param-value>60000</param-value>
      </context-param>
-    <!--Shiro Filter-->
+
+    <!--spring-session的Filter-->
     <filter>
-        <filter-name>shiroFilter</filter-name>
+        <filter-name>springSessionRepositoryFilter</filter-name>
         <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-        <init-param>
-            <param-name>targetFilterLifecycle</param-name>
-            <param-value>true</param-value>
-        </init-param>
     </filter>
     <filter-mapping>
-        <filter-name>shiroFilter</filter-name>
+        <filter-name>springSessionRepositoryFilter</filter-name>
         <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>ERROR</dispatcher>
     </filter-mapping>
+
     <!-- 编码过滤器 -->
     <filter>
         <filter-name>encodingFilter</filter-name>
@@ -86,6 +86,35 @@
         <url-pattern>/index</url-pattern><!-- 必须 -->
     </servlet-mapping>
 
-
+    <!--druidWEB方式监控配置-->
+    <servlet>
+        <servlet-name>DruidStatView</servlet-name>
+        <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DruidStatView</servlet-name>
+        <url-pattern>/druid/*</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>druidWebStatFilter</filter-name>
+        <filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
+        <init-param>
+            <param-name>exclusions</param-name>
+            <param-value>/public/*,*.js,*.css,/druid*,*.jsp,*.swf</param-value>
+        </init-param>
+        <init-param>
+            <param-name>principalSessionName</param-name>
+            <param-value>sessionInfo</param-value>
+        </init-param>
+        <init-param>
+            <param-name>profileEnable</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>druidWebStatFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!--end druidWEB方式监控配置-->
 
 </web-app>

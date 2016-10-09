@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!-- 对静态资源文件的访问，交给default servlet handler处理 -->
+    <mvc:default-servlet-handler />
+
+
+    <!-- 自动扫描该包 -->
+    <context:component-scan base-package="com.jeeplus.monitor"/>
+
+    <context:annotation-config/>
+
+    <!--转换器的配置 -->
+    <bean id="jackson2HttpMessageConverter"
+          class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>application/json;charset=UTF-8</value>
+                <value>text/html;charset=UTF-8</value>
+            </list>
+        </property>
+        <property name="objectMapper">
+            <bean class="com.fasterxml.jackson.databind.ObjectMapper">
+                <property name="dateFormat">
+                    <bean class="java.text.SimpleDateFormat">
+                        <constructor-arg type="java.lang.String" value="yyyy-MM-dd HH:mm:ss"/>
+                    </bean>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <!-- 定义跳转的文件的前后缀 ，视图模式配置-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址 -->
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--
+        配置转换器，避免使用 @ResponseBody 注解，返加字符串不做任何处理时，有可能会出现乱码问题
+        注：配置必须在 <mvc:annotation-driven /> 之前，否则将不会启效；
+    -->
+    <bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
+        <constructor-arg index="0" value="UTF-8"></constructor-arg><!--避免出现乱码-->
+        <property name="supportedMediaTypes">
+            <list>
+                <value>text/plain;charset=UTF-8</value>
+                <value>text/html;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <!--启动mvc的注解驱动，注册请求url和注解POJO类方法的映射-->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <ref bean="jackson2HttpMessageConverter"/>
+            <ref bean="stringHttpMessageConverter"/>
+
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+
+    <!-- 返回类型定义 -->
+    <util:list id="messageConverters">
+        <ref bean="jackson2HttpMessageConverter"/>
+
+        <ref bean="stringHttpMessageConverter"/>
+    </util:list>
+
+</beans>

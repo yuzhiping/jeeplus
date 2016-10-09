@@ -17,7 +17,7 @@ import java.util.Set;
  * @version:v1.0
  * @date: 2016-09-22 13:55.
  */
-@Repository("redisClientTemplate")
+//@Repository("redisClientTemplate")
 public class RedisClientTemplate {
     private static final Logger LOG= LoggerFactory.getLogger(RedisClientTemplate.class);
 
@@ -704,6 +704,12 @@ public class RedisClientTemplate {
         return result;
     }
 
+    /**
+     * 将一个值插入到列表头部，value可以重复，返回列表的长度
+     * @param key
+     * @param string
+     * @return 返回List的长度
+     */
     public Long lpush(String key, String string) {
         Long result = null;
         ShardedJedis shardedJedis = redisDataSource.getRedisClient();
@@ -723,6 +729,37 @@ public class RedisClientTemplate {
         return result;
     }
 
+
+    /**
+     * 将多个值插入到列表头部，value可以重复
+     * @param key
+     * @param values
+     * @return 返回List的数量size
+     */
+    public Long lpush(String key, String[] values) {
+        Long result = null;
+        ShardedJedis shardedJedis = redisDataSource.getRedisClient();
+        if (shardedJedis == null) {
+            return result;
+        }
+        boolean broken = false;
+        try {
+            result = shardedJedis.lpush(key, values);
+
+        } catch (Exception e) {
+            LOG.error(e.getMessage(), e);
+            broken = true;
+        } finally {
+            redisDataSource.returnResource(shardedJedis, broken);
+        }
+        return result;
+    }
+
+    /**
+     * 获取列表长度，key为空时返回0
+     * @param key
+     * @return
+     */
     public Long llen(String key) {
         Long result = null;
         ShardedJedis shardedJedis = redisDataSource.getRedisClient();
@@ -761,6 +798,13 @@ public class RedisClientTemplate {
         return result;
     }
 
+    /**
+     * 对一个列表进行修剪(trim)，就是说，让列表只保留指定区间内的元素，不在指定区间之内的元素都将被删除。
+     * @param key
+     * @param start 可以为负数（-1是列表的最后一个元素，-2是列表倒数第二的元素。）如果start大于end，则返回一个空的列表，即列表被清空
+     * @param end 可以为负数（-1是列表的最后一个元素，-2是列表倒数第二的元素。）可以超出索引，不影响结果
+     * @return
+     */
     public String ltrim(String key, long start, long end) {
         String result = null;
         ShardedJedis shardedJedis = redisDataSource.getRedisClient();
@@ -818,6 +862,13 @@ public class RedisClientTemplate {
         return result;
     }
 
+    /**
+     * 移除列表元素，返回移除的元素数量
+     * @param key
+     * @param count 标识，表示动作或者查找方向:当count=0时，移除所有匹配的元素;当count为负数时，移除方向是从尾到头;当count为正数时，移除方向是从头到尾
+     * @param value 匹配的元素
+     * @return
+     */
     public Long lrem(String key, long count, String value) {
         Long result = null;
         ShardedJedis shardedJedis = redisDataSource.getRedisClient();
@@ -837,6 +888,11 @@ public class RedisClientTemplate {
         return result;
     }
 
+    /**
+     * 移出并获取列表的第一个元素，当列表不存在或者为空时，返回Null
+     * @param key
+     * @return
+     */
     public String lpop(String key) {
         String result = null;
         ShardedJedis shardedJedis = redisDataSource.getRedisClient();
@@ -856,6 +912,11 @@ public class RedisClientTemplate {
         return result;
     }
 
+    /**
+     * 移除并获取列表最后一个元素，当列表不存在或者为空时，返回Null
+     * @param key
+     * @return
+     */
     public String rpop(String key) {
         String result = null;
         ShardedJedis shardedJedis = redisDataSource.getRedisClient();
@@ -1481,6 +1542,14 @@ public class RedisClientTemplate {
         return result;
     }
 
+    /**
+     * 在列表的元素前或者后插入元素，返回List的长度
+     * @param key
+     * @param where
+     * @param pivot 以该元素作为参照物，是在它之前，还是之后（pivot：枢轴;中心点，中枢;[物]支点，支枢;[体]回转运动。）
+     * @param value
+     * @return
+     */
     public Long linsert(String key, BinaryClient.LIST_POSITION where, String pivot, String value) {
         Long result = null;
         ShardedJedis shardedJedis = redisDataSource.getRedisClient();
@@ -2092,6 +2161,61 @@ public class RedisClientTemplate {
         return result;
     }
 
+
+    /**
+     * 将一个或多个值插入到已存在的列表头部，当成功时，返回List的长度；当不成功（即key不存在时，返回0）
+     * @param key
+     * @param value
+     * @return
+     */
+    public Long lpushx(String key,String value) {
+        Long result = null;
+        ShardedJedis shardedJedis = redisDataSource.getRedisClient();
+        if (shardedJedis == null) {
+            return result;
+        }
+        boolean broken = false;
+        try {
+
+            result = shardedJedis.lpushx(key, value);
+
+        } catch (Exception e) {
+
+            LOG.error(e.getMessage(), e);
+            broken = true;
+        } finally {
+            redisDataSource.returnResource(shardedJedis, broken);
+        }
+        return result;
+    }
+
+    /**
+     * 将一个或多个值插入到已存在的列表头部，当成功时，返回List的长度；当不成功（即key不存在时，返回0）
+     * @param key
+     * @param values
+     * @return
+     */
+    public Long lpushx(String key,String[] values) {
+        Long result = null;
+        ShardedJedis shardedJedis = redisDataSource.getRedisClient();
+        if (shardedJedis == null) {
+            return result;
+        }
+        boolean broken = false;
+        try {
+
+            result = shardedJedis.lpushx(key, values);
+
+        } catch (Exception e) {
+
+            LOG.error(e.getMessage(), e);
+            broken = true;
+        } finally {
+            redisDataSource.returnResource(shardedJedis, broken);
+        }
+        return result;
+    }
+
     public Long lpush(byte[] key, byte[] string) {
         Long result = null;
         ShardedJedis shardedJedis = redisDataSource.getRedisClient();
@@ -2134,6 +2258,13 @@ public class RedisClientTemplate {
         return result;
     }
 
+    /**
+     * 获取List列表
+     * @param key
+     * @param start 开始索引
+     * @param end 结束索引
+     * @return
+     */
     public List<byte[]> lrange(byte[] key, int start, int end) {
         List<byte[]> result = null;
         ShardedJedis shardedJedis = redisDataSource.getRedisClient();
@@ -2175,6 +2306,12 @@ public class RedisClientTemplate {
         return result;
     }
 
+    /**
+     * 通过索引获取列表中的元素
+     * @param key
+     * @param index 索引，0表示最新的一个元素
+     * @return
+     */
     public byte[] lindex(byte[] key, int index) {
         byte[] result = null;
         ShardedJedis shardedJedis = redisDataSource.getRedisClient();
@@ -2196,6 +2333,13 @@ public class RedisClientTemplate {
         return result;
     }
 
+    /**
+     * 通过索引设置列表元素的值，当超出索引时会抛错。成功设置返回true
+     * @param key
+     * @param index 索引
+     * @param value
+     * @return
+     */
     public String lset(byte[] key, int index, byte[] value) {
         String result = null;
         ShardedJedis shardedJedis = redisDataSource.getRedisClient();

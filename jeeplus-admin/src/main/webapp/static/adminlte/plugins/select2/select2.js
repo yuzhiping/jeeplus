@@ -424,7 +424,7 @@ var requirejs, require, define;
     };
 
     /**
-     * Just drops the config on the floor, but returns req in case
+     * Just drops the config on the floor, but returns request in case
      * the config return value is used.
      */
     req.config = function (cfg) {

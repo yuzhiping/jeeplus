@@ -13,7 +13,7 @@ import redis.clients.jedis.ShardedJedisPool;
  * @version:v1.0
  * @date: 2016-09-22 13:27.
  */
-@Repository("jedisDS")
+//@Repository("jedisDS")
 public class JedisDataSourceImpl implements JedisDataSource {
     private static final Logger LOG= LoggerFactory.getLogger(JedisDataSourceImpl.class);
 

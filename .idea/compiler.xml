@@ -32,12 +32,13 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jeeplus" target="1.5" />
-      <module name="jeeplus-admin" target="1.7" />
-      <module name="jeeplus-common" target="1.7" />
-      <module name="jeeplus-monitor" target="1.7" />
+      <module name="jeeplus-admin" target="1.8" />
+      <module name="jeeplus-common" target="1.8" />
+      <module name="jeeplus-monitor" target="1.8" />
+      <module name="jeeplus-parent" target="1.5" />
       <module name="jeeplus-test" target="1.5" />
-      <module name="jeeplus-web" target="1.7" />
-      <module name="jeeplus-weixin" target="1.7" />
+      <module name="jeeplus-web" target="1.8" />
+      <module name="jeeplus-weixin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
