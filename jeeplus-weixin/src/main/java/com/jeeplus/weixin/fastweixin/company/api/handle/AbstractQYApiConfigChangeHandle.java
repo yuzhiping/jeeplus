@@ -1,8 +1,8 @@
 package com.jeeplus.weixin.fastweixin.company.api.handle;
 
-import com.github.sd4324530.fastweixin.company.api.config.QYConfigChangeNotice;
-import com.github.sd4324530.fastweixin.handle.ApiConfigChangeHandle;
-import com.github.sd4324530.fastweixin.util.BeanUtil;
+import com.jeeplus.weixin.fastweixin.company.api.config.QYConfigChangeNotice;
+import com.jeeplus.weixin.fastweixin.handle.ApiConfigChangeHandle;
+import com.jeeplus.weixin.fastweixin.util.BeanUtil;
 
 import java.util.Observable;
 

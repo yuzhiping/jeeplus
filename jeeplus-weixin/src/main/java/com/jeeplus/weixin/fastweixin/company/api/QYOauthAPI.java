@@ -1,10 +1,9 @@
 package com.jeeplus.weixin.fastweixin.company.api;
 
-import com.github.sd4324530.fastweixin.api.enums.OauthScope;
-import com.github.sd4324530.fastweixin.company.api.config.QYAPIConfig;
-import com.github.sd4324530.fastweixin.company.api.response.GetOauthUserInfoResponse;
-import com.github.sd4324530.fastweixin.util.BeanUtil;
-import com.github.sd4324530.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.api.enums.OauthScope;
+import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
+import com.jeeplus.weixin.fastweixin.util.BeanUtil;
+import com.jeeplus.weixin.fastweixin.util.StrUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

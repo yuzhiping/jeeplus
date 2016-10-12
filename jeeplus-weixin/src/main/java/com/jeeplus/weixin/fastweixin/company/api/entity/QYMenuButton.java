@@ -1,9 +1,9 @@
 package com.jeeplus.weixin.fastweixin.company.api.entity;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import com.github.sd4324530.fastweixin.api.entity.BaseModel;
-import com.github.sd4324530.fastweixin.company.api.enums.QYMenuType;
-import com.github.sd4324530.fastweixin.exception.WeixinException;
+import com.jeeplus.weixin.fastweixin.api.entity.BaseModel;
+import com.jeeplus.weixin.fastweixin.company.api.enums.QYMenuType;
+import com.jeeplus.weixin.fastweixin.exception.WeixinException;
 
 import java.util.List;
 

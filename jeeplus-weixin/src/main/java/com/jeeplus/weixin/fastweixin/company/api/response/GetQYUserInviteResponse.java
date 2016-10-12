@@ -2,7 +2,7 @@ package com.jeeplus.weixin.fastweixin.company.api.response;/**
  * Created by Nottyjay on 2015/6/11.
  */
 
-import com.github.sd4324530.fastweixin.api.response.BaseResponse;
+import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
 
 /**
  * ====================================================================

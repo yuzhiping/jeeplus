@@ -1,14 +1,14 @@
 package com.jeeplus.weixin.fastweixin.company.api.config;
 
-import com.github.sd4324530.fastweixin.api.config.ChangeType;
-import com.github.sd4324530.fastweixin.api.config.ConfigChangeNotice;
-import com.github.sd4324530.fastweixin.api.response.GetJsApiTicketResponse;
-import com.github.sd4324530.fastweixin.api.response.GetTokenResponse;
-import com.github.sd4324530.fastweixin.exception.WeixinException;
-import com.github.sd4324530.fastweixin.handle.ApiConfigChangeHandle;
-import com.github.sd4324530.fastweixin.util.JSONUtil;
-import com.github.sd4324530.fastweixin.util.NetWorkCenter;
-import com.github.sd4324530.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.api.config.ChangeType;
+import com.jeeplus.weixin.fastweixin.api.config.ConfigChangeNotice;
+import com.jeeplus.weixin.fastweixin.api.response.GetJsApiTicketResponse;
+import com.jeeplus.weixin.fastweixin.api.response.GetTokenResponse;
+import com.jeeplus.weixin.fastweixin.exception.WeixinException;
+import com.jeeplus.weixin.fastweixin.handle.ApiConfigChangeHandle;
+import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.NetWorkCenter;
+import com.jeeplus.weixin.fastweixin.util.StrUtil;
 import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

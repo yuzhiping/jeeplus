@@ -1,16 +1,16 @@
 package com.jeeplus.weixin.fastweixin.company.api;
 
-import com.github.sd4324530.fastweixin.api.response.BaseResponse;
-import com.github.sd4324530.fastweixin.company.api.config.QYAPIConfig;
-import com.github.sd4324530.fastweixin.company.api.entity.QYUser;
-import com.github.sd4324530.fastweixin.company.api.enums.QYResultType;
-import com.github.sd4324530.fastweixin.company.api.response.GetOauthUserInfoResponse;
-import com.github.sd4324530.fastweixin.company.api.response.GetQYUserInfo4DepartmentResponse;
-import com.github.sd4324530.fastweixin.company.api.response.GetQYUserInfoResponse;
-import com.github.sd4324530.fastweixin.company.api.response.GetQYUserInviteResponse;
-import com.github.sd4324530.fastweixin.util.BeanUtil;
-import com.github.sd4324530.fastweixin.util.JSONUtil;
-import com.github.sd4324530.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
+import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
+import com.jeeplus.weixin.fastweixin.company.api.entity.QYUser;
+import com.jeeplus.weixin.fastweixin.company.api.enums.QYResultType;
+import com.jeeplus.weixin.fastweixin.company.api.response.GetOauthUserInfoResponse;
+import com.jeeplus.weixin.fastweixin.company.api.response.GetQYUserInfo4DepartmentResponse;
+import com.jeeplus.weixin.fastweixin.company.api.response.GetQYUserInfoResponse;
+import com.jeeplus.weixin.fastweixin.company.api.response.GetQYUserInviteResponse;
+import com.jeeplus.weixin.fastweixin.util.BeanUtil;
+import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.StrUtil;
 
 import java.util.HashMap;
 import java.util.Map;

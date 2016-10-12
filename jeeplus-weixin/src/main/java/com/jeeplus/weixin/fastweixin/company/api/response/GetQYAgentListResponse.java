@@ -1,8 +1,8 @@
 package com.jeeplus.weixin.fastweixin.company.api.response;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import com.github.sd4324530.fastweixin.api.response.BaseResponse;
-import com.github.sd4324530.fastweixin.company.api.entity.QYAgent;
+import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
+import com.jeeplus.weixin.fastweixin.company.api.entity.QYAgent;
 
 import java.util.List;
 

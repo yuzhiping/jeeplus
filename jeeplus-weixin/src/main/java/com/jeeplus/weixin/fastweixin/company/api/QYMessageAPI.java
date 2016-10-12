@@ -1,12 +1,10 @@
 package com.jeeplus.weixin.fastweixin.company.api;
 
-import com.github.sd4324530.fastweixin.api.BaseAPI;
-import com.github.sd4324530.fastweixin.api.config.ApiConfig;
-import com.github.sd4324530.fastweixin.api.response.BaseResponse;
-import com.github.sd4324530.fastweixin.company.api.config.QYAPIConfig;
-import com.github.sd4324530.fastweixin.company.api.response.GetQYSendMessageResponse;
-import com.github.sd4324530.fastweixin.company.message.*;
-import com.github.sd4324530.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
+import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
+import com.jeeplus.weixin.fastweixin.company.api.response.GetQYSendMessageResponse;
+import com.jeeplus.weixin.fastweixin.company.message.*;
+import com.jeeplus.weixin.fastweixin.util.JSONUtil;
 
 /**
  * ====================================================================

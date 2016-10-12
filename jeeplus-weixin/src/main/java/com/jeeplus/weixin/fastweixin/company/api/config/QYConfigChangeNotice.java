@@ -1,7 +1,7 @@
 package com.jeeplus.weixin.fastweixin.company.api.config;
 
-import com.github.sd4324530.fastweixin.api.config.ChangeType;
-import com.github.sd4324530.fastweixin.api.entity.BaseModel;
+import com.jeeplus.weixin.fastweixin.api.config.ChangeType;
+import com.jeeplus.weixin.fastweixin.api.entity.BaseModel;
 
 import java.util.Date;
 

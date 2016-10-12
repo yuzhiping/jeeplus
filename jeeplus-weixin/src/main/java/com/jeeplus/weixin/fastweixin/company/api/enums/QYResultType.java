@@ -1,6 +1,6 @@
 package com.jeeplus.weixin.fastweixin.company.api.enums;
 
-import com.github.sd4324530.fastweixin.util.BeanUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtil;
 
 /**
  *

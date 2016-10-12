@@ -1,13 +1,13 @@
 package com.jeeplus.weixin.fastweixin.company.api;
 
-import com.github.sd4324530.fastweixin.api.enums.MediaType;
-import com.github.sd4324530.fastweixin.api.response.BaseResponse;
-import com.github.sd4324530.fastweixin.company.api.config.QYAPIConfig;
-import com.github.sd4324530.fastweixin.company.api.response.DownloadMediaResponse;
-import com.github.sd4324530.fastweixin.company.api.response.UploadMediaResponse;
-import com.github.sd4324530.fastweixin.util.JSONUtil;
-import com.github.sd4324530.fastweixin.util.NetWorkCenter;
-import com.github.sd4324530.fastweixin.util.StreamUtil;
+import com.jeeplus.weixin.fastweixin.api.enums.MediaType;
+import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
+import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
+import com.jeeplus.weixin.fastweixin.company.api.response.DownloadMediaResponse;
+import com.jeeplus.weixin.fastweixin.company.api.response.UploadMediaResponse;
+import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.NetWorkCenter;
+import com.jeeplus.weixin.fastweixin.util.StreamUtil;
 import org.apache.http.Header;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.config.RequestConfig;

@@ -1,11 +1,11 @@
 package com.jeeplus.weixin.fastweixin.company.api;
 
-import com.github.sd4324530.fastweixin.api.enums.ResultType;
-import com.github.sd4324530.fastweixin.api.response.BaseResponse;
-import com.github.sd4324530.fastweixin.company.api.config.QYAPIConfig;
-import com.github.sd4324530.fastweixin.util.BeanUtil;
-import com.github.sd4324530.fastweixin.util.CollectionUtil;
-import com.github.sd4324530.fastweixin.util.NetWorkCenter;
+import com.jeeplus.weixin.fastweixin.api.enums.ResultType;
+import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
+import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
+import com.jeeplus.weixin.fastweixin.util.BeanUtil;
+import com.jeeplus.weixin.fastweixin.util.CollectionUtil;
+import com.jeeplus.weixin.fastweixin.util.NetWorkCenter;
 
 import java.io.File;
 import java.util.List;

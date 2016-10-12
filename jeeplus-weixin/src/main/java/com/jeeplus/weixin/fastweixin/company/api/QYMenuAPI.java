@@ -2,14 +2,14 @@ package com.jeeplus.weixin.fastweixin.company.api;
 
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.JSONPath;
-import com.github.sd4324530.fastweixin.api.response.BaseResponse;
-import com.github.sd4324530.fastweixin.company.api.config.QYAPIConfig;
-import com.github.sd4324530.fastweixin.company.api.entity.QYMenu;
-import com.github.sd4324530.fastweixin.company.api.enums.QYResultType;
-import com.github.sd4324530.fastweixin.company.api.response.GetQYMenuResponse;
-import com.github.sd4324530.fastweixin.util.BeanUtil;
-import com.github.sd4324530.fastweixin.util.CollectionUtil;
-import com.github.sd4324530.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
+import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
+import com.jeeplus.weixin.fastweixin.company.api.entity.QYMenu;
+import com.jeeplus.weixin.fastweixin.company.api.enums.QYResultType;
+import com.jeeplus.weixin.fastweixin.company.api.response.GetQYMenuResponse;
+import com.jeeplus.weixin.fastweixin.util.BeanUtil;
+import com.jeeplus.weixin.fastweixin.util.CollectionUtil;
+import com.jeeplus.weixin.fastweixin.util.JSONUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

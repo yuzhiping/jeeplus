@@ -1,13 +1,13 @@
 package com.jeeplus.weixin.fastweixin.company.api;
 
-import com.github.sd4324530.fastweixin.api.response.BaseResponse;
-import com.github.sd4324530.fastweixin.company.api.config.QYAPIConfig;
-import com.github.sd4324530.fastweixin.company.api.entity.QYDepartment;
-import com.github.sd4324530.fastweixin.company.api.enums.QYResultType;
-import com.github.sd4324530.fastweixin.company.api.response.CreateDepartmentResponse;
-import com.github.sd4324530.fastweixin.company.api.response.GetDepartmentListResponse;
-import com.github.sd4324530.fastweixin.util.BeanUtil;
-import com.github.sd4324530.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
+import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
+import com.jeeplus.weixin.fastweixin.company.api.entity.QYDepartment;
+import com.jeeplus.weixin.fastweixin.company.api.enums.QYResultType;
+import com.jeeplus.weixin.fastweixin.company.api.response.CreateDepartmentResponse;
+import com.jeeplus.weixin.fastweixin.company.api.response.GetDepartmentListResponse;
+import com.jeeplus.weixin.fastweixin.util.BeanUtil;
+import com.jeeplus.weixin.fastweixin.util.JSONUtil;
 
 /**
  *  

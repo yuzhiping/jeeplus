@@ -1,6 +1,5 @@
 package com.jeeplus.weixin.fastweixin.company.message.req;
 
-import com.github.sd4324530.fastweixin.message.req.ReqType;
 
 /**
  *  微信企业号推送事件类别

@@ -1,6 +1,6 @@
 package com.jeeplus.weixin.fastweixin.company.api.response;
 
-import com.github.sd4324530.fastweixin.api.response.BaseResponse;
+import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
 
 /**
  *  

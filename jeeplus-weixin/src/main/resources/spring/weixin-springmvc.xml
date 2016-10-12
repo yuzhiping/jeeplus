@@ -7,6 +7,18 @@
             http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
+
+
+    <!--加载微信的配置文件-->
+    <context:property-placeholder location="classpath:weixin/weixin.properties"/>
+
+
+    <!--将ApiConfig交给Spring单例管理-->
+    <bean class="com.jeeplus.weixin.fastweixin.api.config.ApiConfig">
+        <constructor-arg name="appid" value="${weixin.appid}"/>
+        <constructor-arg name="secret" value="${weixin.appscret}"/>
+    </bean>
+
     <!-- 对静态资源文件的访问，交给default servlet handler处理 -->
     <mvc:default-servlet-handler />
 
@@ -28,23 +40,6 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
             </list>
         </property>
     </bean>
-
-    <!--配置XML的转换，需要使用Spring的Marshaller 和 Unmarshaller-->
-    <bean id="marshallingHttpMessageConverter" class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
-        <property name="marshaller" ref="castorMarshaller"/>
-        <property name="unmarshaller" ref="castorMarshaller"/>
-        <property name="supportedMediaTypes">
-            <list>
-                <value>application/json;charset=UTF-8</value>
-                <value>application/xml;charset=UTF-8</value>
-                <value>text/plain;charset=UTF-8</value>
-                <value>text/html;charset=UTF-8</value>
-                <value>text/xml;charset=UTF-8</value>
-            </list>
-        </property>
-    </bean>
-
-    <bean id="castorMarshaller" class="org.springframework.oxm.castor.CastorMarshaller"/>
 
 
     <!--使用alibaba的json转换器-->
@@ -70,14 +65,12 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         <mvc:message-converters>
             <ref bean="fastJsonHttpMessageConverter"/>
             <ref bean="stringHttpMessageConverter"/>
-            <ref bean="marshallingHttpMessageConverter"/>
         </mvc:message-converters>
     </mvc:annotation-driven>
 
     <!-- 返回类型定义 -->
     <util:list id="messageConverters">
         <ref bean="fastJsonHttpMessageConverter"/>
-        <ref bean="marshallingHttpMessageConverter"/>
         <ref bean="stringHttpMessageConverter"/>
     </util:list>
 
