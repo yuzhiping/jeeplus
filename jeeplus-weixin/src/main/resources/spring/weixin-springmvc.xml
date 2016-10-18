@@ -22,7 +22,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
     <!-- 对静态资源文件的访问，交给default servlet handler处理 -->
     <mvc:default-servlet-handler />
 
-    <!--组件扫描-->
+    <!-- 自动扫描该包 -->
     <context:component-scan base-package="com.jeeplus.weixin"/>
 
     <context:annotation-config/>
@@ -32,6 +32,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         注：配置必须在 <mvc:annotation-driven /> 之前，否则将不会启效；
     -->
     <bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
+        <!-- 将StringHttpMessageCOnverter的默认编码设为UTF-8 -->
         <constructor-arg index="0" value="UTF-8"></constructor-arg><!--避免出现乱码-->
         <property name="supportedMediaTypes">
             <list>
@@ -44,19 +45,34 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 
     <!--使用alibaba的json转换器-->
     <bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter4">
+
         <property name="supportedMediaTypes">
             <list>
+                <value>text/json;charset=UTF-8</value>
                 <value>application/json;charset=UTF-8</value>
                 <value>text/html;charset=UTF-8</value><!-- 避免IE出现下载JSON文件的情况 -->
             </list>
         </property>
         <property name="fastJsonConfig">
-            <array>
-                <value>WriteMapNullValue</value>
-                <value>QuoteFieldNames</value>
-                <!--设置使用文本方式输出日期，fastjson默认是long-->
-                <value>WriteDateUseDateFormat</value>
-            </array>
+            <bean class="com.alibaba.fastjson.support.config.FastJsonConfig">
+                <property name="serializerFeatures">
+                    <array value-type="com.alibaba.fastjson.serializer.SerializerFeature">
+                        <!--设置null值也要输出，fastjson默认是关闭的-->
+                        <value>WriteMapNullValue</value>
+                        <!--输出key时是否使用双引号,默认为true-->
+                        <value>QuoteFieldNames</value>
+                        <!--设置使用文本方式输出日期，fastjson默认是long-->
+                        <value>WriteDateUseDateFormat</value>
+                        <!--
+                            <value>WriteNullStringAsEmpty</value>
+                            <value>WriteNullNumberAsZero</value>
+                            <value>WriteNullBooleanAsFalse</value>
+                        -->
+
+                    </array>
+                </property>
+            </bean>
+
         </property>
     </bean>
 
@@ -76,15 +92,10 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 
     <!-- 视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/views"/>
+        <property name="prefix" value="/WEB-INF/views/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 
-
-    <!-- 全局的异常处理器 -->
-
-    <!-- 只要实现了HandlerExceptionResolver接口就是全局的异常处理器 -->
-    <bean class="com.jeeplus.common.exception.GlobalExceptionResolver"/>
 
 
     <!-- Kaptcha验证码生成器 -->
@@ -133,4 +144,10 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         </property>
     </bean>
 
+
+    <!--配置静态资源，直接映射到对应的文件夹，不被DispatcherServlet处理-->
+    <mvc:resources mapping="/plugins/**" location="/plugins/"/>
+    <mvc:resources mapping="/js/**" location="/js/"/>
+    <mvc:resources mapping="/css/**" location="/css/"/>
+    <mvc:resources mapping="/images/**" location="/images/"/>
 </beans>

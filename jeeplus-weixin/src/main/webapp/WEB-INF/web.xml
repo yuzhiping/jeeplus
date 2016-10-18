@@ -57,5 +57,9 @@
         <servlet-name>jeeplus-weixin</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>jeeplus-weixin</servlet-name>
+        <url-pattern>/index</url-pattern><!-- 必须 -->
+    </servlet-mapping>
 
   </web-app>

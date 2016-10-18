@@ -265,7 +265,7 @@ public final class NetWorkCenter {
             HttpEntity entity = response.getEntity();
             //此流不是操作系统资源，不用关闭，ByteArrayOutputStream源码里close也是个空方法-0_0-
 //            OutputStream os = new ByteArrayOutputStream();
-//            entity.writeTo(os);
+//            entities.writeTo(os);
 //            String resultJson = os.toString();
             String resultJson = EntityUtils.toString(entity, UTF_8);
             //返回码200，请求成功；其他情况都为请求出现错误

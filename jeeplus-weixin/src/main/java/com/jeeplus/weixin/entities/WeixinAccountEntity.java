@@ -1,4 +1,4 @@
-package com.jeeplus.weixin.entity;
+package com.jeeplus.weixin.entities;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
