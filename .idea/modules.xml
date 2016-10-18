@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jeeplus-admin/jeeplus-admin.iml" filepath="$PROJECT_DIR$/jeeplus-admin/jeeplus-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/jeeplus-common/jeeplus-common.iml" filepath="$PROJECT_DIR$/jeeplus-common/jeeplus-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jeeplus-demo/jeeplus-demo.iml" filepath="$PROJECT_DIR$/jeeplus-demo/jeeplus-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jeeplus-monitor/jeeplus-monitor.iml" filepath="$PROJECT_DIR$/jeeplus-monitor/jeeplus-monitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/jeeplus-parent.iml" filepath="$PROJECT_DIR$/jeeplus-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" filepath="$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" />

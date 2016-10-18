@@ -41,7 +41,7 @@ public class MyBeanUtils extends PropertyUtilsBean {
                         getInstance().setSimpleProperty(dest, name, value);
                     }
                     catch (Exception e) {
-                        ; // Should not happen
+                        // Should not happen
                     }
 
                 }
@@ -57,7 +57,7 @@ public class MyBeanUtils extends PropertyUtilsBean {
                         getInstance().setSimpleProperty(dest, name, value);
                     }
                     catch (Exception e) {
-                        ; // Should not happen
+                        // Should not happen
                     }
 
                 }
@@ -81,10 +81,10 @@ public class MyBeanUtils extends PropertyUtilsBean {
                         getInstance().setSimpleProperty(dest, name, value);
                     }
                     catch (java.lang.IllegalArgumentException ie) {
-                        ; // Should not happen
+                        // Should not happen
                     }
                     catch (Exception e) {
-                        ; // Should not happen
+                        // Should not happen
                     }
 
                 }
@@ -120,10 +120,10 @@ public class MyBeanUtils extends PropertyUtilsBean {
                     }
                 }
                 catch (java.lang.IllegalArgumentException ie) {
-                    ; // Should not happen
+                    // Should not happen
                 }
                 catch (Exception e) {
-                    ; // Should not happen
+                    // Should not happen
                 }
 
             }

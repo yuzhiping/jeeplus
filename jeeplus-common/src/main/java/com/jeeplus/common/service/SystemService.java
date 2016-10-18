@@ -13,7 +13,7 @@ public interface SystemService {
      * @param loglevel 级别
      * @param operatetype 类型
      */
-    public void addLog(String LogContent, Short loglevel,Short operatetype);
+    void addLog(String LogContent, Short loglevel, Short operatetype);
 
     /**
      * 根据实体名称和主键获取实体
@@ -23,7 +23,7 @@ public interface SystemService {
      * @param id
      * @return
      */
-    public <T> T getEntity(Class entityName, Serializable id);
+    <T> T getEntity(Class entityName, Serializable id);
 
     /**
      * 根据实体名称和主键获取实体
@@ -33,7 +33,7 @@ public interface SystemService {
      * @param id
      * @return
      */
-    public <T> T get(Class<T> class1, Serializable id);
+    <T> T get(Class<T> class1, Serializable id);
 
 
 }

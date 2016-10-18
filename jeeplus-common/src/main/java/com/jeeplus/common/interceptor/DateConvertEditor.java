@@ -31,8 +31,7 @@ public class DateConvertEditor extends PropertyEditorSupport {
                 }
             } catch (ParseException ex) {
                 IllegalArgumentException iae = new IllegalArgumentException(
-                        "Could not parse date: " + ex.getMessage());
-                iae.initCause(ex);
+                        "Could not parse date: " + ex.getMessage(), ex);
                 throw iae;
             }
         } else {

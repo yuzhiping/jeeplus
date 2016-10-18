@@ -3,6 +3,7 @@ package com.jeeplus.weixin.fastweixin.api.response;
 import com.alibaba.fastjson.annotation.JSONField;
 
 /**
+ * 用户基本信息返回对象
  * @author peiyu
  */
 public class GetUserInfoResponse extends BaseResponse {
@@ -21,6 +22,8 @@ public class GetUserInfoResponse extends BaseResponse {
     private String  unionid;
     private String remark;
     private Integer groupid;
+    @JSONField(name = "tagid_list")
+    private String[] tagidList;
 
     public Integer getSubscribe() {
         return subscribe;
@@ -125,4 +128,12 @@ public class GetUserInfoResponse extends BaseResponse {
 	public void setGroupid(Integer groupid) {
 		this.groupid = groupid;
 	}
+
+    public String[] getTagidList() {
+        return tagidList;
+    }
+
+    public void setTagidList(String[] tagidList) {
+        this.tagidList = tagidList;
+    }
 }

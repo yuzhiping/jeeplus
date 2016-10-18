@@ -102,4 +102,8 @@
     <orderEntry type="library" name="Maven: com.alibaba:alidayu:2.3" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:alipay:2.3" level="project" />
   </component>
+  <component name="sonarModuleSettings">
+    <option name="localAnalysisScripName" value="&lt;PROJECT&gt;" />
+    <option name="serverName" value="&lt;PROJECT&gt;" />
+  </component>
 </module>

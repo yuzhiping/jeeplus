@@ -24,8 +24,8 @@
         <processorPath useClasspath="true" />
         <module name="jeeplus-admin" />
         <module name="jeeplus-common" />
+        <module name="jeeplus-demo" />
         <module name="jeeplus-monitor" />
-        <module name="jeeplus-test" />
         <module name="jeeplus-web" />
         <module name="jeeplus-weixin" />
       </profile>
@@ -34,6 +34,7 @@
       <module name="jeeplus" target="1.5" />
       <module name="jeeplus-admin" target="1.8" />
       <module name="jeeplus-common" target="1.8" />
+      <module name="jeeplus-demo" target="1.5" />
       <module name="jeeplus-monitor" target="1.8" />
       <module name="jeeplus-parent" target="1.5" />
       <module name="jeeplus-test" target="1.5" />

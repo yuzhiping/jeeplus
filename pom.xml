@@ -35,7 +35,7 @@
     <spring.version>4.2.4.RELEASE</spring.version>
     <spring-security.version>4.1.0.RELEASE</spring-security.version>
     <jackson.version>2.5.3</jackson.version>
-      <poi.version>3.10.1</poi.version>
+    <poi.version>3.10.1</poi.version>
     <java-version>1.8</java-version>
     <jdk-version>1.8</jdk-version>
   </properties>
@@ -109,6 +109,9 @@
     <module>jeeplus-admin</module>
     <module>jeeplus-common</module>
     <module>jeeplus-monitor</module>
+      <module>jeeplus-demo</module>
+      <module>jeeplus-test</module>
+      <module>jeeplus-test</module>
   </modules>
 
   <issueManagement>
