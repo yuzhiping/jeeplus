@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>管理员列表</title>
+#parse("sys/header.html")
+</head>
+<body>
+<div id="rrapp">
+	<div class="grid-btn">
+		#if($shiro.hasPermission("sys:user:save"))
+		<a class="btn btn-default" href="user_add.html">新增</a>
+		#end
+		#if($shiro.hasPermission("sys:user:update"))
+		<button type="button"  class="btn btn-default" @click="update">修改</button>
+		#end
+		#if($shiro.hasPermission("sys:user:delete"))
+		<button type="button" class="btn btn-default" @click="del">删除</button>
+		#end
+	</div>
+    <table id="jqGrid"></table>
+    <div id="jqGridPager"></div>
+</div>
+
+<script src="${rc.contextPath}/js/sys/user.js"></script>
+</body>
+</html>

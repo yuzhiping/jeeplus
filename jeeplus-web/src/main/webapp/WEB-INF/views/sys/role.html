@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>角色管理</title>
+#parse("sys/header.html")
+</head>
+<body>
+<div id="rrapp">
+	<div class="grid-btn">
+		#if($shiro.hasPermission("sys:role:save"))
+		<a class="btn btn-default" href="role_add.html">新增</a>
+		#end
+		#if($shiro.hasPermission("sys:role:update"))
+		<button type="button"  class="btn btn-default" @click="update">修改</button>
+		#end
+		#if($shiro.hasPermission("sys:role:delete"))
+		<button type="button" class="btn btn-default" @click="del">删除</button>
+		#end
+	</div>
+    <table id="jqGrid"></table>
+    <div id="jqGridPager"></div>
+</div>
+   
+<script src="${rc.contextPath}/js/sys/role.js"></script>    
+</body>
+</html>
