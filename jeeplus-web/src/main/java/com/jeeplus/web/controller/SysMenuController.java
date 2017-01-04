@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
 import java.util.List;
@@ -37,6 +38,7 @@ public class SysMenuController extends AbstractController {
 
      */
     @RequestMapping("/list")
+    @ResponseBody
     @RequiresPermissions("sys:menu:list")
     public R list(Integer page, Integer limit){
         Map<String, Object> map = new HashMap<>();
@@ -86,6 +88,7 @@ public class SysMenuController extends AbstractController {
 
      */
     @RequestMapping("/perms")
+    @ResponseBody
     @RequiresPermissions("sys:menu:perms")
     public R perms(){
         //查询列表数据
@@ -168,6 +171,7 @@ public class SysMenuController extends AbstractController {
 
      */
     @RequestMapping("/user")
+    @ResponseBody
     public R user(){
         List<SysMenuEntity> menuList = sysMenuService.getUserMenuList(getUserId());
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
 
-    <bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+    <bean id="scheduler" lazy-init="false" autowire="no" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
         <property name="dataSource" ref="webDataSource" />
         <property name="quartzProperties">
             <props>
@@ -21,6 +21,7 @@
                 <prop key="org.quartz.jobStore.maxMisfiresToHandleAtATime">1</prop>
 
                 <prop key="org.quartz.jobStore.misfireThreshold">12000</prop>
+                <prop key="org.quartz.jobStore.driverDelegateClass">org.quartz.impl.jdbcjobstore.StdJDBCDelegate</prop>
                 <!-- 表前缀 -->
                 <prop key="org.quartz.jobStore.tablePrefix">QRTZ_</prop>
             </props>

@@ -10,7 +10,7 @@ import java.util.List;
  * @version:v1.0
  * @date: 2016-12-12 9:43.
  */
-public interface SysRoleMenuMapper extends BaseDao<SysRoleMenuEntity> {
+public interface SysRoleMenuMapper extends BaseMapper<SysRoleMenuEntity> {
 
     /**
      * 根据角色ID，获取菜单ID列表

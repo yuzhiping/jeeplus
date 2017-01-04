@@ -10,7 +10,7 @@ import java.util.List;
  * @version:v1.0
  * @date: 2016-12-12 9:46.
  */
-public interface SysUserRoleMapper extends BaseDao<SysUserRoleEntity> {
+public interface SysUserRoleMapper extends BaseMapper<SysUserRoleEntity> {
 
     /**
      * 根据用户ID，获取角色ID列表

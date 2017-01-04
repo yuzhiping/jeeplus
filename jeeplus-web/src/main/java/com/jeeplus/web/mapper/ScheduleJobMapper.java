@@ -10,7 +10,7 @@ import java.util.Map;
  * @version:v1.0
  * @date: 2016-12-12 9:37.
  */
-public interface ScheduleJobMapper extends BaseDao<ScheduleJobEntity> {
+public interface ScheduleJobMapper extends BaseMapper<ScheduleJobEntity> {
 
     /**
 

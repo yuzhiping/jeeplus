@@ -2,11 +2,14 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd" default-autowire="byName">
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"
+       default-autowire="byName">
 
+
+    <tx:annotation-driven/>
 
     <!--加载配置文件-->
     <bean id="propertyConfigurer" class="com.jeeplus.common.configuration.EncryptPropertyPlaceholderConfigurer">
@@ -30,7 +33,7 @@
     <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="webDataSource"/>
         <property name="mapperLocations" value="classpath:com/jeeplus/web/mapper/*.xml"/>
-        <property name="typeAliasesPackage" value="com.jeeplus.web"/>
+        <property name="typeAliasesPackage" value="com.jeeplus.web.entities"/>
         <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
     </bean>
 

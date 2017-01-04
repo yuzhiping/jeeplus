@@ -21,7 +21,7 @@ import java.util.Map;
  * @version:v1.0
  * @date: 2016-12-12 14:04.
  */
-@Service("sysUserService")
+@Service
 public class SysUserServiceImpl implements SysUserService {
 
     @Autowired

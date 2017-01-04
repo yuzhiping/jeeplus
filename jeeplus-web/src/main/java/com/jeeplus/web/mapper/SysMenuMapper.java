@@ -10,7 +10,7 @@ import java.util.List;
  * @version:v1.0
  * @date: 2016-12-12 9:41.
  */
-public interface SysMenuMapper extends BaseDao<SysMenuEntity> {
+public interface SysMenuMapper extends BaseMapper<SysMenuEntity> {
 
     /**
      * 根据父菜单，查询子菜单

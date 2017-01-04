@@ -3,7 +3,6 @@ package com.jeeplus.web.services.impl;
 import com.jeeplus.web.entities.SysMenuEntity;
 import com.jeeplus.web.mapper.SysMenuMapper;
 import com.jeeplus.web.services.SysMenuService;
-import com.jeeplus.web.services.SysRoleMenuService;
 import com.jeeplus.web.services.SysUserService;
 import com.jeeplus.web.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +25,6 @@ public class SysMenuServiceImpl implements SysMenuService {
     private SysMenuMapper sysMenuMapper;
     @Autowired
     private SysUserService sysUserService;
-    @Autowired
-    private SysRoleMenuService sysRoleMenuService;
 
 
     /**

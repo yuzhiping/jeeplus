@@ -5,13 +5,15 @@
        xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <!-- 对静态资源文件的访问，交给default servlet handler处理 -->
-    <mvc:default-servlet-handler />
+
 
     <!-- 自动扫描该包 -->
     <context:component-scan base-package="com.jeeplus.web"/>
 
     <context:annotation-config/>
+
+    <!-- 对静态资源文件的访问，交给default servlet handler处理 -->
+    <mvc:default-servlet-handler />
 
     <!--
         配置转换器，避免使用 @ResponseBody 注解，返加字符串不做任何处理时，有可能会出现乱码问题
@@ -27,33 +29,17 @@
         </property>
     </bean>
 
-    <!--配置XML的转换，需要使用Spring的Marshaller 和 Unmarshaller-->
-    <bean id="marshallingHttpMessageConverter" class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
-        <property name="marshaller" ref="castorMarshaller"/>
-        <property name="unmarshaller" ref="castorMarshaller"/>
-        <property name="supportedMediaTypes">
-            <list>
-                <value>application/json;charset=UTF-8</value>
-                <value>application/xml;charset=UTF-8</value>
-                <value>text/plain;charset=UTF-8</value>
-                <value>text/html;charset=UTF-8</value>
-                <value>text/xml;charset=UTF-8</value>
-            </list>
-        </property>
-    </bean>
-
-    <bean id="castorMarshaller" class="org.springframework.oxm.castor.CastorMarshaller"/>
 
 
     <!--使用alibaba的json转换器-->
-    <bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter4">
+    <bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
         <property name="supportedMediaTypes">
             <list>
                 <value>application/json;charset=UTF-8</value>
-                <value>text/html;charset=UTF-8</value><!-- 避免IE出现下载JSON文件的情况 -->
+               <!-- <value>text/html;charset=UTF-8</value> --><!-- 避免IE出现下载JSON文件的情况 -->
             </list>
         </property>
-        <property name="fastJsonConfig">
+        <property name="features">
             <array>
                 <value>WriteMapNullValue</value>
                 <value>QuoteFieldNames</value>
@@ -68,26 +54,20 @@
         <mvc:message-converters register-defaults="true">
             <ref bean="fastJsonHttpMessageConverter"/>
             <ref bean="stringHttpMessageConverter"/>
-            <ref bean="marshallingHttpMessageConverter"/>
         </mvc:message-converters>
     </mvc:annotation-driven>
 
 
-    <!-- 返回类型定义 -->
-    <util:list id="messageConverters">
-        <ref bean="fastJsonHttpMessageConverter"/>
-        <ref bean="marshallingHttpMessageConverter"/>
-        <ref bean="stringHttpMessageConverter"/>
-    </util:list>
+
 
 
     <!-- Velocity视图解析器,默认视图  -->
     <bean id="velocityViewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
         <property name="contentType" value="text/html;charset=UTF-8" />
         <property name="viewNames" value="*.html" />
-        <property name="suffix" value=".html"/>
-        <property name="dateToolAttribute" value="dateTool" />
-        <property name="numberToolAttribute" value="numberTool" />
+        <property name="suffix" value=""/>
+        <property name="dateToolAttribute" value="date" />
+        <property name="numberToolAttribute" value="number" />
         <property name="toolboxConfigLocation" value="/WEB-INF/velocity-toolbox.xml" />
         <property name="requestContextAttribute" value="rc"/>
         <property name="order" value="0"/>
@@ -113,7 +93,7 @@
         <property name="prefix" value="/WEB-INF/views/"/>
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="viewNames" value="*.jsp" />
-        <property name="suffix" value=".jsp"/>
+        <property name="suffix" value=""/>
         <property name="order" value="1"/>
     </bean>
 
@@ -123,7 +103,7 @@
         <property name="contentType" value="text/html; charset=utf-8"/>
         <property name="cache" value="false"/>
         <property name="viewNames" value="*.ftl" />
-        <property name="suffix" value=".ftl"/>
+        <property name="suffix" value=""/>
         <property name="order" value="2"/>
     </bean>
 
@@ -150,14 +130,14 @@
                     <props>
                         <prop key="kaptcha.border">yes</prop>
                         <prop key="kaptcha.border.color">105,179,90</prop>
-                        <prop key="kaptcha.textproducer.font.color">blue</prop>
+                        <prop key="kaptcha.textproducer.font.color">black</prop>
                         <prop key="kaptcha.obscurificator.impl">com.google.code.kaptcha.impl.ShadowGimpy</prop>
                         <prop key="kaptcha.image.width">125</prop>
                         <prop key="kaptcha.image.height">45</prop>
-                        <prop key="kaptcha.textproducer.font.size">45</prop>
+                        <prop key="kaptcha.textproducer.font.size">40</prop>
                         <prop key="kaptcha.session.key">code</prop>
-                        <prop key="kaptcha.textproducer.char.length">4</prop>
-                        <prop key="kaptcha.textproducer.font.names">宋体,楷体,微软雅黑</prop>
+                        <prop key="kaptcha.textproducer.char.length">5</prop>
+                        <prop key="kaptcha.textproducer.font.names">宋体,楷体,微软雅黑,方正楷体</prop>
                     </props>
                 </constructor-arg>
             </bean>

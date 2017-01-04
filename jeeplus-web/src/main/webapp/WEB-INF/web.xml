@@ -24,9 +24,7 @@
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>
-        classpath:spring/applicationContext-web-*.xml;
-        classpath:spring/spring-scheduler.xml;
-        classpath:shiro/shiro-config.xml
+        classpath:spring/jeeplus-web.xml
     </param-value>
   </context-param>
 
@@ -85,10 +83,6 @@
   <servlet>
     <servlet-name>dispatcher</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-      <init-param>
-          <param-name>contextConfigLocation</param-name>
-          <param-value>classpath:spring/web-springmvc.xml</param-value>
-      </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
 

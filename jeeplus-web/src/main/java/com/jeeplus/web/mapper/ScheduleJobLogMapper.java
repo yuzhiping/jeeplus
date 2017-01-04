@@ -8,5 +8,5 @@ import com.jeeplus.web.entities.ScheduleJobLogEntity;
  * @version:v1.0
  * @date: 2016-12-11 17:01.
  */
-public interface ScheduleJobLogMapper extends BaseDao<ScheduleJobLogEntity> {
+public interface ScheduleJobLogMapper extends BaseMapper<ScheduleJobLogEntity> {
 }

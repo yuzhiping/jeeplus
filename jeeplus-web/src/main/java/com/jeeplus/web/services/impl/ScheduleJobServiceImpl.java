@@ -22,7 +22,7 @@ import java.util.Map;
  * @version:v1.0
  * @date: 2016-12-12 9:48.
  */
-@Service("scheduleJobService")
+@Service
 public class ScheduleJobServiceImpl implements ScheduleJobService {
 
 

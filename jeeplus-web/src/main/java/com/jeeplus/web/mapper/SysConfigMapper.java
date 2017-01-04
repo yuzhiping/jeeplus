@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Param;
  * @version:v1.0
  * @date: 2016-12-12 9:39.
  */
-public interface SysConfigMapper extends BaseDao<SysConfigEntity> {
+public interface SysConfigMapper extends BaseMapper<SysConfigEntity> {
 
 
     /**

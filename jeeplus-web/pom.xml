@@ -64,7 +64,7 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                     <compilerArguments>
                         <verbose />
-                        <bootclasspath>${java.home}/lib/rt.jar;${java.home}/lib/jce.jar</bootclasspath>
+                        <bootclasspath>${java.home}/jre/lib/rt.jar;${java.home}/jre/lib/jce.jar</bootclasspath>
                     </compilerArguments>
                 </configuration>
             </plugin>

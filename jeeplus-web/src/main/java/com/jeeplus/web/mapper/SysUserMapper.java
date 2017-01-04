@@ -11,7 +11,7 @@ import java.util.Map;
  * @version:v1.0
  * @date: 2016-12-12 9:45.
  */
-public interface SysUserMapper extends BaseDao<SysUserEntity> {
+public interface SysUserMapper extends BaseMapper<SysUserEntity> {
 
     /**
      * 查询用户的所有权限

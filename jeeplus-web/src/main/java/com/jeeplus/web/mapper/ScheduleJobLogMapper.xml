@@ -1,70 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.jeeplus.web.mapper.ScheduleJobMapper">
-    <select id="queryObject" resultType="com.jeeplus.web.entities.ScheduleJobEntity" >
-        select * from schedule_job where job_id = #{value}
+<mapper namespace="com.jeeplus.web.mapper.ScheduleJobLogMapper">
+    <select id="queryObject" resultType="com.jeeplus.web.entities.ScheduleJobLogEntity" >
+        select * from schedule_job_log where log_id = #{value}
     </select>
 
-    <select id="queryList" resultType="com.jeeplus.web.entities.ScheduleJobEntity" >
-        select * from schedule_job
+    <select id="queryList" resultType="com.jeeplus.web.entities.ScheduleJobLogEntity" >
+        select * from schedule_job_log
+        <where>
+            <if test="jobId != null">
+                and job_id = #{jobId}
+            </if>
+        </where>
+        order by log_id desc
         <if test="offset != null and limit != null ">
             limit #{offset}, #{limit}
         </if>
     </select>
 
     <select id="queryTotal" resultType="int">
-        select count(1) from schedule_job
+        select count(1) from schedule_job_log
+        <where>
+            <if test="jobId != null">
+                and job_id = #{jobId}
+            </if>
+        </where>
     </select>
 
-    <insert id="save" parameterType="com.jeeplus.web.entities.ScheduleJobEntity" useGeneratedKeys="true" keyProperty="jobId">
-        insert into schedule_job
+    <insert id="save" parameterType="com.jeeplus.web.entities.ScheduleJobLogEntity">
+        insert into schedule_job_log
         (
+        `job_id`,
         `bean_name`,
         `method_name`,
         `params`,
-        `cron_expression`,
         `status`,
-        `remark`,
+        `error`,
+        `times`,
         `create_time`
         )
         values
         (
+        #{jobId},
         #{beanName},
         #{methodName},
         #{params},
-        #{cronExpression},
         #{status},
-        #{remark},
+        #{error},
+        #{times},
         #{createTime}
         )
     </insert>
-
-    <update id="update" parameterType="com.jeeplus.web.entities.ScheduleJobEntity">
-        update schedule_job
-        <set>
-            <if test="beanName != null">`bean_name` = #{beanName}, </if>
-            <if test="methodName != null">`method_name` = #{methodName}, </if>
-            <if test="params != null">`params` = #{params}, </if>
-            <if test="cronExpression != null">`cron_expression` = #{cronExpression}, </if>
-            <if test="status != null">`status` = #{status}, </if>
-            <if test="remark != null">`remark` = #{remark}, </if>
-        </set>
-        where job_id = #{jobId}
-    </update>
-
-    <!-- 批量更新状态 -->
-    <update id="updateBatch">
-        update schedule_job set status = #{status} where job_id in
-        <foreach item="jobId" collection="list"  open="(" separator="," close=")">
-            #{jobId}
-        </foreach>
-    </update>
-
-    <delete id="deleteBatch">
-        delete from schedule_job where job_id in
-        <foreach item="jobId" collection="array" open="(" separator="," close=")">
-            #{jobId}
-        </foreach>
-    </delete>
 </mapper>

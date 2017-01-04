@@ -8,5 +8,5 @@ import com.jeeplus.web.entities.SysRoleEntity;
  * @version:v1.0
  * @date: 2016-12-12 9:42.
  */
-public interface SysRoleMapper extends BaseDao<SysRoleEntity> {
+public interface SysRoleMapper extends BaseMapper<SysRoleEntity> {
 }
