@@ -49,6 +49,7 @@
           <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.3.2" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+          <element id="library" level="project" name="Maven: commons-configuration:commons-configuration:1.10" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.7" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.38" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.11" />

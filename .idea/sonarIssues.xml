@@ -183,7 +183,387 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/AbstractController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobLogController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysConfigController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLoginController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysMenuController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysPageController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysRoleController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysUserController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/ScheduleJobEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/ScheduleJobLogEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/SysConfigEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/SysMenuEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/SysRoleEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/SysRoleMenuEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/SysUserEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/SysUserRoleEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/BaseDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/ScheduleJobLogMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/ScheduleJobLogMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/ScheduleJobMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/ScheduleJobMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysConfigMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysConfigMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysMenuMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysMenuMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysRoleMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysRoleMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysRoleMenuMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysRoleMenuMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysUserMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysUserMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysUserRoleMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysUserRoleMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/Vip.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/VipMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/ScheduleJobLogService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/ScheduleJobService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/SysConfigService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/SysMenuService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/SysRoleMenuService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/SysRoleService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/SysUserRoleService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/SysUserService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/impl/ScheduleJobLogServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/impl/ScheduleJobServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/impl/SysConfigServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/impl/SysMenuServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/impl/SysRoleMenuServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/impl/SysRoleServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/impl/SysUserRoleServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/impl/SysUserServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/shiro/UserRealm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/shiro/VelocityShiro.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/task/TestTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/Constant.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/PageUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/R.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/RRException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/RRExceptionHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/ScheduleJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/ScheduleRunnable.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/ScheduleUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/ShiroUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/SpringContextUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/jeeplus-web/src/main/resources/jdbc-web.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/resources/log4j.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/resources/shiro/shiro-config.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/spring-scheduler.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/web-springmvc.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/velocity-toolbox.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/web.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/webapp/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/common.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jeeplus-web/src/main/webapp/login.html">
           <value>
             <set />
           </value>
