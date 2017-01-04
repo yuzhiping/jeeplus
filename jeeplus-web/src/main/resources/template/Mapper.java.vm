@@ -1,0 +1,14 @@
+package ${package}.mapper;
+
+import ${package}.entities.${className}Entity;
+
+/**
+ * ${comments}
+ * 
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+public interface ${className}Mapper extends BaseMapper<${className}Entity> {
+	
+}

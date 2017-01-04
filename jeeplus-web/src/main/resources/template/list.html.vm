@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>参数管理</title>
-#parse("sys/header.html")
+<title>${comments}</title>
+#set($header='#parse("sys/header.html")')
+$header
 </head>
 <body>
 <div id="rrapp">
 	<div class="grid-btn">
-		<a class="btn btn-default" href="config_add.html">新增</a>
+		<a class="btn btn-default" href="${pathName}_add.html">新增</a>
 		<button type="button"  class="btn btn-default" @click="update">修改</button>
 		<button type="button" class="btn btn-default" @click="del">删除</button>
 	</div>
@@ -15,6 +16,6 @@
     <div id="jqGridPager"></div>
 </div>
 
-<script src="${rc.contextPath}/js/sys/config.js?_${date.systemTime}"></script>
+<script src="${rc.contextPath}/js/${pathName}/${pathName}.js?_${date.systemTime}"></script>
 </body>
 </html>

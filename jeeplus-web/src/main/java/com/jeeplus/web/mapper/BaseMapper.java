@@ -8,7 +8,7 @@ import java.util.Map;
  * @version:v1.0
  * @date: 2016-12-11 17:00.
  */
-public interface BaseDao<T> {
+public interface BaseMapper<T> {
 
     void save(T t);
 
