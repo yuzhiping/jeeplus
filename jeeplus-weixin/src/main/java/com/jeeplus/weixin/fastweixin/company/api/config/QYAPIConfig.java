@@ -6,9 +6,9 @@ import com.jeeplus.weixin.fastweixin.api.response.GetJsApiTicketResponse;
 import com.jeeplus.weixin.fastweixin.api.response.GetTokenResponse;
 import com.jeeplus.weixin.fastweixin.exception.WeixinException;
 import com.jeeplus.weixin.fastweixin.handle.ApiConfigChangeHandle;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 import com.jeeplus.weixin.fastweixin.util.NetWorkCenter;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.util.StringUtils;
 import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -140,7 +140,7 @@ public final class QYAPIConfig extends Observable implements Serializable {
             @Override
             public void onResponse(int resultCode, String resultJson) {
                 if (HttpStatus.SC_OK == resultCode) {
-                    GetTokenResponse response = JSONUtil.toBean(resultJson, GetTokenResponse.class);
+                    GetTokenResponse response = JSONUtils.toBean(resultJson, GetTokenResponse.class);
                     LOG.debug("获取access_token:{}", response.getAccessToken());
                     if (null == response.getAccessToken()) {
                         // 刷新时间回滚
@@ -168,9 +168,9 @@ public final class QYAPIConfig extends Observable implements Serializable {
             @Override
             public void onResponse(int resultCode, String resultJson) {
                 if (HttpStatus.SC_OK == resultCode) {
-                    GetJsApiTicketResponse response = JSONUtil.toBean(resultJson, GetJsApiTicketResponse.class);
+                    GetJsApiTicketResponse response = JSONUtils.toBean(resultJson, GetJsApiTicketResponse.class);
                     LOG.debug("获取jsapi_ticket:{}", response.getTicket());
-                    if (StrUtil.isBlank(response.getTicket())) {
+                    if (StringUtils.isBlank(response.getTicket())) {
                         //刷新时间回滚
                         jsTokenStartTime = oldTime;
                         throw new WeixinException("微信企业号jsToken获取出错，错误信息:" + response.getErrcode() + "," + response.getErrmsg());

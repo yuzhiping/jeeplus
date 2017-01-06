@@ -3,12 +3,10 @@ package com.jeeplus.weixin.fastweixin.api;
 import com.jeeplus.weixin.fastweixin.api.config.ApiConfig;
 import com.jeeplus.weixin.fastweixin.api.entity.Article;
 import com.jeeplus.weixin.fastweixin.api.enums.MediaType;
-import com.jeeplus.weixin.fastweixin.api.enums.ResultType;
 import com.jeeplus.weixin.fastweixin.api.response.*;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 import com.jeeplus.weixin.fastweixin.util.NetWorkCenter;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
-import com.jeeplus.weixin.fastweixin.util.StreamUtil;
+import com.jeeplus.weixin.fastweixin.util.StreamUtils;
 import org.apache.http.Header;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.config.RequestConfig;
@@ -51,7 +49,7 @@ public class MediaAPI extends BaseAPI {
         UploadMediaResponse response;
         String url = "http://file.api.weixin.qq.com/cgi-bin/media/upload?access_token=#&type=" + type.toString();
         BaseResponse r = executePost(url, null, file);
-        response = JSONUtil.toBean(r.getErrmsg(), UploadMediaResponse.class);
+        response = JSONUtils.toBean(r.getErrmsg(), UploadMediaResponse.class);
         return response;
     }
 
@@ -66,8 +64,8 @@ public class MediaAPI extends BaseAPI {
         String url = BASE_API_URL + "cgi-bin/media/uploadnews?access_token=#";
         final Map<String, Object> params = new HashMap<String, Object>();
         params.put("articles", articles);
-        BaseResponse r = executePost(url, JSONUtil.toJson(params));
-        response = JSONUtil.toBean(r.getErrmsg(), UploadMediaResponse.class);
+        BaseResponse r = executePost(url, JSONUtils.toJson(params));
+        response = JSONUtils.toBean(r.getErrmsg(), UploadMediaResponse.class);
         return response;
     }
 
@@ -78,7 +76,7 @@ public class MediaAPI extends BaseAPI {
         UploadImgResponse response;
         String url = "https://api.weixin.qq.com/cgi-bin/media/uploadimg?access_token=#";
         BaseResponse r = executePost(url, null, file);
-        response = JSONUtil.toBean(r.getErrmsg(), UploadImgResponse.class);
+        response = JSONUtils.toBean(r.getErrmsg(), UploadImgResponse.class);
         return response;
     }
 
@@ -105,9 +103,9 @@ public class MediaAPI extends BaseAPI {
                     response.setFileName(headers[0].getElements()[0].getParameterByName("filename").getValue());
                 } else {
                     ByteArrayOutputStream out = new ByteArrayOutputStream();
-                    StreamUtil.copy(inputStream, out);
+                    StreamUtils.copy(inputStream, out);
                     String json = out.toString();
-                    response = JSONUtil.toBean(json, DownloadMediaResponse.class);
+                    response = JSONUtils.toBean(json, DownloadMediaResponse.class);
                 }
             }
         } catch (IOException e) {

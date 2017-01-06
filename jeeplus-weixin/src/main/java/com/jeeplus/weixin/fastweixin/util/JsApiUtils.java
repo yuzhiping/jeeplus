@@ -8,7 +8,7 @@ import java.util.TreeMap;
 /**
  * @author daxiaoming
  */
-public class JsApiUtil {
+public class JsApiUtils {
     /**
      * 计算 wx.config() 中需要使用的签名。每个页面都需要进行计算
      *

@@ -13,11 +13,11 @@ import java.io.OutputStream;
  *
  * @author peiyu
  */
-public final class StreamUtil {
+public final class StreamUtils {
 
-    private static final Logger LOG = LoggerFactory.getLogger(StreamUtil.class);
+    private static final Logger LOG = LoggerFactory.getLogger(StreamUtils.class);
 
-    private StreamUtil() {
+    private StreamUtils() {
     }
 
     /**
@@ -29,8 +29,8 @@ public final class StreamUtil {
      * @throws IOException IO异常
      */
     public static int copy(InputStream in, OutputStream out) throws IOException {
-        BeanUtil.requireNonNull(in, "No InputStream specified");
-        BeanUtil.requireNonNull(out, "No OutputStream specified");
+        BeanUtils.requireNonNull(in, "No InputStream specified");
+        BeanUtils.requireNonNull(out, "No OutputStream specified");
         int byteCount = 0;
         byte[] buffer = new byte[4096];
         int bytesRead1;
@@ -47,7 +47,7 @@ public final class StreamUtil {
      * @param closeable 需要关闭的对象
      */
     public static void closeWithWarn(Closeable closeable) {
-        if (BeanUtil.nonNull(closeable)) {
+        if (BeanUtils.nonNull(closeable)) {
             try {
                 closeable.close();
             } catch (IOException e) {

@@ -6,8 +6,8 @@ import com.jeeplus.weixin.fastweixin.company.api.entity.QYDepartment;
 import com.jeeplus.weixin.fastweixin.company.api.enums.QYResultType;
 import com.jeeplus.weixin.fastweixin.company.api.response.CreateDepartmentResponse;
 import com.jeeplus.weixin.fastweixin.company.api.response.GetDepartmentListResponse;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 
 /**
  *  
@@ -44,7 +44,7 @@ public class QYDepartmentAPI extends QYBaseAPI {
         }
         BaseResponse r = executeGet(url);
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetDepartmentListResponse.class);
+        response = JSONUtils.toBean(resultJson, GetDepartmentListResponse.class);
         return response;
     }
 
@@ -54,12 +54,12 @@ public class QYDepartmentAPI extends QYBaseAPI {
      * @return 部门信息
      */
     public CreateDepartmentResponse create(QYDepartment department) {
-        BeanUtil.requireNonNull(department, "department is null");
+        BeanUtils.requireNonNull(department, "department is null");
         CreateDepartmentResponse response;
         String url = BASE_API_URL + "cgi-bin/department/create?access_token=#";
         BaseResponse r = executePost(url, department.toJsonString());
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, CreateDepartmentResponse.class);
+        response = JSONUtils.toBean(resultJson, CreateDepartmentResponse.class);
         return response;
     }
 
@@ -69,7 +69,7 @@ public class QYDepartmentAPI extends QYBaseAPI {
      * @return 更新结果
      */
     public QYResultType update(QYDepartment department){
-        BeanUtil.requireNonNull(department, "department is null");
+        BeanUtils.requireNonNull(department, "department is null");
         String url = BASE_API_URL + "cgi-bin/department/update?access_token=#";
         BaseResponse r = executePost(url, department.toJsonString());
         return QYResultType.get(r.getErrcode());
@@ -81,7 +81,7 @@ public class QYDepartmentAPI extends QYBaseAPI {
      * @return 删除结果
      */
     public QYResultType delete(Integer id){
-        BeanUtil.requireNonNull(id, "id is null");
+        BeanUtils.requireNonNull(id, "id is null");
         String url = BASE_API_URL + "cgi-bin/department/delete?access_token=#&id=" + id;
         BaseResponse r = executeGet(url);
         return QYResultType.get(r.getErrcode());

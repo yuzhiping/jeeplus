@@ -5,8 +5,8 @@ import com.jeeplus.weixin.fastweixin.api.enums.ResultType;
 import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
 import com.jeeplus.weixin.fastweixin.api.response.GetSendMessageResponse;
 import com.jeeplus.weixin.fastweixin.message.*;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -41,14 +41,14 @@ public class MessageAPI extends BaseAPI {
      */
     @Deprecated
     public GetSendMessageResponse sendMessageToUser(BaseMsg message, boolean isToAll, String groupId, String[] openIds){
-        BeanUtil.requireNonNull(message, "message is null");
+        BeanUtils.requireNonNull(message, "message is null");
         LOG.debug("群发消息......");
         String url = BASE_API_URL + "cgi-bin/message/mass/sendall?access_token=#";
         final Map<String, Object> params = new HashMap<String, Object>();
         Map<String, Object> filterMap = new HashMap<String, Object>();
         filterMap.put("is_to_all", isToAll);
         if(!isToAll){
-            BeanUtil.requireNonNull(groupId, "groupId is null");
+            BeanUtils.requireNonNull(groupId, "groupId is null");
             filterMap.put("group_id", groupId);
         }
         params.put("filter", filterMap);
@@ -79,9 +79,9 @@ public class MessageAPI extends BaseAPI {
         }else if(message instanceof VideoMsg){
             // TODO 此处方法特别
         }
-        BaseResponse response = executePost(url, JSONUtil.toJson(params));
+        BaseResponse response = executePost(url, JSONUtils.toJson(params));
         String resultJson = isSuccess(response.getErrcode()) ? response.getErrmsg() : response.toJsonString();
-        return JSONUtil.toBean(resultJson, GetSendMessageResponse.class);
+        return JSONUtils.toBean(resultJson, GetSendMessageResponse.class);
     }
 
     /**
@@ -93,14 +93,14 @@ public class MessageAPI extends BaseAPI {
      * @return 群发结果
      */
     public GetSendMessageResponse sendMessageToUser(BaseMsg message, boolean isToAll, Integer tagId){
-        BeanUtil.requireNonNull(message, "message is null");
+        BeanUtils.requireNonNull(message, "message is null");
         LOG.debug("群发消息......");
         String url = BASE_API_URL + "cgi-bin/message/mass/sendall?access_token=#";
         final Map<String, Object> params = new HashMap<String, Object>();
         Map<String, Object> filterMap = new HashMap<String, Object>();
         filterMap.put("is_to_all", isToAll);
         if(!isToAll){
-            BeanUtil.requireNonNull(tagId, "tagId is null");
+            BeanUtils.requireNonNull(tagId, "tagId is null");
             filterMap.put("tag_id", tagId);
         }
         params.put("filter", filterMap);
@@ -131,9 +131,9 @@ public class MessageAPI extends BaseAPI {
         }else if(message instanceof VideoMsg){
             // TODO 此处方法特别
         }
-        BaseResponse response = executePost(url, JSONUtil.toJson(params));
+        BaseResponse response = executePost(url, JSONUtils.toJson(params));
         String resultJson = isSuccess(response.getErrcode()) ? response.getErrmsg() : response.toJsonString();
-        return JSONUtil.toBean(resultJson, GetSendMessageResponse.class);
+        return JSONUtils.toBean(resultJson, GetSendMessageResponse.class);
     }
 
     /**
@@ -146,8 +146,8 @@ public class MessageAPI extends BaseAPI {
      */
     @Deprecated
     public ResultType sendCustomMessage(String openid, BaseMsg message) {
-        BeanUtil.requireNonNull(openid, "openid is null");
-        BeanUtil.requireNonNull(message, "message is null");
+        BeanUtils.requireNonNull(openid, "openid is null");
+        BeanUtils.requireNonNull(message, "message is null");
         LOG.debug("发布客服消息......");
         String url = BASE_API_URL + "cgi-bin/message/custom/send?access_token=#";
         final Map<String, Object> params = new HashMap<String, Object>();
@@ -206,7 +206,7 @@ public class MessageAPI extends BaseAPI {
             news.put("articles", articles);
             params.put("news", news);
         }
-        BaseResponse response = executePost(url, JSONUtil.toJson(params));
+        BaseResponse response = executePost(url, JSONUtils.toJson(params));
         return ResultType.get(response.getErrcode());
     }
 }

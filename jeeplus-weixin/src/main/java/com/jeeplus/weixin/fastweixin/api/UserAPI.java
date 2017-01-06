@@ -5,10 +5,10 @@ import com.jeeplus.weixin.fastweixin.api.entity.UserInfo;
 import com.jeeplus.weixin.fastweixin.api.enums.ResultType;
 import com.jeeplus.weixin.fastweixin.api.response.*;
 import com.jeeplus.weixin.fastweixin.exception.WeixinException;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.CollectionUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.CollectionUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
+import com.jeeplus.weixin.fastweixin.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,12 +40,12 @@ public class UserAPI extends BaseAPI {
         GetUsersResponse response;
         LOG.debug("获取关注者列表.....");
         String url = BASE_API_URL + "cgi-bin/user/get?access_token=#";
-        if (StrUtil.isNotBlank(nextOpenid)) {
+        if (StringUtils.isNotBlank(nextOpenid)) {
             url += "&next_openid=" + nextOpenid;
         }
         BaseResponse r = executeGet(url);
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetUsersResponse.class);
+        response = JSONUtils.toBean(resultJson, GetUsersResponse.class);
         return response;
     }
 
@@ -57,13 +57,13 @@ public class UserAPI extends BaseAPI {
      * @return 调用结果
      */
     public ResultType setUserRemark(String openid, String remark) {
-        BeanUtil.requireNonNull(openid, "openid is null");
+        BeanUtils.requireNonNull(openid, "openid is null");
         LOG.debug("设置关注者备注.....");
         String url = BASE_API_URL + "cgi-bin/user/info/updateremark?access_token=#";
         Map<String, String> param = new HashMap<String, String>();
         param.put("openid", openid);
         param.put("remark", remark);
-        BaseResponse response = executePost(url, JSONUtil.toJson(param));
+        BaseResponse response = executePost(url, JSONUtils.toJson(param));
         return ResultType.get(response.getErrcode());
     }
 
@@ -75,16 +75,16 @@ public class UserAPI extends BaseAPI {
      */
     public CreateGroupResponse createGroup(String name) {
         CreateGroupResponse response;
-        BeanUtil.requireNonNull(name, "name is null");
+        BeanUtils.requireNonNull(name, "name is null");
         LOG.debug("创建分组.....");
         String url = BASE_API_URL + "cgi-bin/groups/create?access_token=#";
         Map<String, Object> param = new HashMap<String, Object>();
         Map<String, Object> group = new HashMap<String, Object>();
         group.put("name", name);
         param.put("group", group);
-        BaseResponse r = executePost(url, JSONUtil.toJson(param));
+        BaseResponse r = executePost(url, JSONUtils.toJson(param));
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, CreateGroupResponse.class);
+        response = JSONUtils.toBean(resultJson, CreateGroupResponse.class);
         return response;
     }
 
@@ -99,7 +99,7 @@ public class UserAPI extends BaseAPI {
         String url = BASE_API_URL + "cgi-bin/groups/get?access_token=#";
         BaseResponse r = executeGet(url);
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetGroupsResponse.class);
+        response = JSONUtils.toBean(resultJson, GetGroupsResponse.class);
         return response;
     }
 
@@ -110,15 +110,15 @@ public class UserAPI extends BaseAPI {
      * @return 所在分组信息
      */
     public String getGroupIdByOpenid(String openid) {
-        BeanUtil.requireNonNull(openid, "openid is null");
+        BeanUtils.requireNonNull(openid, "openid is null");
         LOG.debug("通过关注者ID获取所在分组信息.....");
         String result = null;
         String url = BASE_API_URL + "cgi-bin/groups/getid?access_token=#";
         Map<String, String> params = new HashMap<String, String>();
         params.put("openid", openid);
-        BaseResponse r = executePost(url, JSONUtil.toJson(params));
+        BaseResponse r = executePost(url, JSONUtils.toJson(params));
         if (isSuccess(r.getErrcode())) {
-            result = JSONUtil.toMap(r.getErrmsg()).get("groupid").toString();
+            result = JSONUtils.toMap(r.getErrmsg()).get("groupid").toString();
         }
         return result;
     }
@@ -131,8 +131,8 @@ public class UserAPI extends BaseAPI {
      * @return 调用结果
      */
     public ResultType updateGroup(Integer groupid, String name) {
-        BeanUtil.requireNonNull(groupid, "groupid is null");
-        BeanUtil.requireNonNull(name, "name is null");
+        BeanUtils.requireNonNull(groupid, "groupid is null");
+        BeanUtils.requireNonNull(name, "name is null");
         LOG.debug("修改分组信息.....");
         String url = BASE_API_URL + "cgi-bin/groups/update?access_token=#";
         Map<String, Object> param = new HashMap<String, Object>();
@@ -140,7 +140,7 @@ public class UserAPI extends BaseAPI {
         group.put("id", groupid);
         group.put("name", name);
         param.put("group", group);
-        BaseResponse response = executePost(url, JSONUtil.toJson(param));
+        BaseResponse response = executePost(url, JSONUtils.toJson(param));
         return ResultType.get(response.getErrcode());
     }
 
@@ -152,15 +152,15 @@ public class UserAPI extends BaseAPI {
      * @return 调用结果
      */
     public ResultType moveGroupUser(String openid, String toGroupid) {
-        BeanUtil.requireNonNull(openid, "openid is null");
-        BeanUtil.requireNonNull(toGroupid, "toGroupid is null");
+        BeanUtils.requireNonNull(openid, "openid is null");
+        BeanUtils.requireNonNull(toGroupid, "toGroupid is null");
         LOG.debug("移动关注者所在分组.....");
         String url = BASE_API_URL + "cgi-bin/groups/members/update?access_token=#";
         Map<String, Object> param = new HashMap<String, Object>();
         param.put("openid", openid);
         param.put("to_groupid", toGroupid);
 
-        BaseResponse response = executePost(url, JSONUtil.toJson(param));
+        BaseResponse response = executePost(url, JSONUtils.toJson(param));
         return ResultType.get(response.getErrcode());
     }
 
@@ -172,15 +172,15 @@ public class UserAPI extends BaseAPI {
      * @return 调用结果
      */
     public ResultType moveGroupUser(String[] openids, String toGroupid) {
-        BeanUtil.requireNonNull(openids, "openid is null");
-        BeanUtil.requireNonNull(toGroupid, "toGroupid is null");
+        BeanUtils.requireNonNull(openids, "openid is null");
+        BeanUtils.requireNonNull(toGroupid, "toGroupid is null");
         LOG.debug("移动关注者所在分组.....");
         String url = BASE_API_URL + "cgi-bin/groups/members/batchupdate?access_token=#";
         Map<String, Object> param = new HashMap<String, Object>();
         param.put("openid_list", openids);
         param.put("to_groupid", toGroupid);
 
-        BaseResponse response = executePost(url, JSONUtil.toJson(param));
+        BaseResponse response = executePost(url, JSONUtils.toJson(param));
         return ResultType.get(response.getErrcode());
     }
 
@@ -191,13 +191,13 @@ public class UserAPI extends BaseAPI {
      * @return 关注者信息对象
      */
     public GetUserInfoResponse getUserInfo(String openid) {
-        BeanUtil.requireNonNull(openid, "openid is null");
+        BeanUtils.requireNonNull(openid, "openid is null");
         GetUserInfoResponse response;
         LOG.debug("获取关注者信息.....");
         String url = BASE_API_URL + "cgi-bin/user/info?access_token=#&lang=zh_CN&openid=" + openid;
         BaseResponse r = executeGet(url);
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetUserInfoResponse.class);
+        response = JSONUtils.toBean(resultJson, GetUserInfoResponse.class);
         return response;
     }
 
@@ -211,9 +211,9 @@ public class UserAPI extends BaseAPI {
         String url = BASE_API_URL + "cgi-bin/user/info/batchget?access_token=#";
         Map<String, List<UserInfo>> param = new HashMap<String, List<UserInfo>>();
         param.put("user_list", userInfoList);
-        BaseResponse r=executePost(url, JSONUtil.toJson(param));
+        BaseResponse r=executePost(url, JSONUtils.toJson(param));
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        GetUserInfoListResponse getUserInfoListResponse=JSONUtil.toBean(resultJson,GetUserInfoListResponse.class);
+        GetUserInfoListResponse getUserInfoListResponse= JSONUtils.toBean(resultJson,GetUserInfoListResponse.class);
         return getUserInfoListResponse;
     }
 
@@ -223,14 +223,14 @@ public class UserAPI extends BaseAPI {
      * @return 删除结果
      */
     public ResultType deleteGroup(Integer groupId){
-        BeanUtil.requireNonNull(groupId, "groupId is null");
+        BeanUtils.requireNonNull(groupId, "groupId is null");
         LOG.debug("删除分组.....");
         String url = BASE_API_URL + "cgi-bin/groups/delete?access_token=#";
         Map<String, Object> param = new HashMap<String, Object>();
         Map<String, Integer> groups = new HashMap<String, Integer>();
         groups.put("id", groupId);
         param.put("group", groups);
-        BaseResponse response = executePost(url, JSONUtil.toJson(param));
+        BaseResponse response = executePost(url, JSONUtils.toJson(param));
         return ResultType.get(response.getErrcode());
     }
 
@@ -242,8 +242,8 @@ public class UserAPI extends BaseAPI {
      * @return 结果
      */
     public ResultType batchTagsToUser(List<String> openidList, Integer tagId) {
-        BeanUtil.requireNonNull(tagId, "tagId is null");
-        if(CollectionUtil.isEmpty(openidList)) {
+        BeanUtils.requireNonNull(tagId, "tagId is null");
+        if(CollectionUtils.isEmpty(openidList)) {
             throw new WeixinException("openId列表为空");
         }
         LOG.debug("批量为用户打上标签.....");
@@ -251,7 +251,7 @@ public class UserAPI extends BaseAPI {
         Map<String, Object> param = new HashMap<String, Object>();
         param.put("openid_list", openidList);
         param.put("tagid", tagId);
-        BaseResponse response = executePost(url, JSONUtil.toJson(param));
+        BaseResponse response = executePost(url, JSONUtils.toJson(param));
         return ResultType.get(response.getErrcode());
     }
 
@@ -262,8 +262,8 @@ public class UserAPI extends BaseAPI {
      * @return 结果
      */
     public ResultType batchDeleteTagsToUser(List<String> openidList, Integer tagId) {
-        BeanUtil.requireNonNull(tagId, "tagId is null");
-        if(CollectionUtil.isEmpty(openidList)) {
+        BeanUtils.requireNonNull(tagId, "tagId is null");
+        if(CollectionUtils.isEmpty(openidList)) {
             throw new WeixinException("openId列表为空");
         }
         LOG.debug("批量为用户取消标签.....");
@@ -271,7 +271,7 @@ public class UserAPI extends BaseAPI {
         Map<String, Object> param = new HashMap<String, Object>();
         param.put("openid_list", openidList);
         param.put("tagid", tagId);
-        BaseResponse response = executePost(url, JSONUtil.toJson(param));
+        BaseResponse response = executePost(url, JSONUtils.toJson(param));
         return ResultType.get(response.getErrcode());
     }
 }

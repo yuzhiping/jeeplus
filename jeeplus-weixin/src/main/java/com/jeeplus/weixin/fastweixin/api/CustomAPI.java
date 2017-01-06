@@ -7,9 +7,9 @@ import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
 import com.jeeplus.weixin.fastweixin.api.response.GetCustomAccountsResponse;
 import com.jeeplus.weixin.fastweixin.exception.WeixinException;
 import com.jeeplus.weixin.fastweixin.message.*;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
+import com.jeeplus.weixin.fastweixin.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -41,8 +41,8 @@ public class CustomAPI extends BaseAPI {
      * @return 调用结果
      */
     public ResultType sendCustomMessage(String openid, BaseMsg message) {
-        BeanUtil.requireNonNull(openid, "openid is null");
-        BeanUtil.requireNonNull(message, "message is null");
+        BeanUtils.requireNonNull(openid, "openid is null");
+        BeanUtils.requireNonNull(message, "message is null");
         LOG.debug("发布客服消息......");
         String url = BASE_API_URL + "cgi-bin/message/custom/send?access_token=#";
         final Map<String, Object> params = new HashMap<String, Object>();
@@ -107,7 +107,7 @@ public class CustomAPI extends BaseAPI {
             news.put("media_id", msg.getMediaId());
             params.put("mpnews", news);
         }
-        BaseResponse response = executePost(url, JSONUtil.toJson(params));
+        BaseResponse response = executePost(url, JSONUtils.toJson(params));
         return ResultType.get(response.getErrcode());
     }
 
@@ -119,16 +119,16 @@ public class CustomAPI extends BaseAPI {
      */
     public ResultType addCustomAccount(CustomAccount customAccount) {
         LOG.debug("添加客服帐号.....");
-        BeanUtil.requireNonNull(customAccount.getAccountName(), "帐号必填");
-        BeanUtil.requireNonNull(customAccount.getNickName(), "昵称必填");
+        BeanUtils.requireNonNull(customAccount.getAccountName(), "帐号必填");
+        BeanUtils.requireNonNull(customAccount.getNickName(), "昵称必填");
         String url = BASE_API_URL + "customservice/kfaccount/add?access_token=#";
         Map<String, String> params = new HashMap<String, String>();
         params.put("kf_account", customAccount.getAccountName());
         params.put("nickname", customAccount.getNickName());
-        if (StrUtil.isNotBlank(customAccount.getPassword())) {
+        if (StringUtils.isNotBlank(customAccount.getPassword())) {
             params.put("password", customAccount.getPassword());
         }
-        BaseResponse response = executePost(url, JSONUtil.toJson(params));
+        BaseResponse response = executePost(url, JSONUtils.toJson(params));
         return ResultType.get(response.getErrcode());
     }
 
@@ -140,16 +140,16 @@ public class CustomAPI extends BaseAPI {
      */
     public ResultType updateCustomAccount(CustomAccount customAccount) {
         LOG.debug("修改客服帐号信息......");
-        BeanUtil.requireNonNull(customAccount.getAccountName(), "帐号必填");
-        BeanUtil.requireNonNull(customAccount.getNickName(), "昵称必填");
+        BeanUtils.requireNonNull(customAccount.getAccountName(), "帐号必填");
+        BeanUtils.requireNonNull(customAccount.getNickName(), "昵称必填");
         String url = BASE_API_URL + "customservice/kfaccount/update?access_token=#";
         Map<String, String> params = new HashMap<String, String>();
         params.put("kf_account", customAccount.getAccountName());
         params.put("nickname", customAccount.getNickName());
-        if (StrUtil.isNotBlank(customAccount.getPassword())) {
+        if (StringUtils.isNotBlank(customAccount.getPassword())) {
             params.put("password", customAccount.getPassword());
         }
-        BaseResponse response = executePost(url, JSONUtil.toJson(params));
+        BaseResponse response = executePost(url, JSONUtils.toJson(params));
         return ResultType.get(response.getErrcode());
     }
 
@@ -174,8 +174,8 @@ public class CustomAPI extends BaseAPI {
      */
     public ResultType uploadHeadImg(String accountName, File file) {
         LOG.debug("设置客服帐号头像.....");
-        BeanUtil.requireNonNull(accountName, "帐号必填");
-        BeanUtil.requireNonNull(file, "文件为空");
+        BeanUtils.requireNonNull(accountName, "帐号必填");
+        BeanUtils.requireNonNull(file, "文件为空");
 
         String fileName = file.getName().toLowerCase();
         if (!fileName.endsWith("jpg")) {
@@ -196,7 +196,7 @@ public class CustomAPI extends BaseAPI {
         String url = BASE_API_URL + "cgi-bin/customservice/getkflist?access_token=#";
         BaseResponse r = executeGet(url);
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetCustomAccountsResponse.class);
+        response = JSONUtils.toBean(resultJson, GetCustomAccountsResponse.class);
         return response;
     }
 }

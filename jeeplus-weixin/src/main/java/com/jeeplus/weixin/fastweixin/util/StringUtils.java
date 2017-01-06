@@ -5,12 +5,12 @@ package com.jeeplus.weixin.fastweixin.util;
  *
  * @author peiyu
  */
-public final class StrUtil {
+public final class StringUtils {
 
     /**
      * 此类不需要实例化
      */
-    private StrUtil() {
+    private StringUtils() {
     }
 
     /**

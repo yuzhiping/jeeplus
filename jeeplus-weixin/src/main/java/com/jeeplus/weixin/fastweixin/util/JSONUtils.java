@@ -6,15 +6,15 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
 
 import java.util.Map;
 
-import static com.jeeplus.weixin.fastweixin.util.BeanUtil.requireNonNull;
-import static com.jeeplus.weixin.fastweixin.util.StrUtil.isBlank;
+import static com.jeeplus.weixin.fastweixin.util.BeanUtils.requireNonNull;
+import static com.jeeplus.weixin.fastweixin.util.StringUtils.isBlank;
 
 /**
  * json操作工具类，基于fastjson封装
  *
  * @author peiyu
  */
-public final class JSONUtil {
+public final class JSONUtils {
 
     /**
      * 默认json格式化方式
@@ -23,7 +23,7 @@ public final class JSONUtil {
             SerializerFeature.WriteNonStringKeyAsString, SerializerFeature.QuoteFieldNames, SerializerFeature.SkipTransientField,
             SerializerFeature.SortField, SerializerFeature.PrettyFormat};
 
-    private JSONUtil() {
+    private JSONUtils() {
     }
 
     /**

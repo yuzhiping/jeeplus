@@ -2,7 +2,7 @@ package com.jeeplus.weixin.fastweixin.servlet;
 
 import com.jeeplus.weixin.fastweixin.message.aes.AesException;
 import com.jeeplus.weixin.fastweixin.message.aes.WXBizMsgCrypt;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.util.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -48,7 +48,7 @@ public abstract class QYWeixinControllerSupport extends QYWeixinSupport {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     protected final String process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-//        if(StrUtil.isBlank(legalStr(request))){
+//        if(StringUtils.isBlank(legalStr(request))){
 //            return "";
 //        }
         String result = processRequest(request);
@@ -64,7 +64,7 @@ public abstract class QYWeixinControllerSupport extends QYWeixinSupport {
      */
     protected String legalStr(HttpServletRequest request){
         String echoStr = "";
-        if(StrUtil.isBlank(getToken()) || StrUtil.isBlank(getAESKey()) || StrUtil.isBlank(getCropId())){
+        if(StringUtils.isBlank(getToken()) || StringUtils.isBlank(getAESKey()) || StringUtils.isBlank(getCropId())){
             return echoStr;
         }
         try {

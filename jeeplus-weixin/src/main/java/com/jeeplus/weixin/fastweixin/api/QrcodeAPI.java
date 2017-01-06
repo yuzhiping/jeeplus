@@ -4,9 +4,9 @@ import com.jeeplus.weixin.fastweixin.api.config.ApiConfig;
 import com.jeeplus.weixin.fastweixin.api.enums.QrcodeType;
 import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
 import com.jeeplus.weixin.fastweixin.api.response.QrcodeResponse;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
+import com.jeeplus.weixin.fastweixin.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -49,8 +49,8 @@ public class QrcodeAPI extends BaseAPI {
      * @return 二维码对象
      */
     public QrcodeResponse createQrcode(QrcodeType actionName, String sceneId, String sceneStr, Integer expireSeconds) {
-        BeanUtil.requireNonNull(actionName, "actionName is null");
-        BeanUtil.requireNonNull(sceneId, "actionInfo is null");
+        BeanUtils.requireNonNull(actionName, "actionName is null");
+        BeanUtils.requireNonNull(sceneId, "actionInfo is null");
 
         LOG.debug("创建二维码信息.....");
 
@@ -61,18 +61,18 @@ public class QrcodeAPI extends BaseAPI {
         param.put("action_name", actionName);
         Map<String, Object> actionInfo = new HashMap<String, Object>();
         Map<String, Object> scene = new HashMap<String, Object>();
-        if (StrUtil.isNotBlank(sceneId))
+        if (StringUtils.isNotBlank(sceneId))
             scene.put("scene_id", sceneId);
-        if (StrUtil.isNotBlank(sceneStr))
+        if (StringUtils.isNotBlank(sceneStr))
             scene.put("scene_str", sceneStr);
         actionInfo.put("scene", scene);
         param.put("action_info", actionInfo);
-        if (BeanUtil.nonNull(expireSeconds) && 0 != expireSeconds) {
+        if (BeanUtils.nonNull(expireSeconds) && 0 != expireSeconds) {
             param.put("expire_seconds", expireSeconds);
         }
-        BaseResponse r = executePost(url, JSONUtil.toJson(param));
+        BaseResponse r = executePost(url, JSONUtils.toJson(param));
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, QrcodeResponse.class);
+        response = JSONUtils.toBean(resultJson, QrcodeResponse.class);
         return response;
     }
 }

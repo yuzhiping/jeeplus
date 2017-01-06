@@ -6,8 +6,8 @@ import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
 import com.jeeplus.weixin.fastweixin.api.response.CreateTagResponse;
 import com.jeeplus.weixin.fastweixin.api.response.GetAllTagsResponse;
 import com.jeeplus.weixin.fastweixin.api.response.GetUsersResponse;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,7 +38,7 @@ public class TagAPI extends BaseAPI {
      * @return 创建的标签结果
      */
     public CreateTagResponse create(String tagName) {
-        BeanUtil.requireNonNull(tagName, "tagName is null");
+        BeanUtils.requireNonNull(tagName, "tagName is null");
         CreateTagResponse response;
         LOG.debug("创建标签.....");
         String url = BASE_API_URL + "cgi-bin/tags/create?access_token=#";
@@ -46,9 +46,9 @@ public class TagAPI extends BaseAPI {
         Map<String, Object> tag = new HashMap<String, Object>();
         tag.put("name", tagName);
         param.put("tag", tag);
-        BaseResponse r = executePost(url, JSONUtil.toJson(param));
+        BaseResponse r = executePost(url, JSONUtils.toJson(param));
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, CreateTagResponse.class);
+        response = JSONUtils.toBean(resultJson, CreateTagResponse.class);
         return response;
     }
 
@@ -62,7 +62,7 @@ public class TagAPI extends BaseAPI {
         String url = BASE_API_URL + "cgi-bin/tags/get?access_token=#";
         BaseResponse r = executeGet(url);
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetAllTagsResponse.class);
+        response = JSONUtils.toBean(resultJson, GetAllTagsResponse.class);
         return response;
     }
 
@@ -73,14 +73,14 @@ public class TagAPI extends BaseAPI {
      * @return 编辑结果
      */
     public ResultType updateTag(Integer tagId, String newTagName) {
-        BeanUtil.requireNonNull(tagId, "tagId is null");
-        BeanUtil.requireNonNull(newTagName, "newTagName is null");
+        BeanUtils.requireNonNull(tagId, "tagId is null");
+        BeanUtils.requireNonNull(newTagName, "newTagName is null");
         LOG.debug("编辑标签.....");
         String url = BASE_API_URL + "cgi-bin/tags/update?access_token=#";
         Map<String, Object> param = new HashMap<String, Object>();
         param.put("id", tagId);
         param.put("name", newTagName);
-        BaseResponse response = executePost(url, JSONUtil.toJson(param));
+        BaseResponse response = executePost(url, JSONUtils.toJson(param));
         return ResultType.get(response.getErrcode());
     }
 
@@ -90,12 +90,12 @@ public class TagAPI extends BaseAPI {
      * @return 删除结果
      */
     public ResultType deleteTag(Integer tagId) {
-        BeanUtil.requireNonNull(tagId, "tagId is null");
+        BeanUtils.requireNonNull(tagId, "tagId is null");
         LOG.debug("删除标签.....");
         String url = BASE_API_URL + "cgi-bin/tags/delete?access_token=#";
         Map<String, Object> param = new HashMap<String, Object>();
         param.put("id", tagId);
-        BaseResponse response = executePost(url, JSONUtil.toJson(param));
+        BaseResponse response = executePost(url, JSONUtils.toJson(param));
         return ResultType.get(response.getErrcode());
     }
 
@@ -106,16 +106,16 @@ public class TagAPI extends BaseAPI {
      * @return 本批用户列表
      */
     public GetUsersResponse getUsersByTagId(Integer tagId, String nextOpenid) {
-        BeanUtil.requireNonNull(tagId, "tagId is null");
+        BeanUtils.requireNonNull(tagId, "tagId is null");
         GetUsersResponse response;
         LOG.debug("开始获取标签下粉丝.....");
         String url = BASE_API_URL + "cgi-bin/user/tag/get?access_token=#";
         Map<String, Object> param = new HashMap<String, Object>();
         param.put("tagid", tagId);
         param.put("next_openid", null == nextOpenid ? "" : nextOpenid);
-        BaseResponse r = executePost(url, JSONUtil.toJson(param));
+        BaseResponse r = executePost(url, JSONUtils.toJson(param));
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetUsersResponse.class);
+        response = JSONUtils.toBean(resultJson, GetUsersResponse.class);
         return response;
     }
 }

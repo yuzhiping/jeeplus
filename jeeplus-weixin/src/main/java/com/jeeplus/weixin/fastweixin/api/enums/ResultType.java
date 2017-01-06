@@ -1,6 +1,6 @@
 package com.jeeplus.weixin.fastweixin.api.enums;
 
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
 
 /**
  * 微信接口全局返回码枚举
@@ -572,7 +572,7 @@ public enum ResultType {
      * @return 结果枚举对象
      */
     public static ResultType get(String code) {
-        BeanUtil.requireNonNull(code, "code is null");
+        BeanUtils.requireNonNull(code, "code is null");
         ResultType[] list = values();
         for (ResultType resultType : list) {
             if (code.equals(resultType.getCode().toString())) {

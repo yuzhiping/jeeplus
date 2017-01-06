@@ -2,7 +2,7 @@ package com.jeeplus.weixin.fastweixin.company.api.handle;
 
 import com.jeeplus.weixin.fastweixin.company.api.config.QYConfigChangeNotice;
 import com.jeeplus.weixin.fastweixin.handle.ApiConfigChangeHandle;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
 
 import java.util.Observable;
 
@@ -18,7 +18,7 @@ import java.util.Observable;
 public abstract class AbstractQYApiConfigChangeHandle implements ApiConfigChangeHandle{
 
     public void update(Observable o, Object arg){
-        if(BeanUtil.nonNull(arg) && arg instanceof QYConfigChangeNotice){
+        if(BeanUtils.nonNull(arg) && arg instanceof QYConfigChangeNotice){
             configChange((QYConfigChangeNotice) arg);
         }
     }

@@ -6,8 +6,8 @@ import com.jeeplus.weixin.fastweixin.company.api.entity.QYAgent;
 import com.jeeplus.weixin.fastweixin.company.api.enums.QYResultType;
 import com.jeeplus.weixin.fastweixin.company.api.response.GetQYAgentInfoResponse;
 import com.jeeplus.weixin.fastweixin.company.api.response.GetQYAgentListResponse;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -45,7 +45,7 @@ public class QYAgentAPI extends QYBaseAPI {
         String url = BASE_API_URL + "cgi-bin/agent/list?access_token=#";
         BaseResponse r = executeGet(url);
         String jsonResult = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(jsonResult, GetQYAgentListResponse.class);
+        response = JSONUtils.toBean(jsonResult, GetQYAgentListResponse.class);
         return response;
     }
 
@@ -55,12 +55,12 @@ public class QYAgentAPI extends QYBaseAPI {
      * @return 应用信息
      */
     public GetQYAgentInfoResponse getInfo(String agentId){
-        BeanUtil.requireNonNull(agentId, "agentId is null");
+        BeanUtils.requireNonNull(agentId, "agentId is null");
         GetQYAgentInfoResponse response;
         String url = BASE_API_URL + "cgi-bin/agent/get?access_token=#&agentid=" + agentId;
         BaseResponse r = executeGet(url);
         String jsonResult = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(jsonResult, GetQYAgentInfoResponse.class);
+        response = JSONUtils.toBean(jsonResult, GetQYAgentInfoResponse.class);
         return response;
     }
 
@@ -85,7 +85,7 @@ public class QYAgentAPI extends QYBaseAPI {
         params.put("redirect_domain", agent.getRedirectDomain());
         params.put("isreportuser", agent.getIsReportUser());
         params.put("isreportenter", agent.getIsReportEnter());
-        BaseResponse response = executePost(url, JSONUtil.toJson(params));
+        BaseResponse response = executePost(url, JSONUtils.toJson(params));
         return QYResultType.get(response.getErrcode());
     }
 
@@ -96,7 +96,7 @@ public class QYAgentAPI extends QYBaseAPI {
      */
     public QYResultType update(Map<String, Object> params){
         String url = BASE_API_URL + "cgi-bin/agent/set?access_token=#";
-        BaseResponse response = executePost(url, JSONUtil.toJson(params));
+        BaseResponse response = executePost(url, JSONUtils.toJson(params));
         return QYResultType.get(response.getErrcode());
     }
 }

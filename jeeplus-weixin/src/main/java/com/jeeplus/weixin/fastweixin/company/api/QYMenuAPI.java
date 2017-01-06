@@ -7,9 +7,9 @@ import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
 import com.jeeplus.weixin.fastweixin.company.api.entity.QYMenu;
 import com.jeeplus.weixin.fastweixin.company.api.enums.QYResultType;
 import com.jeeplus.weixin.fastweixin.company.api.response.GetQYMenuResponse;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.CollectionUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.CollectionUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -45,9 +45,9 @@ public class QYMenuAPI extends QYBaseAPI {
      * @return 操作结果
      */
     public QYResultType create(QYMenu menu, String agentId){
-        BeanUtil.requireNonNull(menu, "菜单不能为空！");
+        BeanUtils.requireNonNull(menu, "菜单不能为空！");
         String url = BASE_API_URL + "cgi-bin/menu/create?access_token=#&agentid=" + agentId;
-        BaseResponse response = executePost(url, JSONUtil.toJson(menu));
+        BaseResponse response = executePost(url, JSONUtils.toJson(menu));
         return QYResultType.get(response.getErrcode());
     }
 
@@ -57,18 +57,18 @@ public class QYMenuAPI extends QYBaseAPI {
      * @return QYMenu。与创建菜单时的对象一致。
      */
     public GetQYMenuResponse list(String agentId){
-        BeanUtil.requireNonNull(agentId, "应用ID不能为空");
+        BeanUtils.requireNonNull(agentId, "应用ID不能为空");
         GetQYMenuResponse response;
         String url = BASE_API_URL + "cgi-bin/menu/get?access_token=#&agentid=" + agentId;
         BaseResponse r = executeGet(url);
         if (isSuccess(r.getErrcode())) {
-            JSONObject jsonObject = JSONUtil.getJSONFromString(r.getErrmsg());
+            JSONObject jsonObject = JSONUtils.getJSONFromString(r.getErrmsg());
             //通过jsonpath不断修改type的值，才能正常解析- -
             List buttonList = (List) JSONPath.eval(jsonObject, "$.menu.button");
-            if (CollectionUtil.isNotEmpty(buttonList)) {
+            if (CollectionUtils.isNotEmpty(buttonList)) {
                 for (Object button : buttonList) {
                     List subList = (List) JSONPath.eval(button, "$.sub_button");
-                    if (CollectionUtil.isNotEmpty(subList)) {
+                    if (CollectionUtils.isNotEmpty(subList)) {
                         for (Object sub : subList) {
                             Object type = JSONPath.eval(sub, "$.type");
                             JSONPath.set(sub, "$.type", type.toString().toUpperCase());
@@ -79,9 +79,9 @@ public class QYMenuAPI extends QYBaseAPI {
                     }
                 }
             }
-            response = JSONUtil.toBean(jsonObject.toJSONString(), GetQYMenuResponse.class);
+            response = JSONUtils.toBean(jsonObject.toJSONString(), GetQYMenuResponse.class);
         } else {
-            response = JSONUtil.toBean(r.toJsonString(), GetQYMenuResponse.class);
+            response = JSONUtils.toBean(r.toJsonString(), GetQYMenuResponse.class);
         }
         return response;
     }
@@ -92,7 +92,7 @@ public class QYMenuAPI extends QYBaseAPI {
      * @return 操作结果
      */
     public QYResultType delete(String agentId){
-        BeanUtil.requireNonNull(agentId, "AgentId不能为空");
+        BeanUtils.requireNonNull(agentId, "AgentId不能为空");
         String url = BASE_API_URL + "cgi-bin/menu/delete?access_token=#&agentid=" + agentId;
         BaseResponse response = executeGet(url);
         return QYResultType.get(response.getErrcode());

@@ -2,7 +2,7 @@ package com.jeeplus.weixin.fastweixin.api.response;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import com.jeeplus.weixin.fastweixin.message.Article;
-import com.jeeplus.weixin.fastweixin.util.StreamUtil;
+import com.jeeplus.weixin.fastweixin.util.StreamUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -86,7 +86,7 @@ public class DownloadMaterialResponse extends BaseResponse {
     public void setContent(InputStream content, int length){
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         try {
-            StreamUtil.copy(content, byteArrayOutputStream);
+            StreamUtils.copy(content, byteArrayOutputStream);
             byte[] temp = byteArrayOutputStream.toByteArray();
             if (temp.length > length) {
                 this.content = new byte[length];

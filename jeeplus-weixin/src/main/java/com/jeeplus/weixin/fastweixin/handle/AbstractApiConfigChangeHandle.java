@@ -1,7 +1,7 @@
 package com.jeeplus.weixin.fastweixin.handle;
 
 import com.jeeplus.weixin.fastweixin.api.config.ConfigChangeNotice;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
 
 import java.util.Observable;
 
@@ -14,7 +14,7 @@ public abstract class AbstractApiConfigChangeHandle implements ApiConfigChangeHa
 
     @Override
     public void update(Observable o, Object arg) {
-        if (BeanUtil.nonNull(arg) && arg instanceof ConfigChangeNotice) {
+        if (BeanUtils.nonNull(arg) && arg instanceof ConfigChangeNotice) {
             configChange((ConfigChangeNotice) arg);
         }
     }

@@ -7,9 +7,9 @@ import com.jeeplus.weixin.fastweixin.api.entity.Menu;
 import com.jeeplus.weixin.fastweixin.api.enums.ResultType;
 import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
 import com.jeeplus.weixin.fastweixin.api.response.GetMenuResponse;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.CollectionUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.CollectionUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,9 +40,9 @@ public class MenuAPI extends BaseAPI {
      * @return 调用结果
      */
     public ResultType createMenu(Menu menu) {
-        BeanUtil.requireNonNull(menu, "menu is null");
+        BeanUtils.requireNonNull(menu, "menu is null");
         String url = BASE_API_URL;
-        if (BeanUtil.isNull(menu.getMatchrule())) {
+        if (BeanUtils.isNull(menu.getMatchrule())) {
             //普通菜单
             LOG.debug("创建普通菜单.....");
             url += "cgi-bin/menu/create?access_token=#";
@@ -67,13 +67,13 @@ public class MenuAPI extends BaseAPI {
 
         BaseResponse r = executeGet(url);
         if (isSuccess(r.getErrcode())) {
-            JSONObject jsonObject = JSONUtil.getJSONFromString(r.getErrmsg());
+            JSONObject jsonObject = JSONUtils.getJSONFromString(r.getErrmsg());
             //通过jsonpath不断修改type的值，才能正常解析- -
             List buttonList = (List) JSONPath.eval(jsonObject, "$.menu.button");
-            if (CollectionUtil.isNotEmpty(buttonList)) {
+            if (CollectionUtils.isNotEmpty(buttonList)) {
                 for (Object button : buttonList) {
                     List subList = (List) JSONPath.eval(button, "$.sub_button");
-                    if (CollectionUtil.isNotEmpty(subList)) {
+                    if (CollectionUtils.isNotEmpty(subList)) {
                         for (Object sub : subList) {
                             Object type = JSONPath.eval(sub, "$.type");
                             JSONPath.set(sub, "$.type", type.toString().toUpperCase());
@@ -84,9 +84,9 @@ public class MenuAPI extends BaseAPI {
                     }
                 }
             }
-            response = JSONUtil.toBean(jsonObject.toJSONString(), GetMenuResponse.class);
+            response = JSONUtils.toBean(jsonObject.toJSONString(), GetMenuResponse.class);
         } else {
-            response = JSONUtil.toBean(r.toJsonString(), GetMenuResponse.class);
+            response = JSONUtils.toBean(r.toJsonString(), GetMenuResponse.class);
         }
         return response;
     }
@@ -111,12 +111,12 @@ public class MenuAPI extends BaseAPI {
      * @since 1.3.7
      */
     public ResultType deleteConditionalMenu(String menuId) {
-        BeanUtil.requireNonNull(menuId, "menuid is null");
+        BeanUtils.requireNonNull(menuId, "menuid is null");
         LOG.debug("删除个性化菜单.....");
         String url = BASE_API_URL + "cgi-bin/menu/delconditional?access_token=#";
         Map<String, String> params = new HashMap<String, String>();
         params.put("menuid", menuId);
-        BaseResponse response = executePost(url, JSONUtil.toJson(params));
+        BaseResponse response = executePost(url, JSONUtils.toJson(params));
         return ResultType.get(response.getErrcode());
     }
 
@@ -128,23 +128,23 @@ public class MenuAPI extends BaseAPI {
      * @since 1.3.7
      */
     public GetMenuResponse tryMatchMenu(String userId) {
-        BeanUtil.requireNonNull(userId, "userId is null");
+        BeanUtils.requireNonNull(userId, "userId is null");
         LOG.debug("测试个性化菜单.....");
         GetMenuResponse response;
         String url = BASE_API_URL + "cgi-bin/menu/trymatch?access_token=#";
         Map<String, String> params = new HashMap<String, String>();
         params.put("user_id", userId);
-        BaseResponse r = executePost(url, JSONUtil.toJson(params));
+        BaseResponse r = executePost(url, JSONUtils.toJson(params));
 //        String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-//        response = JSONUtil.toBean(resultJson, GetMenuResponse.class);
+//        response = JSONUtils.toBean(resultJson, GetMenuResponse.class);
         if (isSuccess(r.getErrcode())) {
-            JSONObject jsonObject = JSONUtil.getJSONFromString(r.getErrmsg());
+            JSONObject jsonObject = JSONUtils.getJSONFromString(r.getErrmsg());
             //通过jsonpath不断修改type的值，才能正常解析- -
             List buttonList = (List) JSONPath.eval(jsonObject, "$.menu.button");
-            if (CollectionUtil.isNotEmpty(buttonList)) {
+            if (CollectionUtils.isNotEmpty(buttonList)) {
                 for (Object button : buttonList) {
                     List subList = (List) JSONPath.eval(button, "$.sub_button");
-                    if (CollectionUtil.isNotEmpty(subList)) {
+                    if (CollectionUtils.isNotEmpty(subList)) {
                         for (Object sub : subList) {
                             Object type = JSONPath.eval(sub, "$.type");
                             JSONPath.set(sub, "$.type", type.toString().toUpperCase());
@@ -155,9 +155,9 @@ public class MenuAPI extends BaseAPI {
                     }
                 }
             }
-            response = JSONUtil.toBean(jsonObject.toJSONString(), GetMenuResponse.class);
+            response = JSONUtils.toBean(jsonObject.toJSONString(), GetMenuResponse.class);
         } else {
-            response = JSONUtil.toBean(r.toJsonString(), GetMenuResponse.class);
+            response = JSONUtils.toBean(r.toJsonString(), GetMenuResponse.class);
         }
         return response;
     }

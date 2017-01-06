@@ -3,8 +3,8 @@ package com.jeeplus.weixin.fastweixin.company.api;
 import com.jeeplus.weixin.fastweixin.api.enums.ResultType;
 import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
 import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.CollectionUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.CollectionUtils;
 import com.jeeplus.weixin.fastweixin.util.NetWorkCenter;
 
 import java.io.File;
@@ -53,10 +53,10 @@ public abstract class QYBaseAPI {
      */
     protected BaseResponse executePost(String url, String json, File file) {
         BaseResponse response;
-        BeanUtil.requireNonNull(url, "url is null");
+        BeanUtils.requireNonNull(url, "url is null");
         List<File> files = null;
         if (null != file) {
-            files = CollectionUtil.newArrayList(file);
+            files = CollectionUtils.newArrayList(file);
         }
         //需要传token
         String postUrl = url.replace("#", config.getAccessToken());
@@ -73,7 +73,7 @@ public abstract class QYBaseAPI {
      */
     protected BaseResponse executeGet(String url) {
         BaseResponse response;
-        BeanUtil.requireNonNull(url, "url is null");
+        BeanUtils.requireNonNull(url, "url is null");
         //需要传token
         String getUrl = url.replace("#", config.getAccessToken());
         response = NetWorkCenter.get(getUrl);

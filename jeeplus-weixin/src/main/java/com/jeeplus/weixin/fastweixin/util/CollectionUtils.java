@@ -9,12 +9,12 @@ import java.util.Collections;
  *
  * @author peiyu
  */
-public final class CollectionUtil {
+public final class CollectionUtils {
 
     /**
      * 此类不需要实例化
      */
-    private CollectionUtil() {
+    private CollectionUtils() {
     }
 
     /**

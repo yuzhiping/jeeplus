@@ -5,9 +5,9 @@ import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
 import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
 import com.jeeplus.weixin.fastweixin.company.api.response.DownloadMediaResponse;
 import com.jeeplus.weixin.fastweixin.company.api.response.UploadMediaResponse;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 import com.jeeplus.weixin.fastweixin.util.NetWorkCenter;
-import com.jeeplus.weixin.fastweixin.util.StreamUtil;
+import com.jeeplus.weixin.fastweixin.util.StreamUtils;
 import org.apache.http.Header;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.config.RequestConfig;
@@ -60,7 +60,7 @@ public class QYMediaAPI extends QYBaseAPI {
         String url = BASE_API_URL + "cgi-bin/media/upload?access_token=#&type=" + type.toString();
         BaseResponse r = executePost(url, null, file);
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, UploadMediaResponse.class);
+        response = JSONUtils.toBean(resultJson, UploadMediaResponse.class);
         return response;
     }
 
@@ -86,9 +86,9 @@ public class QYMediaAPI extends QYBaseAPI {
                     response.setFileName(headers[0].getElements()[0].getParameterByName("filename").getValue());
                 } else {
                     ByteArrayOutputStream out = new ByteArrayOutputStream();
-                    StreamUtil.copy(inputStream, out);
+                    StreamUtils.copy(inputStream, out);
                     String json = out.toString();
-                    response = JSONUtil.toBean(json, DownloadMediaResponse.class);
+                    response = JSONUtils.toBean(json, DownloadMediaResponse.class);
                 }
             }
         } catch (Exception e) {

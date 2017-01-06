@@ -3,8 +3,8 @@ package com.jeeplus.weixin.fastweixin.api;
 import com.jeeplus.weixin.fastweixin.api.config.ApiConfig;
 import com.jeeplus.weixin.fastweixin.api.enums.ResultType;
 import com.jeeplus.weixin.fastweixin.api.response.GetSignatureResponse;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.JsApiUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.JsApiUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,7 +29,7 @@ public class JsAPI extends BaseAPI {
      * @return 签名以及相关参数
      */
     public GetSignatureResponse getSignature(String url) {
-        BeanUtil.requireNonNull(url, "请传入当前网页的URL，不包含#及其后面部分");
+        BeanUtils.requireNonNull(url, "请传入当前网页的URL，不包含#及其后面部分");
         //当前时间的秒数
         long timestame = System.currentTimeMillis() / 1000;
         //使用UUID来当随机字符串
@@ -45,12 +45,12 @@ public class JsAPI extends BaseAPI {
      * @return 签名以及相关参数
      */
     public GetSignatureResponse getSignature(String nonceStr, long timestame, String url) {
-        BeanUtil.requireNonNull(url, "请传入当前网页的URL，不包含#及其后面部分");
+        BeanUtils.requireNonNull(url, "请传入当前网页的URL，不包含#及其后面部分");
         GetSignatureResponse response = new GetSignatureResponse();
         String jsApiTicket = this.config.getJsApiTicket();
         String sign;
         try {
-            sign = JsApiUtil.sign(jsApiTicket, nonceStr, timestame, url);
+            sign = JsApiUtils.sign(jsApiTicket, nonceStr, timestame, url);
         } catch (Exception e) {
             LOG.error("获取签名异常:", e);
             response.setErrcode(ResultType.OTHER_ERROR.getCode().toString());

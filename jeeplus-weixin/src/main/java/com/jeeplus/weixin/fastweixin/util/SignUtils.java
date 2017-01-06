@@ -8,23 +8,23 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
-import static com.jeeplus.weixin.fastweixin.util.StrUtil.hasBlank;
+import static com.jeeplus.weixin.fastweixin.util.StringUtils.hasBlank;
 
 /**
  * 绑定服务器工具类
  *
  * @author peiyu
  */
-public final class SignUtil {
+public final class SignUtils {
 
-    private static final Logger LOG   = LoggerFactory.getLogger(SignUtil.class);
+    private static final Logger LOG   = LoggerFactory.getLogger(SignUtils.class);
     private static final char[] digit = {'0', '1', '2', '3', '4', '5', '6',
             '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
     /**
      * 此类不需要实例化
      */
-    private SignUtil() {
+    private SignUtils() {
     }
 
     /**

@@ -78,7 +78,7 @@ public final class NetWorkCenter {
             @Override
             public void onResponse(int resultCode, String resultJson) {
                 if (200 == resultCode) {
-                    BaseResponse r = JSONUtil.toBean(resultJson, BaseResponse.class);
+                    BaseResponse r = JSONUtils.toBean(resultJson, BaseResponse.class);
                     r.setErrmsg(resultJson);
                     response[0] = r;
                 } else {//请求本身就失败了
@@ -113,8 +113,8 @@ public final class NetWorkCenter {
             @Override
             public void onResponse(int resultCode, String resultJson) {
                 if (200 == resultCode) {
-                    BaseResponse r = JSONUtil.toBean(resultJson, BaseResponse.class);
-                    if(StrUtil.isBlank(r.getErrcode())) {
+                    BaseResponse r = JSONUtils.toBean(resultJson, BaseResponse.class);
+                    if(StringUtils.isBlank(r.getErrcode())) {
                         r.setErrcode("0");
                     }
                     r.setErrmsg(resultJson);
@@ -159,8 +159,8 @@ public final class NetWorkCenter {
             @Override
             public void onResponse(int resultCode, String resultJson) {
                 if (200 == resultCode) {
-                    BaseResponse r = JSONUtil.toBean(resultJson, BaseResponse.class);
-                    if(StrUtil.isBlank(r.getErrcode())) {
+                    BaseResponse r = JSONUtils.toBean(resultJson, BaseResponse.class);
+                    if(StringUtils.isBlank(r.getErrcode())) {
                         r.setErrcode("0");
                     }
                     r.setErrmsg(resultJson);

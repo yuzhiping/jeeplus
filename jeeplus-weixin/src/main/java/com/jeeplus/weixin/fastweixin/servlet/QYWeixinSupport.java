@@ -98,7 +98,7 @@ public abstract class QYWeixinSupport{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if(StrUtil.isBlank(getToken()) || StrUtil.isBlank(getAESKey()) || StrUtil.isBlank(getCropId())){
+        if(StringUtils.isBlank(getToken()) || StringUtils.isBlank(getAESKey()) || StringUtils.isBlank(getCropId())){
             pw.write("");
             pw.flush();
             pw.close();
@@ -124,7 +124,7 @@ public abstract class QYWeixinSupport{
      * @return 处理消息的结果，已经是接口要求的XML的报文了
      */
     public String processRequest(HttpServletRequest request){
-        Map<String, Object> reqMap = MessageUtil.parseXml(request, getToken(), getCropId(), getAESKey());
+        Map<String, Object> reqMap = MessageUtils.parseXml(request, getToken(), getCropId(), getAESKey());
         String fromUserName = (String)reqMap.get("FromUserName");
         String toUserName = (String)reqMap.get("ToUserName");
         String msgType = (String)reqMap.get("MsgType");
@@ -141,7 +141,7 @@ public abstract class QYWeixinSupport{
                 QYBaseEvent event = new QYBaseEvent();
                 buildBasicEvent(reqMap, event);
                 msg = handleSubScribe(event);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processEventHandle(event);
                 }
 
@@ -149,7 +149,7 @@ public abstract class QYWeixinSupport{
                 QYBaseEvent event = new QYBaseEvent();
                 buildBasicEvent(reqMap, event);
                 msg = handleUnsubscribe(event);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processEventHandle(event);
                 }
             }else if(QYEventType.CLICK.equalsIgnoreCase(eventType)){
@@ -158,7 +158,7 @@ public abstract class QYWeixinSupport{
                 QYMenuEvent event = new QYMenuEvent(eventKey);
                 buildBasicEvent(reqMap, event);
                 msg = handleMenuClickEvent(event);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processEventHandle(event);
                 }
             }else if(QYEventType.VIEW.equalsIgnoreCase(eventType)){
@@ -167,7 +167,7 @@ public abstract class QYWeixinSupport{
                 QYMenuEvent event = new QYMenuEvent(eventKey);
                 buildBasicEvent(reqMap, event);
                 msg = handleMenuViewEvent(event);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processEventHandle(event);
                 }
             }else if(QYEventType.LOCATION.equalsIgnoreCase(eventType)){
@@ -177,7 +177,7 @@ public abstract class QYWeixinSupport{
                 QYLocationEvent event = new QYLocationEvent(latitude, longitude, precision);
                 buildBasicEvent(reqMap, event);
                 msg = handleLocationEvent(event);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processEventHandle(event);
                 }
             }else if(QYEventType.SCANCODEPUSH.equalsIgnoreCase(eventType) || QYEventType.SCANCODEWAITMSG.equalsIgnoreCase(eventType)){
@@ -188,7 +188,7 @@ public abstract class QYWeixinSupport{
                 QYScanCodeEvent event = new QYScanCodeEvent(eventKey, scanType, scanResult);
                 buildBasicEvent(reqMap, event);
                 msg = handleScanCodeEvent(event);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processEventHandle(event);
                 }
             }else if(QYEventType.PICPHOTOORALBUM.equalsIgnoreCase(eventType) || QYEventType.PICSYSPHOTO.equalsIgnoreCase(eventType) || QYEventType.PICWEIXIN.equalsIgnoreCase(eventType)){
@@ -199,14 +199,14 @@ public abstract class QYWeixinSupport{
                 QYSendPicInfoEvent event = new QYSendPicInfoEvent(eventKey, count, picList);
                 buildBasicEvent(reqMap, event);
                 msg = handleSendPicsInfoEvent(event);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processEventHandle(event);
                 }
             }else if(QYEventType.ENTERAGENT.equalsIgnoreCase(eventType)){
                 QYEnterAgentEvent event = new QYEnterAgentEvent();
                 buildBasicEvent(reqMap, event);
                 msg = handleEnterAgentEvent(event);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processEventHandle(event);
                 }
             }else if(QYEventType.BATCHJOBRESULT.equalsIgnoreCase(eventType)){
@@ -218,7 +218,7 @@ public abstract class QYWeixinSupport{
                 QYBatchJobEvent event = new QYBatchJobEvent(jobId, jobType, errCode, errMsg);
                 buildBasicEvent(reqMap, event);
                 msg = handleBatchJobEvent(event);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processEventHandle(event);
                 }
             }
@@ -229,7 +229,7 @@ public abstract class QYWeixinSupport{
                 QYTextReqMsg textReqMsg = new QYTextReqMsg(content);
                 buildBasicReqMsg(reqMap, textReqMsg);
                 msg = handleTextMsg(textReqMsg);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processMessageHandle(textReqMsg);
                 }
             }else if(QYReqType.IMAGE.equalsIgnoreCase(msgType)){
@@ -238,7 +238,7 @@ public abstract class QYWeixinSupport{
                 QYImageReqMsg imageReqMsg = new QYImageReqMsg(picUrl, mediaId);
                 buildBasicReqMsg(reqMap, imageReqMsg);
                 msg = handleImageMsg(imageReqMsg);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processMessageHandle(imageReqMsg);
                 }
             }else if(QYReqType.VOICE.equalsIgnoreCase(msgType)){
@@ -247,7 +247,7 @@ public abstract class QYWeixinSupport{
                 QYVoiceReqMsg voiceReqMsg = new QYVoiceReqMsg(mediaId, format);
                 buildBasicReqMsg(reqMap, voiceReqMsg);
                 msg = handleVoiceMsg(voiceReqMsg);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processMessageHandle(voiceReqMsg);
                 }
             }else if(QYReqType.VIDEO.equalsIgnoreCase(msgType)){
@@ -256,7 +256,7 @@ public abstract class QYWeixinSupport{
                 QYVideoReqMsg videoReqMsg = new QYVideoReqMsg(mediaId, thumbMediaId);
                 buildBasicReqMsg(reqMap, videoReqMsg);
                 msg = handleVideoMsg(videoReqMsg);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processMessageHandle(videoReqMsg);
                 }
             }else if(QYReqType.SHORT_VIDEO.equalsIgnoreCase(msgType)){
@@ -265,7 +265,7 @@ public abstract class QYWeixinSupport{
                 QYVideoReqMsg videoReqMsg = new QYVideoReqMsg(mediaId, thumbMediaId);
                 buildBasicReqMsg(reqMap, videoReqMsg);
                 msg = handleShortVideoMsg(videoReqMsg);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processMessageHandle(videoReqMsg);
                 }
             }else if(QYReqType.LOCATION.equalsIgnoreCase(msgType)){
@@ -276,14 +276,14 @@ public abstract class QYWeixinSupport{
                 QYLocationReqMsg locationReqMsg = new QYLocationReqMsg(locationX, locationY, scale, label);
                 buildBasicReqMsg(reqMap, locationReqMsg);
                 msg = handleLocationMsg(locationReqMsg);
-                if(BeanUtil.isNull(msg)){
+                if(BeanUtils.isNull(msg)){
                     msg = processMessageHandle(locationReqMsg);
                 }
             }
         }
 
         String result = "";
-        if(BeanUtil.nonNull(msg)){
+        if(BeanUtils.nonNull(msg)){
             msg.setFromUserName(toUserName);
             msg.setToUserName(fromUserName);
             result = msg.toXml();
@@ -304,12 +304,12 @@ public abstract class QYWeixinSupport{
      * @return
      */
     private QYBaseRespMsg processMessageHandle(QYBaseReqMsg msg){
-        if(CollectionUtil.isEmpty(messageHandles)){
+        if(CollectionUtils.isEmpty(messageHandles)){
             synchronized (LOCK){
                 messageHandles = this.initMessageHandles();
             }
         }
-        if(CollectionUtil.isNotEmpty(messageHandles)){
+        if(CollectionUtils.isNotEmpty(messageHandles)){
             for(QYMessageHandle messageHandle : messageHandles){
                 QYBaseRespMsg resultMsg = null;
                 boolean result;
@@ -321,7 +321,7 @@ public abstract class QYWeixinSupport{
                 if(result){
                     resultMsg = messageHandle.handle(msg);
                 }
-                if(BeanUtil.nonNull(resultMsg)){
+                if(BeanUtils.nonNull(resultMsg)){
                     return resultMsg;
                 }
             }
@@ -335,12 +335,12 @@ public abstract class QYWeixinSupport{
      * @return
      */
     private QYBaseRespMsg processEventHandle(QYBaseEvent event){
-        if(CollectionUtil.isEmpty(eventHandles)){
+        if(CollectionUtils.isEmpty(eventHandles)){
             synchronized (LOCK){
                 eventHandles = this.initEventHandles();
             }
         }
-        if(CollectionUtil.isNotEmpty(eventHandles)){
+        if(CollectionUtils.isNotEmpty(eventHandles)){
             for(QYEventHandle eventHandle : eventHandles){
                 QYBaseRespMsg resultMsg = null;
                 boolean result;
@@ -352,7 +352,7 @@ public abstract class QYWeixinSupport{
                 if(result){
                     resultMsg = eventHandle.handle(event);
                 }
-                if(BeanUtil.nonNull(resultMsg)){
+                if(BeanUtils.nonNull(resultMsg)){
                     return resultMsg;
                 }
             }

@@ -4,7 +4,7 @@ import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
 import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
 import com.jeeplus.weixin.fastweixin.company.api.response.GetQYSendMessageResponse;
 import com.jeeplus.weixin.fastweixin.company.message.*;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 
 /**
  * ====================================================================
@@ -32,20 +32,20 @@ public class QYMessageAPI extends QYBaseAPI {
         String url = BASE_API_URL + "cgi-bin/message/send?access_token=#";
         BaseResponse r = executePost(url, message.toJsonString());
 //        if(message instanceof QYTextMsg){
-//            r = executePost(url, JSONUtil.toJson((QYTextMsg)message));
+//            r = executePost(url, JSONUtils.toJson((QYTextMsg)message));
 //        }else if(message instanceof QYImageMsg){
-//            r = executePost(url, JSONUtil.toJson((QYImageMsg)message));
+//            r = executePost(url, JSONUtils.toJson((QYImageMsg)message));
 //        }else if(message instanceof QYVoiceMsg){
-//            r = executePost(url, JSONUtil.toJson((QYVoiceMsg)message));
+//            r = executePost(url, JSONUtils.toJson((QYVoiceMsg)message));
 //        }else if(message instanceof QYVideoMsg){
-//            r = executePost(url, JSONUtil.toJson((QYVideoMsg)message));
+//            r = executePost(url, JSONUtils.toJson((QYVideoMsg)message));
 //        }else if(message instanceof QYFileMsg){
-//            r = executePost(url, JSONUtil.toJson((QYFileMsg)message));
+//            r = executePost(url, JSONUtils.toJson((QYFileMsg)message));
 //        }else if(message instanceof QYNewsMsg){
-//            r = executePost(url, JSONUtil.toJson((QYNewsMsg)message));
+//            r = executePost(url, JSONUtils.toJson((QYNewsMsg)message));
 //        }
         String jsonResult = isSuccess(r.getErrcode())? r.getErrmsg() :r.toJsonString();
-        response = JSONUtil.toBean(jsonResult, GetQYSendMessageResponse.class);
+        response = JSONUtils.toBean(jsonResult, GetQYSendMessageResponse.class);
         return response;
     }
 }

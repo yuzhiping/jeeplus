@@ -1,6 +1,6 @@
 package com.jeeplus.weixin.fastweixin.api.entity;
 
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 
 /**
  * 抽象实体类
@@ -10,6 +10,6 @@ import com.jeeplus.weixin.fastweixin.util.JSONUtil;
 public abstract class BaseModel implements Model {
     @Override
     public String toJsonString() {
-        return JSONUtil.toJson(this);
+        return JSONUtils.toJson(this);
     }
 }

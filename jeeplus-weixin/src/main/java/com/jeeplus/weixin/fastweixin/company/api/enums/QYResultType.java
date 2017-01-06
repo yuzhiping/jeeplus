@@ -1,6 +1,6 @@
 package com.jeeplus.weixin.fastweixin.company.api.enums;
 
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
 
 /**
  *
@@ -797,7 +797,7 @@ public enum QYResultType {
     }
 
     public static QYResultType get(String code){
-        BeanUtil.requireNonNull(code, "code is null");
+        BeanUtils.requireNonNull(code, "code is null");
         QYResultType[] list = values();
         for(QYResultType resultType : list){
             if(code.equals(resultType.getCode().toString())){

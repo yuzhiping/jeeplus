@@ -1,6 +1,6 @@
 package com.jeeplus.weixin.fastweixin.api.response;
 
-import com.jeeplus.weixin.fastweixin.util.StreamUtil;
+import com.jeeplus.weixin.fastweixin.util.StreamUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,7 +31,7 @@ public class DownloadMediaResponse extends BaseResponse {
     public void setContent(InputStream content, Integer length) {
         ByteArrayOutputStream byteOutputStream = new ByteArrayOutputStream();
         try {
-            StreamUtil.copy(content, byteOutputStream);
+            StreamUtils.copy(content, byteOutputStream);
             byte[] temp = byteOutputStream.toByteArray();
             if (temp.length > length) {
                 this.content = new byte[length];

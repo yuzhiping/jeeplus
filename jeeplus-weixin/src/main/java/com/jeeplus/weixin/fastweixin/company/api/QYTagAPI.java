@@ -6,9 +6,9 @@ import com.jeeplus.weixin.fastweixin.company.api.entity.QYTag;
 import com.jeeplus.weixin.fastweixin.company.api.enums.QYResultType;
 import com.jeeplus.weixin.fastweixin.company.api.response.*;
 import com.jeeplus.weixin.fastweixin.exception.WeixinException;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
+import com.jeeplus.weixin.fastweixin.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -47,7 +47,7 @@ public class QYTagAPI extends QYBaseAPI{
     public CreateTagResponse create(QYTag tag){
         CreateTagResponse response;
         String url = BASE_API_URL + "cgi-bin/tag/create?access_token=#";
-        if(StrUtil.isBlank(tag.getTagname())){
+        if(StringUtils.isBlank(tag.getTagname())){
             throw new WeixinException("标签名称必须填写!");
         }
         if(LOG.isDebugEnabled()){
@@ -58,9 +58,9 @@ public class QYTagAPI extends QYBaseAPI{
         if(tag.getTagid() != null){
             params.put("tagid", tag.getTagid());
         }
-        BaseResponse r = executePost(url, JSONUtil.toJson(params));
+        BaseResponse r = executePost(url, JSONUtils.toJson(params));
         String jsonResult = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(jsonResult, CreateTagResponse.class);
+        response = JSONUtils.toBean(jsonResult, CreateTagResponse.class);
         return response;
     }
 
@@ -70,7 +70,7 @@ public class QYTagAPI extends QYBaseAPI{
      * @return 操作结果
      */
     public QYResultType delete(Integer tagid){
-        BeanUtil.requireNonNull(tagid, "tagid不能为空！");
+        BeanUtils.requireNonNull(tagid, "tagid不能为空！");
         String url = BASE_API_URL + "cgi-bin/tag/delete?access_token=#&tagid=" + tagid;
         BaseResponse response = executeGet(url);
         return QYResultType.get(response.getErrcode());
@@ -83,11 +83,11 @@ public class QYTagAPI extends QYBaseAPI{
      */
     public GetTagInfoResponse get(Integer tagid){
         GetTagInfoResponse response;
-        BeanUtil.requireNonNull(tagid, "tagid不能为空！");
+        BeanUtils.requireNonNull(tagid, "tagid不能为空！");
         String url = BASE_API_URL + "cgi-bin/tag/get?access_token=#&tagid=" + tagid;
         BaseResponse r = executeGet(url);
         String jsonResult = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(jsonResult, GetTagInfoResponse.class);
+        response = JSONUtils.toBean(jsonResult, GetTagInfoResponse.class);
         return response;
     }
 
@@ -99,7 +99,7 @@ public class QYTagAPI extends QYBaseAPI{
      * @return 操作结果
      */
     public AddTagUsersResponse addTagUsers(Integer tagid, List<String> users, List<Integer> partys){
-        BeanUtil.requireNonNull(tagid, "tagid不能为空！");
+        BeanUtils.requireNonNull(tagid, "tagid不能为空！");
         if((users == null || users.size() == 0) && (partys == null || partys.size() == 0)){
             throw new WeixinException("userlist、partylist不能同时为空！");
         }
@@ -115,9 +115,9 @@ public class QYTagAPI extends QYBaseAPI{
         params.put("tagid", tagid);
         params.put("userlist", users);
         params.put("partylist", partys);
-        BaseResponse r = executePost(url, JSONUtil.toJson(params));
+        BaseResponse r = executePost(url, JSONUtils.toJson(params));
         String jsonResult = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(jsonResult, AddTagUsersResponse.class);
+        response = JSONUtils.toBean(jsonResult, AddTagUsersResponse.class);
         return response;
     }
 
@@ -129,7 +129,7 @@ public class QYTagAPI extends QYBaseAPI{
      * @return 操作结果
      */
     public DelTagUsersResponse delTagUsers(Integer tagid, List<String> users, List<Integer> partys){
-        BeanUtil.requireNonNull(tagid, "tagid不能为空！");
+        BeanUtils.requireNonNull(tagid, "tagid不能为空！");
         if((users == null || users.size() == 0) && (partys == null || partys.size() == 0)){
             throw new WeixinException("userlist、partylist不能同时为空！");
         }
@@ -139,9 +139,9 @@ public class QYTagAPI extends QYBaseAPI{
         params.put("tagid", tagid);
         params.put("userlist", users);
         params.put("partylist", partys);
-        BaseResponse r = executePost(url, JSONUtil.toJson(params));
+        BaseResponse r = executePost(url, JSONUtils.toJson(params));
         String jsonResult = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(jsonResult, DelTagUsersResponse.class);
+        response = JSONUtils.toBean(jsonResult, DelTagUsersResponse.class);
         return response;
     }
 
@@ -154,7 +154,7 @@ public class QYTagAPI extends QYBaseAPI{
         String url = BASE_API_URL + "cgi-bin/tag/list?access_token=#";
         BaseResponse r = executeGet(url);
         String jsonResult = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(jsonResult, GetTagListResponse.class);
+        response = JSONUtils.toBean(jsonResult, GetTagListResponse.class);
         return response;
     }
 }

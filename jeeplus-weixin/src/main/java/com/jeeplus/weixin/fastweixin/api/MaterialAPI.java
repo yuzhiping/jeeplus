@@ -5,9 +5,9 @@ import com.jeeplus.weixin.fastweixin.api.entity.Article;
 import com.jeeplus.weixin.fastweixin.api.enums.MaterialType;
 import com.jeeplus.weixin.fastweixin.api.enums.ResultType;
 import com.jeeplus.weixin.fastweixin.api.response.*;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
 import com.jeeplus.weixin.fastweixin.util.NetWorkCenter;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.util.StringUtils;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpStatus;
@@ -67,16 +67,16 @@ public class MaterialAPI extends BaseAPI {
         UploadMaterialResponse response;
         String url = "http://api.weixin.qq.com/cgi-bin/material/add_material?access_token=#";
         BaseResponse r;
-        if(StrUtil.isBlank(title)) {
+        if(StringUtils.isBlank(title)) {
             r = executePost(url, null, file);
         }else{
             final Map<String, String> param = new HashMap<String, String>();
             param.put("title", title);
             param.put("introduction", introduction);
-            r = executePost(url, JSONUtil.toJson(param), file);
+            r = executePost(url, JSONUtils.toJson(param), file);
         }
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, UploadMaterialResponse.class);
+        response = JSONUtils.toBean(resultJson, UploadMaterialResponse.class);
         return response;
     }
 
@@ -90,9 +90,9 @@ public class MaterialAPI extends BaseAPI {
         String url = BASE_API_URL + "cgi-bin/material/add_news?access_token=#";
         final Map<String, Object> params = new HashMap<String, Object>();
         params.put("articles", articles);
-        BaseResponse r = executePost(url, JSONUtil.toJson(params));
+        BaseResponse r = executePost(url, JSONUtils.toJson(params));
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, UploadMaterialResponse.class);
+        response = JSONUtils.toBean(resultJson, UploadMaterialResponse.class);
         return response;
     }
 
@@ -121,11 +121,11 @@ public class MaterialAPI extends BaseAPI {
                     case NEWS:
                         entity = httpResponse.getEntity();
                         resultJson = EntityUtils.toString(entity, Charset.forName("UTF-8"));
-                        response = JSONUtil.toBean(resultJson, DownloadMaterialResponse.class);
+                        response = JSONUtils.toBean(resultJson, DownloadMaterialResponse.class);
                         LOG.debug("-----------------请求成功-----------------");
                         LOG.debug("响应结果:");
                         LOG.debug(resultJson);
-                        if (StrUtil.isBlank(response.getErrcode())) {
+                        if (StringUtils.isBlank(response.getErrcode())) {
                             response.setErrcode("0");
                             response.setErrmsg(resultJson);
                         }
@@ -136,8 +136,8 @@ public class MaterialAPI extends BaseAPI {
                         LOG.debug("-----------------请求成功-----------------");
                         LOG.debug("响应结果:");
                         LOG.debug(resultJson);
-                        response = JSONUtil.toBean(resultJson, DownloadMaterialResponse.class);
-                        if (StrUtil.isBlank(response.getErrcode())) {
+                        response = JSONUtils.toBean(resultJson, DownloadMaterialResponse.class);
+                        if (StringUtils.isBlank(response.getErrcode())) {
                             response.setErrcode("0");
                             response.setErrmsg(resultJson);
                             // 通过down_url下载文件。文件放置在content中。通过writeTo方法获取
@@ -172,7 +172,7 @@ public class MaterialAPI extends BaseAPI {
         String url = BASE_API_URL + "cgi-bin/material/get_materialcount?access_token=#";
         BaseResponse r = executeGet(url);
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetMaterialTotalCountResponse.class);
+        response = JSONUtils.toBean(resultJson, GetMaterialTotalCountResponse.class);
         return response;
     }
 
@@ -194,9 +194,9 @@ public class MaterialAPI extends BaseAPI {
         params.put("type", type.toString());
         params.put("offset", offset);
         params.put("count", count);
-        BaseResponse r = executePost(url, JSONUtil.toJson(params));
+        BaseResponse r = executePost(url, JSONUtils.toJson(params));
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetMaterialListResponse.class);
+        response = JSONUtils.toBean(resultJson, GetMaterialListResponse.class);
 
         return response;
     }
@@ -210,7 +210,7 @@ public class MaterialAPI extends BaseAPI {
         String url = BASE_API_URL + "cgi-bin/material/del_material?access_token=#";
         final Map<String, String> param = new HashMap<String, String>();
         param.put("media_id", mediaId);
-        BaseResponse response = executePost(url, JSONUtil.toJson(param));
+        BaseResponse response = executePost(url, JSONUtils.toJson(param));
         return ResultType.get(response.getErrcode());
     }
 

@@ -2,8 +2,8 @@ package com.jeeplus.weixin.fastweixin.company.api;
 
 import com.jeeplus.weixin.fastweixin.api.enums.OauthScope;
 import com.jeeplus.weixin.fastweixin.company.api.config.QYAPIConfig;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -41,11 +41,11 @@ public class QYOauthAPI extends QYBaseAPI {
      * @return 回调url，用户在微信中打开即可开始授权
      */
     public String getOauthPageUrl(String redirectUrl, OauthScope scope, String state){
-        if(StrUtil.isBlank(redirectUrl)){
+        if(StringUtils.isBlank(redirectUrl)){
             throw new NullPointerException("redirectUrl is null");
         }
-        BeanUtil.requireNonNull(scope, "scope is null");
-        String userstate = StrUtil.isBlank(state) ? "STATE" : state;
+        BeanUtils.requireNonNull(scope, "scope is null");
+        String userstate = StringUtils.isBlank(state) ? "STATE" : state;
         String url = null;
         try{
             url = URLEncoder.encode(redirectUrl, "UTF-8");

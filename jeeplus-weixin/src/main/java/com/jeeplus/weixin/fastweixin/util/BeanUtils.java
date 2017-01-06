@@ -5,12 +5,12 @@ package com.jeeplus.weixin.fastweixin.util;
  *
  * @author peiyu
  */
-public final class BeanUtil {
+public final class BeanUtils {
 
     /**
      * 此类不需要实例化
      */
-    private BeanUtil() {
+    private BeanUtils() {
     }
 
     /**

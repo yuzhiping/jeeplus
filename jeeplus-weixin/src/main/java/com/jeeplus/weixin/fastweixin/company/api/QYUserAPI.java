@@ -8,9 +8,9 @@ import com.jeeplus.weixin.fastweixin.company.api.response.GetOauthUserInfoRespon
 import com.jeeplus.weixin.fastweixin.company.api.response.GetQYUserInfo4DepartmentResponse;
 import com.jeeplus.weixin.fastweixin.company.api.response.GetQYUserInfoResponse;
 import com.jeeplus.weixin.fastweixin.company.api.response.GetQYUserInviteResponse;
-import com.jeeplus.weixin.fastweixin.util.BeanUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.util.BeanUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
+import com.jeeplus.weixin.fastweixin.util.StringUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -42,7 +42,7 @@ public class QYUserAPI extends QYBaseAPI {
      * @return 创建结果
      */
     public QYResultType create(QYUser user){
-        BeanUtil.requireNonNull(user, "user is null");
+        BeanUtils.requireNonNull(user, "user is null");
         String url = BASE_API_URL + "cgi-bin/user/create?access_token=#";
         BaseResponse response = executePost(url, user.toJsonString());
         return QYResultType.get(response.getErrcode());
@@ -54,7 +54,7 @@ public class QYUserAPI extends QYBaseAPI {
      * @return 更新结果
      */
     public QYResultType update(QYUser user){
-        BeanUtil.requireNonNull(user, "user is null");
+        BeanUtils.requireNonNull(user, "user is null");
         String url = BASE_API_URL + "cgi-bin/user/update?access_token=#";
         BaseResponse response = executePost(url, user.toJsonString());
         return QYResultType.get(response.getErrcode());
@@ -66,7 +66,7 @@ public class QYUserAPI extends QYBaseAPI {
      * @return 删除结果
      */
     public QYResultType delete(String userId){
-        BeanUtil.requireNonNull(userId, "userId is null");
+        BeanUtils.requireNonNull(userId, "userId is null");
         String url = BASE_API_URL + "cgi-bin/user/delete?access_token=#&userid=" + userId;
         BaseResponse response = executeGet(url);
         return QYResultType.get(response.getErrcode());
@@ -81,7 +81,7 @@ public class QYUserAPI extends QYBaseAPI {
         String url = BASE_API_URL + "cgi-bin/user/batchdelete?access_token=#";
         final Map<String, Object> params = new HashMap<String, Object>();
         params.put("useridlist", userIds);
-        BaseResponse response = executePost(url, JSONUtil.toJson(params));
+        BaseResponse response = executePost(url, JSONUtils.toJson(params));
         return QYResultType.get(response.getErrcode());
     }
 
@@ -91,12 +91,12 @@ public class QYUserAPI extends QYBaseAPI {
      * @return 用户信息
      */
     public GetQYUserInfoResponse get(String userId){
-        BeanUtil.requireNonNull(userId, "userId is null");
+        BeanUtils.requireNonNull(userId, "userId is null");
         GetQYUserInfoResponse response;
         String url = BASE_API_URL + "cgi-bin/user/get?access_token=#&userid=" + userId;
         BaseResponse r = executeGet(url);
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetQYUserInfoResponse.class);
+        response = JSONUtils.toBean(resultJson, GetQYUserInfoResponse.class);
         return response;
     }
 
@@ -112,7 +112,7 @@ public class QYUserAPI extends QYBaseAPI {
         String url = BASE_API_URL + "cgi-bin/user/simplelist?access_token=#&department_id=" + departmentId + "&fetch_child=" + (isLoop? 0 : 1) + "&status=" + status;
         BaseResponse r = executeGet(url);
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetQYUserInfo4DepartmentResponse.class);
+        response = JSONUtils.toBean(resultJson, GetQYUserInfo4DepartmentResponse.class);
         return response;
     }
 
@@ -128,7 +128,7 @@ public class QYUserAPI extends QYBaseAPI {
         String url = BASE_API_URL + "cgi-bin/user/list?access_token=#&department_id=" + departmentId + "&fetch_child=" + (isLoop? 0 : 1) + "&status=" + status;
         BaseResponse r = executeGet(url);
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetQYUserInfo4DepartmentResponse.class);
+        response = JSONUtils.toBean(resultJson, GetQYUserInfo4DepartmentResponse.class);
         return response;
     }
 
@@ -138,14 +138,14 @@ public class QYUserAPI extends QYBaseAPI {
      * @return 邀请结果
      */
     public GetQYUserInviteResponse invite(String userid){
-        BeanUtil.requireNonNull(userid, "userid is null");
+        BeanUtils.requireNonNull(userid, "userid is null");
         GetQYUserInviteResponse response;
         String url = BASE_API_URL + "cgi-bin/invite/send?access_token=#";
         final Map<String, String> params = new HashMap<String, String>();
         params.put("userid", userid);
-        BaseResponse r = executePost(url, JSONUtil.toJson(params));
+        BaseResponse r = executePost(url, JSONUtils.toJson(params));
         String resultJson = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(resultJson, GetQYUserInviteResponse.class);
+        response = JSONUtils.toBean(resultJson, GetQYUserInviteResponse.class);
         return response;
     }
 
@@ -157,14 +157,14 @@ public class QYUserAPI extends QYBaseAPI {
      * @return
      */
     public GetOauthUserInfoResponse getOauthUserInfo(String code){
-        if(StrUtil.isBlank(code)){
+        if(StringUtils.isBlank(code)){
             throw new NullPointerException("code is null");
         }
         GetOauthUserInfoResponse response;
         String url = BASE_API_URL + "cgi-bin/user/getuserinfo?access_token=#&code=" + code;
         BaseResponse r = executeGet(url);
         String jsonResult = isSuccess(r.getErrcode()) ? r.getErrmsg() : r.toJsonString();
-        response = JSONUtil.toBean(jsonResult, GetOauthUserInfoResponse.class);
+        response = JSONUtils.toBean(jsonResult, GetOauthUserInfoResponse.class);
         return response;
     }
 }

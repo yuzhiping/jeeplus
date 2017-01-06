@@ -7,9 +7,9 @@ import com.jeeplus.weixin.fastweixin.message.TextMsg;
 import com.jeeplus.weixin.fastweixin.message.aes.AesException;
 import com.jeeplus.weixin.fastweixin.message.aes.WXBizMsgCrypt;
 import com.jeeplus.weixin.fastweixin.message.req.*;
-import com.jeeplus.weixin.fastweixin.util.MessageUtil;
-import com.jeeplus.weixin.fastweixin.util.SignUtil;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.util.MessageUtils;
+import com.jeeplus.weixin.fastweixin.util.SignUtils;
+import com.jeeplus.weixin.fastweixin.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,11 +19,11 @@ import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
 
-import static com.jeeplus.weixin.fastweixin.util.BeanUtil.isNull;
-import static com.jeeplus.weixin.fastweixin.util.BeanUtil.nonNull;
-import static com.jeeplus.weixin.fastweixin.util.CollectionUtil.isEmpty;
-import static com.jeeplus.weixin.fastweixin.util.CollectionUtil.isNotEmpty;
-import static com.jeeplus.weixin.fastweixin.util.StrUtil.isNotBlank;
+import static com.jeeplus.weixin.fastweixin.util.BeanUtils.isNull;
+import static com.jeeplus.weixin.fastweixin.util.BeanUtils.nonNull;
+import static com.jeeplus.weixin.fastweixin.util.CollectionUtils.isEmpty;
+import static com.jeeplus.weixin.fastweixin.util.CollectionUtils.isNotEmpty;
+import static com.jeeplus.weixin.fastweixin.util.StringUtils.isNotBlank;
 
 /**
  * 将微信处理通用部分再抽象一层，使用其他框架框架的同学可以自行继承此类集成微信
@@ -116,7 +116,7 @@ public abstract class WeixinSupport {
      * @return 处理消息的结果，已经是接口要求的xml报文了
      */
     public String processRequest(HttpServletRequest request) {
-        Map<String, Object> reqMap = MessageUtil.parseXml(request, getToken(), getAppId(), getAESKey());
+        Map<String, Object> reqMap = MessageUtils.parseXml(request, getToken(), getAppId(), getAESKey());
         String fromUserName = (String) reqMap.get("FromUserName");
         String toUserName = (String) reqMap.get("ToUserName");
         String msgType = (String) reqMap.get("MsgType");
@@ -312,7 +312,7 @@ public abstract class WeixinSupport {
             msg.setFromUserName(toUserName);
             msg.setToUserName(fromUserName);
             result = msg.toXml();
-            if (StrUtil.isNotBlank(getAESKey())) {
+            if (StringUtils.isNotBlank(getAESKey())) {
                 try {
                     WXBizMsgCrypt pc = new WXBizMsgCrypt(getToken(), getAESKey(), getAppId());
                     result = pc.encryptMsg(result, request.getParameter("timestamp"), request.getParameter("nonce"));
@@ -574,6 +574,6 @@ public abstract class WeixinSupport {
         String signature = request.getParameter("signature");
         String timestamp = request.getParameter("timestamp");
         String nonce = request.getParameter("nonce");
-        return SignUtil.checkSignature(getToken(), signature, timestamp, nonce);
+        return SignUtils.checkSignature(getToken(), signature, timestamp, nonce);
     }
 }

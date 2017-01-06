@@ -4,9 +4,9 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.jeeplus.weixin.fastweixin.api.config.ApiConfig;
 import com.jeeplus.weixin.fastweixin.api.response.BaseResponse;
-import com.jeeplus.weixin.fastweixin.util.CollectionUtil;
-import com.jeeplus.weixin.fastweixin.util.JSONUtil;
-import com.jeeplus.weixin.fastweixin.util.StrUtil;
+import com.jeeplus.weixin.fastweixin.util.CollectionUtils;
+import com.jeeplus.weixin.fastweixin.util.JSONUtils;
+import com.jeeplus.weixin.fastweixin.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -39,7 +39,7 @@ public class SystemAPI extends BaseAPI {
         BaseResponse r = executeGet(url);
         if (isSuccess(r.getErrcode())) {
             JSONArray array = JSON.parseObject(r.getErrmsg()).getJSONArray("ip_list");
-            result = CollectionUtil.newArrayList(array.size());
+            result = CollectionUtils.newArrayList(array.size());
             for (Object obj : array) result.add(obj.toString());
         }
         return result;
@@ -59,9 +59,9 @@ public class SystemAPI extends BaseAPI {
             Map<String, String> params = new HashMap<String, String>();
             params.put("action", "long2short");
             params.put("long_url", longUrl);
-            BaseResponse r = executePost(url, JSONUtil.toJson(params));
+            BaseResponse r = executePost(url, JSONUtils.toJson(params));
             if (isSuccess(r.getErrcode())) {
-                result = JSONUtil.toMap(r.getErrmsg()).get("short_url").toString();
+                result = JSONUtils.toMap(r.getErrmsg()).get("short_url").toString();
             }
         }
         return result;
@@ -74,6 +74,6 @@ public class SystemAPI extends BaseAPI {
      * @return 是否支持
      */
     private boolean checkUrl(String url) {
-        return StrUtil.isNotBlank(url) && (url.startsWith("http://") || url.startsWith("https://") || url.startsWith("weixin://wxpay"));
+        return StringUtils.isNotBlank(url) && (url.startsWith("http://") || url.startsWith("https://") || url.startsWith("weixin://wxpay"));
     }
 }

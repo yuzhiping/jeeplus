@@ -26,16 +26,16 @@ import java.util.Map;
  *
  * @author peiyu
  */
-public final class MessageUtil {
+public final class MessageUtils {
 
-    private static final Logger LOG = LoggerFactory.getLogger(MessageUtil.class);
+    private static final Logger LOG = LoggerFactory.getLogger(MessageUtils.class);
 
     private static final String FORMAT = "<xml><ToUserName><![CDATA[toUser]]></ToUserName><Encrypt><![CDATA[%1$s]]></Encrypt></xml>";
 
     /**
      * 此类不需要实例化
      */
-    private MessageUtil() {
+    private MessageUtils() {
     }
 
     /**
@@ -53,9 +53,9 @@ public final class MessageUtil {
         InputStream inputStream = null;
         try {
             inputStream = request.getInputStream();
-            if (StrUtil.isNotBlank(aesKey)) {
+            if (StringUtils.isNotBlank(aesKey)) {
                 ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-                StreamUtil.copy(inputStream, outputStream);
+                StreamUtils.copy(inputStream, outputStream);
                 String body = outputStream.toString();
                 LOG.debug("收到的消息密文:{}", body);
 
@@ -135,7 +135,7 @@ public final class MessageUtil {
                     sendPicsInfoMap.put(tagName, reader.getElementText());
                 }else if("PicList".equals(tagName)){
 //                    StringBuilder sb = new StringBuilder();
-                    List<Map<String, String>> picList = CollectionUtil.newArrayList();
+                    List<Map<String, String>> picList = CollectionUtils.newArrayList();
                     while(reader.hasNext()){
                         XMLEvent event1 = reader.nextEvent();
                         if(event1.isStartElement() && "PicMd5Sum".equals(event1.asStartElement().getName()
