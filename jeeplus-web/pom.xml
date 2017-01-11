@@ -159,6 +159,18 @@
             <artifactId>freemarker</artifactId>
             <version>${freemarker-version}</version>
         </dependency>
+        <!--baidu ueditor需要的jar-->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20160810</version>
+        </dependency>
+
 
     </dependencies>
 
