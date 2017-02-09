@@ -8,6 +8,11 @@
 
     <select id="queryList" resultType="com.jeeplus.web.entities.ScheduleJobEntity" >
         select * from schedule_job
+        <where>
+            <if test="beanName != null and beanName.trim() != ''">
+                bean_name like concat('%', #{beanName}, '%')
+            </if>
+        </where>
         <if test="offset != null and limit != null ">
             limit #{offset}, #{limit}
         </if>
@@ -15,6 +20,11 @@
 
     <select id="queryTotal" resultType="int">
         select count(1) from schedule_job
+        <where>
+            <if test="beanName != null and beanName.trim() != ''">
+                bean_name like concat('%', #{beanName}, '%')
+            </if>
+        </where>
     </select>
 
     <insert id="save" parameterType="com.jeeplus.web.entities.ScheduleJobEntity" useGeneratedKeys="true" keyProperty="jobId">

@@ -10,12 +10,382 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f27cd3bb-7795-4016-9779-be99f4f155d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/FileUploadController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/fileupload.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/fileupload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_1_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_3_0_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/email/EmailEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/mail/EmailService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/mail/impl/EmailServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/email.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/email/emailTemplate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/email/emailTemplate.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/spring-email.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/test/java/com/jeeplus/web/test/SendEmailTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/test/resources/emailTemplate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/test/resources/emailTemplate.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/test/resources/spring/spring-email-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/response/PrivateTemplate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jeeplus_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jeeplus_web_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/ueditor.config.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/ueditor.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/404.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/500.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/500.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ionicons/fonts/ionicons.svg" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ionicons/fonts/ionicons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/bg.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/bs.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/bs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/cs.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/da.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/el.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/en-au.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/en-au.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/en-ca.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/en-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/en-gb.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/en.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/es.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/fr.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/hr.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/id.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/it.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/mk.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/ms.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/ms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/nl.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/pl.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/pt-br.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/pt.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/ro.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/si.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/sk.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/th.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/ckeditor/lang/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/ColReorder/examples/fixedcolumns.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/ColReorder/examples/fixedcolumns.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/bootstrap.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/bootstrap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/col_filter.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/col_filter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/colvis.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/colvis.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/css_size.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/css_size.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/index_column.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/index_column.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/left_right_columns.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/left_right_columns.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/right_column.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/right_column.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/rowspan.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/rowspan.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/simple.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/simple.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/size_fixed.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/size_fixed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/size_fluid.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/size_fluid.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/two_columns.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/FixedColumns/examples/two_columns.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/child-rows/custom-renderer.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/child-rows/custom-renderer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/display-control/auto.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/display-control/auto.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/display-control/complexHeader.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/display-control/complexHeader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/initialisation/className.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/initialisation/className.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/initialisation/default.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/initialisation/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/initialisation/new.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/initialisation/new.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/initialisation/option.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/initialisation/option.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/styling/bootstrap.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/styling/bootstrap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/styling/compact.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/styling/compact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/styling/foundation.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/styling/foundation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/styling/scrolling.html" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/datatables/extensions/Responsive/examples/styling/scrolling.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/configuration/EncryptPropertyPlaceholderConfigurer.java" afterPath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/configuration/EncryptPropertyPlaceholderConfigurer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" afterPath="$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/pom.xml" afterPath="$PROJECT_DIR$/jeeplus-web/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysConfigController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysConfigController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysRoleController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysRoleController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysUserController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysUserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/ScheduleJobMapper.xml" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/ScheduleJobMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysConfigMapper.xml" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysConfigMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysUserMapper.xml" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysUserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/GenUtils.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/GenUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/jeeplus-web.xml" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/jeeplus-web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/list.html.vm" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/list.html.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/list.js.vm" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/list.js.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/conf/config.json" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/conf/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/fileupload.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/fileupload.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/index.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/TemplateMsgAPI.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/TemplateMsgAPI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/entity/TemplateMsg.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/entity/TemplateMsg.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/entity/TemplateParam.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/entity/TemplateParam.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/enums/ResultType.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/enums/ResultType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/servlet/QYWeixinControllerSupport.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/servlet/QYWeixinControllerSupport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/servlet/QYWeixinSupport.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/servlet/QYWeixinSupport.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/anchor/anchor.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/anchor/anchor.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/attachment.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/attachment.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/attachment.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/attachment.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/attachment.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/attachment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/images/alignicon.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/images/alignicon.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/images/alignicon.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/images/alignicon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/images/bg.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/images/bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/images/file-icons.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/images/file-icons.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/images/file-icons.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/images/file-icons.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/images/icons.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/images/icons.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/images/icons.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/images/icons.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/images/image.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/images/image.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/images/progress.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/images/progress.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/images/success.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/images/success.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/attachment/images/success.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/attachment/images/success.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/background/background.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/background/background.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/background/background.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/background/background.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/background/background.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/background/background.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/background/images/bg.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/background/images/bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/background/images/success.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/background/images/success.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/charts/chart.config.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/charts/chart.config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/charts/charts.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/charts/charts.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/charts/charts.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/charts/charts.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/charts/charts.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/charts/charts.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/charts/images/charts0.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/charts/images/charts0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/charts/images/charts1.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/charts/images/charts1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/charts/images/charts2.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/charts/images/charts2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/charts/images/charts3.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/charts/images/charts3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/charts/images/charts4.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/charts/images/charts4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/charts/images/charts5.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/charts/images/charts5.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/emotion.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/emotion.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/emotion.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/emotion.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/emotion.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/emotion.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/images/0.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/images/0.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/images/bface.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/images/bface.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/images/cface.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/images/cface.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/images/fface.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/images/fface.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/images/jxface2.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/images/jxface2.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/images/tface.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/images/tface.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/images/wface.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/images/wface.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/emotion/images/yface.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/emotion/images/yface.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/gmap/gmap.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/gmap/gmap.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/help/help.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/help/help.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/help/help.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/help/help.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/help/help.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/help/help.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/image/image.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/image/image.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/image/image.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/image/image.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/image/image.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/image/image.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/image/images/alignicon.jpg" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/image/images/alignicon.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/image/images/bg.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/image/images/bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/image/images/icons.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/image/images/icons.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/image/images/icons.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/image/images/icons.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/image/images/image.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/image/images/image.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/image/images/progress.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/image/images/progress.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/image/images/success.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/image/images/success.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/image/images/success.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/image/images/success.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/insertframe/insertframe.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/insertframe/insertframe.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/internal.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/internal.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/link/link.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/link/link.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/map/map.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/map/map.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/map/show.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/map/show.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/music/music.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/music/music.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/music/music.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/music/music.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/music/music.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/music/music.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/preview/preview.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/preview/preview.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/addimg.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/addimg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/brush.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/brush.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/delimg.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/delimg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/delimgH.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/delimgH.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/empty.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/empty.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/emptyH.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/emptyH.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/eraser.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/eraser.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/redo.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/redo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/redoH.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/redoH.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/scale.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/scale.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/scaleH.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/scaleH.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/size.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/size.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/undo.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/undo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/images/undoH.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/images/undoH.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/scrawl.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/scrawl.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/scrawl.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/scrawl.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/scrawl/scrawl.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/scrawl/scrawl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/searchreplace/searchreplace.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/searchreplace/searchreplace.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/searchreplace/searchreplace.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/searchreplace/searchreplace.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/snapscreen/snapscreen.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/snapscreen/snapscreen.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/spechars/spechars.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/spechars/spechars.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/spechars/spechars.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/spechars/spechars.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/table/dragicon.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/table/dragicon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/table/edittable.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/table/edittable.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/table/edittable.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/table/edittable.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/table/edittable.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/table/edittable.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/table/edittd.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/table/edittd.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/table/edittip.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/table/edittip.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/template/config.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/template/config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/template/images/bg.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/template/images/bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/template/images/pre0.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/template/images/pre0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/template/images/pre1.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/template/images/pre1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/template/images/pre2.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/template/images/pre2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/template/images/pre3.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/template/images/pre3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/template/images/pre4.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/template/images/pre4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/template/template.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/template/template.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/template/template.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/template/template.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/template/template.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/template/template.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/bg.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/center_focus.jpg" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/center_focus.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/file-icons.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/file-icons.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/file-icons.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/file-icons.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/icons.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/icons.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/icons.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/icons.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/image.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/image.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/left_focus.jpg" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/left_focus.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/none_focus.jpg" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/none_focus.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/progress.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/progress.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/right_focus.jpg" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/right_focus.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/success.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/success.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/images/success.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/images/success.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/video.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/video.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/video.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/video.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/video/video.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/video/video.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/webapp/webapp.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/webapp/webapp.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/wordimage/imageUploader.swf" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/wordimage/imageUploader.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/wordimage/tangram.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/wordimage/tangram.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/wordimage/wordimage.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/wordimage/wordimage.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/dialogs/wordimage/wordimage.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/dialogs/wordimage/wordimage.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/index.html" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/jsp/config.json" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/jsp/config.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/jsp/controller.jsp" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/jsp/controller.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/jsp/lib/commons-codec-1.9.jar" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/jsp/lib/commons-codec-1.9.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/jsp/lib/commons-fileupload-1.3.1.jar" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/jsp/lib/commons-fileupload-1.3.1.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/jsp/lib/commons-io-2.4.jar" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/jsp/lib/commons-io-2.4.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/jsp/lib/json.jar" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/jsp/lib/json.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/jsp/lib/ueditor-1.1.2.jar" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/jsp/lib/ueditor-1.1.2.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/en.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/en.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/addimage.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/addimage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/alldeletebtnhoverskin.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/alldeletebtnhoverskin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/alldeletebtnupskin.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/alldeletebtnupskin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/background.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/background.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/button.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/button.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/copy.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/copy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/deletedisable.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/deletedisable.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/deleteenable.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/deleteenable.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/listbackground.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/listbackground.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/localimage.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/localimage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/music.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/music.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/rotateleftdisable.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/rotateleftdisable.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/rotateleftenable.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/rotateleftenable.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/rotaterightdisable.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/rotaterightdisable.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/rotaterightenable.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/rotaterightenable.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/en/images/upload.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/en/images/upload.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/zh-cn/images/copy.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/zh-cn/images/copy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/zh-cn/images/localimage.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/zh-cn/images/localimage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/zh-cn/images/music.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/zh-cn/images/music.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/zh-cn/images/upload.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/zh-cn/images/upload.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/lang/zh-cn/zh-cn.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/lang/zh-cn/zh-cn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/css/ueditor.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/css/ueditor.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/css/ueditor.min.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/css/ueditor.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/dialogbase.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/dialogbase.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/anchor.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/anchor.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/arrow.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/arrow_down.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/arrow_down.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/arrow_up.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/arrow_up.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/button-bg.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/button-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/cancelbutton.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/cancelbutton.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/charts.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/charts.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/cursor_h.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/cursor_h.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/cursor_h.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/cursor_h.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/cursor_v.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/cursor_v.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/cursor_v.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/cursor_v.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/dialog-title-bg.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/dialog-title-bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/filescan.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/filescan.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/highlighted.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/highlighted.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/icons-all.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/icons-all.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/icons.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/icons.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/icons.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/icons.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/loaderror.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/loaderror.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/loading.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/loading.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/lock.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/lock.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/neweditor-tab-bg.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/neweditor-tab-bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/pagebreak.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/pagebreak.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/scale.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/scale.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/sortable.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/sortable.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/spacer.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/spacer.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/sparator_v.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/sparator_v.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/table-cell-align.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/table-cell-align.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/tangram-colorpicker.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/tangram-colorpicker.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/toolbar_bg.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/toolbar_bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/unhighlighted.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/unhighlighted.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/upload.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/upload.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/videologo.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/videologo.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/word.gif" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/word.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/default/images/wordpaste.png" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/default/images/wordpaste.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/themes/iframe.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/themes/iframe.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/SyntaxHighlighter/shCore.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/SyntaxHighlighter/shCore.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/codemirror/codemirror.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/codemirror/codemirror.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/codemirror/codemirror.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/adapters/mootools-adapter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/adapters/prototype-adapter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/adapters/standalone-framework.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/highcharts-more.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/highcharts-more.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/highcharts-more.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/highcharts-more.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/highcharts.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/highcharts.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/highcharts.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/highcharts.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/annotations.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/annotations.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/annotations.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/annotations.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/canvas-tools.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/canvas-tools.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/canvas-tools.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/data.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/data.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/data.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/data.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/drilldown.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/drilldown.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/drilldown.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/drilldown.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/exporting.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/exporting.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/exporting.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/exporting.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/funnel.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/funnel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/funnel.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/funnel.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/heatmap.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/heatmap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/heatmap.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/heatmap.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/map.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/map.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/map.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/map.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/no-data-to-display.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/themes/dark-blue.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/themes/dark-blue.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/themes/dark-green.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/themes/dark-green.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/themes/gray.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/themes/gray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/themes/grid.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/themes/grid.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/highcharts/themes/skies.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/highcharts/themes/skies.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/jquery-1.10.2.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/jquery-1.10.2.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/jquery-1.10.2.min.map" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/jquery-1.10.2.min.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/video-js/font/vjs.eot" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/video-js/font/vjs.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/video-js/font/vjs.svg" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/video-js/font/vjs.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/video-js/font/vjs.ttf" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/video-js/font/vjs.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/video-js/font/vjs.woff" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/video-js/font/vjs.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/video-js/video-js.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/video-js/video-js.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/video-js/video-js.min.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/video-js/video-js.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/video-js/video-js.swf" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/video-js/video-js.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/video-js/video.dev.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/video-js/video.dev.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/video-js/video.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/video-js/video.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/Uploader.swf" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/Uploader.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/webuploader.css" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/webuploader.custom.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/webuploader.flashonly.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.flashonly.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.flashonly.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/webuploader.html5only.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.withoutimage.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/xss.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/xss.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/zeroclipboard/ZeroClipboard.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/ueditor.all.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/ueditor.all.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/ueditor.all.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/ueditor.all.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/ueditor.config.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/ueditor.config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/ueditor.parse.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/ueditor.parse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/ueditor.parse.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/ueditor.parse.min.js" />
     </list>
     <ignored path="jeeplus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,70 +414,7 @@
     <favorites_list name="jeeplus" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SysGeneratorController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysGeneratorController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="43" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysLoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-88">
-              <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUploadController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/FileUploadController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fileupload.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/fileupload.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fileupload.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/fileupload.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="19" column="82" lean-forward="true" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ueditor.config.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/ueditor.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -115,18 +422,24 @@
         <option value="Jsp File" />
         <option value="Enum" />
         <option value="package-info" />
-        <option value="spring-beans.schema" />
-        <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>getSelectedRows</find>
+      <find>simpleEmail</find>
+      <find>SimpleEmail</find>
     </findStrings>
+    <replaceStrings>
+      <replace>emailEntity</replace>
+      <replace>EmailEntity</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -139,40 +452,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/Service.java.vm" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/ServiceImpl.java.vm" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/Controller.java.vm" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/GenUtils.java" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysGeneratorController.java" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/login.html" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/user_add.html" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/user.html" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/schedule_log.html" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/header.html" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysMenuController.java" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/web-springmvc.xml" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/Utils.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/Signature.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/RandomStringGenerator.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/exception/WxPayException.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/UUIDGenerator.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/UUIDGeneratorUtils.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/pom.xml" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WxPayApi.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/util/DateTimeUtils.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/XMLParser.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/XMLParserUtils.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/SignatureUtils.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/Configure.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/ConfigureUtils.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/HttpsRequest.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/HttpsRequestUtils.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/MD5.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/MD5Utils.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/PayCommonUtil.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/RandomStringGeneratorUtils.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/WeiXinPayUtils.java" />
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WXPay.java" />
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WxPayAPI.java" />
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WxPayData.java" />
@@ -182,14 +461,48 @@
         <option value="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/alipay/util/AliPayUtils.java" />
         <option value="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/alipay/util/AliPayDateUtils.java" />
         <option value="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/alipay/AliPay.java" />
-        <option value="$PROJECT_DIR$/jeeplus-web/pom.xml" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/UEditorController.java" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/baidu/ueditor/ConfigManager.java" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/jdbc-web.properties" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/FileUploadController.java" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/fileupload.js" />
-        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/fileupload.html" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/ueditor.config.js" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/conf/config.json" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/fileupload.html" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/ueditor.config.js" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/UEditorController.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/servlet/QYWeixinSupport.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/servlet/QYWeixinControllerSupport.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/entity/TemplateParam.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/enums/ResultType.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/response/PrivateTemplate.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/TemplateMsgAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/entity/TemplateMsg.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/mail/MailEntity.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/mail/spring-mail.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/mail/emailTemplate.vm" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/email/EmailEntity.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/mail/EmailService.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/mail.properties" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/email.properties" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/spring-mail.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/jeeplus-web.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/pom.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/test/resources/spring/spring-email.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/test/java/com/jeeplus/web/test/SendEmailTest.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/mail/impl/EmailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/spring-email.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/configuration/EncryptPropertyPlaceholderConfigurer.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobController.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysConfigController.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysRoleController.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysUserController.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/GenUtils.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/ScheduleJobMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysConfigMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysUserMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/list.html.vm" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/list.js.vm" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/index.js" />
       </list>
     </option>
   </component>
@@ -225,12 +538,23 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="jeeplus-admin" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -295,7 +619,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -336,29 +659,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web-1.0-SNAPSHOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,234 +708,13 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -654,21 +734,21 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\test\resources" />
+      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\resources\spring" />
+      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\ueditor" />
       <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\static" />
       <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\init\sql" />
-      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web" />
-      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-monitor\init\sql" />
-      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-monitor" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jeeplus.common.schedule" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\test\resources" />
+      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\resources\mail" />
       <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\WEB-INF\conf" />
       <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\static\plugins\ueditor" />
       <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\img" />
-      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp" />
-      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\js\sys" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.jeeplus-web">
@@ -1458,6 +1538,16 @@
       <workItem from="1484183463177" duration="332000" />
       <workItem from="1484217123390" duration="1167000" />
       <workItem from="1486111265111" duration="4095000" />
+      <workItem from="1486342791418" duration="45000" />
+      <workItem from="1486342872600" duration="3853000" />
+      <workItem from="1486347211536" duration="2864000" />
+      <workItem from="1486354316679" duration="5034000" />
+      <workItem from="1486538878093" duration="1685000" />
+      <workItem from="1486543965926" duration="1565000" />
+      <workItem from="1486551472943" duration="5101000" />
+      <workItem from="1486625692708" duration="3647000" />
+      <workItem from="1486630907760" duration="2318000" />
+      <workItem from="1486639593761" duration="3763000" />
     </task>
     <servers />
   </component>
@@ -1482,7 +1572,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369360000" />
+    <option name="totallyTimeSpent" value="399235000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1494,14 +1584,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51570964" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17963752" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17948718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1511,16 +1601,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4164859" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.318872" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61496747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.49479166" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24413647" sideWeight="0.4832714" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2719017" sideWeight="0.4832714" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18336888" sideWeight="0.51672864" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1530,6 +1619,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.318872" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
@@ -1569,7 +1659,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/baidu/ueditor/upload/BinaryUploader.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/baidu/ueditor/ActionEnter.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1578,300 +1682,176 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/HttpsRequestUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/MD5Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/PayCommonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/RandomStringGeneratorUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/WeiXinPayUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/XMLParserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WXPay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WXPayAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12374">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WXPayData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4994">
-          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/util/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/util/DateTimeUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2895">
-          <caret line="177" column="34" lean-forward="true" selection-start-line="177" selection-start-column="34" selection-end-line="177" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/utils/DateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8426">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/utils/CaptchaUtils.java" />
-    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/utils/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/alipay/AliPay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="64" lean-forward="false" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/alipay/util/AliPayConfigureUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/alipay/util/AliPayDateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/alipay/util/AliPayUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="29" column="37" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/alipay/AlipayClientFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="121" column="32" lean-forward="false" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="242">
-            <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/doc/项目说明.txt">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/ueditor.all.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/doc/入门必读.txt">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/ueditor.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/init/sql/jeeplus-web-create-table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/init/sql/jeeplus-web-init-data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/mybatis/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/libs/app.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/web-springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1512">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/shiro/shiro-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/baidu/ueditor/Encoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/baidu/ueditor/PathFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2152">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="161" column="31" lean-forward="false" selection-start-line="161" selection-start-column="31" selection-end-line="161" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/baidu/ueditor/ActionEnter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="72" column="68" lean-forward="false" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="333">
+          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/baidu/ueditor/ConfigManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="175" column="40" lean-forward="false" selection-start-line="175" selection-start-column="40" selection-end-line="175" selection-end-column="40" />
+        <state relative-caret-position="103">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/baidu/ueditor/ActionEnter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="213">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/baidu/ueditor/upload/Uploader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/baidu/ueditor/upload/BinaryUploader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/4.2.4.RELEASE/spring-context-support-4.2.4.RELEASE.jar!/org/springframework/ui/velocity/VelocityEngineFactoryBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/web-springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3016">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/UEditorController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Properties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-231">
+          <caret line="121" column="6" lean-forward="false" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/menu.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/4.2.4.RELEASE/spring-context-support-4.2.4.RELEASE.jar!/org/springframework/ui/velocity/VelocityEngineFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="297">
+          <caret line="43" column="43" lean-forward="false" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/main.html">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/email/emailTemplate.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="242">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLoginController.java">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/mail/EmailService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="510">
+          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="94" column="31" lean-forward="false" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/jeeplus-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="57" lean-forward="true" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/test/resources/spring/spring-email-test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/spring-email.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="94" lean-forward="false" selection-start-line="6" selection-start-column="94" selection-end-line="6" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/utils/DesUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/configuration/EncryptPropertyPlaceholderConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/email.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+        <state relative-caret-position="176">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="110" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/jdbc-web.properties">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/mail/impl/EmailServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="22">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/ueditor.all.js">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/email/EmailEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/test/resources/emailTemplate.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1879,73 +1859,261 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/conf/config.json">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/test/java/com/jeeplus/web/test/SendEmailTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/generator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysGeneratorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="43" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/generator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/FileUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="22">
+          <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/fileupload.js">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/AbstractController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/BaseMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/fileupload.html">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/ScheduleJobService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="19" column="82" lean-forward="true" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+        <state relative-caret-position="297">
+          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/img/user1-128x128.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/impl/ScheduleJobServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="74" column="39" lean-forward="false" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+          <folding>
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/ueditor/ueditor.config.js">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+        <state relative-caret-position="-2023">
+          <caret line="47" column="66" lean-forward="false" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobLogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysGeneratorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-326">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-876">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1294">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysRoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1426">
+          <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2284">
+          <caret line="45" column="38" lean-forward="false" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/ScheduleJobEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1166">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/ScheduleJobLogEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-770">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/utils/GenUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="199" column="9" lean-forward="false" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/ScheduleJobMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-286">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <marker date="1486641791793" expanded="true" signature="305:355" ph="select * fro... schedule_job" />
+            <marker date="1486641791793" expanded="true" signature="845:878" ph="select count... schedule_job" />
+            <marker date="1486641791793" expanded="true" signature="1207:1583" ph="insert into schedule_job... " />
+            <marker date="1486641791793" expanded="true" signature="1691:2212" ph="update sched... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysConfigMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <marker date="1486641947588" expanded="true" signature="299:340" ph="select * fro... sys_config" />
+            <marker date="1486641947588" expanded="true" signature="1088:1176" ph="insert into sys_config... " />
+            <marker date="1486641947588" expanded="true" signature="1282:1383" ph="update sys_c... " />
+            <marker date="1486641947588" expanded="true" signature="1489:1550" ph="update sys_c... " />
+            <marker date="1486641947588" expanded="true" signature="1673:1722" ph="select value... sys_config" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysGeneratorMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1483091065682" expanded="true" signature="400:417" ph="select datab... " />
+            <marker date="1483091065682" expanded="true" signature="775:792" ph="select datab... " />
+            <marker date="1483091065682" expanded="true" signature="976:1169" ph="select table... tables" />
+            <marker date="1483091065682" expanded="true" signature="1121:1138" ph="select datab... " />
+            <marker date="1483091065682" expanded="true" signature="1231:1472" ph="select colum... columns" />
+            <marker date="1483091065682" expanded="true" signature="1428:1445" ph="select datab... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <marker date="1486642078746" expanded="true" signature="296:343" ph="select * fro... sys_user" />
+            <marker date="1486642078746" expanded="true" signature="856:885" ph="select count... sys_user" />
+            <marker date="1486642078746" expanded="true" signature="1166:1356" ph="select m.per... sys_user_role" />
+            <marker date="1486642078746" expanded="true" signature="1456:1648" ph="select m.men... sys_user_role" />
+            <marker date="1486642078746" expanded="true" signature="1758:1809" ph="select * fro... sys_user" />
+            <marker date="1486642078746" expanded="true" signature="1956:2304" ph="insert into sys_user... " />
+            <marker date="1486642078746" expanded="true" signature="2408:2825" ph="update sys_u... " />
+            <marker date="1486642078746" expanded="true" signature="2902:3010" ph="update sys_u... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/SysUserRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1481524369694" expanded="true" signature="822:872" ph="delete from " />
+            <marker date="1481524369694" expanded="true" signature="948:1006" ph="select role_... sys_user_role" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/template/list.html.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="47" column="10" lean-forward="false" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/template/list.js.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="65" column="38" lean-forward="true" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-458">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

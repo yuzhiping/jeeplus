@@ -14,6 +14,21 @@ public class TemplateParam extends BaseModel {
      */
     private String color;
 
+    public TemplateParam(){
+        super();
+    }
+
+    public TemplateParam(String value){
+        super();
+        this.value=value;
+    }
+
+    public TemplateParam(String value,String color){
+        super();
+        this.value=value;
+        this.color=color;
+    }
+
     public String getValue() {
         return value;
     }

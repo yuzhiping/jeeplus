@@ -8,6 +8,7 @@
     <import resource="classpath:spring/applicationContext-web-transaction.xml"/>
     <import resource="classpath:spring/web-springmvc.xml"/>
     <import resource="classpath:spring/spring-scheduler.xml"/>
+    <import resource="classpath:spring/spring-email.xml"/>
     <import resource="classpath:shiro/shiro-config.xml"/>
 
 </beans>

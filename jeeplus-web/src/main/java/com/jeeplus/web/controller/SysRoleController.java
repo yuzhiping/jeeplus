@@ -39,8 +39,9 @@ public class SysRoleController extends AbstractController {
      */
     @RequestMapping("/list")
     @RequiresPermissions("sys:role:list")
-    public R list(Integer page, Integer limit){
+    public R list(String roleName,Integer page, Integer limit){
         Map<String, Object> map = new HashMap<>();
+        map.put("roleName", roleName);
         map.put("offset", (page - 1) * limit);
         map.put("limit", limit);
 
@@ -66,7 +67,7 @@ public class SysRoleController extends AbstractController {
         //查询列表数据
 
 
-        List<SysRoleEntity> list = sysRoleService.queryList(new HashMap<String, Object>());
+        List<SysRoleEntity> list = sysRoleService.queryList(new HashMap<>());
 
         return R.ok().put("list", list);
     }
