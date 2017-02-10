@@ -44,16 +44,42 @@ $(function () {
 var vm = new Vue({
 	el:'#rrapp',
 	data:{
-		
+        q:{
+            username: null
+        },
+        showList: true,
+        title:null,
+        roleList:{},
+        user:{
+            status:1,
+            roleIdList:[]
+        }
 	},
 	methods: {
+        query: function () {
+            vm.reload();
+        },
+        add: function(){
+            vm.showList = false;
+            vm.title = "新增";
+            vm.roleList = {};
+            vm.user = {status:1,roleIdList:[]};
+
+            //获取角色信息
+            this.getRoleList();
+        },
 		update: function (event) {
 			var userId = getSelectedRow();
 			if(userId == null){
 				return ;
 			}
-			
-			location.href = "user_add.html?userId="+userId;
+
+            vm.showList = false;
+            vm.title = "修改";
+
+            vm.getUser(userId);
+            //获取角色信息
+            this.getRoleList();
 		},
 		del: function (event) {
 			var userIds = getSelectedRows();
@@ -77,6 +103,41 @@ var vm = new Vue({
 					}
 				});
 			});
-		}
+		},
+        saveOrUpdate: function (event) {
+            var url = vm.user.userId == null ? "../sys/user/save" : "../sys/user/update";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: JSON.stringify(vm.user),
+                success: function(r){
+                    if(r.code === 0){
+                        alert('操作成功', function(index){
+                            vm.reload();
+                        });
+                    }else{
+                        alert(r.msg);
+                    }
+                }
+            });
+        },
+        getUser: function(userId){
+            $.get("../sys/user/info/"+userId, function(r){
+                vm.user = r.user;
+            });
+        },
+        getRoleList: function(){
+            $.get("../sys/role/select", function(r){
+                vm.roleList = r.list;
+            });
+        },
+        reload: function (event) {
+            vm.showList = true;
+            var page = $("#jqGrid").jqGrid('getGridParam','page');
+            $("#jqGrid").jqGrid('setGridParam',{
+                postData:{'username': vm.q.username},
+                page:page
+            }).trigger("reloadGrid");
+        }
 	}
 });

@@ -50,13 +50,13 @@ public class FileUploadController {
 
     /*
      * 方式三
-     * 采用 CommonsMultipartResolver file.transferTo 来保存上传文件
+     * 采用 MyCommonsMultipartResolver file.transferTo 来保存上传文件
      * 自动扫描全部的input表单
      */
     @RequestMapping(value = "fileUpload_CommonsMultipartResolver")
     @ResponseBody
     public String fileUpload_CommonsMultipartResolver(HttpServletRequest request) {
-        //将当前上下文初始化给  CommonsMultipartResolver （多部分解析器）
+        //将当前上下文初始化给  MyCommonsMultipartResolver （多部分解析器）
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(request.getSession().getServletContext());
         //检查form中是否有enctype="multipart/form-data"
         if (multipartResolver.isMultipart(request)) {

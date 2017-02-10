@@ -38,16 +38,33 @@ $(function () {
 var vm = new Vue({
 	el:'#rrapp',
 	data:{
-		
+        q:{
+            key: null
+        },
+        showList: true,
+        title: null,
+        config: {}
 	},
 	methods: {
+        query: function () {
+            vm.reload();
+        },
+        add: function(){
+            vm.showList = false;
+            vm.title = "新增";
+            vm.config = {};
+        },
 		update: function (event) {
 			var id = getSelectedRow();
 			if(id == null){
 				return ;
 			}
-			
-			location.href = "config_add.html?id="+id;
+
+            $.get("../sys/config/info/"+id, function(r){
+                vm.showList = false;
+                vm.title = "修改";
+                vm.config = r.config;
+            });
 		},
 		del: function (event) {
 			var ids = getSelectedRows();
@@ -71,6 +88,31 @@ var vm = new Vue({
 					}
 				});
 			});
-		}
+		},
+        saveOrUpdate: function (event) {
+            var url = vm.config.id == null ? "../sys/config/save" : "../sys/config/update";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: JSON.stringify(vm.config),
+                success: function(r){
+                    if(r.code === 0){
+                        alert('操作成功', function(index){
+                            vm.reload();
+                        });
+                    }else{
+                        alert(r.msg);
+                    }
+                }
+            });
+        },
+        reload: function (event) {
+            vm.showList = true;
+            var page = $("#jqGrid").jqGrid('getGridParam','page');
+            $("#jqGrid").jqGrid('setGridParam',{
+                postData:{'key': vm.q.key},
+                page:page
+            }).trigger("reloadGrid");
+        }
 	}
 });

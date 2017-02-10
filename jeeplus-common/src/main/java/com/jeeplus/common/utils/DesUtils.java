@@ -64,7 +64,7 @@ public class DesUtils {
     }
 
     public static void main(String[] args) throws Exception {
-        String str = aesEncrypt("yzp140103", DesUtils.defaultKey);
+        String str = aesEncrypt("1091216604", DesUtils.defaultKey);
         System.out.println(str);
         str = aesDecrypt("yimLj5LvEgx/Noi9/GGzXw==", DesUtils.defaultKey);
         System.out.println(str);

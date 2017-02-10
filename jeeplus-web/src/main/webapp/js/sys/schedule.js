@@ -45,17 +45,51 @@ $(function () {
 var vm = new Vue({
 	el:'#rrapp',
 	data:{
-		
+        q:{
+            beanName: null
+        },
+        showList: true,
+        title: null,
+        schedule: {}
 	},
 	methods: {
+        query: function () {
+            vm.reload();
+        },
+        add: function(){
+            vm.showList = false;
+            vm.title = "新增";
+            vm.schedule = {};
+        },
 		update: function (event) {
 			var jobId = getSelectedRow();
 			if(jobId == null){
 				return ;
 			}
-			
-			location.href = "schedule_add.html?jobId="+jobId;
+
+            $.get("../sys/schedule/info/"+jobId, function(r){
+                vm.showList = false;
+                vm.title = "修改";
+                vm.schedule = r.schedule;
+            });
 		},
+        saveOrUpdate: function (event) {
+            var url = vm.schedule.jobId == null ? "../sys/schedule/save" : "../sys/schedule/update";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: JSON.stringify(vm.schedule),
+                success: function(r){
+                    if(r.code === 0){
+                        alert('操作成功', function(index){
+                            vm.reload();
+                        });
+                    }else{
+                        alert(r.msg);
+                    }
+                }
+            });
+        },
 		del: function (event) {
 			var jobIds = getSelectedRows();
 			if(jobIds == null){
@@ -147,6 +181,14 @@ var vm = new Vue({
 					}
 				});
 			});
-		}
+		},
+        reload: function (event) {
+            vm.showList = true;
+            var page = $("#jqGrid").jqGrid('getGridParam','page');
+            $("#jqGrid").jqGrid('setGridParam',{
+                postData:{'beanName': vm.q.beanName},
+                page:page
+            }).trigger("reloadGrid");
+        }
 	}
 });

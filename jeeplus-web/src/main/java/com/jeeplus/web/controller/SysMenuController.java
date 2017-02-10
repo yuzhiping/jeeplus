@@ -33,9 +33,7 @@ public class SysMenuController extends AbstractController {
     private SysMenuService sysMenuService;
 
     /**
-
      * 所有菜单列表
-
      */
     @RequestMapping("/list")
     @ResponseBody
@@ -47,7 +45,6 @@ public class SysMenuController extends AbstractController {
 
         //查询列表数据
 
-
         List<SysMenuEntity> menuList = sysMenuService.queryList(map);
         int total = sysMenuService.queryTotal(map);
 
@@ -57,21 +54,16 @@ public class SysMenuController extends AbstractController {
     }
 
     /**
-
      * 选择菜单(添加、修改菜单)
-
      */
     @RequestMapping("/select")
+    @ResponseBody
     @RequiresPermissions("sys:menu:select")
     public R select(){
         //查询列表数据
-
-
         List<SysMenuEntity> menuList = sysMenuService.queryNotButtonList();
 
         //添加顶级菜单
-
-
         SysMenuEntity root = new SysMenuEntity();
         root.setMenuId(0L);
         root.setName("一级菜单");
@@ -83,26 +75,20 @@ public class SysMenuController extends AbstractController {
     }
 
     /**
-
      * 角色授权菜单
-
      */
     @RequestMapping("/perms")
     @ResponseBody
     @RequiresPermissions("sys:menu:perms")
     public R perms(){
         //查询列表数据
-
-
-        List<SysMenuEntity> menuList = sysMenuService.queryList(new HashMap<String, Object>());
+        List<SysMenuEntity> menuList = sysMenuService.queryList(new HashMap<>());
 
         return R.ok().put("menuList", menuList);
     }
 
     /**
-
      * 菜单信息
-
      */
     @RequestMapping("/info/{menuId}")
     @RequiresPermissions("sys:menu:info")
@@ -112,15 +98,12 @@ public class SysMenuController extends AbstractController {
     }
 
     /**
-
      * 保存
-
      */
     @RequestMapping("/save")
     @RequiresPermissions("sys:menu:save")
     public R save(@RequestBody SysMenuEntity menu){
         //数据校验
-
 
         verifyForm(menu);
 
@@ -130,15 +113,12 @@ public class SysMenuController extends AbstractController {
     }
 
     /**
-
      * 修改
-
      */
     @RequestMapping("/update")
     @RequiresPermissions("sys:menu:update")
     public R update(@RequestBody SysMenuEntity menu){
         //数据校验
-
 
         verifyForm(menu);
 
@@ -148,15 +128,13 @@ public class SysMenuController extends AbstractController {
     }
 
     /**
-
      * 删除
-
      */
     @RequestMapping("/delete")
     @RequiresPermissions("sys:menu:delete")
     public R delete(@RequestBody Long[] menuIds){
         for(Long menuId : menuIds){
-            if(menuId.longValue() <= 27){
+            if(menuId.longValue() <= 28){
                 return R.error("系统菜单，不能删除");
             }
         }
@@ -166,9 +144,7 @@ public class SysMenuController extends AbstractController {
     }
 
     /**
-
      * 用户菜单列表
-
      */
     @RequestMapping("/user")
     @ResponseBody
@@ -179,9 +155,7 @@ public class SysMenuController extends AbstractController {
     }
 
     /**
-
      * 验证参数是否正确
-
      */
     private void verifyForm(SysMenuEntity menu){
         if(StringUtils.isBlank(menu.getName())){
@@ -193,8 +167,6 @@ public class SysMenuController extends AbstractController {
         }
 
         //菜单
-
-
         if(menu.getType() == Constant.MenuType.MENU.getValue()){
             if(StringUtils.isBlank(menu.getUrl())){
                 throw new RRException("菜单URL不能为空");
@@ -202,8 +174,6 @@ public class SysMenuController extends AbstractController {
         }
 
         //上级菜单类型
-
-
         int parentType = Constant.MenuType.CATALOG.getValue();
         if(menu.getParentId() != 0){
             SysMenuEntity parentMenu = sysMenuService.queryObject(menu.getParentId());
@@ -211,8 +181,6 @@ public class SysMenuController extends AbstractController {
         }
 
         //目录、菜单
-
-
         if(menu.getType() == Constant.MenuType.CATALOG.getValue() ||
                 menu.getType() == Constant.MenuType.MENU.getValue()){
             if(parentType != Constant.MenuType.CATALOG.getValue()){
@@ -222,8 +190,6 @@ public class SysMenuController extends AbstractController {
         }
 
         //按钮
-
-
         if(menu.getType() == Constant.MenuType.BUTTON.getValue()){
             if(parentType != Constant.MenuType.MENU.getValue()){
                 throw new RRException("上级菜单只能为菜单类型");

@@ -4,17 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--加载mail的配置文件-->
-    <bean id="configProperties" class="com.jeeplus.common.configuration.EncryptPropertyPlaceholderConfigurer">
+  <!--  <bean id="configProperties" class="com.jeeplus.common.configuration.EncryptPropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
                 <value>classpath:email.properties</value>
             </list>
         </property>
-    </bean>
+    </bean>-->
 
-    <bean id="placeholderConfigurer" class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
-        <property name="properties" ref="configProperties"/>
-    </bean>
 
     <!--邮件服务器的配置-->
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">

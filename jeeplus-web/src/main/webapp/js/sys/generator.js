@@ -38,7 +38,9 @@ $(function () {
 var vm = new Vue({
 	el:'#rrapp',
 	data:{
-		tableName: null
+        q:{
+            tableName: null
+        }
 	},
 	methods: {
 		query: function () {

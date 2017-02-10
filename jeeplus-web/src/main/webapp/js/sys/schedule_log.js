@@ -46,7 +46,9 @@ $(function () {
 var vm = new Vue({
 	el:'#rrapp',
 	data:{
-		jobId: null
+        q:{
+            jobId: null
+        }
 	},
 	methods: {
 		query: function () {

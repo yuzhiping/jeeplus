@@ -16,6 +16,7 @@
         <property name="locations">
             <list>
                 <value>classpath:jdbc-web.properties</value>
+                <value>classpath:email.properties</value>
             </list>
         </property>
     </bean>
