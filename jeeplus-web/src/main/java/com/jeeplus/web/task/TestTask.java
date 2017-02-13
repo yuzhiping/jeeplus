@@ -1,7 +1,7 @@
 package com.jeeplus.web.task;
 
-import com.jeeplus.web.entities.SysUserEntity;
-import com.jeeplus.web.services.SysUserService;
+import com.jeeplus.web.entities.system.SysUserEntity;
+import com.jeeplus.web.services.system.SysUserService;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

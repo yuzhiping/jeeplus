@@ -5484,7 +5484,7 @@ var platformComponents = {
 
 /*  */
 
-// install platform specific utils
+// install platform specific util
 Vue$3.config.isUnknownElement = isUnknownElement;
 Vue$3.config.isReservedTag = isReservedTag;
 Vue$3.config.getTagNamespace = getTagNamespace;

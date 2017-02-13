@@ -1,7 +1,7 @@
 package com.jeeplus.admin.common.response;
 
 import com.jeeplus.admin.common.enums.ResponseErrorEnum;
-import com.jeeplus.common.utils.JacksonMapper;
+import com.jeeplus.common.util.JacksonMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

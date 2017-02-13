@@ -289,7 +289,7 @@ var ie = browser.ie,
     gecko = browser.gecko,
     opera = browser.opera;
 
-// core/utils.js
+// core/util.js
 /**
  * 工具函数包
  * @file
@@ -318,7 +318,7 @@ var utils = UE.utils = {
      * };
      *
      * //output: key1: 1, key2: 2
-     * UE.utils.each( demoObj, funciton ( value, key ) {
+     * UE.util.each( demoObj, funciton ( value, key ) {
      *
      *     console.log( key + ":" + value );
      *
@@ -336,7 +336,7 @@ var utils = UE.utils = {
      * var divs = document.getElmentByTagNames( "div" );
      *
      * //output: 0: DIV, 1: DIV ...
-     * UE.utils.each( divs, funciton ( value, key ) {
+     * UE.util.each( divs, funciton ( value, key ) {
      *
      *     console.log( key + ":" + value.tagName );
      *
@@ -370,7 +370,7 @@ var utils = UE.utils = {
      *
      * var protoObject = { sayHello: function () { console.log('Hello UEditor!'); } };
      *
-     * var newObject = UE.utils.makeInstance( protoObject );
+     * var newObject = UE.util.makeInstance( protoObject );
      * //output: Hello UEditor!
      * newObject.sayHello();
      * ```
@@ -387,7 +387,7 @@ var utils = UE.utils = {
      * 将source对象中的属性扩展到target对象上
      * @method extend
      * @remind 该方法将强制把source对象上的属性复制到target对象上
-     * @see UE.utils.extend(Object,Object,Boolean)
+     * @see UE.util.extend(Object,Object,Boolean)
      * @param { Object } target 目标对象， 新的属性将附加到该对象上
      * @param { Object } source 源对象， 该对象的属性会被附加到target对象上
      * @return { Object } 返回target对象
@@ -397,7 +397,7 @@ var utils = UE.utils = {
      * var target = { name: 'target', sex: 1 },
      *      source = { name: 'source', age: 17 };
      *
-     * UE.utils.extend( target, source );
+     * UE.util.extend( target, source );
      *
      * //output: { name: 'source', sex: 1, age: 17 }
      * console.log( target );
@@ -419,7 +419,7 @@ var utils = UE.utils = {
      * var target = { name: 'target', sex: 1 },
      *      source = { name: 'source', age: 17 };
      *
-     * UE.utils.extend( target, source, true );
+     * UE.util.extend( target, source, true );
      *
      * //output: { name: 'target', sex: 1, age: 17 }
      * console.log( target );
@@ -453,7 +453,7 @@ var utils = UE.utils = {
      *     source1 = { name: 'source', age: 17 },
      *     source2 = { title: 'dev' };
      *
-     * UE.utils.extend2( target, source1, source2 );
+     * UE.util.extend2( target, source1, source2 );
      *
      * //output: { name: 'source', age: 17, title: 'dev' }
      * console.log( target );
@@ -496,7 +496,7 @@ var utils = UE.utils = {
      *     this.name = "小张";
      * }
      *
-     * UE.utils.inherits(SubClass,SuperClass);
+     * UE.util.inherits(SubClass,SuperClass);
      *
      * var sub = new SubClass();
      * //output: '小张早上好!
@@ -527,7 +527,7 @@ var utils = UE.utils = {
      *     console.log( this.name );
      * }
      *
-     * newTest = UE.utils.bind( test, { name: 'object' } );
+     * newTest = UE.util.bind( test, { name: 'object' } );
      *
      * //output: object
      * newTest();
@@ -559,7 +559,7 @@ var utils = UE.utils = {
      *     console.log( new Date() - start );
      * }
      *
-     * var testDefer = UE.utils.defer( test, 1000 );
+     * var testDefer = UE.util.defer( test, 1000 );
      * //
      * start = new Date();
      * //output: (大约在1000毫秒之后输出) 1000
@@ -585,7 +585,7 @@ var utils = UE.utils = {
      *     console.log(1);
      * }
      *
-     * var testDefer = UE.utils.defer( test, 1000, true );
+     * var testDefer = UE.util.defer( test, 1000, true );
      *
      * //output: (两次调用仅有一次输出) 1
      * testDefer();
@@ -615,7 +615,7 @@ var utils = UE.utils = {
      *     arr = [ 3, 4, 6, 8, 1, 1, 2 ];
      *
      * //output: 4
-     * console.log( UE.utils.indexOf( arr, item ) );
+     * console.log( UE.util.indexOf( arr, item ) );
      * ```
      */
 
@@ -633,7 +633,7 @@ var utils = UE.utils = {
      *     arr = [ 3, 4, 6, 8, 1, 2, 8, 3, 2, 1, 1, 4 ];
      *
      * //output: 9
-     * console.log( UE.utils.indexOf( arr, item, 5 ) );
+     * console.log( UE.util.indexOf( arr, item, 5 ) );
      * ```
      */
     indexOf:function (array, item, start) {
@@ -658,7 +658,7 @@ var utils = UE.utils = {
      * ```javascript
      * var arr = [ 4, 5, 7, 1, 3, 4, 6 ];
      *
-     * UE.utils.removeItem( arr, 4 );
+     * UE.util.removeItem( arr, 4 );
      * //output: [ 5, 7, 1, 3, 6 ]
      * console.log( arr );
      *
@@ -687,7 +687,7 @@ var utils = UE.utils = {
      * console.log( str.length );
      *
      * //output: 7
-     * console.log( UE.utils.trim( " UEdtior " ).length );
+     * console.log( UE.util.trim( " UEdtior " ).length );
      *
      * //output: 9
      * console.log( str.length );
@@ -708,7 +708,7 @@ var utils = UE.utils = {
      * ```javascript
      *
      * //output: Object {UEdtior: 1, UEDTIOR: 1, Hello: 1, HELLO: 1}
-     * console.log( UE.utils.listToMap( 'UEdtior,Hello' ) );
+     * console.log( UE.util.listToMap( 'UEdtior,Hello' ) );
      *
      * ```
      */
@@ -723,7 +723,7 @@ var utils = UE.utils = {
      * ```javascript
      *
      * //output: Object {UEdtior: 1, UEDTIOR: 1, Hello: 1, HELLO: 1}
-     * console.log( UE.utils.listToMap( [ 'UEdtior', 'Hello' ] ) );
+     * console.log( UE.util.listToMap( [ 'UEdtior', 'Hello' ] ) );
      *
      * ```
      */
@@ -746,7 +746,7 @@ var utils = UE.utils = {
      * var html = '<body>&</body>';
      *
      * //output: &lt;body&gt;&amp;&lt;/body&gt;
-     * console.log( UE.utils.unhtml( html ) );
+     * console.log( UE.util.unhtml( html ) );
      *
      * ```
      */
@@ -787,7 +787,7 @@ var utils = UE.utils = {
 
     /**
      * 将str中的转义字符还原成html字符
-     * @see UE.utils.unhtml(String);
+     * @see UE.util.unhtml(String);
      * @method html
      * @param { String } str 需要逆转义的字符串
      * @return { String } 逆转义后的字符串
@@ -797,7 +797,7 @@ var utils = UE.utils = {
      * var str = '&lt;body&gt;&amp;&lt;/body&gt;';
      *
      * //output: <body>&</body>
-     * console.log( UE.utils.html( str ) );
+     * console.log( UE.util.html( str ) );
      *
      * ```
      */
@@ -825,7 +825,7 @@ var utils = UE.utils = {
      * var str = 'border-top';
      *
      * //output: borderTop
-     * console.log( UE.utils.cssStyleToDomStyle( str ) );
+     * console.log( UE.util.cssStyleToDomStyle( str ) );
      *
      * ```
      */
@@ -850,7 +850,7 @@ var utils = UE.utils = {
      * @example
      * ```javascript
      *
-     * UE.utils.loadFile( document, {
+     * UE.util.loadFile( document, {
      *     src:"test.js",
      *     tag:"script",
      *     type:"text/javascript",
@@ -871,7 +871,7 @@ var utils = UE.utils = {
      * @example
      * ```javascript
      *
-     * UE.utils.loadFile( document, {
+     * UE.util.loadFile( document, {
      *     src:"test.js",
      *     tag:"script",
      *     type:"text/javascript",
@@ -960,22 +960,22 @@ var utils = UE.utils = {
      * ```javascript
      *
      * //output: true
-     * console.log( UE.utils.isEmptyObject( {} ) );
+     * console.log( UE.util.isEmptyObject( {} ) );
      *
      * //output: true
-     * console.log( UE.utils.isEmptyObject( [] ) );
+     * console.log( UE.util.isEmptyObject( [] ) );
      *
      * //output: true
-     * console.log( UE.utils.isEmptyObject( "" ) );
+     * console.log( UE.util.isEmptyObject( "" ) );
      *
      * //output: false
-     * console.log( UE.utils.isEmptyObject( { key: 1 } ) );
+     * console.log( UE.util.isEmptyObject( { key: 1 } ) );
      *
      * //output: false
-     * console.log( UE.utils.isEmptyObject( [1] ) );
+     * console.log( UE.util.isEmptyObject( [1] ) );
      *
      * //output: false
-     * console.log( UE.utils.isEmptyObject( "1" ) );
+     * console.log( UE.util.isEmptyObject( "1" ) );
      *
      * ```
      */
@@ -1099,10 +1099,10 @@ var utils = UE.utils = {
      * ```javascript
      *
      * //output: 500px
-     * console.log( UE.utils.transUnitToPx( '20cm' ) );
+     * console.log( UE.util.transUnitToPx( '20cm' ) );
      *
      * //output: 27px
-     * console.log( UE.utils.transUnitToPx( '20pt' ) );
+     * console.log( UE.util.transUnitToPx( '20pt' ) );
      *
      * ```
      */
@@ -1133,7 +1133,7 @@ var utils = UE.utils = {
      * @example
      * ```javascript
      *
-     * UE.utils.domReady( function () {
+     * UE.util.domReady( function () {
      *
      *     console.log('123');
      *
@@ -1192,11 +1192,11 @@ var utils = UE.utils = {
      * 动态添加css样式
      * @method cssRule
      * @param { String } 节点名称
-     * @grammar UE.utils.cssRule('添加的样式的节点名称',['样式'，'放到哪个document上'])
-     * @grammar UE.utils.cssRule('body','body{background:#ccc}') => null  //给body添加背景颜色
-     * @grammar UE.utils.cssRule('body') =>样式的字符串  //取得key值为body的样式的内容,如果没有找到key值先关的样式将返回空，例如刚才那个背景颜色，将返回 body{background:#ccc}
-     * @grammar UE.utils.cssRule('body',document) => 返回指定key的样式，并且指定是哪个document
-     * @grammar UE.utils.cssRule('body','') =>null //清空给定的key值的背景颜色
+     * @grammar UE.util.cssRule('添加的样式的节点名称',['样式'，'放到哪个document上'])
+     * @grammar UE.util.cssRule('body','body{background:#ccc}') => null  //给body添加背景颜色
+     * @grammar UE.util.cssRule('body') =>样式的字符串  //取得key值为body的样式的内容,如果没有找到key值先关的样式将返回空，例如刚才那个背景颜色，将返回 body{background:#ccc}
+     * @grammar UE.util.cssRule('body',document) => 返回指定key的样式，并且指定是哪个document
+     * @grammar UE.util.cssRule('body','') =>null //清空给定的key值的背景颜色
      */
     cssRule:browser.ie && browser.version != 11 ? function (key, style, doc) {
         var indexList, index;
@@ -1675,7 +1675,7 @@ function getListener(obj, type, force) {
 // core/dtd.js
 ///import editor.js
 ///import core/dom/dom.js
-///import core/utils.js
+///import core/util.js
 /**
  * dtd html语义化的体现类
  * @constructor
@@ -11621,7 +11621,7 @@ UE.plugins['font'] = function () {
             }
             node.tagName = 'span';
         });
-//        utils.each(root.getNodesByTagName('span'), function (node) {
+//        util.each(root.getNodesByTagName('span'), function (node) {
 //            var val;
 //            if(val = node.getAttr('class')){
 //                if(/fontstrikethrough/.test(val)){
@@ -11644,7 +11644,7 @@ UE.plugins['font'] = function () {
 //        });
     });
 //    me.addOutputRule(function(root){
-//        utils.each(root.getNodesByTagName('span'), function (node) {
+//        util.each(root.getNodesByTagName('span'), function (node) {
 //            var val;
 //            if(val = node.getStyle('text-decoration')){
 //                if(/line-through/.test(val)){
@@ -15946,7 +15946,7 @@ UE.plugins['list'] = function () {
                             for (var i = 0, ci, tmpFrag = me.document.createDocumentFragment(); ci = frag.firstChild;) {
                                 if(domUtils.isTagNode(ci,'ol ul')){
 //                                  删除时，子列表不处理
-//                                  utils.each(domUtils.getElementsByTagName(ci,'li'),function(li){
+//                                  util.each(domUtils.getElementsByTagName(ci,'li'),function(li){
 //                                        while(li.firstChild){
 //                                            tmpFrag.appendChild(li.firstChild);
 //                                        }
@@ -20292,7 +20292,7 @@ UE.plugins['table'] = function () {
                 if (me.fireEvent("excludetable", table) === true) return;
                 table.ueTable = new UT(table);
                 //trace:3742
-//                utils.each(domUtils.getElementsByTagName(me.document, 'td'), function (td) {
+//                util.each(domUtils.getElementsByTagName(me.document, 'td'), function (td) {
 //
 //                    if (domUtils.isEmptyBlock(td) && td !== start) {
 //                        domUtils.fillNode(me.document, td);
@@ -20301,7 +20301,7 @@ UE.plugins['table'] = function () {
 //                        }
 //                    }
 //                });
-//                utils.each(domUtils.getElementsByTagName(me.document, 'th'), function (th) {
+//                util.each(domUtils.getElementsByTagName(me.document, 'th'), function (th) {
 //                    if (domUtils.isEmptyBlock(th) && th !== start) {
 //                        domUtils.fillNode(me.document, th);
 //                        if (browser.ie && browser.version == 6) {
@@ -21058,7 +21058,7 @@ UE.plugins['table'] = function () {
 //                    minWidth -= cellMinWidth;
 //
 //                    table.removeAttribute("width");
-//                    utils.each(cells, function (cell) {
+//                    util.each(cells, function (cell) {
 //                        cell.style.width = "";
 //                        cell.width -= minWidth;
 //                    });

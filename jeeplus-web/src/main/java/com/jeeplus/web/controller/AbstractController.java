@@ -1,7 +1,7 @@
 package com.jeeplus.web.controller;
 
-import com.jeeplus.web.entities.SysUserEntity;
-import com.jeeplus.web.utils.ShiroUtils;
+import com.jeeplus.web.entities.system.SysUserEntity;
+import com.jeeplus.web.util.ShiroUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

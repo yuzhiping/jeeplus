@@ -1,9 +1,9 @@
 package com.jeeplus.web.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.jeeplus.web.services.SysGeneratorService;
-import com.jeeplus.web.utils.PageUtils;
-import com.jeeplus.web.utils.R;
+import com.jeeplus.web.services.system.SysGeneratorService;
+import com.jeeplus.web.util.PageUtils;
+import com.jeeplus.web.commons.R;
 import org.apache.commons.io.IOUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;

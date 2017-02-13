@@ -1,11 +1,11 @@
 package com.jeeplus.web.controller;
 
-import com.jeeplus.web.entities.SysUserEntity;
-import com.jeeplus.web.services.SysUserRoleService;
-import com.jeeplus.web.services.SysUserService;
-import com.jeeplus.web.utils.PageUtils;
-import com.jeeplus.web.utils.R;
-import com.jeeplus.web.utils.ShiroUtils;
+import com.jeeplus.web.entities.system.SysUserEntity;
+import com.jeeplus.web.services.system.SysUserRoleService;
+import com.jeeplus.web.services.system.SysUserService;
+import com.jeeplus.web.util.PageUtils;
+import com.jeeplus.web.commons.R;
+import com.jeeplus.web.util.ShiroUtils;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;

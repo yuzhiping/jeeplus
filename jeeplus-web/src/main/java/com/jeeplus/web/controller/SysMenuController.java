@@ -1,11 +1,11 @@
 package com.jeeplus.web.controller;
 
-import com.jeeplus.web.entities.SysMenuEntity;
-import com.jeeplus.web.services.SysMenuService;
-import com.jeeplus.web.utils.Constant;
-import com.jeeplus.web.utils.PageUtils;
-import com.jeeplus.web.utils.R;
-import com.jeeplus.web.utils.RRException;
+import com.jeeplus.web.entities.system.SysMenuEntity;
+import com.jeeplus.web.services.system.SysMenuService;
+import com.jeeplus.web.commons.constant.Constant;
+import com.jeeplus.web.util.PageUtils;
+import com.jeeplus.web.commons.R;
+import com.jeeplus.web.commons.exception.RRException;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;

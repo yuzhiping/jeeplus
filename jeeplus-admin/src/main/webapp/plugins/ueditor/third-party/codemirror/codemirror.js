@@ -3164,7 +3164,7 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
         }
     }
 
-    // Combinator utils
+    // Combinator util
 
     var cx = {state: null, column: null, marked: null, cc: null};
     function pass() {

@@ -14,8 +14,8 @@ import org.springframework.stereotype.Controller;
 
 import ${package}.entities.${className}Entity;
 import ${package}.services.${className}Service;
-import com.jeeplus.web.utils.PageUtils;
-import com.jeeplus.web.utils.R;
+import com.jeeplus.web.util.PageUtils;
+import com.jeeplus.web.commons.R;
 
 
 /**

@@ -1,9 +1,9 @@
 package com.jeeplus.web.controller;
 
-import com.jeeplus.web.entities.ScheduleJobLogEntity;
-import com.jeeplus.web.services.ScheduleJobLogService;
-import com.jeeplus.web.utils.PageUtils;
-import com.jeeplus.web.utils.R;
+import com.jeeplus.web.entities.system.ScheduleJobLogEntity;
+import com.jeeplus.web.services.system.ScheduleJobLogService;
+import com.jeeplus.web.util.PageUtils;
+import com.jeeplus.web.commons.R;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
