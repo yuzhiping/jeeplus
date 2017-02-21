@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <resourceExtensions />
-    <wildcardResourcePatterns>
-      <entry name="!?*.java" />
-      <entry name="!?*.form" />
-      <entry name="!?*.class" />
-      <entry name="!?*.groovy" />
-      <entry name="!?*.scala" />
-      <entry name="!?*.flex" />
-      <entry name="!?*.kt" />
-      <entry name="!?*.clj" />
-      <entry name="!?*.aj" />
-    </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="jeeplus-admin" />
+        <module name="jeeplus-blog" />
         <module name="jeeplus-common" />
         <module name="jeeplus-demo" />
         <module name="jeeplus-monitor" />
@@ -32,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="jeeplus-admin" target="1.8" />
+      <module name="jeeplus-blog" target="1.8" />
       <module name="jeeplus-common" target="1.8" />
       <module name="jeeplus-demo" target="1.5" />
       <module name="jeeplus-monitor" target="1.8" />

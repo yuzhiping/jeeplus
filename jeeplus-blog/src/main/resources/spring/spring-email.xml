@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--邮件服务器的配置-->
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="protocol" value="${mailserver.google.protocol}"/>
+        <property name="host" value="${mailserver.google.host}"/>
+        <property name="defaultEncoding" value="${mailserver.google.encoding}"/>
+        <property name="port" value="${mailserver.google.port}"/>
+        <property name="username" value="${mailserver.google.username}"/>
+        <property name="password" value="${mailserver.google.password}"/>
+        <property name="javaMailProperties">
+            <props>
+                <prop key="email.smtp.auth">true</prop>
+                <prop key="email.smtp.starttls.enable">true</prop>
+                <prop key="email.smtp.socketFactory.class">javax.net.ssl.SSLSocketFactory</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--配置velocity模板引擎-->
+    <bean id="velocityEngine" class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
+        <property name="velocityProperties">
+            <props>
+                <prop key="resource.loader">classpath</prop>
+                <prop key="classpath.resource.loader.path">.</prop>
+                <prop key="classpath.resource.loader.class">
+                    org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+                </prop>
+                <prop key="input.encoding">UTF-8</prop>
+                <prop key="output.encoding">UTF-8</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--配置thymeleaf的模板解析器-->
+    <bean id="templateResolver" class="org.thymeleaf.templateresolver.ClassLoaderTemplateResolver">
+        <property name="prefix" value="/"/>
+        <property name="suffix" value=".html"/>
+        <property name="templateMode" value="HTML5"/>
+        <property name="characterEncoding" value="UTF-8"/>
+        <property name="order" value="1"/>
+    </bean>
+
+    <!--配置thymeleaf引擎-->
+    <bean class="org.thymeleaf.spring4.SpringTemplateEngine">
+        <property name="templateResolver" ref="templateResolver"/>
+    </bean>
+
+
+</beans>

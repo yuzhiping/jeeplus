@@ -89,8 +89,6 @@
           <element id="library" level="project" name="Maven: com.dyuproject.protostuff:protostuff-runtime:1.0.10" />
           <element id="library" level="project" name="Maven: com.dyuproject.protostuff:protostuff-collectionschema:1.0.10" />
           <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:2.10.2" />
-          <element id="library" level="project" name="Maven: com.alibaba:alidayu:2.3" />
-          <element id="library" level="project" name="Maven: com.alibaba:alipay:2.3" />
           <element id="library" level="project" name="Maven: javax.persistence:persistence-api:1.0.2" />
         </element>
       </element>

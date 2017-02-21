@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jeeplus-blog:war">
+    <output-path>$PROJECT_DIR$/jeeplus-blog/target</output-path>
+    <root id="archive" name="jeeplus-blog.war">
+      <element id="artifact" artifact-name="jeeplus-blog:war exploded" />
+    </root>
+  </artifact>
+</component>

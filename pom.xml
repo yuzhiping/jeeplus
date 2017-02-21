@@ -112,6 +112,7 @@
       <module>jeeplus-demo</module>
       <module>jeeplus-test</module>
       <module>jeeplus-test</module>
+      <module>jeeplus-blog</module>
   </modules>
 
   <issueManagement>

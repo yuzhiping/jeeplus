@@ -43,6 +43,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/jeeplus-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/jeeplus-blog" />
     <file type="web" url="file://$PROJECT_DIR$/jeeplus-monitor" />
     <file type="web" url="file://$PROJECT_DIR$/jeeplus-web" />
     <file type="web" url="file://$PROJECT_DIR$/jeeplus-weixin" />

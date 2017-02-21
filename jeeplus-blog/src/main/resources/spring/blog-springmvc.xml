@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+
+    <!-- 自动扫描该包 -->
+    <context:component-scan base-package="com.jeeplus.blog"/>
+
+    <context:annotation-config/>
+
+    <!-- 对静态资源文件的访问，交给default servlet handler处理 -->
+    <mvc:default-servlet-handler />
+
+    <!--
+        配置转换器，避免使用 @ResponseBody 注解，返加字符串不做任何处理时，有可能会出现乱码问题
+        注：配置必须在 <mvc:annotation-driven /> 之前，否则将不会启效；
+    -->
+    <bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
+        <constructor-arg index="0" value="UTF-8"></constructor-arg><!--避免出现乱码-->
+        <property name="supportedMediaTypes">
+            <list>
+                <value>text/plain;charset=UTF-8</value>
+                <value>text/html;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+
+
+
+    <!--使用alibaba的json转换器-->
+    <bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>application/json;charset=UTF-8</value>
+               <!-- <value>text/html;charset=UTF-8</value> --><!-- 避免IE出现下载JSON文件的情况 -->
+            </list>
+        </property>
+        <property name="features">
+            <array>
+                <value>WriteMapNullValue</value>
+                <value>QuoteFieldNames</value>
+                <!--设置使用文本方式输出日期，fastjson默认是long-->
+                <value>WriteDateUseDateFormat</value>
+            </array>
+        </property>
+    </bean>
+
+    <!--启动mvc的注解驱动，注册请求url和注解POJO类方法的映射-->
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <ref bean="fastJsonHttpMessageConverter"/>
+            <ref bean="stringHttpMessageConverter"/>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+
+
+
+
+    <!-- Velocity视图解析器,默认视图  -->
+    <bean id="velocityViewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+        <property name="contentType" value="text/html;charset=UTF-8" />
+        <property name="viewNames" value="*.html" />
+        <property name="suffix" value=""/>
+        <property name="dateToolAttribute" value="date" />
+        <property name="numberToolAttribute" value="number" />
+        <property name="toolboxConfigLocation" value="/WEB-INF/velocity-toolbox.xml" />
+        <property name="requestContextAttribute" value="rc"/>
+        <property name="order" value="0"/>
+    </bean>
+
+    <bean id="velocityConfigurer" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+        <property name="resourceLoaderPath" value="/WEB-INF/views/" />
+        <property name="velocityProperties">
+            <props>
+                <prop key="input.encoding">UTF-8</prop>
+                <prop key="output.encoding">UTF-8</prop>
+                <prop key="contentType">text/html;charset=UTF-8</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--/End Velocity视图解析器配置-->
+
+
+    <!-- 定义跳转的文件的前后缀 ，JSP视图模式配置-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址 -->
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="viewNames" value="*.jsp" />
+        <property name="suffix" value=""/>
+        <property name="order" value="1"/>
+    </bean>
+
+    <!-- FreeMarker视图解析器 -->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"/>
+        <property name="contentType" value="text/html; charset=utf-8"/>
+        <property name="cache" value="false"/>
+        <property name="viewNames" value="*.ftl" />
+        <property name="suffix" value=""/>
+        <property name="order" value="2"/>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/WEB-INF/views/"/>
+    </bean>
+    <!-- /End FreeMarker视图解析器 -->
+
+
+    <!--文件上传-->
+    <bean id="multipartResolver" class="com.jeeplus.blog.commons.CustomCommonsMultipartResolver">
+        <!--上传文件的大小，默认为字节-->
+        <property name="maxUploadSize" value="104857600"/>
+        <property name="maxInMemorySize" value="4096"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
+
+
+    <!-- Kaptcha验证码生成器 -->
+    <bean id="captchaProducer" class="com.google.code.kaptcha.impl.DefaultKaptcha" scope="singleton">
+        <property name="config">
+            <bean class="com.google.code.kaptcha.util.Config">
+                <constructor-arg>
+                    <props>
+                        <prop key="kaptcha.border">yes</prop>
+                        <prop key="kaptcha.border.color">105,179,90</prop>
+                        <prop key="kaptcha.textproducer.font.color">black</prop>
+                        <prop key="kaptcha.obscurificator.impl">com.google.code.kaptcha.impl.ShadowGimpy</prop>
+                        <prop key="kaptcha.image.width">125</prop>
+                        <prop key="kaptcha.image.height">45</prop>
+                        <prop key="kaptcha.textproducer.font.size">40</prop>
+                        <prop key="kaptcha.session.key">code</prop>
+                        <prop key="kaptcha.textproducer.char.length">5</prop>
+                        <prop key="kaptcha.textproducer.font.names">宋体,楷体,微软雅黑,方正楷体</prop>
+                    </props>
+                </constructor-arg>
+            </bean>
+        </property>
+    </bean>
+
+
+    <!-- 系统错误转发配置[并记录错误日志] -->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="defaultErrorView" value="500"></property>   <!-- 默认为500，系统错误(error.jsp) -->
+        <property name="defaultStatusCode" value="404"></property>
+        <property name="statusCodes"><!-- 配置多个statusCode -->
+            <props>
+                <prop key="error">500</prop>  <!-- error.jsp -->
+                <prop key="error1">404</prop>    <!-- error1.jsp -->
+            </props>
+        </property>
+        <property name="exceptionMappings">
+            <props>
+                <!-- 这里你可以根据需要定义N多个错误异常转发 -->
+                <prop key="java.sql.SQLException">dbError</prop> <!-- 数据库错误(dbError.jsp) -->
+                <prop key="org.springframework.web.bind.ServletRequestBindingException">bizError</prop> <!-- 参数绑定错误(如：必须参数没传递)(bizError.jsp) -->
+                <prop key="java.lang.IllegalArgumentException">bizError</prop>  <!-- 参数错误(bizError.jsp) -->
+                <prop key="org.springframework.validation.BindException">bizError</prop>  <!-- 参数类型有误(bizError.jsp) -->
+                <prop key="java.lang.Exception">unknowError</prop>  <!-- 其他错误为'未定义错误'(unknowError.jsp) -->
+            </props>
+        </property>
+    </bean>
+
+</beans>
