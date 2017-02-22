@@ -21,7 +21,6 @@ public class CustomCommonsMultipartResolver extends CommonsMultipartResolver {
             System.out.println("CustomCommonsMultipartResolver 放行");
             return false;
         }
-        System.out.println("CustomCommonsMultipartResolver 拦截");
         return super.isMultipart(request);
     }
 

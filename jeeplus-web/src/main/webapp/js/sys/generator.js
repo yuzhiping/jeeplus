@@ -45,7 +45,7 @@ var vm = new Vue({
 	methods: {
 		query: function () {
 			$("#jqGrid").jqGrid('setGridParam',{ 
-                postData:{'tableName': vm.tableName},
+                postData:{'tableName': vm.q.tableName},
                 page:1 
             }).trigger("reloadGrid");
 		},
