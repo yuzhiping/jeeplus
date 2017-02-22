@@ -50,46 +50,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <repository>
-            <id>spy</id>
-            <name>Spy Repository</name>
-            <url>http://files.couchbase.com/maven2/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>xerces</id>
-            <name>xerces</name>
-            <url>https://xerces.apache.org/xerces2-j/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>proxool</id>
-            <name>proxool</name>
-            <url>http://proxool.cvs.sourceforge.net/viewvc/proxool/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>jeecg</id>
-            <name>jeecg Repository</name>
-            <url>http://maven.jeecg.org/nexus/content/repositories/jeecg</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>jeecg-snapshots</id>
-            <name>jeecg-snapshots Repository</name>
-            <url>http://maven.jeecg.org/nexus/content/repositories/snapshots</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
     </repositories>
 
 
@@ -105,13 +65,11 @@
   <modules>
     <module>jeeplus-web</module>
     <module>jeeplus-weixin</module>
-    <module>jeeplus-test</module>
     <module>jeeplus-admin</module>
     <module>jeeplus-common</module>
     <module>jeeplus-monitor</module>
       <module>jeeplus-demo</module>
-      <module>jeeplus-test</module>
-      <module>jeeplus-test</module>
+      <module>jeeplus-blog</module>
   </modules>
 
   <issueManagement>
@@ -119,7 +77,7 @@
     <url>https://github.com/yuzhiping/jeeplus/issues</url>
   </issueManagement>
   <scm>
-    <url>https://github.com/alibaba/jeeplus</url>
+    <url>https://github.com/yuzhiping/jeeplus</url>
     <connection>https://github.com/yuzhiping/jeeplus.git</connection>
   </scm>
 

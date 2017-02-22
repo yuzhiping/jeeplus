@@ -102,14 +102,6 @@
             <version>${spring.version}</version>
         </dependency>
         <!--end spring的依赖-->
-        <!--servlet start-->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <!--servlet end-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
@@ -308,17 +300,6 @@
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache</artifactId>
             <version>2.10.2</version>
-        </dependency>
-        <!--加入阿里大鱼和支付宝支付的依赖-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>alidayu</artifactId>
-            <version>2.3</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>alipay</artifactId>
-            <version>2.3</version>
         </dependency>
     </dependencies>
     <build>
