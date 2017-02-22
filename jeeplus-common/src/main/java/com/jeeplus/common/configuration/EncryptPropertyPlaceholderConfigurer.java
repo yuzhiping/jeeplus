@@ -1,6 +1,6 @@
 package com.jeeplus.common.configuration;
 
-import com.jeeplus.common.util.DesUtils;
+import com.jeeplus.common.util.EncryptUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
@@ -36,7 +36,7 @@ public class EncryptPropertyPlaceholderConfigurer extends PropertyPlaceholderCon
     protected String convertProperty(String propertyName,String propertyValue){
         //如果在加密属性中发现该名单
         if(isEncryptProp(propertyName)){
-            String decryptValue= DesUtils.aesDecrypt(propertyValue,DesUtils.defaultKey);
+            String decryptValue= EncryptUtils.aesDecrypt(propertyValue, EncryptUtils.defaultKey);
             LOG.info("解密后的字符串为："+decryptValue);
             return  decryptValue;
         }else

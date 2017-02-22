@@ -1,7 +1,6 @@
 package com.jeeplus.common.util;
 
 import org.apache.commons.lang.RandomStringUtils;
-import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.dom4j.Document;
@@ -22,9 +21,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * 字符串处理的工具类
  * Created by yuzp17311 on 2016/9/12.
  */
-public class StringUtil {
+public class StringUtils {
 
     private static Pattern numericPattern = Pattern.compile("^[0-9\\-]+$");
     private static Pattern numericStringPattern = Pattern.compile("^[0-9\\-\\-]+$");
@@ -32,7 +32,7 @@ public class StringUtil {
     private static Pattern abcPattern = Pattern.compile("^[a-z|A-Z]+$");
     public static final String splitStrPattern = ",|，|;|；|、|\\.|。|-|_|\\(|\\)|\\[|\\]|\\{|\\}|\\\\|/| |　|\"";
 
-    private static Log logger = LogFactory.getLog(StringUtil.class);
+    private static Log logger = LogFactory.getLog(StringUtils.class);
     public static boolean isEmpty(final String value) {
         return (null == value || value.trim().equals(""));
     }
@@ -570,9 +570,9 @@ public class StringUtil {
      * @return
      */
     public static boolean equals(String s1, String s2) {
-        if (StringUtil.isEmpty(s1) && StringUtil.isEmpty(s2)) {
+        if (StringUtils.isEmpty(s1) && StringUtils.isEmpty(s2)) {
             return true;
-        } else if (!StringUtil.isEmpty(s1) && !StringUtil.isEmpty(s2)) {
+        } else if (!StringUtils.isEmpty(s1) && !StringUtils.isEmpty(s2)) {
             return s1.equals(s2);
         }
         return false;
@@ -803,7 +803,7 @@ public class StringUtil {
     public static String changCoding(String s, String fencode, String bencode) {
         String str;
         try {
-            if (StringUtil.isNotEmpty(s)) {
+            if (StringUtils.isNotEmpty(s)) {
                 str = new String(s.getBytes(fencode), bencode);
             } else {
                 str = "";
@@ -1259,7 +1259,7 @@ public class StringUtil {
     }
 
     /**
-     * 泛型方法(通用)，把list转换成以“,”相隔的字符串 调用时注意类型初始化（申明类型） 如：List<Integer> intList = new ArrayList<Integer>(); 调用方法：StringUtil.listTtoString(intList); 效率：list中4条信息，1000000次调用时间为850ms左右
+     * 泛型方法(通用)，把list转换成以“,”相隔的字符串 调用时注意类型初始化（申明类型） 如：List<Integer> intList = new ArrayList<Integer>(); 调用方法：StringUtils.listTtoString(intList); 效率：list中4条信息，1000000次调用时间为850ms左右
      *
      * @author fengliang
      * @serialData 2008-01-09
@@ -1533,7 +1533,7 @@ public class StringUtil {
      * @return 替换后的字符串
      */
     public static String getMaskStr(String str, int start, int len) {
-        if (StringUtil.isEmpty(str)) {
+        if (StringUtils.isEmpty(str)) {
             return str;
         }
         if (str.length() < start) {
@@ -1766,7 +1766,7 @@ public class StringUtil {
      * @return
      */
     public static String firstUpperCase(String realName) {
-        return StringUtils.replaceChars(realName, realName.substring(0, 1),realName.substring(0, 1).toUpperCase());
+        return org.apache.commons.lang.StringUtils.replaceChars(realName, realName.substring(0, 1),realName.substring(0, 1).toUpperCase());
     }
 
     /**
@@ -1775,7 +1775,7 @@ public class StringUtil {
      * @return
      */
     public static String firstLowerCase(String realName) {
-        return StringUtils.replaceChars(realName, realName.substring(0, 1),realName.substring(0, 1).toLowerCase());
+        return org.apache.commons.lang.StringUtils.replaceChars(realName, realName.substring(0, 1),realName.substring(0, 1).toLowerCase());
     }
 
     /**
