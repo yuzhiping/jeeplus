@@ -26,7 +26,7 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-        <!-- commons-beanutils -->
+        <!-- common-beanutils -->
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
@@ -39,19 +39,19 @@
             </exclusions>
         </dependency>
 
-        <!-- commons-collections -->
+        <!-- common-collections -->
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
             <version>${commons-collections.version}</version>
         </dependency>
-        <!-- commons-chain -->
+        <!-- common-chain -->
         <dependency>
             <groupId>commons-chain</groupId>
             <artifactId>commons-chain</artifactId>
             <version>${commons-chain.version}</version>
         </dependency>
-        <!-- commons-codec -->
+        <!-- common-codec -->
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
