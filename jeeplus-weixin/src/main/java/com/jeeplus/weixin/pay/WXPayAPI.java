@@ -95,7 +95,9 @@ public class WXPayAPI {
      * @throws SAXException
      * @throws ParserConfigurationException
      */
-    public static WXPayData OrderQuery(WXPayData inputObj, int timeOut) throws UnrecoverableKeyException, KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, WxPayException, ParserConfigurationException, SAXException, org.xml.sax.SAXException {
+    public static WXPayData OrderQuery(WXPayData inputObj, int timeOut) throws UnrecoverableKeyException,
+            KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, WxPayException,
+            ParserConfigurationException, SAXException, org.xml.sax.SAXException {
         String url = ConfigureUtils.PAY_QUERY_API;
         //检测必填参数
         if (!inputObj.IsSet("out_trade_no") && !inputObj.IsSet("transaction_id"))
@@ -135,7 +137,9 @@ public class WXPayAPI {
      * @throws SAXException
      * @throws ParserConfigurationException
      */
-    public static WXPayData Reverse(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException, KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException, SAXException, org.xml.sax.SAXException {
+    public static WXPayData Reverse(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException,
+            KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException,
+            SAXException, org.xml.sax.SAXException {
         String url = ConfigureUtils.REVERSE_API;
         //检测必填参数
         if (!inputObj.IsSet("out_trade_no") && !inputObj.IsSet("transaction_id"))
@@ -175,7 +179,9 @@ public class WXPayAPI {
      * @throws SAXException
      * @throws ParserConfigurationException
      */
-    public static WXPayData Refund(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException, KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException, SAXException, org.xml.sax.SAXException {
+    public static WXPayData Refund(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException,
+            KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException,
+            SAXException, org.xml.sax.SAXException {
         String url = ConfigureUtils.REFUND_API;
         //检测必填参数
         if (!inputObj.IsSet("out_trade_no") && !inputObj.IsSet("transaction_id"))
@@ -234,7 +240,9 @@ public class WXPayAPI {
      * @throws SAXException
      * @throws ParserConfigurationException
      */
-    public static WXPayData RefundQuery(WXPayData inputObj, int timeOut) throws UnrecoverableKeyException, KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, WxPayException, ParserConfigurationException, SAXException, org.xml.sax.SAXException {
+    public static WXPayData RefundQuery(WXPayData inputObj, int timeOut) throws UnrecoverableKeyException,
+            KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, WxPayException,
+            ParserConfigurationException, SAXException, org.xml.sax.SAXException {
         String url = ConfigureUtils.REFUND_QUERY_API;
         //检测必填参数
         if(!inputObj.IsSet("out_refund_no") && !inputObj.IsSet("out_trade_no") &&
@@ -275,7 +283,9 @@ public class WXPayAPI {
      * @throws SAXException
      * @throws ParserConfigurationException
      */
-    public static WXPayData DownloadBill(WXPayData inputObj, int timeOut) throws UnrecoverableKeyException, KeyManagementException, KeyStoreException, NoSuchAlgorithmException, IOException, WxPayException, ParserConfigurationException, SAXException, org.xml.sax.SAXException {
+    public static WXPayData DownloadBill(WXPayData inputObj, int timeOut) throws UnrecoverableKeyException,
+            KeyManagementException, KeyStoreException, NoSuchAlgorithmException, IOException, WxPayException,
+            ParserConfigurationException, SAXException, org.xml.sax.SAXException {
         String url = ConfigureUtils.DOWNLOAD_BILL_API;
         //检测必填参数
         if (!inputObj.IsSet("bill_date"))
@@ -326,7 +336,9 @@ public class WXPayAPI {
      * @throws SAXException
      * @throws ParserConfigurationException
      */
-    public static WXPayData ShortUrl(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException, KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException, SAXException, org.xml.sax.SAXException {
+    public static WXPayData ShortUrl(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException,
+            KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException,
+            SAXException, org.xml.sax.SAXException {
         String url = ConfigureUtils.Shorturl_API;
         //检测必填参数
         if(!inputObj.IsSet("long_url"))
@@ -368,7 +380,9 @@ public class WXPayAPI {
      * @throws SAXException
      * @throws ParserConfigurationException
      */
-    public static WXPayData UnifiedOrder(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException, KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException, SAXException, org.xml.sax.SAXException {
+    public static WXPayData UnifiedOrder(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException,
+            KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException,
+            SAXException, org.xml.sax.SAXException {
         String url = ConfigureUtils.UnifiedOrder_API;
         //检测必填参数
         if (!inputObj.IsSet("out_trade_no"))
@@ -440,7 +454,9 @@ public class WXPayAPI {
      * @throws SAXException
      * @throws ParserConfigurationException
      */
-    public static WXPayData CloseOrder(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException, KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException, SAXException, org.xml.sax.SAXException {
+    public static WXPayData CloseOrder(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException,
+            KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException,
+            SAXException, org.xml.sax.SAXException {
 
         String url = ConfigureUtils.CloseOrder_API;
         //检测必填参数
@@ -545,7 +561,9 @@ public class WXPayAPI {
      * @throws SAXException
      * @throws ParserConfigurationException
      */
-    public static WXPayData Report(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException, KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException, SAXException, org.xml.sax.SAXException {
+    public static WXPayData Report(WXPayData inputObj, int timeOut) throws WxPayException, UnrecoverableKeyException,
+            KeyManagementException, NoSuchAlgorithmException, KeyStoreException, IOException, ParserConfigurationException,
+            SAXException, org.xml.sax.SAXException {
         String url = ConfigureUtils.REPORT_API;
         //检测必填参数
         if(!inputObj.IsSet("interface_url"))

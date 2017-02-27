@@ -10,153 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f27cd3bb-7795-4016-9779-be99f4f155d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/Pagination.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/bean/convert/BeanConvert.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/mapper/BaseMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/service/CommonService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/service/impl/CommonServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogArticleCommentDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogArticleDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogBookMarkDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogBookMarkFolderDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogCategoryDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogLableDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogMsgBoardDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogPubTimeLineDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogUserDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogWebSiteCountInfoDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogWebSiteDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BaseAgent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogArticle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogArticleComment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogArticleCommentSupport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogArticleLikes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogBookmarks.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogBookmarksFolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogCategory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogDiyMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogLable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogMsgBoard.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogRequestLog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogRes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogWebSite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogArticleCommentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogArticleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogBookMarkService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogCategoryService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogLableService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogReportService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogResService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogUserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogWebSiteService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/font/FontBlogArticleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/font/FontBlogService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/font/impl/FontBlogArticleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/font/impl/FontBlogServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogArticleCommentServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogArticleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogBookMarkServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogCategoryServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogLableServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogReportServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogResServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogUserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogWebSiteServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/pub/PubBlogService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/pub/impl/PubBlogServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/system/SysEmailNotifyService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/system/SysUrlValidationService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/system/impl/SysEmailNotifyServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/system/impl/SysUrlValidationServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Account.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Comments.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Favorite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Friendships.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Location.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Oauth.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Place.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/PublicService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Register.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Reminds.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Search.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/ShortUrl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Suggestion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Tags.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Timeline.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Trend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Users.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Weibo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/http/AccessToken.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/http/BASE64Encoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/http/HTMLEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/http/HttpClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/http/ImageItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/http/Response.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/ApiRateLimits.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Comment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/CommentWapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Configuration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Emotion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Favorites.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/FavoritesIds.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/FavoritesTag.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/FriendsTimelineIds.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Gender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Geos.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/IDs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/MentionsIds.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/MySSLSocketFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Paging.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Places.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Poisition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/PoisitionCategory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/PostParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Privacy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Query.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/RateLimitStatus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/RepostTimelineIds.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/School.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/SchoolSearch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Source.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Status.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/StatusWapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Tag.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/TagWapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Trend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Trends.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/UserCounts.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/UserTimelineIds.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/UserTrend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/UserWapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Version.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/Visible.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/WeiboException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/model/WeiboResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/CDL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/Cookie.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/CookieList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/HTTP.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/HTTPTokener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/JSONArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/JSONException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/JSONObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/JSONString.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/JSONStringer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/JSONTokener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/JSONWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/util/ArrayUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/util/BareBonesBrowserLaunch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/util/URLEncodeUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/util/WeiboConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/resources/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/BizwifiAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/ClearQuotaAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/DeviceAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MerchantAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/PayAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/PayMchAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/PoiAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/ScanAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/SemanticAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/ShakeAroundAPI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/pom.xml" afterPath="$PROJECT_DIR$/jeeplus-weixin/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/message/aes/WXBizMsgCrypt.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/message/aes/WXBizMsgCrypt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MaterialAPI.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MaterialAPI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WXPayAPI.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WXPayAPI.java" />
     </list>
     <ignored path="jeeplus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -194,30 +60,7 @@
     <favorites_list name="jeeplus" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BlogArticleMapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2204">
-              <caret line="103" column="66" lean-forward="true" selection-start-line="103" selection-start-column="66" selection-end-line="103" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlogArticleMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -228,8 +71,8 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -259,19 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogBookmarks.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogBookmarksFolder.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogCategory.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogLable.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogRequestLog.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogWebSite.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/commons/Pagination.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogArticleCommentService.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogResService.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogBookMarkService.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogCategoryService.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogLableService.java" />
-        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogReportService.java" />
         <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/WebSiteCountInfoDTO.java" />
         <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogUserDTO.java" />
         <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/WebSiteDTO.java" />
@@ -310,6 +140,19 @@
         <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/mapper/BaseMapper.java" />
         <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleMapper.java" />
         <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/BizwifiAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/ClearQuotaAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MaterialAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MerchantAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/ScanAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/SemanticAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/ShakeAroundAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/DeviceAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/PoiAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/PayAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/PayMchAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WXPayAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/ShakeAroundAPI.java" />
       </list>
     </option>
   </component>
@@ -422,7 +265,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -445,7 +298,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-blog" />
+              <option name="myItemId" value="jeeplus-weixin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -459,7 +312,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-blog" />
+              <option name="myItemId" value="jeeplus-weixin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -481,33 +334,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-blog" />
+              <option name="myItemId" value="jeeplus-weixin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -522,14 +349,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -541,7 +360,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-blog" />
+              <option name="myItemId" value="jeeplus-weixin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -557,15 +376,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
+              <option name="myItemId" value="weixin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -579,7 +390,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-blog" />
+              <option name="myItemId" value="jeeplus-weixin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -595,23 +406,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
+              <option name="myItemId" value="weixin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastweixin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeeplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeeplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeeplus-weixin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weixin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastweixin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1503,6 +1346,8 @@
       <workItem from="1487920604821" duration="43000" />
       <workItem from="1487920699744" duration="601000" />
       <workItem from="1487921486686" duration="927000" />
+      <workItem from="1488185742536" duration="63000" />
+      <workItem from="1488187120663" duration="3868000" />
     </task>
     <servers />
   </component>
@@ -1527,7 +1372,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="464087000" />
+    <option name="totallyTimeSpent" value="468018000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1564,7 +1409,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61496747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.49479166" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26119402" sideWeight="0.4832714" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26652452" sideWeight="0.4832714" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18336888" sideWeight="0.51672864" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1623,188 +1468,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/Oauth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/weibo4j/org/json/JSONString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/Pagination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogBookmarksFolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogWebSiteCountInfoDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogCategoryDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogWebSiteDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogLableDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogArticleDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogArticleCommentDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="137" column="5" lean-forward="true" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogBookMarkFolderDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogBookMarkDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="77" lean-forward="false" selection-start-line="40" selection-start-column="77" selection-end-line="40" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/entities/BlogUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogUserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogMsgBoardDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="103" column="18" lean-forward="false" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogPubTimeLineDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogArticleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6992">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogArticleCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogBookMarkServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="113" column="5" lean-forward="true" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogArticleCommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogBookMarkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogCategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/BlogLableService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/service/impl/BlogLableServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -1969,18 +1632,252 @@
     <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2204">
-          <caret line="103" column="66" lean-forward="true" selection-start-line="103" selection-start-column="66" selection-end-line="103" selection-end-column="66" />
+        <state relative-caret-position="330">
+          <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/resources/jdbc-blog.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/response/BaseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/config/ApiConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/util/NetWorkCenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="193" column="19" lean-forward="true" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/DataCubeAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="108" column="36" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/UserAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="118" column="34" lean-forward="false" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/BaseAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/ClearQuotaAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#725#726#0" expanded="false" />
+            <element signature="e#754#755#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/CustomAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MaterialAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3124">
+          <caret line="34" column="11" lean-forward="false" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/SystemAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="75" column="42" lean-forward="true" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/BizwifiAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#495#496#0" expanded="false" />
+            <element signature="e#524#525#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MerchantAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#494#495#0" expanded="false" />
+            <element signature="e#523#524#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/ScanAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/SemanticAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/OauthAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/JsAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-348">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/DeviceAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#488#489#0" expanded="false" />
+            <element signature="e#517#518#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/PoiAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#508#509#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/PayAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#495#496#0" expanded="false" />
+            <element signature="e#524#525#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/PayMchAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="81" lean-forward="false" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/util/WeiXinPayUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1056">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WXPayData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1496">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WXPayAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="134" column="37" lean-forward="true" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/pay/WXPay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1448">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/ShakeAroundAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
