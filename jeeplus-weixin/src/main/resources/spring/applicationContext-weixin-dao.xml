@@ -13,6 +13,7 @@
         <property name="locations">
             <list>
                 <value>classpath:jdbc-weixin.properties</value>
+                <value>classpath:weixin/weixin.properties</value>
             </list>
         </property>
     </bean>

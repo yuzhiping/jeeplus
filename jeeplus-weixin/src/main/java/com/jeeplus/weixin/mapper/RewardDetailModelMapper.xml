@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jeeplus.weixin.mapper.RewardDetailModelMapper">
+	<resultMap type="cn.btkj.entity.RewardDetailModel" id="BaseResultMap">
+		<id column="recordid" property="recordid" jdbcType="INTEGER" />
+		<result column="rewarduser" property="rewarduser" jdbcType="INTEGER" />
+		<result column="rewardfromuserno" property="rewardfromuserno"
+			jdbcType="VARCHAR" />
+		<result column="rewardfromuserlevel" property="rewardfromuserlevel"
+			jdbcType="TINYINT" />
+		<result column="reward" property="reward" jdbcType="INTEGER" />
+		<result column="rewarddesc" property="rewarddesc" jdbcType="VARCHAR" />
+		<result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		recordid,rewarduser,rewardfromuserno,rewardfromuserlevel,reward,rewarddesc,updatetime
+	</sql>
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap"
+		parameterType="java.lang.Integer">
+		select
+		<include refid="Base_Column_List" />
+		from tmk_reward_detail
+		where recordid = #{recordid,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		delete from
+		tmk_reward_detail
+		where recordid = #{recordid,jdbcType=INTEGER}
+	</delete>
+	<insert id="insert" parameterType="cn.btkj.entity.RewardDetailModel">
+		insert into tmk_reward_detail
+		(recordid, rewarduser, rewardfromuserno,
+		rewardfromuserlevel, reward,
+		rewarddesc, updatetime)
+		values (#{recordid,jdbcType=INTEGER},
+		#{rewarduser,jdbcType=INTEGER},
+		#{rewardfromuserno,jdbcType=VARCHAR},
+		#{rewardfromuserlevel,jdbcType=TINYINT}, #{reward,jdbcType=INTEGER},
+		#{rewarddesc,jdbcType=VARCHAR},
+		#{updatetime,jdbcType=TIMESTAMP})
+	</insert>
+	<insert id="insertSelective" parameterType="cn.btkj.entity.RewardDetailModel">
+		insert into tmk_reward_detail
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="recordid != null">
+				recordid,
+			</if>
+			<if test="rewarduser != null">
+				rewarduser,
+			</if>
+			<if test="rewardfromuserno != null">
+				rewardfromuserno,
+			</if>
+			<if test="rewardfromuserlevel != null">
+				rewardfromuserlevel,
+			</if>
+			<if test="reward != null">
+				reward,
+			</if>
+			<if test="rewarddesc != null">
+				rewarddesc,
+			</if>
+			<if test="updatetime != null">
+				updatetime,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="recordid != null">
+				#{recordid,jdbcType=INTEGER},
+			</if>
+			<if test="rewarduser != null">
+				#{rewarduser,jdbcType=INTEGER},
+			</if>
+			<if test="rewardfromuserno != null">
+				#{rewardfromuserno,jdbcType=VARCHAR},
+			</if>
+			<if test="rewardfromuserlevel != null">
+				#{rewardfromuserlevel,jdbcType=TINYINT},
+			</if>
+			<if test="reward != null">
+				#{reward,jdbcType=INTEGER},
+			</if>
+			<if test="rewarddesc != null">
+				#{rewarddesc,jdbcType=VARCHAR},
+			</if>
+			<if test="updatetime != null">
+				#{updatetime,jdbcType=TIMESTAMP},
+			</if>
+		</trim>
+	</insert>
+	<update id="updateByPrimaryKeySelective" parameterType="cn.btkj.entity.RewardDetailModel">
+		update tmk_reward_detail
+		<set>
+			<if test="rewarduser != null">
+				rewarduser = #{rewarduser,jdbcType=INTEGER},
+			</if>
+			<if test="rewardfromuserno != null">
+				rewardfromuserno = #{rewardfromuserno,jdbcType=VARCHAR},
+			</if>
+			<if test="rewardfromuserlevel != null">
+				rewardfromuserlevel =
+				#{rewardfromuserlevel,jdbcType=TINYINT},
+			</if>
+			<if test="reward != null">
+				reward = #{reward,jdbcType=SMALLINT},
+			</if>
+			<if test="rewarddesc != null">
+				rewarddesc = #{rewarddesc,jdbcType=SMALLINT},
+			</if>
+			<if test="updatetime != null">
+				updatetime = #{updatetime,jdbcType=TIMESTAMP},
+			</if>
+		</set>
+		where recordid = #{recordid,jdbcType=INTEGER}
+	</update>
+	<update id="updateByPrimaryKey" parameterType="cn.btkj.entity.RewardDetailModel">
+		update
+		tmk_reward_detail
+		set rewarduser = #{rewarduser,jdbcType=INTEGER},
+		rewardfromuserno = #{rewardfromuserno,jdbcType=VARCHAR},
+		rewardfromuserlevel = #{rewardfromuserlevel,jdbcType=TINYINT},
+		reward =
+		#{reward,jdbcType=INTEGER},
+		rewarddesc =
+		#{rewarddesc,jdbcType=VARCHAR},
+		updatetime =
+		#{updatetime,jdbcType=TIMESTAMP}
+		where recordid =
+		#{recordid,jdbcType=INTEGER}
+	</update>
+	<select id="selectRewardDetailList" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from tmk_reward_detail
+	</select>
+	<select id="selectByRewardUser" resultType="RewardModel"
+		parameterType="RewardDetailModel">
+		select tui2.phoneNo rewardfromuserphone,
+		tmk_reward_detail.reward,
+		tmk_reward_detail.updatetime,
+		tmk_reward_detail.rewarddesc,
+		tui1.phoneNo
+		from
+		tmk_reward_detail
+		LEFT JOIN tmk_user_info tui1 on
+		tmk_reward_detail.rewarduser=tui1.recordid
+		LEFT JOIN tmk_user_info tui2 on
+		tmk_reward_detail.rewardfromuserno=tui2.recordid
+		where
+		tui1.recordid=#{rewarduser}
+	</select>
+	<select id="sumReward" resultType="java.lang.Integer" parameterType="RewardModel">
+		select ifnull(sum(tmk_reward_detail.reward),0)
+		from
+		tmk_reward_detail
+		LEFT JOIN tmk_user_info on
+		tmk_reward_detail.rewarduser=tmk_user_info.recordid
+		where
+		tmk_user_info.recordid=#{rewarduser}
+	</select>
+
+</mapper>

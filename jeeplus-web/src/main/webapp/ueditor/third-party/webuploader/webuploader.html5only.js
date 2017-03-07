@@ -4525,7 +4525,7 @@
      * @fileOverview Image控件
      */
     define('runtime/html5/imagemeta',[
-        'runtime/html5/util'
+        'runtime/html5/utils'
     ], function( Util ) {
     
         var api;
@@ -4965,7 +4965,7 @@
     define('runtime/html5/image',[
         'base',
         'runtime/html5/runtime',
-        'runtime/html5/util'
+        'runtime/html5/utils'
     ], function( Base, Html5Runtime, Util ) {
     
         var BLANK = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D';

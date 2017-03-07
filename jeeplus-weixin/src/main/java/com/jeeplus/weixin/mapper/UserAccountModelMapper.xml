@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jeeplus.weixin.mapper.UserAccountModelMapper" >
+  <resultMap id="BaseResultMap" type="cn.btkj.entity.UserAccountModel" >
+    <id column="recordid" property="recordid" jdbcType="INTEGER" />
+    <result column="accountuser" property="accountuser" jdbcType="INTEGER" />
+    <result column="deposit" property="deposit" jdbcType="INTEGER" />
+    <result column="depositfrozenstatus" property="depositfrozenstatus" jdbcType="TINYINT" />
+    <result column="reward" property="reward" jdbcType="INTEGER" />
+    <result column="totalamount" property="totalamount" jdbcType="INTEGER" />
+    <result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+
+  </resultMap>
+  <sql id="Base_Column_List" >
+    recordid, accountuser, deposit, depositfrozenstatus, reward, totalamount, updatetime
+  </sql>
+  <select id="selectByUserid" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tmk_user_account
+    where accountuser = #{accountuser,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tmk_user_account
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.btkj.entity.UserAccountModel" >
+    insert into tmk_user_account (recordid, accountuser, deposit, 
+      depositfrozenstatus, reward, totalamount, 
+      updatetime)
+    values (#{recordid,jdbcType=INTEGER}, #{accountuser,jdbcType=INTEGER}, 0, 0,0,0, now())
+  </insert>
+  <insert id="insertSelective" parameterType="cn.btkj.entity.UserAccountModel" >
+    insert into tmk_user_account
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        recordid,
+      </if>
+      <if test="accountuser != null" >
+        accountuser,
+      </if>
+      <if test="deposit != null" >
+        deposit,
+      </if>
+      <if test="depositfrozenstatus != null" >
+        depositfrozenstatus,
+      </if>
+      <if test="reward != null" >
+        reward,
+      </if>
+      <if test="totalamount != null" >
+        totalamount,
+      </if>
+      <if test="updatetime != null" >
+        updatetime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        #{recordid,jdbcType=INTEGER},
+      </if>
+      <if test="accountuser != null" >
+        #{accountuser,jdbcType=INTEGER},
+      </if>
+      <if test="deposit != null" >
+        #{deposit,jdbcType=INTEGER},
+      </if>
+      <if test="depositfrozenstatus != null" >
+        #{depositfrozenstatus,jdbcType=TINYINT},
+      </if>
+      <if test="reward != null" >
+        #{reward,jdbcType=INTEGER},
+      </if>
+      <if test="totalamount != null" >
+        #{totalamount,jdbcType=INTEGER},
+      </if>
+      <if test="updatetime != null" >
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.btkj.entity.UserAccountModel" >
+    update tmk_user_account
+    <set >
+      <if test="accountuser != null" >
+        accountuser = #{accountuser,jdbcType=INTEGER},
+      </if>
+      <if test="deposit != null" >
+        deposit = #{deposit,jdbcType=INTEGER},
+      </if>
+      <if test="depositfrozenstatus != null" >
+        depositfrozenstatus = #{depositfrozenstatus,jdbcType=TINYINT},
+      </if>
+      <if test="reward != null" >
+        reward = #{reward,jdbcType=INTEGER},
+      </if>
+      <if test="totalamount != null" >
+        totalamount = #{totalamount,jdbcType=INTEGER},
+      </if>
+        updatetime = now(),
+    </set>
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.btkj.entity.UserAccountModel" >
+    update tmk_user_account
+    set accountuser = #{accountuser,jdbcType=INTEGER},
+      deposit = #{deposit,jdbcType=INTEGER},
+      depositfrozenstatus = #{depositfrozenstatus,jdbcType=TINYINT},
+      reward = #{reward,jdbcType=INTEGER},
+      totalamount = #{totalamount,jdbcType=INTEGER},
+      updatetime = #{updatetime,jdbcType=TIMESTAMP}
+
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  
+  
+   <select id="selectmyFoundByUserid" resultType="MyFoundModel" parameterType="java.lang.Integer" >
+	  select tua.*,
+		<![CDATA[ (select ifnull(sum(optamount),0) from tmk_user_account_detail where accountuser=#{accountuser} and optamount<0 and accountopt not in(7,8,9,10) and del=0) as  consume]]>  
+		from tmk_user_account  tua
+		where accountuser=#{accountuser}
+   </select>
+
+  
+</mapper>

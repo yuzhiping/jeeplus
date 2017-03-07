@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jeeplus.weixin.mapper.CarInfoModelMapper" >
+  <resultMap id="BaseResultMap" type="cn.btkj.entity.CarInfoModel" >
+    <id column="recordid" property="recordid" jdbcType="INTEGER" />
+    <result column="carmodel" property="carmodel" jdbcType="VARCHAR" />
+    <result column="carpicname" property="carpicname" jdbcType="VARCHAR" />
+    <result column="macrangepercharge" property="macrangepercharge" jdbcType="SMALLINT" />
+    <result column="carrypassengers" property="carrypassengers" jdbcType="SMALLINT" />
+    <result column="loadweight" property="loadweight" jdbcType="SMALLINT" />
+    <result column="carprovider" property="carprovider" jdbcType="INTEGER" />
+    <result column="carname" property="carname" jdbcType="VARCHAR" />
+    <result column="deletestatus" property="deletestatus" jdbcType="TINYINT" />
+    <result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    recordid, carmodel, carpicname, macrangepercharge, carrypassengers, loadweight, carprovider, 
+    carname, deletestatus, updatetime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tmk_car_info
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tmk_car_info
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.btkj.entity.CarInfoModel" >
+    insert into tmk_car_info (recordid, carmodel, carpicname, 
+      macrangepercharge, carrypassengers, loadweight, 
+      carprovider, carname, deletestatus, 
+      updatetime)
+    values (#{recordid,jdbcType=INTEGER}, #{carmodel,jdbcType=VARCHAR}, #{carpicname,jdbcType=VARCHAR}, 
+      #{macrangepercharge,jdbcType=SMALLINT}, #{carrypassengers,jdbcType=SMALLINT}, #{loadweight,jdbcType=SMALLINT}, 
+      #{carprovider,jdbcType=INTEGER}, #{carname,jdbcType=VARCHAR}, #{deletestatus,jdbcType=TINYINT}, 
+      #{updatetime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.btkj.entity.CarInfoModel" >
+    insert into tmk_car_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        recordid,
+      </if>
+      <if test="carmodel != null" >
+        carmodel,
+      </if>
+      <if test="carpicname != null" >
+        carpicname,
+      </if>
+      <if test="macrangepercharge != null" >
+        macrangepercharge,
+      </if>
+      <if test="carrypassengers != null" >
+        carrypassengers,
+      </if>
+      <if test="loadweight != null" >
+        loadweight,
+      </if>
+      <if test="carprovider != null" >
+        carprovider,
+      </if>
+      <if test="carname != null" >
+        carname,
+      </if>
+      <if test="deletestatus != null" >
+        deletestatus,
+      </if>
+      <if test="updatetime != null" >
+        updatetime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        #{recordid,jdbcType=INTEGER},
+      </if>
+      <if test="carmodel != null" >
+        #{carmodel,jdbcType=VARCHAR},
+      </if>
+      <if test="carpicname != null" >
+        #{carpicname,jdbcType=VARCHAR},
+      </if>
+      <if test="macrangepercharge != null" >
+        #{macrangepercharge,jdbcType=SMALLINT},
+      </if>
+      <if test="carrypassengers != null" >
+        #{carrypassengers,jdbcType=SMALLINT},
+      </if>
+      <if test="loadweight != null" >
+        #{loadweight,jdbcType=SMALLINT},
+      </if>
+      <if test="carprovider != null" >
+        #{carprovider,jdbcType=INTEGER},
+      </if>
+      <if test="carname != null" >
+        #{carname,jdbcType=VARCHAR},
+      </if>
+      <if test="deletestatus != null" >
+        #{deletestatus,jdbcType=TINYINT},
+      </if>
+      <if test="updatetime != null" >
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.btkj.entity.CarInfoModel" >
+    update tmk_car_info
+    <set >
+      <if test="carmodel != null" >
+        carmodel = #{carmodel,jdbcType=VARCHAR},
+      </if>
+      <if test="carpicname != null" >
+        carpicname = #{carpicname,jdbcType=VARCHAR},
+      </if>
+      <if test="macrangepercharge != null" >
+        macrangepercharge = #{macrangepercharge,jdbcType=SMALLINT},
+      </if>
+      <if test="carrypassengers != null" >
+        carrypassengers = #{carrypassengers,jdbcType=SMALLINT},
+      </if>
+      <if test="loadweight != null" >
+        loadweight = #{loadweight,jdbcType=SMALLINT},
+      </if>
+      <if test="carprovider != null" >
+        carprovider = #{carprovider,jdbcType=INTEGER},
+      </if>
+      <if test="carname != null" >
+        carname = #{carname,jdbcType=VARCHAR},
+      </if>
+      <if test="deletestatus != null" >
+        deletestatus = #{deletestatus,jdbcType=TINYINT},
+      </if>
+      <if test="updatetime != null" >
+        updatetime = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.btkj.entity.CarInfoModel" >
+    update tmk_car_info
+    set carmodel = #{carmodel,jdbcType=VARCHAR},
+      carpicname = #{carpicname,jdbcType=VARCHAR},
+      macrangepercharge = #{macrangepercharge,jdbcType=SMALLINT},
+      carrypassengers = #{carrypassengers,jdbcType=SMALLINT},
+      loadweight = #{loadweight,jdbcType=SMALLINT},
+      carprovider = #{carprovider,jdbcType=INTEGER},
+      carname = #{carname,jdbcType=VARCHAR},
+      deletestatus = #{deletestatus,jdbcType=TINYINT},
+      updatetime = #{updatetime,jdbcType=TIMESTAMP}
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  
+  <select id="selectCarInfoList" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tmk_car_info
+  </select>
+  
+</mapper>

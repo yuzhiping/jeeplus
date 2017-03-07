@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jeeplus.weixin.mapper.OrderHistoryModelMapper" >
+  <resultMap id="BaseResultMap" type="cn.btkj.entity.OrderHistoryModel" >
+    <id column="recordid" property="recordid" jdbcType="INTEGER" />
+    <result column="orderno" property="orderno" jdbcType="VARCHAR" />
+    <result column="orderstatus" property="orderstatus" jdbcType="TINYINT" />
+    <result column="ordercar" property="ordercar" jdbcType="INTEGER" />
+    <result column="orderuser" property="orderuser" jdbcType="INTEGER" />
+    <result column="depositstatus" property="depositstatus" jdbcType="TINYINT" />
+    <result column="orderpay" property="orderpay" jdbcType="INTEGER" />
+    <result column="calcmileage" property="calcmileage" jdbcType="INTEGER" />
+    <result column="validmileage" property="validmileage" jdbcType="INTEGER" />
+    <result column="contractno" property="contractno" jdbcType="VARCHAR" />
+    <result column="platenumber" property="platenumber" jdbcType="VARCHAR" />
+    <result column="ordertime" property="ordertime" jdbcType="TIMESTAMP" />
+    <result column="picktime" property="picktime" jdbcType="TIMESTAMP" />
+    <result column="planusetime" property="planusetime" jdbcType="VARCHAR" />
+    <result column="actualusetime" property="actualusetime" jdbcType="VARCHAR" />
+    <result column="tboxid" property="tboxid" jdbcType="INTEGER" />
+    <result column="pickremark" property="pickremark" jdbcType="VARCHAR" />
+    <result column="rtnremark" property="rtnremark" jdbcType="VARCHAR" />
+    <result column="orderoperator" property="orderoperator" jdbcType="VARCHAR" />
+    <result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    recordid, orderno, orderstatus, ordercar, orderuser, depositstatus, orderpay, calcmileage, 
+    validmileage, contractno, platenumber, ordertime, picktime, planusetime, actualusetime, 
+    tboxid, pickremark, rtnremark, orderoperator, updatetime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tmk_order_history
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tmk_order_history
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.btkj.entity.OrderHistoryModel" >
+    insert into tmk_order_history (recordid, orderno, orderstatus, 
+      ordercar, orderuser, depositstatus, 
+      orderpay, calcmileage, validmileage, 
+      contractno, platenumber, ordertime, 
+      picktime, planusetime, actualusetime, 
+      tboxid, pickremark, rtnremark, 
+      orderoperator, updatetime)
+    values (#{recordid,jdbcType=INTEGER}, #{orderno,jdbcType=VARCHAR}, #{orderstatus,jdbcType=TINYINT}, 
+      #{ordercar,jdbcType=INTEGER}, #{orderuser,jdbcType=INTEGER}, #{depositstatus,jdbcType=TINYINT}, 
+      #{orderpay,jdbcType=INTEGER}, #{calcmileage,jdbcType=INTEGER}, #{validmileage,jdbcType=INTEGER}, 
+      #{contractno,jdbcType=VARCHAR}, #{platenumber,jdbcType=VARCHAR}, now() , 
+      #{picktime,jdbcType=TIMESTAMP}, #{planusetime,jdbcType=VARCHAR}, #{actualusetime,jdbcType=VARCHAR}, 
+      #{tboxid,jdbcType=INTEGER}, #{pickremark,jdbcType=VARCHAR}, #{rtnremark,jdbcType=VARCHAR}, 
+      #{orderoperator,jdbcType=VARCHAR}, now())
+  </insert>
+  <insert id="insertSelective" parameterType="cn.btkj.entity.OrderHistoryModel" >
+    insert into tmk_order_history
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        recordid,
+      </if>
+      <if test="orderno != null" >
+        orderno,
+      </if>
+      <if test="orderstatus != null" >
+        orderstatus,
+      </if>
+      <if test="ordercar != null" >
+        ordercar,
+      </if>
+      <if test="orderuser != null" >
+        orderuser,
+      </if>
+      <if test="depositstatus != null" >
+        depositstatus,
+      </if>
+      <if test="orderpay != null" >
+        orderpay,
+      </if>
+      <if test="calcmileage != null" >
+        calcmileage,
+      </if>
+      <if test="validmileage != null" >
+        validmileage,
+      </if>
+      <if test="contractno != null" >
+        contractno,
+      </if>
+      <if test="platenumber != null" >
+        platenumber,
+      </if>
+        ordertime,
+      <if test="picktime != null" >
+        picktime,
+      </if>
+      <if test="planusetime != null" >
+        planusetime,
+      </if>
+      <if test="actualusetime != null" >
+        actualusetime,
+      </if>
+      <if test="tboxid != null" >
+        tboxid,
+      </if>
+      <if test="pickremark != null" >
+        pickremark,
+      </if>
+      <if test="rtnremark != null" >
+        rtnremark,
+      </if>
+      <if test="orderoperator != null" >
+        orderoperator,
+      </if>
+        updatetime,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        #{recordid,jdbcType=INTEGER},
+      </if>
+      <if test="orderno != null" >
+        #{orderno,jdbcType=VARCHAR},
+      </if>
+      <if test="orderstatus != null" >
+        #{orderstatus,jdbcType=TINYINT},
+      </if>
+      <if test="ordercar != null" >
+        #{ordercar,jdbcType=INTEGER},
+      </if>
+      <if test="orderuser != null" >
+        #{orderuser,jdbcType=INTEGER},
+      </if>
+      <if test="depositstatus != null" >
+        #{depositstatus,jdbcType=TINYINT},
+      </if>
+      <if test="orderpay != null" >
+        #{orderpay,jdbcType=INTEGER},
+      </if>
+      <if test="calcmileage != null" >
+        #{calcmileage,jdbcType=INTEGER},
+      </if>
+      <if test="validmileage != null" >
+        #{validmileage,jdbcType=INTEGER},
+      </if>
+      <if test="contractno != null" >
+        #{contractno,jdbcType=VARCHAR},
+      </if>
+      <if test="platenumber != null" >
+        #{platenumber,jdbcType=VARCHAR},
+      </if>
+        now(),
+      <if test="picktime != null" >
+        #{picktime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="planusetime != null" >
+        #{planusetime,jdbcType=VARCHAR},
+      </if>
+      <if test="actualusetime != null" >
+        #{actualusetime,jdbcType=VARCHAR},
+      </if>
+      <if test="tboxid != null" >
+        #{tboxid,jdbcType=INTEGER},
+      </if>
+      <if test="pickremark != null" >
+        #{pickremark,jdbcType=VARCHAR},
+      </if>
+      <if test="rtnremark != null" >
+        #{rtnremark,jdbcType=VARCHAR},
+      </if>
+      <if test="orderoperator != null" >
+        #{orderoperator,jdbcType=VARCHAR},
+      </if>
+       now(),
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.btkj.entity.OrderHistoryModel" >
+    update tmk_order_history
+    <set >
+      <if test="orderno != null" >
+        orderno = #{orderno,jdbcType=VARCHAR},
+      </if>
+      <if test="orderstatus != null" >
+        orderstatus = #{orderstatus,jdbcType=TINYINT},
+      </if>
+      <if test="ordercar != null" >
+        ordercar = #{ordercar,jdbcType=INTEGER},
+      </if>
+      <if test="orderuser != null" >
+        orderuser = #{orderuser,jdbcType=INTEGER},
+      </if>
+      <if test="depositstatus != null" >
+        depositstatus = #{depositstatus,jdbcType=TINYINT},
+      </if>
+      <if test="orderpay != null" >
+        orderpay = #{orderpay,jdbcType=INTEGER},
+      </if>
+      <if test="calcmileage != null" >
+        calcmileage = #{calcmileage,jdbcType=INTEGER},
+      </if>
+      <if test="validmileage != null" >
+        validmileage = #{validmileage,jdbcType=INTEGER},
+      </if>
+      <if test="contractno != null" >
+        contractno = #{contractno,jdbcType=VARCHAR},
+      </if>
+      <if test="platenumber != null" >
+        platenumber = #{platenumber,jdbcType=VARCHAR},
+      </if>
+      <if test="ordertime != null" >
+        ordertime = #{ordertime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="picktime != null" >
+        picktime = #{picktime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="planusetime != null" >
+        planusetime = #{planusetime,jdbcType=VARCHAR},
+      </if>
+      <if test="actualusetime != null" >
+        actualusetime = #{actualusetime,jdbcType=VARCHAR},
+      </if>
+      <if test="tboxid != null" >
+        tboxid = #{tboxid,jdbcType=INTEGER},
+      </if>
+      <if test="pickremark != null" >
+        pickremark = #{pickremark,jdbcType=VARCHAR},
+      </if>
+      <if test="rtnremark != null" >
+        rtnremark = #{rtnremark,jdbcType=VARCHAR},
+      </if>
+      <if test="orderoperator != null" >
+        orderoperator = #{orderoperator,jdbcType=VARCHAR},
+      </if>
+      <if test="updatetime != null" >
+        updatetime = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.btkj.entity.OrderHistoryModel" >
+    update tmk_order_history
+    set orderno = #{orderno,jdbcType=VARCHAR},
+      orderstatus = #{orderstatus,jdbcType=TINYINT},
+      ordercar = #{ordercar,jdbcType=INTEGER},
+      orderuser = #{orderuser,jdbcType=INTEGER},
+      depositstatus = #{depositstatus,jdbcType=TINYINT},
+      orderpay = #{orderpay,jdbcType=INTEGER},
+      calcmileage = #{calcmileage,jdbcType=INTEGER},
+      validmileage = #{validmileage,jdbcType=INTEGER},
+      contractno = #{contractno,jdbcType=VARCHAR},
+      platenumber = #{platenumber,jdbcType=VARCHAR},
+      ordertime = #{ordertime,jdbcType=TIMESTAMP},
+      picktime = #{picktime,jdbcType=TIMESTAMP},
+      planusetime = #{planusetime,jdbcType=VARCHAR},
+      actualusetime = #{actualusetime,jdbcType=VARCHAR},
+      tboxid = #{tboxid,jdbcType=INTEGER},
+      pickremark = #{pickremark,jdbcType=VARCHAR},
+      rtnremark = #{rtnremark,jdbcType=VARCHAR},
+      orderoperator = #{orderoperator,jdbcType=VARCHAR},
+      updatetime = #{updatetime,jdbcType=TIMESTAMP}
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+</mapper>

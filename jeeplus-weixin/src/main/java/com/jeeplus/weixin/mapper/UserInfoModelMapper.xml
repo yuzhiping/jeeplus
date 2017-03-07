@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jeeplus.weixin.mapper.UserInfoModelMapper" >
+  <resultMap id="BaseResultMap" type="cn.btkj.entity.UserInfoModel" >
+    <id column="recordid" property="recordid" jdbcType="INTEGER" />
+    <result column="phoneNo" property="phoneno" jdbcType="VARCHAR" />
+    <result column="pwd" property="pwd" jdbcType="VARCHAR" />
+    <result column="refferNo" property="refferno" jdbcType="VARCHAR" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="gender" property="gender" jdbcType="TINYINT" />
+    <result column="idcard" property="idcard" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="userLevel" property="userlevel" jdbcType="TINYINT" />
+    <result column="updateTime" property="updatetime" jdbcType="TIMESTAMP" />
+    <result column="openid" property="openid" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="cn.btkj.entity.UserInfoModel" extends="BaseResultMap" >
+    <result column="userpic" property="userpic" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    recordid, phoneNo, pwd, refferNo, username, gender, idcard, email, userLevel, updateTime,openid
+  </sql>
+  <sql id="Blob_Column_List" >
+    userpic
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tmk_user_info
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tmk_user_info
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.btkj.entity.UserInfoModel" >
+      
+     <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="recordid">
+	      SELECT LAST_INSERT_ID() AS recordid
+	</selectKey>
+    insert into tmk_user_info
+     (recordid, phoneNo, pwd, 
+      refferNo, username, gender, 
+      idcard, email, userLevel, 
+      updateTime, userpic,openid)
+    values (#{recordid,jdbcType=INTEGER}, #{phoneno,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, 
+      #{refferno,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{gender,jdbcType=TINYINT}, 
+      #{idcard,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{userlevel,jdbcType=TINYINT}, 
+      now(), #{userpic,jdbcType=VARCHAR},#{openid,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.btkj.entity.UserInfoModel" >
+       <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="recordid">
+	      SELECT LAST_INSERT_ID() AS recordid
+	</selectKey>
+    insert into tmk_user_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        recordid,
+      </if>
+      <if test="phoneno != null" >
+        phoneNo,
+      </if>
+      <if test="pwd != null" >
+        pwd,
+      </if>
+      <if test="refferno != null" >
+        refferNo,
+      </if>
+      <if test="username != null" >
+        username,
+      </if>
+      <if test="gender != null" >
+        gender,
+      </if>
+      <if test="idcard != null" >
+        idcard,
+      </if>
+      <if test="email != null" >
+        email,
+      </if>
+      <if test="userlevel != null" >
+        userLevel,
+      </if>
+        now(),
+      <if test="userpic != null" >
+        userpic,
+      </if>
+      <if test="openid != null" >
+        openid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        #{recordid,jdbcType=INTEGER},
+      </if>
+      <if test="phoneno != null" >
+        #{phoneno,jdbcType=VARCHAR},
+      </if>
+      <if test="pwd != null" >
+        #{pwd,jdbcType=VARCHAR},
+      </if>
+      <if test="refferno != null" >
+        #{refferno,jdbcType=VARCHAR},
+      </if>
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null" >
+        #{gender,jdbcType=TINYINT},
+      </if>
+      <if test="idcard != null" >
+        #{idcard,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="userlevel != null" >
+        #{userlevel,jdbcType=TINYINT},
+      </if>
+        now(),
+      <if test="userpic != null" >
+        #{userpic,jdbcType=VARCHAR},
+      </if>
+       <if test="openid != null" >
+        #{openid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.btkj.entity.UserInfoModel" >
+    update tmk_user_info
+    <set >
+      <if test="phoneno != null" >
+        phoneNo = #{phoneno,jdbcType=VARCHAR},
+      </if>
+      <if test="pwd != null" >
+        pwd = #{pwd,jdbcType=VARCHAR},
+      </if>
+      <if test="refferno != null" >
+        refferNo = #{refferno,jdbcType=VARCHAR},
+      </if>
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null" >
+        gender = #{gender,jdbcType=TINYINT},
+      </if>
+      <if test="idcard != null" >
+        idcard = #{idcard,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="userlevel != null" >
+        userLevel = #{userlevel,jdbcType=TINYINT},
+      </if>
+        updateTime = now(),
+      <if test="userpic != null" >
+        userpic = #{userpic,jdbcType=VARCHAR},
+      </if>
+      <if test="userpic != null" >
+        userpic = #{userpic,jdbcType=VARCHAR},
+      </if>
+      <if test="openid != null" >
+        openid = #{openid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="cn.btkj.entity.UserInfoModel" >
+    update tmk_user_info
+    set phoneNo = #{phoneno,jdbcType=VARCHAR},
+      pwd = #{pwd,jdbcType=VARCHAR},
+      refferNo = #{refferno,jdbcType=VARCHAR},
+      username = #{username,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=TINYINT},
+      idcard = #{idcard,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      userLevel = #{userlevel,jdbcType=TINYINT},
+      updateTime =now(),
+      openid = #{openid,jdbcType=VARCHAR},
+      userpic = #{userpic,jdbcType=VARCHAR}
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.btkj.entity.UserInfoModel" >
+    update tmk_user_info
+    set phoneNo = #{phoneno,jdbcType=VARCHAR},
+      pwd = #{pwd,jdbcType=VARCHAR},
+      refferNo = #{refferno,jdbcType=VARCHAR},
+      username = #{username,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=TINYINT},
+      idcard = #{idcard,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      userLevel = #{userlevel,jdbcType=TINYINT},
+      openid = #{openid,jdbcType=VARCHAR},
+      updateTime = now()
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  
+   
+    <select id="selectByPhoneNo" parameterType="String" resultMap="ResultMapWithBLOBs">
+       select
+          <include refid="Base_Column_List" />
+           ,
+          <include refid="Blob_Column_List" />
+       from `tmk_user_info`
+       where phoneNo = #{phoneno}
+   </select>
+   
+   
+      
+    <select id="selectByOpenid" parameterType="String" resultMap="ResultMapWithBLOBs">
+       select
+          <include refid="Base_Column_List" />
+           ,
+          <include refid="Blob_Column_List" />
+       from `tmk_user_info`
+       where openid=#{openid} 
+   </select>
+ 
+</mapper>

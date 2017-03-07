@@ -5065,7 +5065,7 @@ module.exports = (function( root, factory ) {
      * @fileOverview Image控件
      */
     define('runtime/html5/imagemeta',[
-        'runtime/html5/util'
+        'runtime/html5/utils'
     ], function( Util ) {
     
         var api;
@@ -6255,7 +6255,7 @@ module.exports = (function( root, factory ) {
      * @fileOverview Fix android canvas.toDataUrl bug.
      */
     define('runtime/html5/androidpatch',[
-        'runtime/html5/util',
+        'runtime/html5/utils',
         'runtime/html5/jpegencoder',
         'base'
     ], function( Util, encoder, Base ) {
@@ -6307,7 +6307,7 @@ module.exports = (function( root, factory ) {
     define('runtime/html5/image',[
         'base',
         'runtime/html5/runtime',
-        'runtime/html5/util'
+        'runtime/html5/utils'
     ], function( Base, Html5Runtime, Util ) {
     
         var BLANK = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D';

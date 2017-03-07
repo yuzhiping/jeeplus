@@ -977,7 +977,7 @@ public class StringUtils {
      */
 
     // ★传入一个字符串，把符合pattern格式的字符串放入字符串数组
-    // java.util.regex是一个用正则表达式所订制的模式来对字符串进行匹配工作的类库包
+    // java.utils.regex是一个用正则表达式所订制的模式来对字符串进行匹配工作的类库包
     public static String[] getStringArrayByPattern(String str, String pattern) {
         Pattern p = Pattern.compile(pattern, Pattern.CASE_INSENSITIVE);
         Matcher matcher = p.matcher(str);
@@ -987,7 +987,7 @@ public class StringUtils {
         while (matcher.find()) {
             for (int i = 0; i < matcher.groupCount(); i++) { // int groupCount()
                 // 返回当前查找所获得的匹配组的数量。
-                // org.jeecgframework.core.util.LogUtil.info(matcher.group(i));
+                // org.jeecgframework.core.utils.LogUtil.info(matcher.group(i));
                 result.add(matcher.group(i));
 
             }
@@ -1014,7 +1014,7 @@ public class StringUtils {
      */
 
 	/*
-	 * String aaa="abcdefghijklmn"; String[] bbb=StringProcessor.midString(aaa, "b","l"); org.jeecgframework.core.util.LogUtil.info("bbb[0]:"+bbb[0]);//cdefghijk org.jeecgframework.core.util.LogUtil.info("bbb[1]:"+bbb[1]);//lmn ★这个方法是得到第二个参数和第三个参数之间的字符串,赋给元素0;然后把元素0代表的字符串之后的,赋给元素1
+	 * String aaa="abcdefghijklmn"; String[] bbb=StringProcessor.midString(aaa, "b","l"); org.jeecgframework.core.utils.LogUtil.info("bbb[0]:"+bbb[0]);//cdefghijk org.jeecgframework.core.utils.LogUtil.info("bbb[1]:"+bbb[1]);//lmn ★这个方法是得到第二个参数和第三个参数之间的字符串,赋给元素0;然后把元素0代表的字符串之后的,赋给元素1
 	 */
 
 	/*
@@ -1790,7 +1790,7 @@ public class StringUtils {
         }else if (clazz.isPrimitive()||clazz.getPackage()==null
                 || clazz.getPackage().getName().equals("java.lang")
                 || clazz.getPackage().getName().equals("java.math")
-                || clazz.getPackage().getName().equals("java.util")) {
+                || clazz.getPackage().getName().equals("java.utils")) {
             isBaseClass =  true;
         }
         return isBaseClass;

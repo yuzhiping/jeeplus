@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jeeplus.weixin.mapper.CitiesModelMapper" >
+  <resultMap id="BaseResultMap" type="cn.btkj.entity.CitiesModel" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="Name" property="name" jdbcType="VARCHAR" />
+    <result column="ParentId" property="parentid" jdbcType="INTEGER" />
+    <result column="ShortName" property="shortname" jdbcType="VARCHAR" />
+    <result column="LevelType" property="leveltype" jdbcType="CHAR" />
+    <result column="CityCode" property="citycode" jdbcType="VARCHAR" />
+    <result column="ZipCode" property="zipcode" jdbcType="VARCHAR" />
+    <result column="MergerName" property="mergername" jdbcType="VARCHAR" />
+    <result column="lng" property="lng" jdbcType="VARCHAR" />
+    <result column="Lat" property="lat" jdbcType="VARCHAR" />
+    <result column="Pinyin" property="pinyin" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, Name, ParentId, ShortName, LevelType, CityCode, ZipCode, MergerName, lng, Lat, 
+    Pinyin
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from tmk_cities
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from tmk_cities
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="cn.btkj.entity.CitiesModel" >
+    insert into tmk_cities (id, Name, ParentId, 
+      ShortName, LevelType, CityCode, 
+      ZipCode, MergerName, lng, 
+      Lat, Pinyin)
+    values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{parentid,jdbcType=INTEGER}, 
+      #{shortname,jdbcType=VARCHAR}, #{leveltype,jdbcType=CHAR}, #{citycode,jdbcType=VARCHAR}, 
+      #{zipcode,jdbcType=VARCHAR}, #{mergername,jdbcType=VARCHAR}, #{lng,jdbcType=VARCHAR}, 
+      #{lat,jdbcType=VARCHAR}, #{pinyin,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.btkj.entity.CitiesModel" >
+    insert into tmk_cities
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        Name,
+      </if>
+      <if test="parentid != null" >
+        ParentId,
+      </if>
+      <if test="shortname != null" >
+        ShortName,
+      </if>
+      <if test="leveltype != null" >
+        LevelType,
+      </if>
+      <if test="citycode != null" >
+        CityCode,
+      </if>
+      <if test="zipcode != null" >
+        ZipCode,
+      </if>
+      <if test="mergername != null" >
+        MergerName,
+      </if>
+      <if test="lng != null" >
+        lng,
+      </if>
+      <if test="lat != null" >
+        Lat,
+      </if>
+      <if test="pinyin != null" >
+        Pinyin,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="parentid != null" >
+        #{parentid,jdbcType=INTEGER},
+      </if>
+      <if test="shortname != null" >
+        #{shortname,jdbcType=VARCHAR},
+      </if>
+      <if test="leveltype != null" >
+        #{leveltype,jdbcType=CHAR},
+      </if>
+      <if test="citycode != null" >
+        #{citycode,jdbcType=VARCHAR},
+      </if>
+      <if test="zipcode != null" >
+        #{zipcode,jdbcType=VARCHAR},
+      </if>
+      <if test="mergername != null" >
+        #{mergername,jdbcType=VARCHAR},
+      </if>
+      <if test="lng != null" >
+        #{lng,jdbcType=VARCHAR},
+      </if>
+      <if test="lat != null" >
+        #{lat,jdbcType=VARCHAR},
+      </if>
+      <if test="pinyin != null" >
+        #{pinyin,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.btkj.entity.CitiesModel" >
+    update tmk_cities
+    <set >
+      <if test="name != null" >
+        Name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="parentid != null" >
+        ParentId = #{parentid,jdbcType=INTEGER},
+      </if>
+      <if test="shortname != null" >
+        ShortName = #{shortname,jdbcType=VARCHAR},
+      </if>
+      <if test="leveltype != null" >
+        LevelType = #{leveltype,jdbcType=CHAR},
+      </if>
+      <if test="citycode != null" >
+        CityCode = #{citycode,jdbcType=VARCHAR},
+      </if>
+      <if test="zipcode != null" >
+        ZipCode = #{zipcode,jdbcType=VARCHAR},
+      </if>
+      <if test="mergername != null" >
+        MergerName = #{mergername,jdbcType=VARCHAR},
+      </if>
+      <if test="lng != null" >
+        lng = #{lng,jdbcType=VARCHAR},
+      </if>
+      <if test="lat != null" >
+        Lat = #{lat,jdbcType=VARCHAR},
+      </if>
+      <if test="pinyin != null" >
+        Pinyin = #{pinyin,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.btkj.entity.CitiesModel" >
+    update tmk_cities
+    set Name = #{name,jdbcType=VARCHAR},
+      ParentId = #{parentid,jdbcType=INTEGER},
+      ShortName = #{shortname,jdbcType=VARCHAR},
+      LevelType = #{leveltype,jdbcType=CHAR},
+      CityCode = #{citycode,jdbcType=VARCHAR},
+      ZipCode = #{zipcode,jdbcType=VARCHAR},
+      MergerName = #{mergername,jdbcType=VARCHAR},
+      lng = #{lng,jdbcType=VARCHAR},
+      Lat = #{lat,jdbcType=VARCHAR},
+      Pinyin = #{pinyin,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  
+    <select id="selectByCityName" resultMap="BaseResultMap" parameterType="CitiesModel" >
+    select 
+    <include refid="Base_Column_List" />
+    from tmk_cities
+    where Name = #{name}
+  </select>
+  <select id="selectCityName" resultMap="BaseResultMap" >
+  	select 
+  	DISTINCT tc.id,tc.`Name` 
+  	from tmk_cities tc RIGHT JOIN tmk_provider_contact tpc ON tc.id=tpc.carsupplycity
+  </select>
+  
+</mapper>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jeeplus.weixin.mapper.ProviderInfoModelMapper" >
+  <resultMap id="BaseResultMap" type="cn.btkj.entity.ProviderInfoModel" >
+    <id column="recordid" property="recordid" jdbcType="INTEGER" />
+    <result column="providerid" property="providerid" jdbcType="SMALLINT" />
+    <result column="providername" property="providername" jdbcType="VARCHAR" />
+    <result column="phoneno" property="phoneno" jdbcType="VARCHAR" />
+    <result column="providertype" property="providertype" jdbcType="TINYINT" />
+    <result column="deletestatus" property="deletestatus" jdbcType="TINYINT" />
+    <result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    recordid, providerid, providername, phoneno, providertype, deletestatus, updatetime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tmk_provider_info
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tmk_provider_info
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.btkj.entity.ProviderInfoModel" >
+    insert into tmk_provider_info (recordid, providerid, providername, 
+      phoneno, providertype, deletestatus, 
+      updatetime)
+    values (#{recordid,jdbcType=INTEGER}, #{providerid,jdbcType=SMALLINT}, #{providername,jdbcType=VARCHAR}, 
+      #{phoneno,jdbcType=VARCHAR}, #{providertype,jdbcType=TINYINT}, #{deletestatus,jdbcType=TINYINT}, 
+      #{updatetime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.btkj.entity.ProviderInfoModel" >
+    insert into tmk_provider_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        recordid,
+      </if>
+      <if test="providerid != null" >
+        providerid,
+      </if>
+      <if test="providername != null" >
+        providername,
+      </if>
+      <if test="phoneno != null" >
+        phoneno,
+      </if>
+      <if test="providertype != null" >
+        providertype,
+      </if>
+      <if test="deletestatus != null" >
+        deletestatus,
+      </if>
+      <if test="updatetime != null" >
+        updatetime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        #{recordid,jdbcType=INTEGER},
+      </if>
+      <if test="providerid != null" >
+        #{providerid,jdbcType=SMALLINT},
+      </if>
+      <if test="providername != null" >
+        #{providername,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneno != null" >
+        #{phoneno,jdbcType=VARCHAR},
+      </if>
+      <if test="providertype != null" >
+        #{providertype,jdbcType=TINYINT},
+      </if>
+      <if test="deletestatus != null" >
+        #{deletestatus,jdbcType=TINYINT},
+      </if>
+      <if test="updatetime != null" >
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.btkj.entity.ProviderInfoModel" >
+    update tmk_provider_info
+    <set >
+      <if test="providerid != null" >
+        providerid = #{providerid,jdbcType=SMALLINT},
+      </if>
+      <if test="providername != null" >
+        providername = #{providername,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneno != null" >
+        phoneno = #{phoneno,jdbcType=VARCHAR},
+      </if>
+      <if test="providertype != null" >
+        providertype = #{providertype,jdbcType=TINYINT},
+      </if>
+      <if test="deletestatus != null" >
+        deletestatus = #{deletestatus,jdbcType=TINYINT},
+      </if>
+      <if test="updatetime != null" >
+        updatetime = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.btkj.entity.ProviderInfoModel" >
+    update tmk_provider_info
+    set providerid = #{providerid,jdbcType=SMALLINT},
+      providername = #{providername,jdbcType=VARCHAR},
+      phoneno = #{phoneno,jdbcType=VARCHAR},
+      providertype = #{providertype,jdbcType=TINYINT},
+      deletestatus = #{deletestatus,jdbcType=TINYINT},
+      updatetime = #{updatetime,jdbcType=TIMESTAMP}
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+</mapper>

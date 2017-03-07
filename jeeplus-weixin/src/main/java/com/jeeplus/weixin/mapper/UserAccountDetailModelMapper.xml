@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jeeplus.weixin.mapper.UserAccountDetailModelMapper" >
+  <resultMap id="BaseResultMap" type="cn.btkj.entity.UserAccountDetailModel" >
+    <id column="recordid" property="recordid" jdbcType="INTEGER" />
+    <result column="accountuser" property="accountuser" jdbcType="INTEGER" />
+    <result column="accountopt" property="accountopt" jdbcType="TINYINT" />
+    <result column="optamount" property="optamount" jdbcType="INTEGER" />
+    <result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+    <result column="reason" property="reason" jdbcType="VARCHAR" />
+    <result column="checktime" property="checktime" jdbcType="TIMESTAMP" />
+    <result column="checkerid" property="checkerid" jdbcType="INTEGER" />
+    <result column="alipayaccount" property="alipayaccount" jdbcType="VARCHAR" />
+    <result column="realname" property="realname" jdbcType="VARCHAR" />
+    <result column="wxopenid" property="wxopenid" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    recordid, accountuser, accountopt, optamount, updatetime,reason,checktime,checkerid,alipayaccount,realname,wxopenid
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tmk_user_account_detail
+    where recordid = #{recordid,jdbcType=INTEGER} 
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tmk_user_account_detail
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.btkj.entity.UserAccountDetailModel" >
+    insert into tmk_user_account_detail (recordid, accountuser, accountopt, 
+      optamount, updatetime,alipayaccount,realname,wxopenid)
+    values (#{recordid,jdbcType=INTEGER}, #{accountuser,jdbcType=INTEGER}, #{accountopt,jdbcType=TINYINT}, 
+      #{optamount,jdbcType=INTEGER}, #{updatetime,jdbcType=TIMESTAMP}, #{alipayaccount},
+       #{realname},#{wxopenid})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.btkj.entity.UserAccountDetailModel" >
+    insert into tmk_user_account_detail
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        recordid,
+      </if>
+      <if test="accountuser != null" >
+        accountuser,
+      </if>
+      <if test="accountopt != null" >
+        accountopt,
+      </if>
+      <if test="optamount != null" >
+        optamount,
+      </if>
+      <if test="updatetime != null" >
+        updatetime,
+      </if>
+      <if test="alipayaccount != null" >
+        alipayaccount,
+      </if>
+      <if test="realname != null" >
+        realname,
+      </if>
+      <if test="wxopenid != null" >
+        wxopenid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        #{recordid,jdbcType=INTEGER},
+      </if>
+      <if test="accountuser != null" >
+        #{accountuser,jdbcType=INTEGER},
+      </if>
+      <if test="accountopt != null" >
+        #{accountopt,jdbcType=TINYINT},
+      </if>
+      <if test="optamount != null" >
+        #{optamount,jdbcType=INTEGER},
+      </if>
+      <if test="updatetime != null" >
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="alipayaccount != null" >
+        #{alipayaccount},
+      </if>
+      <if test="realname != null" >
+        #{realname},
+      </if>
+      <if test="wxopenid != null" >
+        #{wxopenid},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.btkj.entity.UserAccountDetailModel" >
+    update tmk_user_account_detail
+    <set >
+      <if test="accountuser != null" >
+        accountuser = #{accountuser,jdbcType=INTEGER},
+      </if>
+      <if test="accountopt != null" >
+        accountopt = #{accountopt,jdbcType=TINYINT},
+      </if>
+      <if test="optamount != null" >
+        optamount = #{optamount,jdbcType=INTEGER},
+      </if>
+      <if test="updatetime != null" >
+        updatetime = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="reason != null" >
+        reason = #{reason},
+      </if>
+      <if test="checktime != null" >
+        checktime = #{checktime},
+      </if>
+      <if test="checkerid != null" >
+        checkerid = #{checkerid},
+      </if>
+      <if test="del != null" >
+        del = #{del}
+      </if>
+    </set>
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.btkj.entity.UserAccountDetailModel" >
+    update tmk_user_account_detail
+    set accountuser = #{accountuser,jdbcType=INTEGER},
+      accountopt = #{accountopt,jdbcType=TINYINT},
+      optamount = #{optamount,jdbcType=INTEGER},
+      updatetime = #{updatetime,jdbcType=TIMESTAMP},
+      reason = #{reason},
+      checktime = #{checktime},
+      checkerid = #{checkerid},
+      del = #{del}
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  
+   <select id="selectListByUserid" resultType="FoundDetailModel" parameterType="java.lang.Integer" >
+	    select tuad.*,td.name as  accountopt_name
+	    from tmk_user_account_detail tuad
+	    LEFT JOIN tmk_dict td on td.category='AccountOpt' and tuad.accountopt=td.`value` 
+	    where tuad.accountuser = #{accountuser} and tuad.del=0
+	    order by tuad.updatetime desc
+  </select>
+  
+</mapper>

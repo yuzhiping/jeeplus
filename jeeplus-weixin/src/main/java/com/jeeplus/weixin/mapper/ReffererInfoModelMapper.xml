@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jeeplus.weixin.mapper.ReffererInfoModelMapper" >
+  <resultMap id="BaseResultMap" type="cn.btkj.entity.ReffererInfoModel" >
+    <id column="recordid" property="recordid" jdbcType="INTEGER" />
+    <result column="phoneNo" property="phoneno" jdbcType="VARCHAR" />
+    <result column="refferNo" property="refferno" jdbcType="VARCHAR" />
+    <result column="refferInfo" property="refferinfo" jdbcType="VARCHAR" />
+    <result column="updateTime" property="updatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    recordid, phoneNo, refferNo, refferInfo, updateTime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tmk_refferer_info
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tmk_refferer_info
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.btkj.entity.ReffererInfoModel" >
+    insert into tmk_refferer_info (recordid, phoneNo, refferNo, 
+      refferInfo, updateTime)
+    values (#{recordid,jdbcType=INTEGER}, #{phoneno,jdbcType=VARCHAR}, #{refferno,jdbcType=VARCHAR}, 
+      #{refferinfo,jdbcType=VARCHAR},now())
+  </insert>
+  <insert id="insertSelective" parameterType="cn.btkj.entity.ReffererInfoModel" >
+    insert into tmk_refferer_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        recordid,
+      </if>
+      <if test="phoneno != null" >
+        phoneNo,
+      </if>
+      <if test="refferno != null" >
+        refferNo,
+      </if>
+      <if test="refferinfo != null" >
+        refferInfo,
+      </if>
+        updateTime,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        #{recordid,jdbcType=INTEGER},
+      </if>
+      <if test="phoneno != null" >
+        #{phoneno,jdbcType=VARCHAR},
+      </if>
+      <if test="refferno != null" >
+        #{refferno,jdbcType=VARCHAR},
+      </if>
+      <if test="refferinfo != null" >
+        #{refferinfo,jdbcType=VARCHAR},
+      </if>
+        now(),
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.btkj.entity.ReffererInfoModel" >
+    update tmk_refferer_info
+    <set >
+      <if test="phoneno != null" >
+        phoneNo = #{phoneno,jdbcType=VARCHAR},
+      </if>
+      <if test="refferno != null" >
+        refferNo = #{refferno,jdbcType=VARCHAR},
+      </if>
+      <if test="refferinfo != null" >
+        refferInfo = #{refferinfo,jdbcType=VARCHAR},
+      </if>
+        updateTime =now(),
+    </set>
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.btkj.entity.ReffererInfoModel" >
+    update tmk_refferer_info
+    set phoneNo = #{phoneno,jdbcType=VARCHAR},
+      refferNo = #{refferno,jdbcType=VARCHAR},
+      refferInfo = #{refferinfo,jdbcType=VARCHAR},
+      updateTime = now()
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+</mapper>

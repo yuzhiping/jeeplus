@@ -10,22 +10,21 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 
 
     <!--加载微信的配置文件-->
-    <context:property-placeholder location="classpath:weixin/weixin.properties"/>
+    <!--<context:property-placeholder location="classpath:weixin/weixin.properties"/>-->
 
+    <!-- 自动扫描该包 -->
+    <context:component-scan base-package="com.jeeplus.weixin"/>
+
+    <context:annotation-config/>
+
+    <!-- 对静态资源文件的访问，交给default servlet handler处理 -->
+    <mvc:default-servlet-handler />
 
     <!--将ApiConfig交给Spring单例管理-->
     <bean class="com.jeeplus.weixin.fastweixin.api.config.ApiConfig">
         <constructor-arg name="appid" value="${weixin.appid}"/>
         <constructor-arg name="secret" value="${weixin.appscret}"/>
     </bean>
-
-    <!-- 对静态资源文件的访问，交给default servlet handler处理 -->
-    <mvc:default-servlet-handler />
-
-    <!-- 自动扫描该包 -->
-    <context:component-scan base-package="com.jeeplus.weixin"/>
-
-    <context:annotation-config/>
 
     <!--
         配置转换器，避免使用 @ResponseBody 注解，返加字符串不做任何处理时，有可能会出现乱码问题
@@ -77,12 +76,13 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
     </bean>
 
     <!-- 使用mvc:annotation-driven代替注解的适配器和注解的映射器 -->
-    <mvc:annotation-driven>
+    <!--<mvc:annotation-driven>
         <mvc:message-converters>
             <ref bean="fastJsonHttpMessageConverter"/>
             <ref bean="stringHttpMessageConverter"/>
         </mvc:message-converters>
-    </mvc:annotation-driven>
+    </mvc:annotation-driven>-->
+    <mvc:annotation-driven/>
 
     <!-- 返回类型定义 -->
     <util:list id="messageConverters">

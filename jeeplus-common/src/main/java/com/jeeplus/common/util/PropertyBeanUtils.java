@@ -238,7 +238,7 @@ public class PropertyBeanUtils extends PropertyUtilsBean {
                 }
                 String className = clazz.getName();
                 // 临时对策（如果不处理默认的类型转换时会出错）
-                if (className.equalsIgnoreCase("java.util.Date")) {
+                if (className.equalsIgnoreCase("java.utils.Date")) {
                     value = new java.util.Date(((java.sql.Timestamp)value).getTime());// wait to do：貌似有时区问题, 待进一步确认
                 }
 //              if (className.equalsIgnoreCase("java.sql.Timestamp")) {

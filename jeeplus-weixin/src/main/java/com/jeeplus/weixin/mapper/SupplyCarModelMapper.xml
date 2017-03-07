@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jeeplus.weixin.mapper.SupplyCarModelMapper" >
+  <resultMap id="BaseResultMap" type="cn.btkj.entity.SupplyCarModel" >
+    <id column="recordid" property="recordid" jdbcType="INTEGER" />
+    <result column="carprovider" property="carprovider" jdbcType="INTEGER" />
+    <result column="carsupplycity" property="carsupplycity" jdbcType="VARCHAR" />
+    <result column="supplycarapptype" property="supplycarapptype" jdbcType="INTEGER" />
+    <result column="supplycarmodel" property="supplycarmodel" jdbcType="INTEGER" />
+    <result column="supplycarname" property="supplycarname" jdbcType="VARCHAR" />
+    <result column="phoneno" property="phoneno" jdbcType="VARCHAR" />
+    <result column="feescheme" property="feescheme" jdbcType="INTEGER" />
+    <result column="displayseq" property="displayseq" jdbcType="INTEGER" />
+    <result column="deletestatus" property="deletestatus" jdbcType="TINYINT" />
+    <result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    recordid, carprovider, carsupplycity, supplycarapptype, supplycarmodel, supplycarname, 
+    phoneno, feescheme, displayseq, deletestatus, updatetime
+  </sql>
+  <select id="selectByPrimaryKey" resultType="IndexModel" parameterType="java.lang.Integer" >
+	   select  tsc.*,
+		           tci.carmodel,
+		           tci.loadweight, 
+		           tci.carrypassengers,
+		           tci.macrangepercharge, 
+		           tci.carpicname,
+		           tfs.fee ,
+                   tfu.feeunitname,
+                   tc.Name cityName,
+                   tpc.providerphoneno
+                   
+		  from tmk_supply_car tsc
+		  LEFT JOIN tmk_car_info tci on tsc.supplycarmodel=tci.recordid 
+		  LEFT JOIN tmk_provider_info tpi on tpi.recordid=tsc.carprovider
+		  LEFT JOIN tmk_fee_scheme tfs on tfs.recordid=tsc.feescheme
+          LEFT JOIN tmk_fee_unit tfu on tfu.feeunitcode=tfs.feeunit
+          LEFT JOIN tmk_cities tc on tc.id=tsc.carsupplycity
+          LEFT JOIN  tmk_provider_contact tpc on tpc.carprovider=tsc.carprovider and tpc.carsupplycity=tsc.carsupplycity 
+		  
+		  where  tsc.deletestatus=0     and tci.deletestatus=0 
+		         and tpi.deletestatus=0     and tfs.deletestatus=0   
+		         and tfu.deletestatus=0  and tpc.deletestatus=0 
+		         and tsc.usingstatus=1  and  tsc.recordid = #{recordid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tmk_supply_car
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.btkj.entity.SupplyCarModel" >
+    insert into tmk_supply_car (recordid, carprovider, carsupplycity, 
+      supplycarapptype, supplycarmodel, supplycarname, 
+      phoneno, feescheme, displayseq, 
+      deletestatus, updatetime)
+    values (#{recordid,jdbcType=INTEGER}, #{carprovider,jdbcType=INTEGER}, #{carsupplycity,jdbcType=VARCHAR}, 
+      #{supplycarapptype,jdbcType=INTEGER}, #{supplycarmodel,jdbcType=INTEGER}, #{supplycarname,jdbcType=VARCHAR}, 
+      #{phoneno,jdbcType=VARCHAR}, #{feescheme,jdbcType=INTEGER}, #{displayseq,jdbcType=INTEGER}, 0, now())
+  </insert>
+  <insert id="insertSelective" parameterType="cn.btkj.entity.SupplyCarModel" >
+    insert into tmk_supply_car
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        recordid,
+      </if>
+      <if test="carprovider != null" >
+        carprovider,
+      </if>
+      <if test="carsupplycity != null" >
+        carsupplycity,
+      </if>
+      <if test="supplycarapptype != null" >
+        supplycarapptype,
+      </if>
+      <if test="supplycarmodel != null" >
+        supplycarmodel,
+      </if>
+      <if test="supplycarname != null" >
+        supplycarname,
+      </if>
+      <if test="phoneno != null" >
+        phoneno,
+      </if>
+      <if test="feescheme != null" >
+        feescheme,
+      </if>
+      <if test="displayseq != null" >
+        displayseq,
+      </if>
+      <if test="deletestatus != null" >
+        deletestatus,
+      </if>
+      <if test="updatetime != null" >
+        updatetime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="recordid != null" >
+        #{recordid,jdbcType=INTEGER},
+      </if>
+      <if test="carprovider != null" >
+        #{carprovider,jdbcType=INTEGER},
+      </if>
+      <if test="carsupplycity != null" >
+        #{carsupplycity,jdbcType=VARCHAR},
+      </if>
+      <if test="supplycarapptype != null" >
+        #{supplycarapptype,jdbcType=INTEGER},
+      </if>
+      <if test="supplycarmodel != null" >
+        #{supplycarmodel,jdbcType=INTEGER},
+      </if>
+      <if test="supplycarname != null" >
+        #{supplycarname,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneno != null" >
+        #{phoneno,jdbcType=VARCHAR},
+      </if>
+      <if test="feescheme != null" >
+        #{feescheme,jdbcType=INTEGER},
+      </if>
+      <if test="displayseq != null" >
+        #{displayseq,jdbcType=INTEGER},
+      </if>
+      <if test="deletestatus != null" >
+        #{deletestatus,jdbcType=TINYINT},
+      </if>
+      <if test="updatetime != null" >
+        now(),
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.btkj.entity.SupplyCarModel" >
+    update tmk_supply_car
+    <set >
+      <if test="carprovider != null" >
+        carprovider = #{carprovider,jdbcType=INTEGER},
+      </if>
+      <if test="carsupplycity != null" >
+        carsupplycity = #{carsupplycity,jdbcType=VARCHAR},
+      </if>
+      <if test="supplycarapptype != null" >
+        supplycarapptype = #{supplycarapptype,jdbcType=INTEGER},
+      </if>
+      <if test="supplycarmodel != null" >
+        supplycarmodel = #{supplycarmodel,jdbcType=INTEGER},
+      </if>
+      <if test="supplycarname != null" >
+        supplycarname = #{supplycarname,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneno != null" >
+        phoneno = #{phoneno,jdbcType=VARCHAR},
+      </if>
+      <if test="feescheme != null" >
+        feescheme = #{feescheme,jdbcType=INTEGER},
+      </if>
+      <if test="displayseq != null" >
+        displayseq = #{displayseq,jdbcType=INTEGER},
+      </if>
+      <if test="deletestatus != null" >
+        deletestatus = #{deletestatus,jdbcType=TINYINT},
+      </if>
+      <if test="updatetime != null" >
+        updatetime =now(),
+      </if>
+    </set>
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.btkj.entity.SupplyCarModel" >
+    update tmk_supply_car
+    set carprovider = #{carprovider,jdbcType=INTEGER},
+      carsupplycity = #{carsupplycity,jdbcType=VARCHAR},
+      supplycarapptype = #{supplycarapptype,jdbcType=INTEGER},
+      supplycarmodel = #{supplycarmodel,jdbcType=INTEGER},
+      supplycarname = #{supplycarname,jdbcType=VARCHAR},
+      phoneno = #{phoneno,jdbcType=VARCHAR},
+      feescheme = #{feescheme,jdbcType=INTEGER},
+      displayseq = #{displayseq,jdbcType=INTEGER},
+      deletestatus = #{deletestatus,jdbcType=TINYINT},
+      updatetime = now()
+    where recordid = #{recordid,jdbcType=INTEGER}
+  </update>
+  
+   <select id="selectSupplyCarList" resultType="IndexModel" parameterType="SupplyCarModel" >
+		   select  tsc.*,
+		           tci.carmodel,
+		           tci.loadweight, 
+		           tci.carrypassengers,
+		           tci.macrangepercharge, 
+		           tci.carpicname,
+		           tfs.fee,
+                   tfu.feeunitname,
+                   tva.vehicleappname,
+                   tpc.providerphoneno
+		  from tmk_supply_car tsc
+		  LEFT JOIN tmk_car_info tci on tsc.supplycarmodel=tci.recordid 
+		  LEFT JOIN tmk_vehicle_apptype tva on tva.vehicleapptype=tsc.supplycarapptype 
+		  LEFT JOIN tmk_provider_info tpi on tpi.recordid=tsc.carprovider
+		  LEFT JOIN tmk_fee_scheme tfs on tfs.recordid=tsc.feescheme
+          LEFT JOIN tmk_fee_unit tfu on tfu.feeunitcode=tfs.feeunit
+          LEFT JOIN  tmk_provider_contact tpc on tpc.carprovider=tsc.carprovider and tpc.carsupplycity=tsc.carsupplycity and tpc.deletestatus=0
+		  where  tsc.deletestatus=0     and tci.deletestatus=0 
+		         and tpi.deletestatus=0     and tfs.deletestatus=0   
+		         and tfu.deletestatus=0  and tva.deletestatus=0   
+		         and tsc.usingstatus=1
+		    <trim  suffixOverrides="," >
+		      <if test="supplycarapptype != null" >
+		          and tva.vehicleapptype = #{supplycarapptype} 
+		      </if>
+		      <if test="carsupplycity != null" >
+		          and tsc.carsupplycity = #{carsupplycity} 
+		       </if>
+		      <if test="updatetime != null" >
+		         and tpi.providerid= #{carprovider} 
+		      </if>
+		   </trim>
+		     order by tsc.displayseq ,tsc.updatetime desc   
+  </select>
+ 
+  
+</mapper>

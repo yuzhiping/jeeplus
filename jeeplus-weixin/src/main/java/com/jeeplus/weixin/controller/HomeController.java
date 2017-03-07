@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date: 2016-10-17 19:34.
  */
 @Controller
-@RequestMapping("/Home")
+@RequestMapping("/home")
 public class HomeController extends BaseController {
 
 
