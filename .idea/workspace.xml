@@ -10,170 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f27cd3bb-7795-4016-9779-be99f4f155d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160212.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/jeeplus-blog.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/common/pagination/Page.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/common/pagination/PageHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/common/pagination/PageInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/BaseController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/FrontController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/FundController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/MonitorControl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/OrderController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/PersonController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/RewardController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/dto/FoundDetailModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/dto/IndexModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/dto/MyFoundModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/dto/OrderDetailModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/dto/RegisterModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/dto/ResetPwdModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/dto/RewardModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/dto/VerifyCodeModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/BaseModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/CarInfoModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/CitiesModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/CommonModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/DictModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/OrderHistoryModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/OrderInfoModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/ProviderInfoModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/ReffererInfoModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/RewardDetailModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/SQLAdapterModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/SupplyCarModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/UserAccountDetailModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/UserAccountModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/entities/UserInfoModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/CarInfoModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/CarInfoModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/CitiesModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/CitiesModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/DictModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/DictModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/OrderHistoryModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/OrderHistoryModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/OrderInfoModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/OrderInfoModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/ProviderInfoModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/ProviderInfoModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/ReffererInfoModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/ReffererInfoModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/RewardDetailModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/RewardDetailModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/SupplyCarModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/SupplyCarModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserAccountDetailModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserAccountDetailModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserAccountModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserAccountModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserInfoModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserInfoModelMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/BaseService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/FrontService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/FundService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/OrderService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/PersonService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/RewardService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/DateUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/DictUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/IOUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/ObjectUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/PropertiesUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/SendsmsUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/SerializeUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/TimeUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/cache/EhcacheUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/cache/RedisUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/config/Property.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/config/PropertyPlaceholderConfigurer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/json/JsonUtil1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/json/JsonUtil2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/json/JsonUtil3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/listener/ServiceInitListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/spring/SpringContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/resources/spring/jeeplus-weixin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/alipay/AliPay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/alipay/AlipayClientFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/resources/weixin/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_20.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_6.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jeeplus_admin_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jeeplus_admin_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jeeplus_monitor_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jeeplus_monitor_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jeeplus_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jeeplus_web_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jeeplus_weixin_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jeeplus_weixin_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/jeeplus-admin.iml" afterPath="$PROJECT_DIR$/jeeplus-admin/jeeplus-admin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/webuploader/webuploader.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/webuploader/webuploader.custom.min.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/webuploader/webuploader.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/webuploader/webuploader.html5only.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/webuploader/webuploader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/webuploader/webuploader.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/xss.min.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/third-party/xss.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/ueditor.all.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/ueditor/ueditor.all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.custom.min.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.fis.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.fis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.html5nodepend.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.html5nodepend.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.html5only.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.html5only.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.html5only.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.nolog.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.nolog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.nolog.min.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/plugins/webuploader/webuploader.nolog.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/bootstrap-slider/bootstrap-slider.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/bootstrap-slider/bootstrap-slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/fullcalendar/fullcalendar.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/fullcalendar/fullcalendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/select2/select2.full.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/select2/select2.full.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/select2/select2.full.min.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/select2/select2.full.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/select2/select2.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/select2/select2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/select2/select2.min.js" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/webapp/static/adminlte/plugins/select2/select2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/codemirror/codemirror.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.min.js" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/webuploader/webuploader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/webuploader/webuploader.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/xss.min.js" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/third-party/xss.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/ueditor.all.js" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/webapp/ueditor/ueditor.all.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-common/jeeplus-common.iml" afterPath="$PROJECT_DIR$/jeeplus-common/jeeplus-common.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-common/pom.xml" afterPath="$PROJECT_DIR$/jeeplus-common/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/PropertyBeanUtils.java" afterPath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/PropertyBeanUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/StringUtils.java" afterPath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/StringUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-monitor/jeeplus-monitor.iml" afterPath="$PROJECT_DIR$/jeeplus-monitor/jeeplus-monitor.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" afterPath="$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/jqgrid/jquery.jqGrid.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/jqgrid/jquery.jqGrid.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/select2/select2.full.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/select2/select2.full.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/select2/select2.full.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/select2/select2.full.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/select2/select2.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/select2/select2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/select2/select2.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/select2/select2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.custom.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.fis.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.fis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.html5only.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.html5only.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.html5only.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.nolog.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.nolog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.nolog.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/plugins/webuploader/webuploader.nolog.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/codemirror/codemirror.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/xss.min.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/third-party/xss.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/ueditor.all.js" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/ueditor/ueditor.all.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/jeeplus-weixin.iml" afterPath="$PROJECT_DIR$/jeeplus-weixin/jeeplus-weixin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/pom.xml" afterPath="$PROJECT_DIR$/jeeplus-weixin/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/HomeController.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/WeixinController.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/WeixinController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/resources/jdbc-weixin.properties" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/resources/jdbc-weixin.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/resources/spring/applicationContext-weixin-dao.xml" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/resources/spring/applicationContext-weixin-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/resources/spring/weixin-springmvc.xml" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/resources/spring/weixin-springmvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/webapp/plugins/vue/vue.js" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/webapp/plugins/vue/vue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MaterialAPI.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MaterialAPI.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_18.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_29.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_29.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" />
     </list>
     <ignored path="jeeplus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -212,14 +65,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FrontController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/FrontController.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jeeplus-common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="146" column="31" lean-forward="false" selection-start-line="146" selection-start-column="31" selection-end-line="146" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="405">
+              <caret line="231" column="37" lean-forward="true" selection-start-line="231" selection-start-column="37" selection-end-line="231" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -268,8 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/dto/RegisterModel.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/dto/RewardModel.java" />
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/dto/VerifyCodeModel.java" />
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/CarInfoModelMapper.java" />
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/common/pagination/Page.java" />
@@ -319,6 +168,8 @@
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/RewardService.java" />
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/RewardController.java" />
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/FrontController.java" />
+        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MaterialAPI.java" />
+        <option value="$PROJECT_DIR$/jeeplus-common/pom.xml" />
       </list>
     </option>
   </component>
@@ -454,7 +305,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -595,43 +455,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-weixin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="jeeplus-common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1608,6 +1439,8 @@
       <workItem from="1488590706113" duration="3272000" />
       <workItem from="1488807127061" duration="2285000" />
       <workItem from="1488885706930" duration="4184000" />
+      <workItem from="1490103609686" duration="303000" />
+      <workItem from="1490103995381" duration="2261000" />
     </task>
     <servers />
   </component>
@@ -1632,7 +1465,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="481690000" />
+    <option name="totallyTimeSpent" value="484254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1672,7 +1505,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26647145" sideWeight="0.4832714" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18336888" sideWeight="0.51672864" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270142" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18336888" sideWeight="0.5097614" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1683,6 +1515,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31753555" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270142" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1736,105 +1569,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/DictModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/OrderHistoryModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/OrderInfoModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/ProviderInfoModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/ReffererInfoModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/RewardDetailModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/SupplyCarModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserAccountDetailModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserAccountModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserInfoModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/CarInfoModelMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1842,14 +1580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="44" />
-          <folding>
-            <marker date="1488889092189" expanded="true" signature="1353:1473" ph="select from tmk_car_info" />
-            <marker date="1488889092189" expanded="true" signature="1560:1634" ph="delete from " />
-            <marker date="1488889092189" expanded="true" signature="1719:2259" ph="insert into tmk_car_info... " />
-            <marker date="1488889092189" expanded="true" signature="4259:5312" ph="update tmk_c... " />
-            <marker date="1488889092189" expanded="true" signature="5409:5963" ph="update tmk_c... " />
-            <marker date="1488889092189" expanded="true" signature="6043:6113" ph="select from tmk_car_info" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1857,9 +1587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1867,15 +1594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="161" column="37" lean-forward="true" selection-start-line="161" selection-start-column="37" selection-end-line="161" selection-end-column="37" />
-          <folding>
-            <marker date="1488889092181" expanded="true" signature="1283:1389" ph="select from tmk_cities" />
-            <marker date="1488889092181" expanded="true" signature="1475:1535" ph="delete from " />
-            <marker date="1488889092181" expanded="true" signature="1619:2095" ph="insert into tmk_cities... " />
-            <marker date="1488889092181" expanded="true" signature="4047:5052" ph="update tmk_c... " />
-            <marker date="1488889092181" expanded="true" signature="5148:5645" ph="update tmk_c... " />
-            <marker date="1488889092181" expanded="true" signature="5755:5848" ph="select from tmk_cities" />
-            <marker date="1488889092181" expanded="true" signature="5922:6043" ph="select DISTI... tmk_cities" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1883,14 +1601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="63" lean-forward="true" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-          <folding>
-            <marker date="1488889177318" expanded="true" signature="950:1054" ph="select from tmk_dict" />
-            <marker date="1488889177318" expanded="true" signature="1141:1199" ph="delete from " />
-            <marker date="1488889177318" expanded="true" signature="1281:1584" ph="insert into tmk_dict... " />
-            <marker date="1488889177318" expanded="true" signature="2925:3543" ph="update tmk_d... " />
-            <marker date="1488889177318" expanded="true" signature="3637:3947" ph="update tmk_d... " />
-            <marker date="1488889177318" expanded="true" signature="4051:4401" ph="select from tmk_dict" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1898,13 +1608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="837">
           <caret line="43" column="43" lean-forward="true" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-          <folding>
-            <marker date="1488889177272" expanded="true" signature="2216:2341" ph="select from tmk_order_history" />
-            <marker date="1488889177272" expanded="true" signature="2428:2507" ph="delete from " />
-            <marker date="1488889177272" expanded="true" signature="2597:3551" ph="insert into tmk_order_history... " />
-            <marker date="1488889177272" expanded="true" signature="6871:8927" ph="update tmk_o... " />
-            <marker date="1488889177272" expanded="true" signature="9029:10077" ph="update tmk_o... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1912,14 +1615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-432">
           <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding>
-            <marker date="1488889177283" expanded="true" signature="2215:3209" ph="select toi.*... tmk_order_info" />
-            <marker date="1488889177283" expanded="true" signature="3296:3372" ph="delete from " />
-            <marker date="1488889177283" expanded="true" signature="3459:4408" ph="insert into tmk_order_info... " />
-            <marker date="1488889177283" expanded="true" signature="7906:9992" ph="update tmk_o... " />
-            <marker date="1488889177283" expanded="true" signature="10091:11165" ph="update tmk_o... " />
-            <marker date="1488889177283" expanded="true" signature="11288:12274" ph="select toi.*... tmk_order_info" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1927,13 +1622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-756">
           <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding>
-            <marker date="1488889177294" expanded="true" signature="1071:1196" ph="select from tmk_provider_info" />
-            <marker date="1488889177294" expanded="true" signature="1283:1362" ph="delete from " />
-            <marker date="1488889177294" expanded="true" signature="1452:1835" ph="insert into tmk_provider_info... " />
-            <marker date="1488889177294" expanded="true" signature="3340:4066" ph="update tmk_p... " />
-            <marker date="1488889177294" expanded="true" signature="4168:4558" ph="update tmk_p... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1941,13 +1629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1647">
           <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding>
-            <marker date="1488889177341" expanded="true" signature="870:995" ph="select from tmk_refferer_info" />
-            <marker date="1488889177341" expanded="true" signature="1082:1161" ph="delete from " />
-            <marker date="1488889177341" expanded="true" signature="1251:1487" ph="insert into tmk_refferer_info... " />
-            <marker date="1488889177341" expanded="true" signature="2512:2929" ph="update tmk_r... " />
-            <marker date="1488889177341" expanded="true" signature="3031:3275" ph="update tmk_r... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1955,16 +1636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2052">
           <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding>
-            <marker date="1488889177252" expanded="true" signature="1069:1187" ph="select from tmk_reward_detail" />
-            <marker date="1488889177252" expanded="true" signature="1269:1348" ph="delete from " />
-            <marker date="1488889177252" expanded="true" signature="1433:1817" ph="insert into tmk_reward_detail... " />
-            <marker date="1488889177252" expanded="true" signature="3179:3861" ph="update tmk_r... " />
-            <marker date="1488889177252" expanded="true" signature="3958:4349" ph="update tmk_r... " />
-            <marker date="1488889177252" expanded="true" signature="4427:4497" ph="select from tmk_reward_detail" />
-            <marker date="1488889177252" expanded="true" signature="4606:4982" ph="select tui2.... tmk_reward_detail" />
-            <marker date="1488889177252" expanded="true" signature="5080:5283" ph="select ifnul... tmk_reward_detail" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1972,14 +1643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-189">
           <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding>
-            <marker date="1488889177261" expanded="true" signature="1455:2527" ph="select tsc.*... tmk_supply_car" />
-            <marker date="1488889177261" expanded="true" signature="2614:2690" ph="delete from " />
-            <marker date="1488889177261" expanded="true" signature="2777:3305" ph="insert into tmk_supply_car... " />
-            <marker date="1488889177261" expanded="true" signature="5461:6603" ph="update tmk_s... " />
-            <marker date="1488889177261" expanded="true" signature="6702:7289" ph="update tmk_s... " />
-            <marker date="1488889177261" expanded="true" signature="7403:8877" ph="select tsc.*... tmk_supply_car" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1987,14 +1650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-594">
           <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding>
-            <marker date="1488889177241" expanded="true" signature="1398:1529" ph="select from tmk_user_account_detail" />
-            <marker date="1488889177241" expanded="true" signature="1617:1702" ph="delete from " />
-            <marker date="1488889177241" expanded="true" signature="1797:2159" ph="insert into tmk_user_account_detail... " />
-            <marker date="1488889177241" expanded="true" signature="3772:4592" ph="update tmk_u... " />
-            <marker date="1488889177241" expanded="true" signature="4699:5096" ph="update tmk_u... " />
-            <marker date="1488889177241" expanded="true" signature="5218:5480" ph="select tuad.... tmk_user_account_detail" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2002,15 +1657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-756">
           <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding>
-            <marker date="1488889203222" expanded="true" signature="1068:1198" ph="select from tmk_user_account" />
-            <marker date="1488889203222" expanded="true" signature="1285:1363" ph="delete from " />
-            <marker date="1488889203222" expanded="true" signature="1452:1673" ph="insert into tmk_user_account... " />
-            <marker date="1488889203222" expanded="true" signature="3178:3828" ph="update tmk_u... " />
-            <marker date="1488889203222" expanded="true" signature="3929:4320" ph="update tmk_u... " />
-            <marker date="1488889203222" expanded="true" signature="4442:4702" ph="select tua.*... tmk_user_account" />
-            <marker date="1488889203222" expanded="true" signature="4469:4620" ph="select ifnul... tmk_user_account_detail" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2018,15 +1664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
-          <folding>
-            <marker date="1488889203238" expanded="true" signature="1549:1717" ph="select , fro... " />
-            <marker date="1488889203238" expanded="true" signature="1804:1879" ph="delete from " />
-            <marker date="1488889203238" expanded="true" signature="4779:5918" ph="update tmk_u... " />
-            <marker date="1488889203238" expanded="true" signature="6025:6561" ph="update tmk_u... " />
-            <marker date="1488889203238" expanded="true" signature="6659:7151" ph="update tmk_u... " />
-            <marker date="1488889203238" expanded="true" signature="7266:7441" ph="select , fro... " />
-            <marker date="1488889203238" expanded="true" signature="7564:7735" ph="select , fro... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2034,9 +1671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2044,7 +1678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4009">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2052,15 +1685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-283">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="93" column="21" lean-forward="true" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2068,7 +1692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="274" column="20" lean-forward="false" selection-start-line="274" selection-start-column="20" selection-end-line="274" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2076,9 +1699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1809">
           <caret line="69" column="63" lean-forward="false" selection-start-line="69" selection-start-column="63" selection-end-line="69" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2086,7 +1706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1006">
           <caret line="216" column="44" lean-forward="true" selection-start-line="216" selection-start-column="44" selection-end-line="216" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2094,7 +1713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-189">
           <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2102,7 +1720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3307">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2110,7 +1727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2118,7 +1734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2469">
           <caret line="102" column="20" lean-forward="true" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2126,9 +1741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-229">
           <caret line="233" column="49" lean-forward="true" selection-start-line="233" selection-start-column="49" selection-end-line="233" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2136,7 +1748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2144,25 +1755,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/junit/TestMybatis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/junit/TestMybatis.java" />
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/listener/ServiceInitListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="43" column="54" lean-forward="true" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2170,7 +1770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2178,9 +1777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="985">
           <caret line="140" column="71" lean-forward="false" selection-start-line="140" selection-start-column="71" selection-end-line="140" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2188,10 +1784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-          <folding>
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2199,9 +1791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="284" column="27" lean-forward="true" selection-start-line="284" selection-start-column="27" selection-end-line="284" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2209,9 +1798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="125" column="27" lean-forward="true" selection-start-line="125" selection-start-column="27" selection-end-line="125" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2219,9 +1805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="39" column="53" lean-forward="true" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2229,9 +1812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1684">
           <caret line="69" column="48" lean-forward="false" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2239,9 +1819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11009">
           <caret line="434" column="6" lean-forward="true" selection-start-line="434" selection-start-column="6" selection-end-line="434" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2249,9 +1826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
           <caret line="28" column="80" lean-forward="false" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2259,17 +1833,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1435">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/FrontController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="146" column="31" lean-forward="false" selection-start-line="146" selection-start-column="31" selection-end-line="146" selection-end-column="31" />
+        <state relative-caret-position="396">
+          <caret line="148" column="26" lean-forward="true" selection-start-line="148" selection-start-column="26" selection-end-line="148" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/enums/ResultType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1905">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/response/UploadMaterialResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/response/BaseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/response/GetMaterialListResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-215">
+          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.11/fastjson-1.2.11.jar!/com/alibaba/fastjson/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="76" column="35" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.11/fastjson-1.2.11-sources.jar!/com/alibaba/fastjson/JSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2106">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/util/JSONUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-607">
+          <caret line="75" column="27" lean-forward="false" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MaterialAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="212" column="63" lean-forward="false" selection-start-line="212" selection-start-column="63" selection-end-line="212" selection-end-column="63" />
+          <folding>
+            <element signature="e#9344#9359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2282">
+          <caret line="93" column="21" lean-forward="true" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1620">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="231" column="37" lean-forward="true" selection-start-line="231" selection-start-column="37" selection-end-line="231" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
