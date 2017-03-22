@@ -10,56 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f27cd3bb-7795-4016-9779-be99f4f155d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_bpmn_converter_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_bpmn_model_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_engine_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_image_generator_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_process_validation_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_spring_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_email_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/resources/process/leave.bpmn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/resources/process/purchase.bpmn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/resources/spring/admin-spring-activiti.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/ExcelUtils.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/controller/AccountController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/controller/DefaultController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/api/GithubAPI.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/api/QQAPI.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/config/OAuthConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/config/OAuthTypes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/entities/OAuthUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/entities/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/service/GithubOAuthService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/service/OAuthServiceDeractor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/service/OAuthServices.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/IOauthUserService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/impl/OauthUserServiceImpl.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jeeplus_admin_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jeeplus_admin_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/jeeplus-admin.iml" afterPath="$PROJECT_DIR$/jeeplus-admin/jeeplus-admin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/pom.xml" afterPath="$PROJECT_DIR$/jeeplus-admin/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/common/controller/BaseController.java" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/common/controller/BaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/common/services/impl/CommonServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/common/services/impl/CommonServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/controller/LoginController.java" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/impl/LoginServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/impl/LoginServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/resources/jdbc-admin.properties" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/resources/jdbc-admin.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/resources/redis-admin.properties" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/resources/redis-admin.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/resources/spring/admin-spring-redis.xml" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/resources/spring/admin-spring-redis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/jeeplus-blog.iml" afterPath="$PROJECT_DIR$/jeeplus-blog/jeeplus-blog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-common/jeeplus-common.iml" afterPath="$PROJECT_DIR$/jeeplus-common/jeeplus-common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-monitor/jeeplus-monitor.iml" afterPath="$PROJECT_DIR$/jeeplus-monitor/jeeplus-monitor.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" afterPath="$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/jeeplus-weixin.iml" afterPath="$PROJECT_DIR$/jeeplus-weixin/jeeplus-weixin.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/common/services/ICommonService.java" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/common/services/CommonService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/ILoginService.java" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/LoginService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/IUserService.java" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/UserService.java" />
     </list>
     <ignored path="jeeplus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,6 +36,7 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
@@ -101,12 +53,10 @@
       <file leaf-file-name="ExcelUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/ExcelUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="117" column="57" lean-forward="true" selection-start-line="117" selection-start-column="57" selection-end-line="117" selection-end-column="57" />
+            <state relative-caret-position="-2508">
+              <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#531#541#0" expanded="true" />
-                <element signature="e#6852#6862#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -476,12 +426,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="last_opened_file_path" value="E:/Server/apache-tomcat-8.5.5" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -512,6 +462,18 @@
       <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\services" />
       <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\mapper" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.ExcelUtils">
     <configuration default="false" name="UUIDGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -1450,6 +1412,9 @@
       <workItem from="1490150201019" duration="2233000" />
       <workItem from="1490156089299" duration="54000" />
       <workItem from="1490156201563" duration="1666000" />
+      <workItem from="1490186478981" duration="645000" />
+      <workItem from="1490188592922" duration="64000" />
+      <workItem from="1490188700449" duration="349000" />
     </task>
     <servers />
   </component>
@@ -1474,7 +1439,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="488207000" />
+    <option name="totallyTimeSpent" value="489265000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1487,7 +1452,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1503,7 +1467,6 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41548184" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31753555" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1512,9 +1475,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61496747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.49479166" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27452025" sideWeight="0.4832714" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28411514" sideWeight="0.4832714" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18336888" sideWeight="0.51672864" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270142" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18336888" sideWeight="0.5097614" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1522,9 +1486,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31753555" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270142" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1684,13 +1648,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/oauth.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/oauth.properties" />
     <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1709,7 +1667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1842">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1724,10 +1681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="622">
           <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="e#982#1005#0" expanded="false" />
-            <element signature="e#1053#1082#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1776,7 +1729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1842,7 +1794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1850,7 +1801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1858,7 +1808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1734">
           <caret line="26" column="55" lean-forward="false" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1866,7 +1815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4928">
           <caret line="224" column="30" lean-forward="false" selection-start-line="224" selection-start-column="30" selection-end-line="224" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1874,7 +1822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1890,18 +1837,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2860">
           <caret line="231" column="36" lean-forward="false" selection-start-line="231" selection-start-column="36" selection-end-line="231" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/ExcelUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="117" column="57" lean-forward="true" selection-start-line="117" selection-start-column="57" selection-end-line="117" selection-end-column="57" />
+        <state relative-caret-position="-2508">
+          <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#531#541#0" expanded="true" />
-            <element signature="e#6852#6862#0" expanded="true" />
           </folding>
         </state>
       </provider>
