@@ -1,6 +1,6 @@
 package com.jeeplus.admin.common.controller;
 
-import com.jeeplus.admin.common.services.ICommonService;
+import com.jeeplus.admin.common.services.CommonService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -9,6 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class BaseController {
 
     @Autowired
-    private ICommonService commonService;
+    private CommonService commonService;
 
 }
