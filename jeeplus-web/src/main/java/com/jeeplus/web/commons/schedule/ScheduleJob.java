@@ -2,7 +2,7 @@ package com.jeeplus.web.commons.schedule;
 
 import com.jeeplus.web.entities.system.ScheduleJobEntity;
 import com.jeeplus.web.entities.system.ScheduleJobLogEntity;
-import com.jeeplus.web.services.system.ScheduleJobLogService;
+import com.jeeplus.web.service.system.ScheduleJobLogService;
 import com.jeeplus.web.util.SpringContextUtils;
 import org.apache.commons.lang.StringUtils;
 import org.quartz.JobExecutionContext;

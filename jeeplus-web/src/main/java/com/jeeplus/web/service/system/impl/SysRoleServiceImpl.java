@@ -1,9 +1,9 @@
-package com.jeeplus.web.services.system.impl;
+package com.jeeplus.web.service.system.impl;
 
 import com.jeeplus.web.entities.system.SysRoleEntity;
 import com.jeeplus.web.mapper.system.SysRoleMapper;
-import com.jeeplus.web.services.system.SysRoleMenuService;
-import com.jeeplus.web.services.system.SysRoleService;
+import com.jeeplus.web.service.system.SysRoleMenuService;
+import com.jeeplus.web.service.system.SysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,8 +1,8 @@
 package com.jeeplus.web.controller;
 
 import com.jeeplus.web.entities.system.SysRoleEntity;
-import com.jeeplus.web.services.system.SysRoleMenuService;
-import com.jeeplus.web.services.system.SysRoleService;
+import com.jeeplus.web.service.system.SysRoleMenuService;
+import com.jeeplus.web.service.system.SysRoleService;
 import com.jeeplus.web.util.PageUtils;
 import com.jeeplus.web.commons.R;
 import org.apache.commons.lang.StringUtils;

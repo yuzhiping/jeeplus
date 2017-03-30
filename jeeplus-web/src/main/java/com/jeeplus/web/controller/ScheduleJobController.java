@@ -1,7 +1,7 @@
 package com.jeeplus.web.controller;
 
 import com.jeeplus.web.entities.system.ScheduleJobEntity;
-import com.jeeplus.web.services.system.ScheduleJobService;
+import com.jeeplus.web.service.system.ScheduleJobService;
 import com.jeeplus.web.util.PageUtils;
 import com.jeeplus.web.commons.R;
 import com.jeeplus.web.commons.exception.RRException;

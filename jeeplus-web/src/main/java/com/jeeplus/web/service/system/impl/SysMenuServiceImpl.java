@@ -1,9 +1,9 @@
-package com.jeeplus.web.services.system.impl;
+package com.jeeplus.web.service.system.impl;
 
 import com.jeeplus.web.entities.system.SysMenuEntity;
 import com.jeeplus.web.mapper.system.SysMenuMapper;
-import com.jeeplus.web.services.system.SysMenuService;
-import com.jeeplus.web.services.system.SysUserService;
+import com.jeeplus.web.service.system.SysMenuService;
+import com.jeeplus.web.service.system.SysUserService;
 import com.jeeplus.web.commons.constant.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

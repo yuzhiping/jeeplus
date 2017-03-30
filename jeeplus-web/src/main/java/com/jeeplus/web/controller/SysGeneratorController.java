@@ -1,7 +1,7 @@
 package com.jeeplus.web.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.jeeplus.web.services.system.SysGeneratorService;
+import com.jeeplus.web.service.system.SysGeneratorService;
 import com.jeeplus.web.util.PageUtils;
 import com.jeeplus.web.commons.R;
 import org.apache.commons.io.IOUtils;

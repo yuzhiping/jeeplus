@@ -1,7 +1,7 @@
-package com.jeeplus.web.services.mail.impl;
+package com.jeeplus.web.service.mail.impl;
 
 import com.jeeplus.web.entities.email.EmailEntity;
-import com.jeeplus.web.services.mail.EmailService;
+import com.jeeplus.web.service.mail.EmailService;
 import org.apache.velocity.app.VelocityEngine;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,8 +1,8 @@
-package com.jeeplus.web.services.system.impl;
+package com.jeeplus.web.service.system.impl;
 
 import com.jeeplus.web.entities.system.ScheduleJobLogEntity;
 import com.jeeplus.web.mapper.system.ScheduleJobLogMapper;
-import com.jeeplus.web.services.system.ScheduleJobLogService;
+import com.jeeplus.web.service.system.ScheduleJobLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -2,8 +2,8 @@ package com.jeeplus.web.shiro;
 
 import com.jeeplus.web.entities.system.SysMenuEntity;
 import com.jeeplus.web.entities.system.SysUserEntity;
-import com.jeeplus.web.services.system.SysMenuService;
-import com.jeeplus.web.services.system.SysUserService;
+import com.jeeplus.web.service.system.SysMenuService;
+import com.jeeplus.web.service.system.SysUserService;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;

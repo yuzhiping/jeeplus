@@ -1,4 +1,4 @@
-package com.jeeplus.web.services.mail;
+package com.jeeplus.web.service.mail;
 
 import com.jeeplus.web.entities.email.EmailEntity;
 

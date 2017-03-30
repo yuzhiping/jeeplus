@@ -1,7 +1,7 @@
 package com.jeeplus.web.controller;
 
 import com.jeeplus.web.entities.system.SysMenuEntity;
-import com.jeeplus.web.services.system.SysMenuService;
+import com.jeeplus.web.service.system.SysMenuService;
 import com.jeeplus.web.commons.constant.Constant;
 import com.jeeplus.web.util.PageUtils;
 import com.jeeplus.web.commons.R;

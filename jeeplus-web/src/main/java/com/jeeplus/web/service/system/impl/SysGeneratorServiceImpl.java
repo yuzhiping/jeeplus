@@ -1,7 +1,7 @@
-package com.jeeplus.web.services.system.impl;
+package com.jeeplus.web.service.system.impl;
 
 import com.jeeplus.web.mapper.system.SysGeneratorMapper;
-import com.jeeplus.web.services.system.SysGeneratorService;
+import com.jeeplus.web.service.system.SysGeneratorService;
 import com.jeeplus.web.util.GenUtils;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;

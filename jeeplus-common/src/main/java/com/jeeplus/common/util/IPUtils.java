@@ -1,5 +1,9 @@
 package com.jeeplus.common.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -11,7 +15,9 @@ import java.util.Enumeration;
  * 获取本机IP地址的工具类
  * Created by yuzp17311 on 2016/9/2.
  */
-public class IPAddressUtils {
+public class IPUtils {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(IPUtils.class);
 
 
     /**
@@ -40,7 +46,7 @@ public class IPAddressUtils {
             // 如果是Windows操作系统
             if (isWindowsOS()) {
                 ip = InetAddress.getLocalHost();
-            }else {
+            } else {
                 // 如果是Linux操作系统
                 boolean bFindIP = false;
                 Enumeration<NetworkInterface> netInterfaces = NetworkInterface.getNetworkInterfaces();
@@ -73,7 +79,7 @@ public class IPAddressUtils {
     }
 
 
-    public static String getMacAddress(){
+    public static String getMacAddress() {
         String mac = "";
         String line = "";
         String os = System.getProperty("os.name");
@@ -92,10 +98,49 @@ public class IPAddressUtils {
                 }
                 br.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                LOGGER.error("exception occur on invoke getMacAddress methed:"+e);
             }
         }
         return mac;
+    }
+
+    public static String getIPAddr(HttpServletRequest request) {
+        String ip = null;
+        try {
+            ip = request.getHeader("x-forwarded-for");
+            if (StringUtils.isEmpty(ip) || "unknown".equalsIgnoreCase(ip)) {
+                ip = request.getHeader("Proxy-Client-IP");
+            }
+            if (StringUtils.isEmpty(ip) || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+                ip = request.getHeader("WL-Proxy-Client-IP");
+            }
+            if (StringUtils.isEmpty(ip) || "unknown".equalsIgnoreCase(ip)) {
+                ip = request.getHeader("HTTP_CLIENT_IP");
+            }
+            if (StringUtils.isEmpty(ip) || "unknown".equalsIgnoreCase(ip)) {
+                ip = request.getHeader("HTTP_X_FORWARDED_FOR");
+            }
+            if (StringUtils.isEmpty(ip) || "unknown".equalsIgnoreCase(ip)) {
+                ip = request.getRemoteAddr();
+            }
+        } catch (Exception e) {
+            LOGGER.error("IPUtils ERROR ", e);
+        }
+
+//        //使用代理，则获取第一个IP地址
+
+//        if(StringUtils.isEmpty(ip) && ip.length() > 15) {
+
+//			if(ip.indexOf(",") > 0) {
+
+//				ip = ip.substring(0, ip.indexOf(","));
+
+//			}
+
+//		}
+
+
+        return ip;
     }
 
 }

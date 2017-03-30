@@ -1,9 +1,9 @@
-package com.jeeplus.web.services.system.impl;
+package com.jeeplus.web.service.system.impl;
 
 import com.jeeplus.web.entities.system.SysUserEntity;
 import com.jeeplus.web.mapper.system.SysUserMapper;
-import com.jeeplus.web.services.system.SysUserRoleService;
-import com.jeeplus.web.services.system.SysUserService;
+import com.jeeplus.web.service.system.SysUserRoleService;
+import com.jeeplus.web.service.system.SysUserService;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -38,6 +38,7 @@
         <jstl-version>1.2</jstl-version>
         <taglibs-version>1.1.2</taglibs-version>
         <freemarker-version>2.3.23</freemarker-version>
+        <hibernate-validator-version>5.4.1.Final</hibernate-validator-version>
     </properties>
 
     <build>
@@ -186,7 +187,11 @@
             <artifactId>json</artifactId>
             <version>20160810</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator-version}</version>
+        </dependency>
 
     </dependencies>
 

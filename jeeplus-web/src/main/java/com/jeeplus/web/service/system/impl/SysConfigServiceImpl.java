@@ -1,9 +1,9 @@
-package com.jeeplus.web.services.system.impl;
+package com.jeeplus.web.service.system.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.jeeplus.web.entities.system.SysConfigEntity;
 import com.jeeplus.web.mapper.system.SysConfigMapper;
-import com.jeeplus.web.services.system.SysConfigService;
+import com.jeeplus.web.service.system.SysConfigService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

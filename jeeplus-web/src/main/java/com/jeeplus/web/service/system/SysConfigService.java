@@ -1,4 +1,4 @@
-package com.jeeplus.web.services.system;
+package com.jeeplus.web.service.system;
 
 import com.jeeplus.web.entities.system.SysConfigEntity;
 

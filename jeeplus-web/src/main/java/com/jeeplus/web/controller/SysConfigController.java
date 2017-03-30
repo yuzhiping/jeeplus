@@ -1,7 +1,7 @@
 package com.jeeplus.web.controller;
 
 import com.jeeplus.web.entities.system.SysConfigEntity;
-import com.jeeplus.web.services.system.SysConfigService;
+import com.jeeplus.web.service.system.SysConfigService;
 import com.jeeplus.web.util.PageUtils;
 import com.jeeplus.web.commons.R;
 import com.jeeplus.web.commons.exception.RRException;

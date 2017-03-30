@@ -1,7 +1,7 @@
 package com.jeeplus.web.test;
 
 import com.jeeplus.web.entities.email.EmailEntity;
-import com.jeeplus.web.services.mail.EmailService;
+import com.jeeplus.web.service.mail.EmailService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
