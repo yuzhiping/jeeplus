@@ -1,6 +1,6 @@
 package com.jeeplus.web.util;
 
-import com.jeeplus.web.commons.exception.RRException;
+import com.jeeplus.web.common.exception.RRException;
 import com.jeeplus.web.entities.system.generate.ColumnEntity;
 import com.jeeplus.web.entities.system.generate.TableEntity;
 import org.apache.commons.configuration.Configuration;

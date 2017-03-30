@@ -1,6 +1,6 @@
-package com.jeeplus.web.commons.schedule;
+package com.jeeplus.web.common.schedule;
 
-import com.jeeplus.web.commons.exception.RRException;
+import com.jeeplus.web.common.exception.RRException;
 import com.jeeplus.web.util.SpringContextUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.util.ReflectionUtils;

@@ -3,7 +3,7 @@ package com.jeeplus.web.service.system.impl;
 import com.jeeplus.web.entities.system.ScheduleJobEntity;
 import com.jeeplus.web.mapper.system.ScheduleJobMapper;
 import com.jeeplus.web.service.system.ScheduleJobService;
-import com.jeeplus.web.commons.constant.Constant;
+import com.jeeplus.web.common.constant.Constant;
 import com.jeeplus.web.util.ScheduleUtils;
 import org.quartz.CronTrigger;
 import org.quartz.Scheduler;

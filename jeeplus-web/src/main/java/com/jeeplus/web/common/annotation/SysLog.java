@@ -1,4 +1,4 @@
-package com.jeeplus.web.commons.annotation;
+package com.jeeplus.web.common.annotation;
 
 import java.lang.annotation.*;
 

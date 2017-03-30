@@ -1,4 +1,4 @@
-package com.jeeplus.web.commons.listener;
+package com.jeeplus.web.common.listener;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

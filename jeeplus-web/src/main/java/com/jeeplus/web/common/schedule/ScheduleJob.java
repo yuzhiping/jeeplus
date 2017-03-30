@@ -1,4 +1,4 @@
-package com.jeeplus.web.commons.schedule;
+package com.jeeplus.web.common.schedule;
 
 import com.jeeplus.web.entities.system.ScheduleJobEntity;
 import com.jeeplus.web.entities.system.ScheduleJobLogEntity;

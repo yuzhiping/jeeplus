@@ -10,64 +10,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f27cd3bb-7795-4016-9779-be99f4f155d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/annotation/SysLog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/validator/Assert.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/system/SysLogEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysLogMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysLogMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysLogService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysLogServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/ValidatorUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_oss_aliyun_sdk_oss_2_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_qcloud_cos_api_4_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/Query.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/aop/SysLogAspect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/constant/ConfigConstant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/group/AliyunGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/group/QcloudGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/group/QiniuGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLogController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysOssController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/system/SysOssEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysOssMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysOssMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/AliyunCloudStorageService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/CloudStorageConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/CloudStorageService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/OSSFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/QcloudCloudStorageService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/QiniuCloudStorageService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysOssService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysOssServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/HttpContextUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/log.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/oss.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/log.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/oss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/libs/ajaxupload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jeeplus_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jeeplus_web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/jeeplus-admin.iml" afterPath="$PROJECT_DIR$/jeeplus-admin/jeeplus-admin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/jeeplus-blog.iml" afterPath="$PROJECT_DIR$/jeeplus-blog/jeeplus-blog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-common/jeeplus-common.iml" afterPath="$PROJECT_DIR$/jeeplus-common/jeeplus-common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-demo/jeeplus-demo.iml" afterPath="$PROJECT_DIR$/jeeplus-demo/jeeplus-demo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-monitor/jeeplus-monitor.iml" afterPath="$PROJECT_DIR$/jeeplus-monitor/jeeplus-monitor.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-parent.iml" afterPath="$PROJECT_DIR$/jeeplus-parent.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" afterPath="$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/pom.xml" afterPath="$PROJECT_DIR$/jeeplus-web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/constant/Constant.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/constant/Constant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/schedule/ScheduleJob.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/schedule/ScheduleJob.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobLogController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobLogController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysConfigController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysConfigController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysGeneratorController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysGeneratorController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLoginController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysMenuController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysMenuController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysRoleController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysRoleController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysUserController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysUserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysUserRoleMapper.xml" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysUserRoleMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/shiro/UserRealm.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/shiro/UserRealm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/task/TestTask.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/task/TestTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/ScheduleJobServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/ScheduleJobServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysMenuServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysMenuServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/GenUtils.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/GenUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/test/java/com/jeeplus/web/test/SendEmailTest.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/test/java/com/jeeplus/web/test/SendEmailTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/jeeplus-weixin.iml" afterPath="$PROJECT_DIR$/jeeplus-weixin/jeeplus-weixin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/webapp/plugins/framework7/js/my-app.js" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/webapp/plugins/framework7/js/my-app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/IPAddressUtils.java" afterPath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/IPUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/mail/EmailService.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/mail/EmailService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/mail/impl/EmailServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/mail/impl/EmailServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/ScheduleJobLogService.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/ScheduleJobLogService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/ScheduleJobService.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/ScheduleJobService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/SysConfigService.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysConfigService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/SysGeneratorService.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysGeneratorService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/SysMenuService.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysMenuService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/SysRoleMenuService.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysRoleMenuService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/SysRoleService.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysRoleService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/SysUserRoleService.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysUserRoleService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/SysUserService.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysUserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/impl/ScheduleJobLogServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/ScheduleJobLogServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/impl/ScheduleJobServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/ScheduleJobServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/impl/SysConfigServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysConfigServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/impl/SysGeneratorServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysGeneratorServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/impl/SysMenuServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysMenuServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/impl/SysRoleMenuServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysRoleMenuServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/impl/SysRoleServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysRoleServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/impl/SysUserRoleServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysUserRoleServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/services/system/impl/SysUserServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysUserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/ScheduleUtils.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/ScheduleUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/ValidatorUtils.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/ValidatorUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-dao.xml" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-dao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-transaction.xml" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-transaction.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/web-springmvc.xml" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/web-springmvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/Controller.java.vm" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/Controller.java.vm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/CustomCommonsMultipartResolver.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/CustomCommonsMultipartResolver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/R.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/R.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/annotation/SysLog.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/annotation/SysLog.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/constant/Constant.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/constant/Constant.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/exception/RRException.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/exception/RRException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/exception/handler/RRExceptionHandler.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/exception/handler/RRExceptionHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/listener/StartUpListener.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/listener/StartUpListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/schedule/ScheduleJob.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/schedule/ScheduleJob.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/schedule/ScheduleRunnable.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/schedule/ScheduleRunnable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/validator/Assert.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/Assert.java" />
     </list>
     <ignored path="jeeplus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,7 +113,7 @@
     <favorites_list name="jeeplus" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,12 +121,12 @@
         <option value="Jsp File" />
         <option value="Enum" />
         <option value="package-info" />
-        <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="spring-beans.schema" />
         <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -132,6 +139,7 @@
       <find>throws Exception</find>
       <find>websiteid</find>
       <find>StringUtil</find>
+      <find>io.renren.entity.</find>
     </findStrings>
     <replaceStrings>
       <replace>emailEntity</replace>
@@ -151,35 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/SupplyCarModelMapper.xml" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserAccountDetailModelMapper.xml" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserAccountModelMapper.xml" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/mapper/UserInfoModelMapper.xml" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/util/DictUtil.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/util/Constants.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/Constants.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/spring/SpringContext.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/PropertiesUtil.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/BaseService.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/pom.xml" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/TimeUtil.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/json/JsonUtil1.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/DateUtil.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/ObjectUtil.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/IOUtil.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/FrontService.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/SerializeUtil.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/cache/RedisUtil.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/junit/TestMybatis.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/listener/ServiceInitListener.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/FundService.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/OrderService.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/PersonService.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/RewardService.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/RewardController.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/FrontController.java" />
-        <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/MaterialAPI.java" />
-        <option value="$PROJECT_DIR$/jeeplus-common/pom.xml" />
         <option value="$PROJECT_DIR$/jeeplus-admin/src/main/resources/jdbc-admin.properties" />
         <option value="$PROJECT_DIR$/jeeplus-admin/src/main/resources/spring/admin-spring-redis.xml" />
         <option value="$PROJECT_DIR$/jeeplus-admin/src/main/resources/redis-admin.properties" />
@@ -197,11 +176,40 @@
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysLogMapper.xml" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysLogService.java" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysLogServiceImpl.java" />
-        <option value="$PROJECT_DIR$/jeeplus-web/pom.xml" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/validator/Assert.java" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/ValidatorUtils.java" />
         <option value="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/IPUtils.java" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/constant/Constant.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/Query.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLogController.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/HttpContextUtils.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/aop/SysLogAspect.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/group/AliyunGroup.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/group/QcloudGroup.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/group/QiniuGroup.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/CloudStorageConfig.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/CloudStorageService.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/pom.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/AliyunCloudStorageService.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/QcloudCloudStorageService.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/QiniuCloudStorageService.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/constant/ConfigConstant.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/OSSFactory.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-dao.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-transaction.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/system/SysOssEntity.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/SysOssService.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysOssService.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysOssMapper.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysOssMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysOssServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/FileUploadController.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/log.html" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/oss.html" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/log.js" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/oss.js" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysOssController.java" />
+        <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/libs/ajaxupload.js" />
       </list>
     </option>
   </component>
@@ -282,7 +290,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -403,176 +411,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="constant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -604,15 +442,8 @@
     <property name="js.eslint.eslintPackage" value="C:\Program Files\nodejs\node_modules\eslint" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\java\com\jeeplus\web\mapper\system" />
-      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\test\resources" />
-      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\resources\spring" />
-      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\ueditor" />
-      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\static" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.jeeplus.common.schedule" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jeeplus.web.oss" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\controller" />
@@ -620,6 +451,16 @@
       <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\util" />
       <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\services" />
       <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jeeplus.common.schedule" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\java\com\jeeplus\web\mapper\system" />
+      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\test\resources" />
+      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\resources\spring" />
+      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\ueditor" />
+      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1569,6 +1410,7 @@
       <workItem from="1490188592922" duration="64000" />
       <workItem from="1490188700449" duration="349000" />
       <workItem from="1490841977096" duration="3966000" />
+      <workItem from="1490851124428" duration="8818000" />
     </task>
     <servers />
   </component>
@@ -1593,7 +1435,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="493231000" />
+    <option name="totallyTimeSpent" value="502049000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1605,7 +1447,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1621,6 +1463,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41548184" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31753555" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1629,7 +1472,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61496747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.49479166" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28731343" sideWeight="0.4832714" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29113248" sideWeight="0.4832714" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18336888" sideWeight="0.51672864" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264642" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
@@ -1640,7 +1483,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31753555" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1696,201 +1538,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/jdbc-admin.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/spring/admin-springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1842">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/redis-admin.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/spring/admin-spring-redis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/config/OAuthConfig.java" />
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/config/OAuthTypes.java" />
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/api/QQAPI.java" />
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/oauth/api/GithubAPI.java" />
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/impl/OauthUserServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/IOauthUserService.java" />
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/entities/TbSysUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/dto/SysUserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/common/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/common/entities/zTreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-524">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/common/listener/StartupListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/common/response/ResponseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/common/services/impl/CommonServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/controller/DefaultController.java" />
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/controller/AccountController.java" />
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/controller/FileUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/controller/FileDownloadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/spring/applicationContext-admin-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/spring/applicationContext-admin-transaction.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/process/leave.bpmn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1734">
-          <caret line="26" column="55" lean-forward="false" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/process/purchase.bpmn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4928">
-          <caret line="224" column="30" lean-forward="false" selection-start-line="224" selection-start-column="30" selection-end-line="224" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/src/main/resources/spring/admin-spring-activiti.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-admin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="65" column="18" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2860">
-          <caret line="231" column="36" lean-forward="false" selection-start-line="231" selection-start-column="36" selection-end-line="231" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/ExcelUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/annotation/SysLog.java">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/annotation/SysLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
@@ -1902,7 +1557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1945,20 +1599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysLogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="57" column="51" lean-forward="true" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
-          <folding>
-            <marker date="1490843912988" expanded="true" signature="276:317" ph="select * fro... sys_log" />
-            <marker date="1490843912988" expanded="true" signature="1173:1478" ph="insert into sys_log... " />
-            <marker date="1490843912988" expanded="true" signature="1556:1951" ph="update sys_l... " />
-            <marker date="1490843912988" expanded="true" signature="2000:2039" ph="delete from " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1966,9 +1606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1976,9 +1613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1994,7 +1628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2002,35 +1635,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1312#1313#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2077">
-          <caret line="40" column="78" lean-forward="false" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/validator/Assert.java">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
@@ -2058,16 +1666,383 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/constant/Constant.java">
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/AbstractController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="190">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding>
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1368#1369#0" expanded="true" />
-            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#667#668#0" expanded="false" />
+            <element signature="e#694#695#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#763#764#0" expanded="false" />
+            <element signature="e#792#793#0" expanded="false" />
+            <element signature="e#820#821#0" expanded="false" />
+            <element signature="e#859#860#0" expanded="false" />
+            <element signature="e#893#894#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/HttpContextUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/aop/SysLogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="77" column="41" lean-forward="true" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/group/QiniuGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/group/QcloudGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/group/AliyunGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/CloudStorageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="39" lean-forward="false" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="211" column="21" lean-forward="true" selection-start-line="211" selection-start-column="21" selection-end-line="211" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/AliyunCloudStorageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1246#1247#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/QcloudCloudStorageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="70" column="47" lean-forward="true" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+            <element signature="e#2156#2157#0" expanded="true" />
+            <element signature="e#2223#2224#0" expanded="true" />
+            <element signature="e#2300#2301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/QiniuCloudStorageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+            <element signature="e#1848#1849#0" expanded="true" />
+            <element signature="e#1924#1925#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/CloudStorageConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/constant/ConfigConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="85" lean-forward="false" selection-start-line="13" selection-start-column="85" selection-end-line="13" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/constant/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1387">
+          <caret line="81" column="16" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/OSSFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/jdbc-web.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" column="11" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-transaction.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/system/SysOssEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysOssMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysLogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="107" />
+          <folding>
+            <marker date="1490843912988" expanded="true" signature="276:317" ph="select * fro... sys_log" />
+            <marker date="1490843912988" expanded="true" signature="1173:1478" ph="insert into sys_log... " />
+            <marker date="1490843912988" expanded="true" signature="1556:1951" ph="update sys_l... " />
+            <marker date="1490843912988" expanded="true" signature="2000:2039" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysOssMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="92" lean-forward="true" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
+          <folding>
+            <marker date="1490861228814" expanded="true" signature="278:319" ph="select * fro... sys_oss" />
+            <marker date="1490861228814" expanded="true" signature="610:638" ph="select count... sys_oss" />
+            <marker date="1490861228814" expanded="true" signature="755:904" ph="insert into sys_oss... " />
+            <marker date="1490861228814" expanded="true" signature="982:1184" ph="update sys_o... " />
+            <marker date="1490861228814" expanded="true" signature="1233:1272" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysOssServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1312#1313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysOssService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/oss.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/fileupload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/fileupload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/log.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/oss.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/FileUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysOssController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/libs/ajaxupload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="673" column="0" lean-forward="true" selection-start-line="673" selection-start-column="0" selection-end-line="673" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

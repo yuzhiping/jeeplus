@@ -1,8 +1,8 @@
 package com.jeeplus.web.util;
 
-import com.jeeplus.web.commons.constant.Constant;
-import com.jeeplus.web.commons.exception.RRException;
-import com.jeeplus.web.commons.schedule.ScheduleJob;
+import com.jeeplus.web.common.constant.Constant;
+import com.jeeplus.web.common.exception.RRException;
+import com.jeeplus.web.common.schedule.ScheduleJob;
 import com.jeeplus.web.entities.system.ScheduleJobEntity;
 import org.quartz.*;
 

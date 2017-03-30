@@ -1,8 +1,8 @@
-package com.jeeplus.web.commons.exception.handler;
+package com.jeeplus.web.common.exception.handler;
 
 import com.alibaba.fastjson.JSON;
-import com.jeeplus.web.commons.exception.RRException;
-import com.jeeplus.web.commons.R;
+import com.jeeplus.web.common.exception.RRException;
+import com.jeeplus.web.common.R;
 import org.apache.shiro.authz.AuthorizationException;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Component;

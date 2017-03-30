@@ -4,7 +4,7 @@ import com.jeeplus.web.entities.system.SysUserEntity;
 import com.jeeplus.web.service.system.SysUserRoleService;
 import com.jeeplus.web.service.system.SysUserService;
 import com.jeeplus.web.util.PageUtils;
-import com.jeeplus.web.commons.R;
+import com.jeeplus.web.common.R;
 import com.jeeplus.web.util.ShiroUtils;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.StringUtils;

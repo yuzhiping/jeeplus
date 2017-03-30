@@ -1,4 +1,4 @@
-package com.jeeplus.web.commons.constant;
+package com.jeeplus.web.common.constant;
 
 /**
  * 常量

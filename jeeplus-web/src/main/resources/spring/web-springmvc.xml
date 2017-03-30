@@ -114,7 +114,7 @@
 
 
     <!--文件上传-->
-    <bean id="multipartResolver" class="com.jeeplus.web.commons.CustomCommonsMultipartResolver">
+    <bean id="multipartResolver" class="com.jeeplus.web.common.CustomCommonsMultipartResolver">
         <!--上传文件的大小，默认为字节-->
         <property name="maxUploadSize" value="104857600"/>
         <property name="maxInMemorySize" value="4096"/>

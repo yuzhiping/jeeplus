@@ -1,4 +1,4 @@
-package com.jeeplus.web.commons;
+package com.jeeplus.web.common;
 
 import java.util.HashMap;
 import java.util.Map;

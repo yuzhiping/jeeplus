@@ -1,4 +1,4 @@
-package com.jeeplus.web.commons;
+package com.jeeplus.web.common;
 
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 

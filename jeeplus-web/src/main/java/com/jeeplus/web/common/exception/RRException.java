@@ -1,4 +1,4 @@
-package com.jeeplus.web.commons.exception;
+package com.jeeplus.web.common.exception;
 
 /**
  * 自定义异常

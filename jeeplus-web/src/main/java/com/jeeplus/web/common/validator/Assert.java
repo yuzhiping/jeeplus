@@ -1,6 +1,6 @@
-package com.jeeplus.web.commons.validator;
+package com.jeeplus.web.common.validator;
 
-import com.jeeplus.web.commons.exception.RRException;
+import com.jeeplus.web.common.exception.RRException;
 import org.apache.commons.lang3.StringUtils;
 
 /**
