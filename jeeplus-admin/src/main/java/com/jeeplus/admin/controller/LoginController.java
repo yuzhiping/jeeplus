@@ -1,7 +1,7 @@
 package com.jeeplus.admin.controller;
 
 import com.jeeplus.admin.common.controller.BaseController;
-import com.jeeplus.admin.services.ILoginService;
+import com.jeeplus.admin.services.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Controller;
@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginController extends BaseController {
 
     @Autowired
-    private ILoginService loginService;
+    private LoginService loginService;
 
 
     /**

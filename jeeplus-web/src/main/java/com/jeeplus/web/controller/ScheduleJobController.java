@@ -1,10 +1,10 @@
 package com.jeeplus.web.controller;
 
 import com.jeeplus.web.entities.system.ScheduleJobEntity;
-import com.jeeplus.web.services.system.ScheduleJobService;
+import com.jeeplus.web.service.system.ScheduleJobService;
 import com.jeeplus.web.util.PageUtils;
-import com.jeeplus.web.commons.R;
-import com.jeeplus.web.commons.exception.RRException;
+import com.jeeplus.web.common.R;
+import com.jeeplus.web.common.exception.RRException;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;

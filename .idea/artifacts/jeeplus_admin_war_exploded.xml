@@ -80,6 +80,18 @@
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.12.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.21" />
           <element id="library" level="project" name="Maven: org.scribe:scribe:1.3.7" />
+          <element id="library" level="project" name="Maven: org.activiti:activiti-engine:5.22.0" />
+          <element id="library" level="project" name="Maven: org.activiti:activiti-bpmn-converter:5.22.0" />
+          <element id="library" level="project" name="Maven: org.activiti:activiti-bpmn-model:5.22.0" />
+          <element id="library" level="project" name="Maven: org.activiti:activiti-process-validation:5.22.0" />
+          <element id="library" level="project" name="Maven: org.activiti:activiti-image-generator:5.22.0" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-email:1.4" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.2" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1.1" />
+          <element id="library" level="project" name="Maven: joda-time:joda-time:2.6" />
+          <element id="library" level="project" name="Maven: org.activiti:activiti-spring:5.22.0" />
+          <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
+          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
         </element>
       </element>
       <element id="directory" name="META-INF">

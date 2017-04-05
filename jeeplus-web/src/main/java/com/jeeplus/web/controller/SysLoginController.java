@@ -1,6 +1,6 @@
 package com.jeeplus.web.controller;
 
-import com.jeeplus.web.commons.R;
+import com.jeeplus.web.common.R;
 import com.jeeplus.web.util.ShiroUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.crypto.hash.Sha256Hash;

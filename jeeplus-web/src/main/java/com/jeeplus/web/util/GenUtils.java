@@ -1,6 +1,6 @@
 package com.jeeplus.web.util;
 
-import com.jeeplus.web.commons.exception.RRException;
+import com.jeeplus.web.common.exception.RRException;
 import com.jeeplus.web.entities.system.generate.ColumnEntity;
 import com.jeeplus.web.entities.system.generate.TableEntity;
 import org.apache.commons.configuration.Configuration;
@@ -181,11 +181,11 @@ public class GenUtils {
         }
 
         if(template.contains("Service.java.vm")){
-            return packagePath + "services" + File.separator + className + "Service.java";
+            return packagePath + "service" + File.separator + className + "Service.java";
         }
 
         if(template.contains("ServiceImpl.java.vm")){
-            return packagePath + "services" + File.separator + "impl" + File.separator + className + "ServiceImpl.java";
+            return packagePath + "service" + File.separator + "impl" + File.separator + className + "ServiceImpl.java";
         }
 
         if(template.contains("Controller.java.vm")){
