@@ -10,71 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f27cd3bb-7795-4016-9779-be99f4f155d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_oss_aliyun_sdk_oss_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_qcloud_cos_api_4_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/Query.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/aop/SysLogAspect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/constant/ConfigConstant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/group/AliyunGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/group/QcloudGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/group/QiniuGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLogController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysOssController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/system/SysOssEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysOssMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysOssMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/AliyunCloudStorageService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/CloudStorageConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/CloudStorageService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/OSSFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/QcloudCloudStorageService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/oss/QiniuCloudStorageService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/SysOssService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysOssServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/HttpContextUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/log.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/WEB-INF/views/sys/oss.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/log.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/oss.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/libs/ajaxupload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/resources/rebel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/resources/rebel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/ExcelBigDataUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-common/src/test/java/com/hexsmith/testExcelBigData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-demo/src/main/resources/rebel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-monitor/src/main/resources/rebel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/rebel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/resources/rebel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jeeplus_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jeeplus_web_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-admin/jeeplus-admin.iml" afterPath="$PROJECT_DIR$/jeeplus-admin/jeeplus-admin.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/jeeplus-blog.iml" afterPath="$PROJECT_DIR$/jeeplus-blog/jeeplus-blog.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-common/jeeplus-common.iml" afterPath="$PROJECT_DIR$/jeeplus-common/jeeplus-common.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-common/pom.xml" afterPath="$PROJECT_DIR$/jeeplus-common/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-demo/jeeplus-demo.iml" afterPath="$PROJECT_DIR$/jeeplus-demo/jeeplus-demo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-monitor/jeeplus-monitor.iml" afterPath="$PROJECT_DIR$/jeeplus-monitor/jeeplus-monitor.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" afterPath="$PROJECT_DIR$/jeeplus-web/jeeplus-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/pom.xml" afterPath="$PROJECT_DIR$/jeeplus-web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobLogController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/ScheduleJobLogController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysConfigController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysConfigController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysGeneratorController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysGeneratorController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLoginController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysLoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysMenuController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysMenuController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysRoleController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysRoleController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysUserController.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysUserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/ScheduleJobServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/ScheduleJobServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysMenuServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/service/system/impl/SysMenuServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/GenUtils.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/GenUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/ScheduleUtils.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/ScheduleUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/ValidatorUtils.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/util/ValidatorUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-dao.xml" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-transaction.xml" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/applicationContext-web-transaction.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/web-springmvc.xml" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/spring/web-springmvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/Controller.java.vm" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/template/Controller.java.vm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/CustomCommonsMultipartResolver.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/CustomCommonsMultipartResolver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/R.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/R.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/annotation/SysLog.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/annotation/SysLog.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/constant/Constant.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/constant/Constant.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/exception/RRException.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/exception/RRException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/exception/handler/RRExceptionHandler.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/exception/handler/RRExceptionHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/listener/StartUpListener.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/listener/StartUpListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/schedule/ScheduleJob.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/schedule/ScheduleJob.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/schedule/ScheduleRunnable.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/schedule/ScheduleRunnable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/commons/validator/Assert.java" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/validator/Assert.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-weixin/jeeplus-weixin.iml" afterPath="$PROJECT_DIR$/jeeplus-weixin/jeeplus-weixin.iml" />
     </list>
     <ignored path="jeeplus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -125,8 +83,8 @@
         <option value="AnnotationType" />
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -159,8 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jeeplus-admin/src/main/resources/jdbc-admin.properties" />
-        <option value="$PROJECT_DIR$/jeeplus-admin/src/main/resources/spring/admin-spring-redis.xml" />
         <option value="$PROJECT_DIR$/jeeplus-admin/src/main/resources/redis-admin.properties" />
         <option value="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/UserService.java" />
         <option value="$PROJECT_DIR$/jeeplus-admin/src/main/java/com/jeeplus/admin/services/impl/UserServiceImpl.java" />
@@ -210,6 +166,8 @@
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/js/sys/oss.js" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/controller/SysOssController.java" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/webapp/static/libs/ajaxupload.js" />
+        <option value="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/ExcelBigDataUtils.java" />
+        <option value="$PROJECT_DIR$/jeeplus-common/src/test/java/com/hexsmith/testExcelBigData.java" />
       </list>
     </option>
   </component>
@@ -290,7 +248,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1932" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -345,6 +303,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -357,63 +316,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Default">
           <PATH>
@@ -428,7 +332,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
     <property name="last_opened_file_path" value="E:/Server/apache-tomcat-8.5.5" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -1411,6 +1315,12 @@
       <workItem from="1490188700449" duration="349000" />
       <workItem from="1490841977096" duration="3966000" />
       <workItem from="1490851124428" duration="8818000" />
+      <workItem from="1490871124439" duration="2864000" />
+      <workItem from="1490925406122" duration="165000" />
+      <workItem from="1490930366598" duration="814000" />
+      <workItem from="1490931641616" duration="158000" />
+      <workItem from="1492482579355" duration="667000" />
+      <workItem from="1492483450649" duration="1065000" />
     </task>
     <servers />
   </component>
@@ -1435,7 +1345,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="502049000" />
+    <option name="totallyTimeSpent" value="507782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1447,13 +1357,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5150079" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5146262" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="16" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26207906" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1463,7 +1375,6 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41548184" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31753555" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1472,10 +1383,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61496747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.49479166" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29113248" sideWeight="0.4832714" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3075693" sideWeight="0.47980613" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18336888" sideWeight="0.51672864" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264642" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.304371" sideWeight="0.5201939" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.304371" sideWeight="0.5201939" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18336888" sideWeight="0.5097614" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1483,8 +1394,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31753555" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264642" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1538,36 +1451,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/ExcelUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/annotation/SysLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysUserRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysUserRoleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <marker date="1490843398876" expanded="true" signature="836:886" ph="delete from " />
-            <marker date="1490843398876" expanded="true" signature="972:1030" ph="select role_... sys_user_role" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1575,15 +1462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="107" />
-          <folding>
-            <marker date="1486969930076" expanded="true" signature="311:358" ph="select * fro... sys_menu" />
-            <marker date="1486969930076" expanded="true" signature="467:827" ph="insert into sys_menu... " />
-            <marker date="1486969930076" expanded="true" signature="946:1021" ph="select * fro... sys_menu" />
-            <marker date="1486969930076" expanded="true" signature="1141:1202" ph="select * fro... sys_menu" />
-            <marker date="1486969930076" expanded="true" signature="1325:1384" ph="select p.nam... sys_menu" />
-            <marker date="1486969930076" expanded="true" signature="1623:1652" ph="select count... sys_menu" />
-            <marker date="1486969930076" expanded="true" signature="1763:2285" ph="update sys_m... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1591,7 +1469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1620,7 +1497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1642,9 +1518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1652,9 +1525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
           <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1662,7 +1532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-196">
           <caret line="96" column="21" lean-forward="true" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1670,7 +1539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1678,7 +1546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1686,17 +1553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#667#668#0" expanded="false" />
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#731#732#0" expanded="false" />
-            <element signature="e#763#764#0" expanded="false" />
-            <element signature="e#792#793#0" expanded="false" />
-            <element signature="e#820#821#0" expanded="false" />
-            <element signature="e#859#860#0" expanded="false" />
-            <element signature="e#893#894#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1704,9 +1560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1714,9 +1567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1724,9 +1574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="77" column="41" lean-forward="true" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1734,7 +1581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1742,7 +1588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1750,7 +1595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1758,9 +1602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="31" column="39" lean-forward="false" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1768,7 +1609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="716">
           <caret line="211" column="21" lean-forward="true" selection-start-line="211" selection-start-column="21" selection-end-line="211" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1776,15 +1616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1792,13 +1623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1330">
           <caret line="70" column="47" lean-forward="true" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2086#2087#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
-            <element signature="e#2223#2224#0" expanded="true" />
-            <element signature="e#2300#2301#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1806,13 +1630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1712#1713#0" expanded="true" />
-            <element signature="e#1781#1782#0" expanded="true" />
-            <element signature="e#1848#1849#0" expanded="true" />
-            <element signature="e#1924#1925#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1820,9 +1637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1830,7 +1644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="85" lean-forward="false" selection-start-line="13" selection-start-column="85" selection-end-line="13" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1838,7 +1651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1387">
           <caret line="81" column="16" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1846,9 +1658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1856,7 +1665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1880,20 +1688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1045">
           <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1901,9 +1695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1911,12 +1702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="107" />
-          <folding>
-            <marker date="1490843912988" expanded="true" signature="276:317" ph="select * fro... sys_log" />
-            <marker date="1490843912988" expanded="true" signature="1173:1478" ph="insert into sys_log... " />
-            <marker date="1490843912988" expanded="true" signature="1556:1951" ph="update sys_l... " />
-            <marker date="1490843912988" expanded="true" signature="2000:2039" ph="delete from " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1924,13 +1709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="92" lean-forward="true" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
-          <folding>
-            <marker date="1490861228814" expanded="true" signature="278:319" ph="select * fro... sys_oss" />
-            <marker date="1490861228814" expanded="true" signature="610:638" ph="select count... sys_oss" />
-            <marker date="1490861228814" expanded="true" signature="755:904" ph="insert into sys_oss... " />
-            <marker date="1490861228814" expanded="true" signature="982:1184" ph="update sys_o... " />
-            <marker date="1490861228814" expanded="true" signature="1233:1272" ph="delete from " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1938,23 +1716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1312#1313#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1962,9 +1723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1972,7 +1730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1980,7 +1737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1988,7 +1744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1996,9 +1751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2006,7 +1758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2014,9 +1765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2024,7 +1772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2032,9 +1779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
           <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2042,7 +1786,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="768">
           <caret line="673" column="0" lean-forward="true" selection-start-line="673" selection-start-column="0" selection-end-line="673" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/ExcelUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/test/java/com/hexsmith/testExcelBigData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="89" column="26" lean-forward="true" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1078#1093#0" expanded="true" />
+            <element signature="e#1647#1648#0" expanded="true" />
+            <element signature="e#1682#1683#0" expanded="true" />
+            <element signature="e#1726#1727#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1801#1802#0" expanded="true" />
+            <element signature="e#1835#1836#0" expanded="true" />
+            <element signature="e#1872#1873#0" expanded="true" />
+            <element signature="e#1911#1912#0" expanded="true" />
+            <element signature="e#1961#1962#0" expanded="true" />
+            <element signature="e#2009#2010#0" expanded="true" />
+            <element signature="e#2045#2046#0" expanded="true" />
+            <element signature="e#2082#2083#0" expanded="true" />
+            <element signature="e#2129#2130#0" expanded="true" />
+            <element signature="e#2173#2174#0" expanded="true" />
+            <element signature="e#2210#2211#0" expanded="true" />
+            <element signature="e#2247#2248#0" expanded="true" />
+            <element signature="e#2295#2296#0" expanded="true" />
+            <element signature="e#2339#2340#0" expanded="true" />
+            <element signature="e#2373#2374#0" expanded="true" />
+            <element signature="e#2407#2408#0" expanded="true" />
+            <element signature="e#2450#2451#0" expanded="true" />
+            <element signature="e#2488#2489#0" expanded="true" />
+            <element signature="e#2531#2532#0" expanded="true" />
+            <element signature="e#2569#2570#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/ExcelBigDataUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="337" column="33" lean-forward="true" selection-start-line="337" selection-start-column="33" selection-end-line="337" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

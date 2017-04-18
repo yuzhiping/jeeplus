@@ -18,7 +18,7 @@
     <bytecodeTargetLevel target="1.8">
       <module name="jeeplus-admin" target="1.5" />
       <module name="jeeplus-blog" target="1.5" />
-      <module name="jeeplus-common" target="1.5" />
+      <module name="jeeplus-common" target="1.8" />
       <module name="jeeplus-demo" target="1.5" />
       <module name="jeeplus-monitor" target="1.5" />
       <module name="jeeplus-parent" target="1.5" />
