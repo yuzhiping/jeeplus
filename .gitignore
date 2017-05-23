@@ -1,4 +1,6 @@
 *.class
+rebel.xml
+rebel-remote.xml
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
