@@ -7,7 +7,6 @@ import com.jeeplus.blog.entities.BlogWebSite;
 import com.jeeplus.blog.util.BlogUtils;
 import com.jeeplus.common.util.RegexUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
@@ -21,7 +20,6 @@ import javax.servlet.http.HttpServletRequest;
 @Component
 public class SkinTemplateVariable {
 
-    @Qualifier("CommonServiceImpl")
     @Autowired
     private CommonService commonService;
     /**

@@ -7,6 +7,10 @@ package com.jeeplus.blog.common.service;
  */
 public interface CommonService {
 
+    String getHost();
+
+    String getFileTempFolder();
+
     /**
      * 指定的缓存容器是否包含指定的key
      * @param cacheName ehcache配置的name
