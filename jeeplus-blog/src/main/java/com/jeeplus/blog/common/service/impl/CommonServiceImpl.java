@@ -1,6 +1,10 @@
 package com.jeeplus.blog.common.service.impl;
 
 import com.jeeplus.blog.common.service.CommonService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.ehcache.EhCacheCacheManager;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,6 +14,46 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CommonServiceImpl implements CommonService {
+
+    @Autowired
+    private EhCacheCacheManager em;
+    @Qualifier("HibernateBaseDao")
+    @Autowired
+    private HibernateBaseDao baseDao;
+    @Value("${app.debug}")
+    protected boolean debug;//是否开发模式
+    @Value("${app.host}")
+    protected String host;
+    @Value("${app.file.temp.folder}")
+    /**
+     * 文件上传处理临时目录
+     */
+    protected String fileTempFolder;
+
+    public boolean isDebug() {
+        return debug;
+    }
+
+    public String getHost() {
+        return host;
+    }
+
+    public String getFileTempFolder() {
+        return fileTempFolder;
+    }
+
+    /**
+     * 返回cookie 共享顶级域名
+     * @return
+     */
+    public String getShareCookHost(){
+        //如果是本地开发模式，配置的localhost那就不要加点，不然登录会有问题
+        if (host.contains("localhost")) {
+            return host;
+        }
+        return String.format(".%s", host);
+    }
+
     /**
      * 指定的缓存容器是否包含指定的key
      *
