@@ -1,4 +1,4 @@
-package com.jeeplus.weixin.services;
+package com.jeeplus.weixin.service;
 
 import javax.servlet.http.HttpSession;
 

@@ -1,4 +1,4 @@
-package com.jeeplus.weixin.services;
+package com.jeeplus.weixin.service;
 
  
 import java.util.List;
@@ -9,8 +9,6 @@ import com.jeeplus.weixin.entities.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
-import org.springframework.transaction.annotation.Isolation;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
 import org.springframework.ui.Model;
  
