@@ -7,6 +7,7 @@ import org.springframework.web.context.ContextLoader;
  * @version:v1.0
  * @date: 2017-02-22 14:14.
  */
+@SuppressWarnings("unchecked")
 public class SpringUtils {
 
     public static <T> T getBean(Class<?> clazz){

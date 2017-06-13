@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f27cd3bb-7795-4016-9779-be99f4f155d7" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_6_2.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_qiniu_happy_dns_java_0_1_4.xml" />
@@ -42,6 +43,41 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/PersonService.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/service/PersonService.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/services/RewardService.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/service/RewardService.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/spring/SpringContext.java" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/utils/spring/SpringContextUtils.java" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-admin/src/main/resources/rebel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/aop/ErrorLogAdvice.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/qiniu/QiNiuManagement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleCommentMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleCommentMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogBookMarksMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogBookMarksMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogCategoryMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogCategoryMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogLableMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogLableMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogReportMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogReportMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogResMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogResMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogUserMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogUserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogWebSiteMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogWebSiteMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/font/BlogFontMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/font/BlogFontMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/util/sina/SinaWeiBoUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/web/interceptor/assist/BlogUrlMapping.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/resources/rebel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-demo/src/main/resources/rebel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-monitor/src/main/resources/rebel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-web/src/main/resources/rebel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jeeplus-weixin/src/main/resources/rebel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/service/CommonService.java" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/service/CommonService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/service/impl/CommonServiceImpl.java" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/service/impl/CommonServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/skin/template/SkinTemplateVariable.java" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/skin/template/SkinTemplateVariable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/web/interceptor/BlogFilter.java" afterPath="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/web/interceptor/BlogFilter.java" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
     </list>
     <ignored path="jeeplus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,6 +116,7 @@
     <favorites_list name="jeeplus" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="FrontController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/FrontController.java">
@@ -99,26 +136,52 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1573#1603#1" expanded="true" />
+=======
+    <leaf>
+      <file leaf-file-name="BlogUserMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogUserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="JsAPI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/JsAPI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="626">
               <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+=======
+      <file leaf-file-name="BlogUserMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogUserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="54" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="FundController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/FundController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-42">
               <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+=======
+      <file leaf-file-name="BlogFontMapper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/font/BlogFontMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,20 +189,38 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="BlogFontMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/font/BlogFontMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="Enum" />
         <option value="package-info" />
         <option value="spring-beans.schema" />
         <option value="AnnotationType" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+<<<<<<< HEAD
         <option value="Interface" />
         <option value="Class" />
+=======
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
       </list>
     </option>
   </component>
@@ -153,13 +234,18 @@
       <find>websiteid</find>
       <find>StringUtil</find>
       <find>io.renren.entity.</find>
+<<<<<<< HEAD
       <find>info</find>
+=======
+      <find>UserVo</find>
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
     </findStrings>
     <replaceStrings>
       <replace>emailEntity</replace>
       <replace>EmailEntity</replace>
       <replace>websiteId</replace>
       <replace>StringUtils</replace>
+      <replace>BlogUserDTO</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -173,6 +259,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/entities/system/SysLogEntity.java" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysUserRoleMapper.xml" />
         <option value="$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/mapper/system/SysLogMapper.java" />
@@ -224,6 +311,59 @@
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/service/weixin/impl/FwhuserServiceImpl.java" />
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/util/StringUtils.java" />
         <option value="$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/service/weixin/impl/FwhloginServiceImpl.java" />
+=======
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/template/StringTemplateLoader.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/template/StringTemplateParser.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/util/freemarker/FreemarkerParseUtils.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/BlogResDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/util/DateUtils.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/CalendarDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/util/freemarker/directive/TimeSummaryDirectiveUtils.java" />
+        <option value="$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/StringUtils.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/util/freemarker/directive/SubStringDirectiveUtils.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/home/HomeArticleDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/bookmark/BookMarkDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/bookmark/BookMarkFolderDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/blogsite/WebSiteDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/blogsite/WebSiteCountInfoDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/ArticleCommentDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/ArticleDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/ArticleTimeLineItemsDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/ArticleTimeLineNavigateDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/CategoryDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/CountCategoryDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/HotArticleDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/LableArticleItemsDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/LableDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/SimilarArticlesDirective.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/util/BlogUtils.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/service/CommonService.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/service/impl/CommonServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/skin/template/SkinTemplateVariable.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/web/interceptor/BlogFilter.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/aop/ErrorLogAdvice.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/qiniu/QiNiuManagement.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/util/sina/SinaWeiBoUtils.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/web/interceptor/assist/BlogUrlMapping.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogWebSiteMapper.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogWebSiteMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleCommentMapper.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleCommentMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogResMapper.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogResMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogBookMarksMapper.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogBookMarksMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogCategoryMapper.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogCategoryMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogLableMapper.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogLableMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogReportMapper.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogReportMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogUserMapper.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogUserMapper.xml" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/font/BlogFontMapper.java" />
+        <option value="$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/font/BlogFontMapper.xml" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
       </list>
     </option>
   </component>
@@ -304,8 +444,13 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
+<<<<<<< HEAD
     <option name="width" value="1382" />
     <option name="height" value="744" />
+=======
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -360,6 +505,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+<<<<<<< HEAD
       <pane id="Scope">
         <subPane subId="Default">
           <PATH>
@@ -371,6 +517,8 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+=======
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -393,7 +541,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="jeeplus-weixin" />
+=======
+              <option name="myItemId" value="jeeplus-blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,7 +558,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-weixin" />
+              <option name="myItemId" value="jeeplus-blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -429,7 +580,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jeeplus-weixin" />
+              <option name="myItemId" value="jeeplus-blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -444,6 +595,123 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeeplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeeplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeeplus-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeeplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeeplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="jeeplus-weixin" />
+=======
+              <option name="myItemId" value="jeeplus-blog" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeeplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeeplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="jeeplus-weixin" />
+=======
+              <option name="myItemId" value="jeeplus-blog" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -620,7 +888,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+=======
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
     <property name="last_opened_file_path" value="E:/Server/apache-tomcat-8.5.5" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -634,25 +906,25 @@
     <property name="js.eslint.eslintPackage" value="C:\Program Files\nodejs\node_modules\eslint" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.jeeplus.web.oss" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\controller" />
-      <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\utils" />
-      <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\util" />
-      <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\services" />
-      <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\mapper" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.jeeplus.common.schedule" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\java\com\jeeplus\web\mapper\system" />
       <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\test\resources" />
       <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\resources\spring" />
       <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\ueditor" />
       <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-web\src\main\webapp\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ IDEA\Workspace\jeeplus\jeeplus-blog\src\main\java\com\jeeplus\blog\common\freemarker\directive\article" />
+      <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\controller" />
+      <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\utils" />
+      <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\util" />
+      <recent name="E:\Intellij IDEA\jeeplus\jeeplus-weixin\src\main\java\com\jeeplus\weixin\services" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jeeplus.common.schedule" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jeeplus.web.oss" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1270,6 +1542,9 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="49953" />
       </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="53452" />
+      </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -1286,6 +1561,36 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -1619,9 +1924,24 @@
       <workItem from="1490188700449" duration="349000" />
       <workItem from="1490841977096" duration="3966000" />
       <workItem from="1490851124428" duration="8818000" />
+<<<<<<< HEAD
       <workItem from="1491402432994" duration="1159000" />
       <workItem from="1491831271899" duration="202000" />
       <workItem from="1491831541351" duration="5027000" />
+=======
+      <workItem from="1490871124439" duration="2864000" />
+      <workItem from="1490925406122" duration="165000" />
+      <workItem from="1490930366598" duration="814000" />
+      <workItem from="1490931641616" duration="158000" />
+      <workItem from="1492482579355" duration="667000" />
+      <workItem from="1492483450649" duration="1065000" />
+      <workItem from="1495589387277" duration="439000" />
+      <workItem from="1495590061200" duration="5200000" />
+      <workItem from="1495596004839" duration="1617000" />
+      <workItem from="1495603891343" duration="521000" />
+      <workItem from="1495605693348" duration="6038000" />
+      <workItem from="1495623567903" duration="4766000" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
     </task>
     <servers />
   </component>
@@ -1646,7 +1966,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="508437000" />
+=======
+    <option name="totallyTimeSpent" value="526363000" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1658,13 +1982,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5150079" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5146262" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719395" sideWeight="0.5" order="16" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26207906" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1682,9 +2012,16 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61496747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.49479166" order="11" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33821377" sideWeight="0.4832714" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18336888" sideWeight="0.51672864" order="6" side_tool="true" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32782516" sideWeight="0.47980613" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.304371" sideWeight="0.5201939" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.304371" sideWeight="0.5201939" order="3" side_tool="true" content_ui="tabs" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18336888" sideWeight="0.5097614" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1755,6 +2092,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-web/src/main/java/com/jeeplus/web/common/constant/ConfigConstant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1922,10 +2260,239 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1995">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="1813" column="25" lean-forward="false" selection-start-line="1813" selection-start-column="25" selection-end-line="1813" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/util/freemarker/directive/SubStringDirectiveUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="49" lean-forward="true" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/home/HomeArticleDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="57" column="81" lean-forward="false" selection-start-line="57" selection-start-column="81" selection-end-line="57" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1557#1573#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/bookmark/BookMarkDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="54" column="63" lean-forward="true" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1738#1754#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/bookmark/BookMarkFolderDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/blogsite/WebSiteDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/blogsite/WebSiteCountInfoDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/CustomCommonsMultipartResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/ArticleDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/ArticleCommentDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="57" column="30" lean-forward="false" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/ArticleTimeLineItemsDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="51" column="40" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/ArticleTimeLineNavigateDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="58" lean-forward="false" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/CategoryDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/CountCategoryDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/HotArticleDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/LableArticleItemsDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/LableDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.4.RELEASE/spring-beans-4.2.4.RELEASE.jar!/org/springframework/beans/factory/annotation/Qualifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/util/BlogUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="128" column="36" lean-forward="true" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="false" />
+            <element signature="e#1729#1730#0" expanded="false" />
+            <element signature="e#5842#5843#0" expanded="false" />
+            <element signature="e#5924#5925#0" expanded="false" />
+            <element signature="e#6003#6004#0" expanded="false" />
+            <element signature="e#6089#6090#0" expanded="false" />
+            <element signature="e#6998#6999#0" expanded="false" />
+            <element signature="e#7060#7061#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/freemarker/directive/article/SimilarArticlesDirective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/service/CommonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/skin/template/SkinTemplateVariable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="8" column="62" lean-forward="false" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/service/impl/CommonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/mapper/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-common/src/main/java/com/jeeplus/common/util/UrlUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/controller/dto/BlogUserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/service/FrontService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3612">
@@ -1979,10 +2546,55 @@
             <element signature="e#1119#1120#0" expanded="true" />
             <element signature="e#1161#1162#0" expanded="true" />
             <element signature="e#1195#1196#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/web/interceptor/BlogFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="150" column="88" lean-forward="true" selection-start-line="150" selection-start-column="88" selection-end-line="150" selection-end-column="88" />
+          <folding>
+            <element signature="e#13249#13265#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/aop/ErrorLogAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/common/qiniu/QiNiuManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="83" column="56" lean-forward="false" selection-start-line="83" selection-start-column="56" selection-end-line="83" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1545#1546#0" expanded="true" />
+            <element signature="e#1596#1597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/util/sina/SinaWeiBoUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/entity/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -2003,18 +2615,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/web/interceptor/assist/BlogUrlMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogWebSiteMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleCommentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="41" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/entity/UserSummary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="54" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/request/BaseRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -2108,18 +2762,52 @@
             <element signature="e#728#729#0" expanded="true" />
             <element signature="e#780#781#0" expanded="true" />
             <element signature="e#824#825#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogResMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/response/GetUserInfoResponse.java">
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogArticleCommentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogBookMarksMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/response/GetUserInfoResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogResMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="54" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/OauthAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -2135,6 +2823,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="172" column="32" lean-forward="false" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogCategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="35" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
           <folding>
             <element signature="e#5937#5938#0" expanded="true" />
             <element signature="e#5967#5968#0" expanded="true" />
@@ -2142,14 +2836,22 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/config/ApiConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3927">
           <caret line="214" column="27" lean-forward="true" selection-start-line="214" selection-start-column="27" selection-end-line="214" selection-end-column="27" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogBookMarksMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="54" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/WeixinController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -2172,36 +2874,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogLableMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogCategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogReportMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="33" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/service/weixin/FwhuserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="74" lean-forward="true" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogReportMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/controller/FrontController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="143" column="39" lean-forward="false" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="39" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogLableMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="54" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/entity/BaseModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogWebSiteMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="54" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/fastweixin/api/response/BaseResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -2214,10 +2962,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/BlogUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="54" />
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jeeplus-weixin/src/main/java/com/jeeplus/weixin/service/weixin/impl/FwhuserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -2258,6 +3023,26 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/font/BlogFontMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeeplus-blog/src/main/java/com/jeeplus/blog/mapper/font/BlogFontMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
   </component>
   <component name="masterDetails">
     <states>

@@ -1,6 +1,13 @@
 package com.jeeplus.blog.common.service.impl;
 
 import com.jeeplus.blog.common.service.CommonService;
+import com.jeeplus.blog.entities.BlogRequestLog;
+import com.jeeplus.common.util.TimeStampUtils;
+import net.sf.ehcache.Element;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.ehcache.EhCacheCacheManager;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,6 +17,45 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CommonServiceImpl implements CommonService {
+
+    @Autowired
+    private EhCacheCacheManager cacheManager;
+    @Value("${app.debug}")
+    protected boolean debug;//是否开发模式
+    @Value("${app.host}")
+    protected String host;
+    @Value("${app.file.temp.folder}")
+    /**
+     * 文件上传处理临时目录
+     */
+    protected String fileTempFolder;
+
+    public boolean isDebug() {
+        return debug;
+    }
+
+    @Override
+    public String getHost() {
+        return host;
+    }
+
+    @Override
+    public String getFileTempFolder() {
+        return fileTempFolder;
+    }
+
+    /**
+     * 返回cookie 共享顶级域名
+     * @return
+     */
+    public String getShareCookHost(){
+        //如果是本地开发模式，配置的localhost那就不要加点，不然登录会有问题
+        if (host.contains("localhost")) {
+            return host;
+        }
+        return String.format(".%s", host);
+    }
+
     /**
      * 指定的缓存容器是否包含指定的key
      *
@@ -20,7 +66,8 @@ public class CommonServiceImpl implements CommonService {
      */
     @Override
     public boolean cacheContrainKey(String cacheName, String key) {
-        return false;
+        Element et= cacheManager.getCacheManager().getCache(cacheName).get(key);
+        return null==et.getObjectValue();
     }
 
     /**
@@ -33,6 +80,8 @@ public class CommonServiceImpl implements CommonService {
     @Override
     public void addCache(String cacheName, String key, Object value) {
 
+        Element et=new Element(key, value);
+        cacheManager.getCacheManager().getCache(cacheName).put(et);
     }
 
     /**
@@ -43,6 +92,8 @@ public class CommonServiceImpl implements CommonService {
      */
     @Override
     public void removeCache(String cacheName, String key) {
+
+        cacheManager.getCacheManager().getCache(cacheName).remove(key);
 
     }
 
@@ -56,7 +107,8 @@ public class CommonServiceImpl implements CommonService {
      */
     @Override
     public Object getCache(String cacheName, String key) {
-        return null;
+        Element et= cacheManager.getCacheManager().getCache(cacheName).get(key);
+        return null==et||null==et.getObjectValue()?null:et.getObjectValue();
     }
 
     /**
@@ -71,7 +123,18 @@ public class CommonServiceImpl implements CommonService {
      * @param blog
      */
     @Override
-    public void addHttpRequestLog(String url, String method, String ip, String agent, String referer, int runmills, String blog) {
+    public void addHttpRequestLog(String url, String method, String ip,
+                                  String agent, String referer, int runmills, String blog) {
+
+        BlogRequestLog log = new BlogRequestLog();
+        log.setReqUrl(url);
+        log.setReqMethod(method);
+        log.setReqIp(ip);
+        log.setReqAgent(agent);
+        log.setReqReferer(referer);
+        log.setReqRunTime(runmills);
+        log.setReqDatetime(TimeStampUtils.getCurrentDate());
+        log.setReqBlog(blog);
 
     }
 

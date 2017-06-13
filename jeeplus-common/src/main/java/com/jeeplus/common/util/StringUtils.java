@@ -1803,4 +1803,40 @@ public class StringUtils {
     public static String getEmptyString() {
         return "";
     }
+
+    /**
+     * 返回指定长度的字符串
+     * @param s
+     * @param length
+     * @param overflow 如果超出长度在后面追加指定的字符串
+     * @return
+     */
+    public static String getLengthOfSub(String s,int length,String overflow) {
+        double valueLength = 0;
+        StringBuffer sb = new StringBuffer();
+        String chinese = "[\u4e00-\u9fa5]";
+        // 获取字段值的长度，如果含中文字符，则每个中文字符长度为2，否则为1
+        for (int i = 0; i < s.length(); i++) {
+            // 获取一个字符
+            String temp = s.substring(i, i + 1);
+            // 判断是否为中文字符
+            if (temp.matches(chinese)) {
+                // 中文字符长度为1
+                valueLength += 1;
+            } else {
+                // 其他字符长度为0.5
+                valueLength += 0.5;
+            }
+            if (valueLength<=length) {
+                sb.append(temp);
+            }else{
+                if (null!=overflow&&!overflow.isEmpty()) {
+                    sb.append(overflow);
+                }
+                break;
+            }
+
+        }
+        return  sb.toString();
+    }
 }
