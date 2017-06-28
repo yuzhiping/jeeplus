@@ -14,8 +14,9 @@ import com.jeeplus.weixin.entities.CitiesModel;
 import com.jeeplus.weixin.entities.CommonModel;
 import com.jeeplus.weixin.entities.ReffererInfoModel;
 import com.jeeplus.weixin.entities.UserInfoModel;
-import com.jeeplus.weixin.services.FrontService;
+import com.jeeplus.weixin.service.FrontService;
 import com.jeeplus.weixin.utils.Constants;
+import com.jeeplus.weixin.utils.spring.SpringContextUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -140,7 +141,7 @@ public class FrontController extends BaseController {
        	    String ua = ((HttpServletRequest) request).getHeader("user-agent").toLowerCase();  
       	    if (ua.indexOf("micromessenger") > 0) { 
  
-      	    	   	    FwhloginService fwhloginService = SpringContext.getBean("fwhloginServiceImpl");
+      	    	   	    FwhloginService fwhloginService = SpringContextUtils.getBean("fwhloginServiceImpl");
 	        	    	try {
 							fwhloginService.getWxLoginuser(request, response);
 						} catch (Exception e) {

@@ -2,7 +2,7 @@ package com.jeeplus.weixin.controller;
 
 import com.jeeplus.weixin.common.pagination.PageInfo;
 import com.jeeplus.weixin.dto.RewardModel;
-import com.jeeplus.weixin.services.RewardService;
+import com.jeeplus.weixin.service.RewardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

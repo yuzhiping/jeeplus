@@ -1,9 +1,7 @@
-package com.jeeplus.weixin.services;
+package com.jeeplus.weixin.service;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 import com.jeeplus.weixin.common.pagination.Page;
 import com.jeeplus.weixin.common.pagination.PageHelper;

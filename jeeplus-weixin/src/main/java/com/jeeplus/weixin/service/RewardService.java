@@ -1,4 +1,4 @@
-package com.jeeplus.weixin.services;
+package com.jeeplus.weixin.service;
  
 import com.jeeplus.weixin.common.pagination.Page;
 import com.jeeplus.weixin.common.pagination.PageHelper;

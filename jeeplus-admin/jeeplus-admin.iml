@@ -15,6 +15,10 @@
         </sourceRoots>
       </configuration>
     </facet>
+<<<<<<< HEAD
+    <facet type="Spring" name="Spring">
+      <configuration />
+=======
     <facet type="JRebel" name="JRebel">
       <configuration>
         <option name="deleteUnindexed" value="true" />
@@ -36,6 +40,7 @@
         <option name="url" />
         <option name="xmlDir" />
       </configuration>
+>>>>>>> dc8991ba817a34e14b12c3832ad22519b0decaaf
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
@@ -97,7 +102,7 @@
     <orderEntry type="module-library">
       <library name="Maven: com.alibaba:jconsole:1.8.0">
         <CLASSES>
-          <root url="jar://C:/Program Files/Java/jdk1.8.0_101/lib/jconsole.jar!/" />
+          <root url="jar://C:/Program Files/Java/jdk1.8.0_51/lib/jconsole.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -106,7 +111,7 @@
     <orderEntry type="module-library">
       <library name="Maven: com.alibaba:tools:1.8.0">
         <CLASSES>
-          <root url="jar://C:/Program Files/Java/jdk1.8.0_101/lib/tools.jar!/" />
+          <root url="jar://C:/Program Files/Java/jdk1.8.0_51/lib/tools.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

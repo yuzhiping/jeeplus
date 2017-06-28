@@ -52,4 +52,9 @@ public final class StringUtils {
         }
         return false;
     }
+
+    public static boolean isEmpty (Object o) {
+        return o == null || "".equals(o);
+    }
+
 }
